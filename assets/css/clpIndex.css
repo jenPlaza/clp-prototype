@@ -1,0 +1,148 @@
+/*-----------------------Grids ----*/
+main ul,
+section#actividades ul {
+  display: grid;
+
+  grid-gap: 5px;
+  width: 100%;
+  padding: 0;
+  max-width: 992px;
+  margin: 0 auto 35px auto;
+  position: relative;
+}
+main ul {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+section#actividades ul {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+main ul li figure,
+section#actividades ul li figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0.25px solid var(--grey);
+  position: relative;
+}
+/*----------------------- Parallex Mas ----*/
+.parallex-section {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  top: -90px;
+}
+.parallex {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  height: 490px;
+  background-position: left 0px bottom 0px;
+}
+.parallex-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.parallex-section > div a {
+  padding: 3%;
+  position: sticky;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#parallex-set-1 {
+  background: url('../images/lampa.png') no-repeat top center / 100% 100%;
+  background-size: cover;
+  width: 100%;
+}
+
+.parallex-section > div a h2:hover {
+  color: var(--lime);
+  text-shadow: 1px 1px 2px #dcdcdc;
+  cursor: pointer;
+  margin: 0 auto 3% auto;
+}
+
+/*-----------------------Actividades ----*/
+section#actividades {
+  height: auto;
+  position: relative;
+  top: -45px;
+  margin-bottom: -17%;
+}
+section#actividades > h5 {
+  color: var(--black);
+  width: 85%;
+  margin: 0 0 35px auto;
+  text-indent: 0px;
+  position: relative;
+}
+section#actividades > h5:first-letter {
+  -webkit-initial-letter: 3 1;
+  initial-letter: 3 1;
+  color: var(--lime);
+  font-weight: bold;
+  margin-right: 0.75em;
+}
+section#actividades ul li figure figcaption {
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#actividades ul li figure figcaption h5 {
+  color: var(--white);
+}
+@media screen and (min-width: 576px) {
+  .parallex-section {
+    top: -80px;
+  }
+  section#actividades ul {
+    margin: 0 auto 80px auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  section#actividades {
+    top: -15px;
+  }
+  section#actividades > h5 {
+    text-indent: 50px;
+    margin: 0 auto 55px auto;
+  }
+  section#actividades ul {
+    margin: 0 auto 175px auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section#actividades ul li:nth-child(4) img,
+  section#actividades ul li:nth-child(4) figcaption {
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  section#actividades {
+    height: 300px;
+    margin-bottom: -8%;
+  }
+}
+@media screen and(min-width:1200px) {
+}
+@media screen and(min-width:1600px) {
+}
+@media screen and(min-width:20000px) {
+}
+@media screen and(min-width:24000px) {
+}

@@ -3,11 +3,269 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SignUp</title>
-    <link rel="stylesheet" href="z_stylesheet.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Club Los Paltos</title>
+    <link rel="stylesheet" href="./assets/css/clpIndex.css" />
+    <link rel="stylesheet" href="./assets/css/clpReusable.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <script type="text/javascript" src="./js/z_javascript.js"></script>
+    <header id="top" class="scroll-in-place">
+      <figure>
+        <img src="./assets/images/logos/CLP_wt.png" alt="white logo" />
+      </figure>
+      <figure onclick="appear();">
+        <img src="./assets/images/icons/menu-white.png" alt="white menu icon" />
+      </figure>
+      <nav id="navList" style="display: none">
+        <ul class="list min">
+          <li style="display: inline-flex">
+            <img
+              src="./assets/images/icons/arrow-left-small-white.png"
+              alt="white menu icon"
+              width="16px"
+              height="16px"
+              class="nav-icon nav-close"
+              onclick="shortenMenu();"
+            /><img
+              src="./assets/images/icons/arrow-right-small-white.png"
+              alt="white menu icon"
+              width="16px"
+              height="16px"
+              class="nav-icon nav-open"
+              onclick="extendMenu();"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/home-white.png"
+              alt="white menu icon"
+              width="30px"
+              height="30px"
+              class="nav-icon"
+            />
+            <a href="#" class="nav-link"><h6>Home</h6></a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/calendar-white.png"
+              alt="white menu icon"
+              width="30px"
+              height="30px"
+              class="nav-icon"
+            />
+            <a href="#" class="nav-link"><h6>Calendar</h6></a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/info-white.png"
+              alt="white menu icon"
+              width="30px"
+              height="30px"
+              class="nav-icon"
+            />
+            <a href="#" class="nav-link"><h6>About Us</h6></a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/balloon-white.png"
+              alt="white menu icon"
+              width="30px"
+              height="30px"
+              class="nav-icon"
+            />
+            <a href="#" class="nav-link"><h6>Events</h6></a>
+          </li>
+          <li class="dropdown">
+            <img
+              src="./assets/images/icons/categorize-white.png"
+              alt="white menu icon"
+              width="30px"
+              height="30px"
+              class="nav-icon"
+              onclick="displayContent();"
+            />
+            <h6 class="dropbtn nav-link" onclick="displayActivities();">
+              Activities
+            </h6>
+            <div class="dropdown-content" style="display: none">
+              <ul>
+                <li>
+                  <img
+                    src="./assets/images/icons/9023871_tennis_ball_fill_icon.png"
+                    alt="white menu icon"
+                    width="30px"
+                    height="30px"
+                    class="nav-icon"
+                  />
+                  <a href="#" class="nav-link"><h6>Tennis</h6></a>
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/icons/paddeling-white.png"
+                    alt="white menu icon"
+                    width="30px"
+                    height="30px"
+                    class="nav-icon"
+                  />
+                  <a href="#" class="nav-link"><h6>Paddeling</h6></a>
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/icons/lotus-white.png"
+                    alt="white menu icon"
+                    width="30px"
+                    height="30px"
+                    class="nav-icon"
+                  />
+                  <a href="#" class="nav-link"><h6>Yoga</h6></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/trophy-white.png"
+              alt="white menu icon"
+              width="30px"
+              height="30px"
+              class="nav-icon"
+            />
+            <a href="#" class="nav-link"><h6>Tournaments</h6></a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/phone-white-2.png"
+              alt="white menu icon"
+              width="30px"
+              height="30px"
+              class="nav-icon"
+            />
+            <a href="#" class="nav-link"><h6>Contact Us</h6></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <figure class="wave">
+      <img
+        src="./assets/images/red-grey-wave.png"
+        alt="gray-red wave upside
+      down"
+      />
+    </figure>
+    <div id="body">
+      <main>
+        <h1>Lorem Ipsium</h1>
+        <h4>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum.
+        </h4>
+        <ul>
+          <li>
+            <figure>
+              <img
+                src="./assets/images/index/quicncho_1_bk.png"
+                alt="black and white 1of3 picture of an event celebrated in club los paltos"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="./assets/images/index/quicncho_2_bk.png"
+                alt="black and white 2of3 picture of an event celebrated in club los paltos"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="./assets/images/index/quicncho_3_bk.png"
+                alt="black and white 3of3 picture of an event celebrated in club los paltos"
+              />
+            </figure>
+          </li>
+        </ul>
+        <button>Exploren Eventos</button>
+      </main>
+      <!-- parallex hay mas -->
+      <section class="parallex-section">
+        <div class="parallex parallex1" id="parallex-set-1">
+          <a href="/"><h2>Pero Hay Mas</h2></a>
+        </div>
+      </section>
+      <!-- actividades -->
+      <section id="actividades">
+        <h5>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum.
+        </h5>
+        <ul>
+          <li>
+            <figure>
+              <img
+                src="./assets/images/index/tennis_2_bk.png"
+                alt="black and white 1of3 picture of an event celebrated in club los paltos"
+              />
+              <figcaption>
+                <h5><em>Tennis</em></h5>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="./assets/images/index/paddeling_bk.png"
+                alt="black and white 2of3 picture of an event celebrated in club los paltos"
+              />
+              <figcaption>
+                <h5><em>Paddeling</em></h5>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="./assets/images/index/tournaments_bk.png"
+                alt="black and white 3of3 picture of an event celebrated in club los paltos"
+              />
+              <figcaption>
+                <h5><em>Tournament</em></h5>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="./assets/images/index/outdoor_yoga-bk.jpeg"
+                alt="black and white 3of3 picture of an event celebrated in club los paltos"
+              />
+              <figcaption>
+                <h5><em>Yoga</em></h5>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <figure class="footer-wave">
+        <img
+          src="./assets/images/red-wave-footer-195px.png"
+          alt="gray-red wave upside
+      down"
+        />
+      </figure>
+      <footer>
+        <section id="location"></section>
+        <section id="socialM"></section>
+      </footer>
+    </div>
+    <script type="text/javascript" src="./assets/js/clpData.js"></script>
+    <script type="text/javascript" src="./assets/js/clpMain.js"></script>
   </body>
-  </html>
+</html>
