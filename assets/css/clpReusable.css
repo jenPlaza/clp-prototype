@@ -278,6 +278,7 @@ main h4 {
   width: 82%;
   max-width: 980px;
   font-size: x-large;
+  filter: drop-shadow(1px 1px 1px var(--light-border));
 }
 /*-----------------------footer ----*/
 figure.footer-wave {
@@ -329,9 +330,9 @@ footer section:first-child > div address {
 footer section:first-child > div div {
   margin-left: 0;
 }
-footer section:first-child > div div p {
+/* footer section:first-child > div div p {
   color: var(--black);
-}
+} */
 footer section:last-child {
   display: flex;
   justify-content: center;
@@ -474,35 +475,113 @@ footer section#socialM ul li a figure {
   /*-----------------------footer ----*/
   figure.footer-wave {
     position: relative;
-    bottom: -64px;
+    bottom: -85px;
     height: 176px;
     width: 100%;
     margin: 0;
     z-index: -1;
     display: block;
   }
+  figure.footer-wave img {
+    width: 95%;
+  }
   footer {
     height: 65px;
     background-color: transparent;
     flex-direction: row;
   }
+  footer div {
+    align-items: start;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  footer div p {
+    width: 100%;
+    margin: 5px;
+  }
   footer section:first-child {
     width: calc(100% - 280px);
     height: 40px;
   }
-  footer div {
-    align-items: center;
-    flex-direction: row;
+  footer section:first-child div > p b {
+    font-size: larger;
+  }
+  footer section:first-child > div address {
+    margin-top: 0px;
   }
   footer section:first-child > div div {
-    margin-left: 30px;
+    margin-left: 0;
+    top: -15px;
+  }
+  footer section:first-child > div div p b {
+    color: var(--black) !important;
   }
 }
 @media screen and (min-width: 1200px) {
+  body > header nav#navList {
+    width: 60%;
+    max-width: 725px;
+  }
+  #parallex-set-1 {
+    background: url(../images/lampa.png) no-repeat top center / 100% 100%;
+    background-size: cover;
+    width: 100%;
+    background-position: 50% bottom;
+  }
+  figure.footer-wave img {
+    width: 75%;
+  }
+  footer section:first-child > div {
+    width: 77%;
+  }
+  main h4 {
+    margin: 0 auto 25px auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body div#body {
+    top: -100px;
+  }
+  footer section:first-child > div {
+    width: 72%;
+  }
 }
 @media screen and (min-width: 1600px) {
+  body div#body {
+    top: -180px;
+  }
+  footer section:first-child > div {
+    width: 70%;
+  }
 }
-@media screen and (min-width: 20000px) {
+@media screen and (min-width: 1800px) {
+  body div#body {
+    top: -240px;
+  }
+
+  footer section:first-child > div {
+    width: 67%;
+  }
 }
-@media screen and (min-width: 24000px) {
+@media screen and (min-width: 2000px) {
+  body div#body {
+    top: -300px;
+  }
+
+  footer section:first-child > div {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 2400px) {
+  body div#body {
+    top: -445px;
+  }
+  figure.footer-wave img {
+    width: 70%;
+  }
+  footer section:first-child > div {
+    width: 62%;
+  }
 }
