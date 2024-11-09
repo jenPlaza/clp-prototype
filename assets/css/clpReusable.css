@@ -310,10 +310,13 @@ section#tour ul li {
 }
 section#tour ul li figure {
   width: 255px;
-  height: 155px;
+  height: 125px;
   margin: 0;
   border: 0.25px solid var(--grey);
   position: relative;
+}
+section#tour ul li:nth-last-child(2) figure img {
+  object-position: 50% 70%;
 }
 section#tour {
   height: auto;
@@ -605,7 +608,8 @@ footer section#socialM ul li a figure {
     margin: 0 auto 45px auto;
   }
   section#tour {
-    top: -15px;
+    top: 125px;
+    margin-bottom: 23%;
   }
   section#tour > h4 {
     width: 88%;
@@ -655,11 +659,7 @@ footer section#socialM ul li a figure {
     margin-top: -5px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  main ul li:nth-child(3) img {
-    width: 100vw;
-  }
-}
+
 @media screen and (min-width: 992px) {
   nav ul {
     align-items: center;
@@ -677,8 +677,8 @@ footer section#socialM ul li a figure {
   }
   section#tour {
     height: 300px;
-    margin-bottom: 50px;
-    top: 95px;
+    margin-bottom: 30px;
+    top: 120px;
   }
   section#tour > h4 {
     width: 70%;
@@ -745,7 +745,7 @@ footer section#socialM ul li a figure {
     background-position: 50% bottom;
   }
   section#tour {
-    margin-bottom: -14px;
+    margin-bottom: -50px;
   }
   section#tour > h4 {
     width: 75%;
@@ -769,6 +769,9 @@ footer section#socialM ul li a figure {
   body div#body {
     top: -180px;
   }
+  section#tour {
+    margin-bottom: -40px;
+  }
   footer section:first-child > div {
     width: 70%;
   }
@@ -777,7 +780,9 @@ footer section#socialM ul li a figure {
   body div#body {
     top: -240px;
   }
-
+  section#tour {
+    margin-bottom: -35px;
+  }
   footer section:first-child > div {
     width: 67%;
   }
@@ -786,7 +791,6 @@ footer section#socialM ul li a figure {
   body div#body {
     top: -300px;
   }
-
   footer section:first-child > div {
     width: 65%;
   }
@@ -794,6 +798,9 @@ footer section#socialM ul li a figure {
 @media screen and (min-width: 2400px) {
   body div#body {
     top: -445px;
+  }
+  section#tour {
+    margin-bottom: -10px;
   }
   figure.footer-wave img {
     width: 70%;

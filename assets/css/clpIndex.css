@@ -96,6 +96,17 @@ section#actividades > h5:first-letter {
   font-weight: bold;
   margin-right: 0.75em;
 }
+section#actividades ul li figure {
+  width: auto;
+  height: 250px;
+  min-height: 165px;
+  margin: 0;
+  border: 0.25px solid var(--grey);
+  position: relative;
+}
+section#actividades ul li:nth-child(4) figure a img {
+  object-position: 65% 50%;
+}
 section#actividades ul li figure figcaption {
   height: 40px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -105,7 +116,7 @@ section#actividades ul li figure figcaption {
   align-items: center;
   justify-content: center;
 }
-section#actividades ul li figure figcaption h5 {
+section#actividades ul li figure figcaption a h5 {
   color: var(--white);
 }
 @media screen and (min-width: 576px) {
@@ -129,9 +140,50 @@ section#actividades ul li figure figcaption h5 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  section#actividades ul li:nth-child(4) img,
-  section#actividades ul li:nth-child(4) figcaption {
+  main ul li:last-child figure img,
+  section#actividades ul li:nth-child(4) figure a img,
+  section#actividades ul li:last-child figcaption {
     width: 100vw;
+  }
+  main ul li:last-child figure img,
+  section#actividades ul li:last-child figure a img {
+    height: 350px;
+  }
+
+  main ul > *:nth-child(2n-1) {
+    justify-self: center;
+    text-align: center;
+  }
+
+  main ul > *:nth-child(2n) {
+    justify-self: end;
+    text-align: right;
+  }
+
+  main ul > *:nth-child(2n-1):nth-last-of-type(1) {
+    grid-column: span 2;
+  }
+
+  main ul > *:nth-child(2n-2):nth-last-of-type(1) {
+    grid-column: span 3;
+  }
+
+  section#actividades ul > *:nth-child(3n-1) {
+    justify-self: center;
+    text-align: center;
+  }
+
+  section#actividades ul > *:nth-child(3n) {
+    justify-self: end;
+    text-align: right;
+  }
+
+  section#actividades ul > *:nth-child(3n-1):nth-last-of-type(1) {
+    grid-column: span 2;
+  }
+
+  section#actividades ul > *:nth-child(3n-2):nth-last-of-type(1) {
+    grid-column: span 3;
   }
 }
 @media screen and (min-width: 992px) {

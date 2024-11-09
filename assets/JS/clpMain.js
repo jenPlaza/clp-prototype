@@ -99,6 +99,46 @@ if (mediaQueryTablet.matches) {
   }
 }
 
+//ACTIVIDADES
+var activity =
+  '<h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</h5>';
+activity += '<ul>';
+for (var a = 0; a < activities.length; a++) {
+  activity += '<li><figure><a href="' + activities[a].media_link + '">';
+  activity +=
+    '<img src="' +
+    activities[a].media_src +
+    '" alt="' +
+    activities[a].media_alt +
+    '" />';
+  activity +=
+    '</a><figcaption><a href="' +
+    activities[a].media_link +
+    '"><h5>' +
+    activities[a].media_cap +
+    '</h5></a></figcaption>';
+  activity += '</figure></li>';
+}
+activity += '</ul>';
+document.getElementById('actividades').innerHTML = activity;
+
+//TOUR
+function takeATour() {
+  var newTour = '<h4>Llamen hoy y programen un recorrido 740 - 548-2041.</h4>';
+  newTour += '<ul>';
+  for (var t = 0; t < tour.length; t++) {
+    newTour +=
+      '<li><figure><img src="' +
+      tour[t].media_src +
+      '" alt="' +
+      tour[t].media_alt +
+      '" />';
+    newTour += '</figure></li>';
+  }
+  newTour += '</ul>';
+  document.getElementById('tour').innerHTML = newTour;
+}
+
 //FOOTER LOCATION
 var locate = '<figure id="logo">';
 locate +=

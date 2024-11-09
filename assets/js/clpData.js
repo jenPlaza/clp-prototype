@@ -44,6 +44,81 @@ var company = [
   },
 ];
 
+//Actividades
+var activities = [
+  {
+    media_id: 'tennis',
+    media_link: '/',
+    media_src: './assets/images/index/tennis_2_bk.png',
+    media_alt:
+      'black and white 1of3 picture of an event celebrated in club los paltos',
+    media_cap: 'TENNIS',
+  },
+  {
+    media_id: 'paddeling',
+    media_link: '/',
+    media_src: './assets/images/index/paddeling_bk.png',
+    media_alt:
+      'black and white 2of3 picture of an event celebrated in club los paltos',
+    media_cap: 'PADDELING',
+  },
+  {
+    media_id: 'tournament',
+    media_link: '/',
+    media_src: './assets/images/index/tournaments_bk.png',
+    media_alt:
+      'black and white 3of3 picture of an event celebrated in club los paltos',
+    media_cap: 'TOURNAMENTS',
+  },
+  {
+    media_id: 'yoga',
+    media_link: '/',
+    media_src: './assets/images/index/outdoor_yoga-bk.jpeg',
+    media_alt:
+      'black and white 3of3 picture of an event celebrated in club los paltos',
+    media_cap: 'YOGA',
+  },
+];
+
+//Tour
+var tour = [
+  {
+    media_id: 'pool001',
+    media_src: './assets/images/tour/picina_2.jpeg',
+    media_alt: 'photo image of pool',
+  },
+  {
+    media_id: 'pool002',
+    media_src: './assets/images/tour/picina.jpeg',
+    media_alt: 'photo image of pool 2',
+  },
+  {
+    media_id: 'macetero',
+    media_src: './assets/images/tour/macetero.jpeg',
+    media_alt: 'photo image of a clay pot',
+  },
+  {
+    media_id: 'flores001',
+    media_src: './assets/images/tour/flores.jpeg',
+    media_alt: 'photo image of flowers',
+  },
+  {
+    media_id: 'flores002',
+    media_src: './assets/images/tour/flores_2.jpeg',
+    media_alt: 'photo image of flowers 2',
+  },
+  {
+    media_id: 'bano001',
+    media_src: './assets/images/tour/bano.jpeg',
+    media_alt: 'photo image of club bathroons',
+  },
+  {
+    media_id: 'bano002',
+    media_src: './assets/images/tour/bano_2.jpeg',
+    media_alt: 'photo image of club bathroons 2',
+  },
+];
+//Footer
 var socialArray = [
   {
     media_id: 'email',
