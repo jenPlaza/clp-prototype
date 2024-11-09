@@ -80,63 +80,14 @@ section#actividades {
   top: -45px;
   margin-bottom: -17%;
 }
-section#actividades > h5 {
-  color: var(--black);
-  width: 85%;
-  margin: 0 0 35px auto;
-  text-indent: 0px;
-  position: relative;
-  max-width: 980px;
-  letter-spacing: 0.5px;
-}
-section#actividades > h5:first-letter {
-  -webkit-initial-letter: 3 1;
-  initial-letter: 3 1;
-  color: var(--lime);
-  font-weight: bold;
-  margin-right: 0.75em;
-}
-section#actividades ul li figure {
-  width: auto;
-  height: 250px;
-  min-height: 165px;
-  margin: 0;
-  border: 0.25px solid var(--grey);
-  position: relative;
-}
-section#actividades ul li:nth-child(4) figure a img {
-  object-position: 65% 50%;
-}
-section#actividades ul li figure figcaption {
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-  bottom: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-section#actividades ul li figure figcaption a h5 {
-  color: var(--white);
-}
 @media screen and (min-width: 576px) {
   .parallex-section {
     top: -80px;
-  }
-  section#actividades ul {
-    margin: 0 auto 80px auto;
   }
 }
 @media screen and (min-width: 768px) {
   section#actividades {
     top: -15px;
-  }
-  section#actividades > h5 {
-    text-indent: 50px;
-    margin: 0 auto 55px auto;
-  }
-  section#actividades ul {
-    margin: 0 auto 175px auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -165,24 +116,6 @@ section#actividades ul li figure figcaption a h5 {
   }
 
   main ul > *:nth-child(2n-2):nth-last-of-type(1) {
-    grid-column: span 3;
-  }
-
-  section#actividades ul > *:nth-child(3n-1) {
-    justify-self: center;
-    text-align: center;
-  }
-
-  section#actividades ul > *:nth-child(3n) {
-    justify-self: end;
-    text-align: right;
-  }
-
-  section#actividades ul > *:nth-child(3n-1):nth-last-of-type(1) {
-    grid-column: span 2;
-  }
-
-  section#actividades ul > *:nth-child(3n-2):nth-last-of-type(1) {
     grid-column: span 3;
   }
 }
