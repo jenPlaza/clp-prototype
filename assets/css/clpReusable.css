@@ -10,6 +10,10 @@
   --red: #db3739;
   --lime: #80cd28;
   --green: #40b93f;
+  --primary-color: var(--red);
+  --accent-color: var(--lime);
+  --secondary-color: var(--green);
+  --header-text: var(--white);
 }
 * {
   box-sizing: border-box;
@@ -41,38 +45,38 @@ body div#body {
 }
 h1 {
   font: normal normal 900 72px/1.2 'Raleway', sans-serif;
-  color: var(--white);
+  color: var(--header-text);
 }
 h2 {
   font: normal normal bold 64px/1.2 'Raleway', sans-serif;
-  color: var(--white);
+  color: var(--header-text);
 }
 
 h3 {
   font: normal normal 300 38px/1.2 'Raleway', sans-serif;
-  color: var(--white);
+  color: var(--header-text);
 }
 
 h4 {
   font: normal normal bold 26px/1.6 'Bodoni 72', serif;
-  color: var(--black);
+  color: var(--header-text);
 }
 h4 em {
   font: normal normal bold 26px/1.6 'Bodoni 72', serif;
-  color: var(--white);
+  color: var(--header-text);
 }
 h5 {
   font: normal normal bold 22px/1.6 'Bodoni 72', serif;
-  color: var(--white);
+  color: var(--header-text);
 }
 h5 em,
 button {
   font: normal normal 300 22px/1.6 'Raleway', sans-serif;
-  color: var(--white);
+  color: var(--header-text);
 }
 h6 {
   font: normal normal 900 18px/1.6 'Raleway', sans-serif;
-  color: var(--white);
+  color: var(--header-text);
 }
 
 p b {
@@ -109,7 +113,7 @@ body > header.scroll-in-place {
   filter: drop-shadow(2px 4px 6px var(--shadow));
 }
 body > header.scroll-in-place.nav-scroll {
-  background-color: var(--red);
+  background-color: var(--primary-color);
   filter: drop-shadow(2px 4px 6px black);
 }
 /*-----------------------Header ----*/
@@ -164,7 +168,7 @@ nav ul.list.min {
   flex-direction: column;
   align-items: start;
   padding: 5% 2% 5% 2%;
-  background-color: var(--red);
+  background-color: var(--primary-color);
   position: relative;
   top: 258px;
   left: 0;
@@ -207,7 +211,7 @@ button {
   margin: 0;
 }
 button {
-  background-color: var(--red);
+  background-color: var(--primary-color);
   padding: 15px 0;
   border-radius: 10px;
   margin: 0 auto 35px auto;
@@ -216,21 +220,21 @@ button {
 
 .dropdown:hover .dropbtn,
 button:hover {
-  color: var(--lime);
-  filter: drop-shadow(1px 1px 1px black);
-  border-bottom: 3px solid var(--lime);
+  color: var(--accent-color);
+  filter: drop-shadow(1px 1px 1px var(--shadow));
+  border-bottom: 3px solid var(--accent-color);
 }
 nav ul li.dropdown div.dropdown-content a h6:hover,
 nav a h6:active {
   background: -webkit-radial-gradient(
     left,
     var(--white),
-    var(--green),
+    var(--secondary-color),
     var(--black)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(1px 1px 1px black);
+  filter: drop-shadow(1px 1px 1px var(--shadow));
 }
 
 .dropdown-content {
@@ -278,8 +282,181 @@ main h4 {
   width: 82%;
   max-width: 980px;
   font-size: x-large;
+  letter-spacing: 0.5px;
   filter: drop-shadow(1px 1px 1px var(--light-border));
 }
+/*-----------------------tour ----*/
+section#tour h4 {
+  /* color: var(black); */
+}
+section#tour ul {
+  display: flex;
+  grid-gap: 5px;
+  width: 100%;
+  padding: 0;
+  /* max-width: 992px; */
+  margin: 0 auto 35px auto;
+  position: relative;
+  overflow: hidden;
+}
+section#tour ul li {
+  position: relative;
+  left: 0;
+  width: 800%;
+  -webkit-animation: loop 55s infinite;
+  -moz-animation: loop 55s infinite;
+  /* -webkit-animation: slidey 30s infinite;
+  animation: slidey 30s infinite; */
+}
+section#tour ul li figure {
+  width: 255px;
+  height: 155px;
+  margin: 0;
+  border: 0.25px solid var(--grey);
+  position: relative;
+}
+section#tour {
+  height: auto;
+  position: relative;
+  top: 0;
+  margin-bottom: -3%;
+  letter-spacing: 0.5px;
+}
+section#tour > h4 {
+  color: var(--primary-color);
+  width: 85%;
+  margin: 0 0 15px auto;
+  text-indent: 0px;
+  position: relative;
+  max-width: 980px;
+}
+/*-----------------------keyframes ----*/
+@-webkit-keyframes loop {
+  0% {
+    left: 0;
+  }
+  5% {
+    left: 0;
+  }
+  15% {
+    left: 0;
+  }
+  20% {
+    left: -15em;
+  }
+  25% {
+    left: -15em;
+  }
+  30% {
+    left: -15em;
+  }
+  35% {
+    left: -30em;
+  }
+  40% {
+    left: -30em;
+  }
+  46% {
+    left: -30em;
+  }
+  50% {
+    left: -45em;
+  }
+  58% {
+    left: -45em;
+  }
+  60% {
+    left: -45em;
+  }
+  66% {
+    left: -60em;
+  }
+  70% {
+    left: -60em;
+  }
+  78% {
+    left: -60em;
+  }
+  80% {
+    left: -75em;
+  }
+  88% {
+    left: -75em;
+  }
+  91% {
+    left: -75em;
+  }
+  95% {
+    left: -95em;
+  }
+  100% {
+    left: -95em;
+  }
+}
+
+@-moz-keyframes loop {
+  0% {
+    left: 0;
+  }
+  5% {
+    left: 0;
+  }
+  15% {
+    left: 0;
+  }
+  20% {
+    left: -15em;
+  }
+  25% {
+    left: -15em;
+  }
+  30% {
+    left: -15em;
+  }
+  35% {
+    left: -30em;
+  }
+  40% {
+    left: -30em;
+  }
+  46% {
+    left: -30em;
+  }
+  50% {
+    left: -45em;
+  }
+  58% {
+    left: -45em;
+  }
+  60% {
+    left: -45em;
+  }
+  66% {
+    left: -60em;
+  }
+  70% {
+    left: -60em;
+  }
+  78% {
+    left: -60em;
+  }
+  80% {
+    left: -75em;
+  }
+  88% {
+    left: -75em;
+  }
+  91% {
+    left: -75em;
+  }
+  95% {
+    left: -95em;
+  }
+  100% {
+    left: -95em;
+  }
+}
+
 /*-----------------------footer ----*/
 figure.footer-wave {
   display: none;
@@ -294,7 +471,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--red);
+  background-color: var(--primary-color);
 }
 footer div {
   display: flex;
@@ -366,6 +543,17 @@ footer section#socialM ul li a figure {
     padding: 15px 50px;
     width: auto;
   }
+  section#tour > h4 {
+    width: 88%;
+    font-size: xx-large;
+    text-align: center;
+  }
+  section#tour {
+    margin-bottom: -8%;
+  }
+  section#tour ul {
+    margin: 0 auto 80px auto;
+  }
 }
 @media screen and (min-width: 768px) {
   body > header#top {
@@ -415,6 +603,21 @@ footer section#socialM ul li a figure {
   main h4 {
     position: relative;
     margin: 0 auto 45px auto;
+  }
+  section#tour {
+    top: -15px;
+  }
+  section#tour > h4 {
+    width: 88%;
+    color: var(--primary-color);
+    margin: 0 auto 39px auto;
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 34px;
+    text-align: center;
+  }
+  section#tour ul {
+    margin: 0 auto 115px auto;
   }
   figure.footer-wave {
     display: block;
@@ -472,6 +675,14 @@ footer section#socialM ul li a figure {
   main {
     top: -205px;
   }
+  section#tour {
+    height: 300px;
+    margin-bottom: 50px;
+    top: 95px;
+  }
+  section#tour > h4 {
+    width: 70%;
+  }
   /*-----------------------footer ----*/
   figure.footer-wave {
     position: relative;
@@ -524,20 +735,26 @@ footer section#socialM ul li a figure {
     width: 60%;
     max-width: 725px;
   }
+  main h4 {
+    margin: 0 auto 25px auto;
+  }
   #parallex-set-1 {
     background: url(../images/lampa.png) no-repeat top center / 100% 100%;
     background-size: cover;
     width: 100%;
     background-position: 50% bottom;
   }
+  section#tour {
+    margin-bottom: -14px;
+  }
+  section#tour > h4 {
+    width: 75%;
+  }
   figure.footer-wave img {
     width: 75%;
   }
   footer section:first-child > div {
     width: 77%;
-  }
-  main h4 {
-    margin: 0 auto 25px auto;
   }
 }
 @media screen and (min-width: 1400px) {

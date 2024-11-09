@@ -87,6 +87,7 @@ section#actividades > h5 {
   text-indent: 0px;
   position: relative;
   max-width: 980px;
+  letter-spacing: 0.5px;
 }
 section#actividades > h5:first-letter {
   -webkit-initial-letter: 3 1;
@@ -139,15 +140,7 @@ section#actividades ul li figure figcaption h5 {
   }
   section#actividades {
     height: 300px;
-    margin-bottom: -2%;
+    margin-bottom: 0;
     top: -115px;
   }
-}
-@media screen and(min-width:1200px) {
-}
-@media screen and(min-width:1600px) {
-}
-@media screen and(min-width:20000px) {
-}
-@media screen and(min-width:24000px) {
 }
