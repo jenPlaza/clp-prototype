@@ -28,7 +28,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   border: 3px;
-  font: normal normal normal 16px / 1 'Raleway', sans-serif;
+  font: normal normal normal 16px / 1.6 'Raleway', sans-serif;
   position: relative;
   margin: 0;
   padding: 0;
@@ -39,9 +39,9 @@ body {
 }
 body div#body {
   position: relative;
-  top: 50px;
+  top: 250px;
   flex: 1;
-  z-index: 0;
+  z-index: -1;
 }
 h1 {
   font: normal normal 900 72px/1.2 'Raleway', sans-serif;
@@ -81,9 +81,11 @@ h6 {
 
 p b {
   font: normal normal bold 16px/1 'Raleway', sans-serif;
-  color: var(--white);
 }
 p {
+  color: var(--black);
+}
+p em {
   color: var(--white);
 }
 nav a,
@@ -120,7 +122,7 @@ body > header.scroll-in-place.nav-scroll {
 body > header {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   padding: 1%;
   width: 100vw;
   height: 60px;
@@ -168,7 +170,7 @@ nav ul.list.min {
   flex-direction: column;
   align-items: start;
   padding: 5% 2% 5% 2%;
-  background-color: var(--primary-color);
+  background-color: #c22f30;
   position: relative;
   top: 258px;
   left: 0;
@@ -259,6 +261,18 @@ figure.wave {
   width: 100%;
   margin: 0;
 }
+figure.wave h1 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+  top: 100px;
+  margin: 0 auto 35px auto;
+  filter: drop-shadow(1px 1px 2px var(--shadow));
+}
 /*-----------------------main ----*/
 main {
   height: auto;
@@ -269,12 +283,12 @@ main {
   align-items: center;
   justify-content: space-evenly;
 }
-main h1 {
+/* main h1 {
   position: relative;
   margin: 0 auto 35px auto;
   filter: drop-shadow(1px 1px 2px var(--shadow));
   text-align: center;
-}
+} */
 main h4 {
   position: relative;
   margin: 0 0 45px auto;
@@ -286,6 +300,28 @@ main h4 {
   filter: drop-shadow(1px 1px 1px var(--light-border));
 }
 /*-----------------------Activities ----*/
+
+section#actividades ul {
+  display: grid;
+  grid-gap: 5px;
+  width: 100%;
+  padding: 0;
+  max-width: 992px;
+  margin: 0 auto 35px auto;
+  position: relative;
+}
+
+section#actividades ul {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+section#actividades ul li figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0.25px solid var(--grey);
+  position: relative;
+}
 section#actividades > h5 {
   color: var(--black);
   width: 85%;
@@ -294,13 +330,6 @@ section#actividades > h5 {
   position: relative;
   max-width: 980px;
   letter-spacing: 0.5px;
-}
-section#actividades > h5:first-letter {
-  -webkit-initial-letter: 3 1;
-  initial-letter: 3 1;
-  color: var(--lime);
-  font-weight: bold;
-  margin-right: 0.75em;
 }
 section#actividades ul li figure {
   width: auto;
@@ -575,12 +604,15 @@ footer section#socialM ul li a figure {
   nav ul.list.min.max {
     width: 50vw;
   }
+  figure.wave h1 {
+    top: 100px;
+  }
   body div#body {
-    top: 0;
+    top: 100px;
   }
-  main h1 {
+  /* main h1 {
     margin: 0 auto 35px 75px;
-  }
+  } */
   button {
     padding: 15px 50px;
     width: auto;
@@ -639,8 +671,11 @@ footer section#socialM ul li a figure {
     overflow: scroll;
     background-color: unset;
   }
+  figure.wave h1 {
+    top: 135px;
+  }
   body div#body {
-    top: -40px;
+    top: 55px;
   }
   main h1 {
     margin: 0 auto 35px auto;
@@ -657,7 +692,7 @@ footer section#socialM ul li a figure {
     margin: 0 auto 175px auto;
   }
   section#tour {
-    top: 125px;
+    top: 105px;
     margin-bottom: 23%;
   }
   section#tour > h4 {
@@ -675,7 +710,7 @@ footer section#socialM ul li a figure {
   figure.footer-wave {
     display: block;
     position: absolute;
-    bottom: -41px;
+    bottom: -61px;
     left: -40px;
     width: 100%;
     overflow: hidden;
@@ -709,20 +744,24 @@ footer section#socialM ul li a figure {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  section#actividades ul li:nth-child(4) figure a img,
+  section#actividades ul li:last-child figcaption {
+    width: 100vw;
+  }
+  section#actividades ul li:last-child figure a img {
+    height: 350px;
+  }
   section#actividades ul > *:nth-child(3n-1) {
     justify-self: center;
     text-align: center;
   }
-
   section#actividades ul > *:nth-child(3n) {
     justify-self: end;
     text-align: right;
   }
-
   section#actividades ul > *:nth-child(3n-1):nth-last-of-type(1) {
     grid-column: span 2;
   }
-
   section#actividades ul > *:nth-child(3n-2):nth-last-of-type(1) {
     grid-column: span 3;
   }
@@ -739,13 +778,16 @@ footer section#socialM ul li a figure {
     z-index: 1;
     margin: 10px;
   }
+  body div#body {
+    top: 120px;
+  }
   main {
     top: -205px;
   }
   section#tour {
     height: 300px;
-    margin-bottom: 30px;
-    top: 120px;
+    margin-bottom: 65px;
+    top: 150px;
   }
   section#tour > h4 {
     width: 70%;
@@ -798,21 +840,26 @@ footer section#socialM ul li a figure {
   }
 }
 @media screen and (min-width: 1200px) {
+  img:not(img.nav-icon):not(main#about img):not(figure.footer-wave img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   body > header nav#navList {
     width: 60%;
     max-width: 725px;
   }
+  figure.wave h1 {
+    top: 150px;
+  }
+  body div#body {
+    top: 60px;
+  }
   main h4 {
     margin: 0 auto 25px auto;
   }
-  #parallex-set-1 {
-    background: url(../images/lampa.png) no-repeat top center / 100% 100%;
-    background-size: cover;
-    width: 100%;
-    background-position: 50% bottom;
-  }
   section#tour {
-    margin-bottom: -50px;
+    margin-bottom: 10px;
   }
   section#tour > h4 {
     width: 75%;
@@ -826,7 +873,7 @@ footer section#socialM ul li a figure {
 }
 @media screen and (min-width: 1400px) {
   body div#body {
-    top: -100px;
+    top: -15px;
   }
   footer section:first-child > div {
     width: 72%;
@@ -834,10 +881,10 @@ footer section#socialM ul li a figure {
 }
 @media screen and (min-width: 1600px) {
   body div#body {
-    top: -180px;
+    top: -85px;
   }
   section#tour {
-    margin-bottom: -40px;
+    margin-bottom: 20px;
   }
   footer section:first-child > div {
     width: 70%;
@@ -845,10 +892,10 @@ footer section#socialM ul li a figure {
 }
 @media screen and (min-width: 1800px) {
   body div#body {
-    top: -240px;
+    top: -143px;
   }
   section#tour {
-    margin-bottom: -35px;
+    margin-bottom: 32px;
   }
   footer section:first-child > div {
     width: 67%;
@@ -856,7 +903,7 @@ footer section#socialM ul li a figure {
 }
 @media screen and (min-width: 2000px) {
   body div#body {
-    top: -300px;
+    top: -215px;
   }
   footer section:first-child > div {
     width: 65%;
@@ -864,10 +911,10 @@ footer section#socialM ul li a figure {
 }
 @media screen and (min-width: 2400px) {
   body div#body {
-    top: -445px;
+    top: -343px;
   }
   section#tour {
-    margin-bottom: -10px;
+    margin-bottom: 60px;
   }
   figure.footer-wave img {
     width: 70%;

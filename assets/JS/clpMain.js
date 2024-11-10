@@ -1,4 +1,74 @@
-console.log('js main');
+//HEADER
+var menu = '<ul class="list min">';
+menu += '<li style="display: inline-flex">';
+menu +=
+  '<img src="./assets/images/icons/arrow-left-small-white.png" alt="white menu icon" width="16px" height="16px" class="nav-icon nav-close" onclick="shortenMenu();" />';
+menu +=
+  '<img src="./assets/images/icons/arrow-right-small-white.png" alt="white menu icon" width="16px" height="16px" class="nav-icon nav-open" onclick="extendMenu();" />';
+menu += '</li>';
+for (var h = 0; h < navigationArray.length - 5; h++) {
+  menu +=
+    '<li><a href="' +
+    navigationArray[h].link_href +
+    '"><img src="' +
+    navigationArray[h].icon_src +
+    '" alt="' +
+    navigationArray[h].icon_alt +
+    '" width="30px" height="30px" class="nav-icon"/></a>';
+  menu +=
+    '<a href="' +
+    navigationArray[h].link_href +
+    '" class="nav-link"><h6>' +
+    navigationArray[h].link_name +
+    '</h6></a>';
+  menu += '</li>';
+}
+menu += '<li class="dropdown">';
+menu +=
+  '<img src="./assets/images/icons/categorize-white.png" alt="white menu icon" width="30px" height="30px" class="nav-icon" onclick="displayContent();"/>';
+menu +=
+  '<h6 class="dropbtn nav-link" onclick="displayActivities();">Actividades</h6>';
+menu += '<div class="dropdown-content" style="display: none">';
+menu += '<ul>';
+for (var h = 4; h < navigationArray.length - 2; h++) {
+  menu +=
+    '<li><a href="' +
+    navigationArray[h].link_href +
+    '"><img src="' +
+    navigationArray[h].icon_src +
+    '" alt="' +
+    navigationArray[h].icon_alt +
+    '" width="30px" height="30px" class="nav-icon"/></a>';
+  menu +=
+    '<a href="' +
+    navigationArray[h].link_href +
+    '" class="nav-link"><h6>' +
+    navigationArray[h].link_name +
+    '</h6></a>';
+  menu += '</li>';
+}
+menu += '</ul></div></li>';
+for (var h = 7; h < navigationArray.length; h++) {
+  menu +=
+    '<li><a href="' +
+    navigationArray[h].link_href +
+    '"><img src="' +
+    navigationArray[h].icon_src +
+    '" alt="' +
+    navigationArray[h].icon_alt +
+    '" width="30px" height="30px" class="nav-icon"/></a>';
+  menu +=
+    '<a href="' +
+    navigationArray[h].link_href +
+    '" class="nav-link"><h6>' +
+    navigationArray[h].link_name +
+    '</h6></a>';
+  menu += '</li>';
+}
+menu += '</ul>';
+
+document.getElementById('navList').innerHTML = menu;
+
 //NAV Scrolling
 const navMenu = document.querySelector('.scroll-in-place');
 console.log(window.scrollY);
@@ -100,9 +170,7 @@ if (mediaQueryTablet.matches) {
 }
 
 //ACTIVIDADES
-var activity =
-  '<h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</h5>';
-activity += '<ul>';
+var activity = '';
 for (var a = 0; a < activities.length; a++) {
   activity += '<li><figure><a href="' + activities[a].media_link + '">';
   activity +=
@@ -119,8 +187,8 @@ for (var a = 0; a < activities.length; a++) {
     '</h5></a></figcaption>';
   activity += '</figure></li>';
 }
-activity += '</ul>';
-document.getElementById('actividades').innerHTML = activity;
+
+document.getElementById('sports').innerHTML = activity;
 
 //TOUR
 function takeATour() {
@@ -143,11 +211,12 @@ function takeATour() {
 var locate = '<figure id="logo">';
 locate +=
   '<img src="' +
-  company[0].logo_info[0].img_src +
+  company[0].logo_info[0].img_src[0] +
   '" alt="logo" width="40px" height="40px" /></figure>';
-locate += '<div><p><b>' + company[0].company_name + '</b></p>';
+locate += '<div><p><em><b>' + company[0].company_name + '</b></em></p>';
 locate += '<address>' + company[0].company_add + '</address>';
-locate += '<div><p><b>' + company[0].company_phone + '</b></p></div></div>';
+locate +=
+  '<div><p><em><b>' + company[0].company_phone + '</b></em></p></div></div>';
 
 document.getElementById('location').innerHTML = locate;
 

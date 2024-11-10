@@ -1,0 +1,129 @@
+main#about {
+  margin-bottom: -5%;
+}
+main#about p {
+  position: relative;
+  margin: 0 0 0 auto;
+  padding: 3% 5% 0 5%;
+  width: 90%;
+  max-width: 980px;
+  font-size: large;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+section#actividades {
+  top: -90px;
+  position: relative;
+  height: auto;
+  margin-bottom: -12%;
+}
+section#actividades h4 {
+  width: 90%;
+  color: var(--black);
+  padding: 0 5%;
+  text-align: center;
+  font-size: 42px;
+}
+section#actividades > h5 {
+  margin: -50px 0 55px auto;
+  text-indent: unset;
+}
+section#actividades ul {
+  margin: 0 auto 0 auto;
+}
+@media screen and (min-width: 576px) {
+  section#actividades {
+    top: -55px;
+  }
+  section#actividades h4 {
+    width: 100%;
+    line-height: 1.4;
+  }
+  section#actividades > h5 {
+    margin: -35px 0 55px auto;
+  }
+  section#actividades ul {
+    margin: 0 auto 50px auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  main#about p {
+    width: 100%;
+  }
+  section#actividades > h5 {
+    margin: -35px auto 55px auto;
+  }
+  section#actividades {
+    top: -20px;
+    margin-bottom: 18%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main#about p {
+    max-width: unset;
+  }
+  section#actividades {
+    top: -100px;
+    margin-bottom: -215px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  figure.wave img {
+    position: relative;
+    top: -25px;
+  }
+  main#about img {
+    height: 700px;
+  }
+  section#actividades {
+    margin-bottom: -205px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  figure.wave img {
+    position: relative;
+    top: -75px;
+  }
+  main#about img {
+    height: 500px;
+    object-position: 50% 10%;
+  }
+  section#actividades {
+    margin-bottom: -180px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  figure.wave img {
+    position: relative;
+    top: -125px;
+  }
+  main#about img {
+    height: 550px;
+    object-position: 50% 13%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  figure.wave img {
+    position: relative;
+    top: -175px;
+  }
+  main#about img {
+    height: 625px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  figure.wave img {
+    position: relative;
+    top: -215px;
+  }
+}
+@media screen and (min-width: 2400px) {
+  figure.wave img {
+    position: relative;
+    top: -320px;
+  }
+  main#about img {
+    object-position: 50% 16%;
+  }
+}

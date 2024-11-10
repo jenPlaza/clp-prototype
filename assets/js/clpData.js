@@ -1,30 +1,67 @@
-console.log('js data');
 //NAVIGATION MENU
 var navigationArray = [
   {
     link_id: 'home',
     link_name: 'Home',
     link_href: './index.html',
+    icon_src: './assets/images/icons/home-white.png',
+    icon_alt: 'white menu icon',
+  },
+  {
+    link_id: 'calendar',
+    link_name: 'Calendario',
+    link_href: '/',
+    icon_src: './assets/images/icons/calendar-white.png',
+    icon_alt: 'white menu icon',
   },
   {
     link_id: 'about',
-    link_name: 'About Us',
-    link_href: './about-us.html',
+    link_name: 'Nosotros',
+    link_href: './nosotros.html',
+    icon_src: './assets/images/icons/info-white.png',
+    icon_alt: 'white info icon',
   },
   {
     link_id: 'events',
-    link_name: 'Events',
-    link_href: './event.html',
+    link_name: 'Eventos',
+    link_href: './eventos.html',
+    icon_src: './assets/images/icons/balloon-white.png',
+    icon_alt: 'white balloon icon',
+  },
+  {
+    link_id: 'tennis',
+    link_name: 'Tennis',
+    link_href: './#activity.html?id=tennis',
+    icon_src: './assets/images/icons/9023871_tennis_ball_fill_icon.png',
+    icon_alt: 'white tennis ball icon',
+  },
+  {
+    link_id: 'paddle',
+    link_name: 'Paddeling',
+    link_href: './#activity.html?id=paddeling',
+    icon_src: './assets/images/icons/paddeling-white.png',
+    icon_alt: 'white paddle ball icon',
+  },
+  {
+    link_id: 'yoga',
+    link_name: 'Yoga',
+    link_href: './#activity.html?id=yoga',
+    icon_src: './assets/images/icons/lotus-white.png',
+    icon_alt: 'white lotus icon',
   },
   {
     link_id: 'competencias',
     link_name: 'Tournaments',
     link_href: './tournaments.html',
+    icon_src: './assets/images/icons/trophy-white.png',
+    icon_alt: 'white trophy icon',
   },
   {
     link_id: 'contact',
-    link_name: 'Contact',
+    link_name: 'Contacto',
     link_href: './index#contact.html',
+    icon_src: './assets/images/icons/phone-white-2.png',
+    icon_alt: 'white phone icon',
   },
 ];
 
@@ -36,7 +73,10 @@ var company = [
     logo_info: [
       {
         link_href: '.index.html',
-        img_src: './assets/images/logos/clublospaltos.png',
+        img_src: [
+          './assets/images/logos/clublospaltos.png',
+          './assets/images/logos/CLP_wt.png',
+        ],
         img_alt: 'Club Los Paltos logo',
         img_caption: 'Club Los Paltos',
       },

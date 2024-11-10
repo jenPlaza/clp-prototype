@@ -1,6 +1,5 @@
 /*-----------------------Grids ----*/
-main ul,
-section#actividades ul {
+main ul {
   display: grid;
 
   grid-gap: 5px;
@@ -13,12 +12,8 @@ section#actividades ul {
 main ul {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-section#actividades ul {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
 
-main ul li figure,
-section#actividades ul li figure {
+main ul li figure {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -80,6 +75,13 @@ section#actividades {
   top: -45px;
   margin-bottom: -17%;
 }
+section#actividades > h5:first-letter {
+  -webkit-initial-letter: 3 1;
+  initial-letter: 3 1;
+  color: var(--lime);
+  font-weight: bold;
+  margin-right: 0.75em;
+}
 @media screen and (min-width: 576px) {
   .parallex-section {
     top: -80px;
@@ -91,13 +93,10 @@ section#actividades {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  main ul li:last-child figure img,
-  section#actividades ul li:nth-child(4) figure a img,
-  section#actividades ul li:last-child figcaption {
+  main ul li:last-child figure img {
     width: 100vw;
   }
-  main ul li:last-child figure img,
-  section#actividades ul li:last-child figure a img {
+  main ul li:last-child figure img {
     height: 350px;
   }
 
@@ -127,5 +126,13 @@ section#actividades {
     height: 300px;
     margin-bottom: 0;
     top: -115px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #parallex-set-1 {
+    background: url(../images/lampa.png) no-repeat top center / 100% 100%;
+    background-size: cover;
+    width: 100%;
+    background-position: 50% bottom;
   }
 }
