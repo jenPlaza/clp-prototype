@@ -1,3 +1,7 @@
+const mediaQueryDesktop = window.matchMedia('(min-width: 1400px)');
+const mediaQueryTablet = window.matchMedia('(min-width: 768px)');
+const mediaQueryMobile = window.matchMedia('(min-width: 375px)');
+
 //HEADER
 var menu = '<ul class="list min">';
 menu += '<li style="display: inline-flex">';
@@ -18,16 +22,16 @@ for (var h = 0; h < navigationArray.length - 5; h++) {
   menu +=
     '<a href="' +
     navigationArray[h].link_href +
-    '" class="nav-link"><h6>' +
+    '" class="nav-link"><h6><em>' +
     navigationArray[h].link_name +
-    '</h6></a>';
+    '</em></h6></a>';
   menu += '</li>';
 }
 menu += '<li class="dropdown">';
 menu +=
   '<img src="./assets/images/icons/categorize-white.png" alt="white menu icon" width="30px" height="30px" class="nav-icon" onclick="displayContent();"/>';
 menu +=
-  '<h6 class="dropbtn nav-link" onclick="displayActivities();">Actividades</h6>';
+  '<h6 class="dropbtn nav-link" onclick="displayActivities();"><em>Actividades</em></h6>';
 menu += '<div class="dropdown-content" style="display: none">';
 menu += '<ul>';
 for (var h = 4; h < navigationArray.length - 2; h++) {
@@ -42,9 +46,9 @@ for (var h = 4; h < navigationArray.length - 2; h++) {
   menu +=
     '<a href="' +
     navigationArray[h].link_href +
-    '" class="nav-link"><h6>' +
+    '" class="nav-link"><h6><em>' +
     navigationArray[h].link_name +
-    '</h6></a>';
+    '</em></h6></a>';
   menu += '</li>';
 }
 menu += '</ul></div></li>';
@@ -60,9 +64,9 @@ for (var h = 7; h < navigationArray.length; h++) {
   menu +=
     '<a href="' +
     navigationArray[h].link_href +
-    '" class="nav-link"><h6>' +
+    '" class="nav-link"><h6><em>' +
     navigationArray[h].link_name +
-    '</h6></a>';
+    '</em></h6></a>';
   menu += '</li>';
 }
 menu += '</ul>';
@@ -155,8 +159,6 @@ function shortenMenu() {
   }
 }
 
-const mediaQueryTablet = window.matchMedia('(min-width: 768px)');
-const mediaQueryMobile = window.matchMedia('(min-width: 375px)');
 if (mediaQueryTablet.matches) {
   const navicon = document.getElementsByClassName('nav-icon');
   const navshow = document.getElementsByClassName('nav-link');
@@ -192,7 +194,7 @@ document.getElementById('sports').innerHTML = activity;
 
 //TOUR
 function takeATour() {
-  var newTour = '<h4>Llamen hoy y programen un recorrido 740 - 548-2041.</h4>';
+  var newTour = '<h4>Llamen hoy y programen un recorrido (740) 548-2041.</h4>';
   newTour += '<ul>';
   for (var t = 0; t < tour.length; t++) {
     newTour +=

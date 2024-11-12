@@ -23,8 +23,8 @@ var navigationArray = [
   },
   {
     link_id: 'events',
-    link_name: 'Eventos',
-    link_href: './eventos.html',
+    link_name: 'Acontecimientos',
+    link_href: './acontecimientos.html',
     icon_src: './assets/images/icons/balloon-white.png',
     icon_alt: 'white balloon icon',
   },
@@ -89,7 +89,7 @@ var activities = [
   {
     media_id: 'tennis',
     media_link: '/',
-    media_src: './assets/images/index/tennis_2_bk.png',
+    media_src: './assets/images/actividades/tennis_2_bk.png',
     media_alt:
       'black and white 1of3 picture of an event celebrated in club los paltos',
     media_cap: 'TENNIS',
@@ -97,7 +97,7 @@ var activities = [
   {
     media_id: 'paddeling',
     media_link: '/',
-    media_src: './assets/images/index/paddeling_bk.png',
+    media_src: './assets/images/actividades/paddeling_bk.png',
     media_alt:
       'black and white 2of3 picture of an event celebrated in club los paltos',
     media_cap: 'PADDELING',
@@ -105,7 +105,7 @@ var activities = [
   {
     media_id: 'tournament',
     media_link: '/',
-    media_src: './assets/images/index/tournaments_bk.png',
+    media_src: './assets/images/actividades/tournaments_bk.png',
     media_alt:
       'black and white 3of3 picture of an event celebrated in club los paltos',
     media_cap: 'TOURNAMENTS',
@@ -113,7 +113,7 @@ var activities = [
   {
     media_id: 'yoga',
     media_link: '/',
-    media_src: './assets/images/index/outdoor_yoga-bk.jpeg',
+    media_src: './assets/images/actividades/outdoor_yoga-bk.jpeg',
     media_alt:
       'black and white 3of3 picture of an event celebrated in club los paltos',
     media_cap: 'YOGA',
@@ -204,5 +204,167 @@ var socialArray = [
       'assets/images/icons/instagram-bk.png',
     ],
     media_alt: 'instgram icon',
+  },
+];
+
+// Galleries
+var gallery = [
+  {
+    home: {
+      h6: 'El <b>Club Los Paltos</b> se encuentra a menos de 30 minutos del centro de Santiago y a 20 minutos del aeropuerto. Está reconocido por contar con una de las mejores canchas de arcilla. Las canchas de tierra batida son ideales para jugar al tenis, ya que facilitan un bote más alto, reduciendo drásticamente la velocidad de la pelota. Estas canchas están construidas con la técnica "clay court" y tienen una superficie de 23,77 metros cuadrados. Son de estilo tradicional y ofrecen a cada tenista una experiencia nueva y divertida. Ofrecemos alquileres por hora, clases para niños y adultos, e inscripción en torneos. También contamos con pistas de pádel y clases para niños y adultos. Si el tenis no es lo tuyo, reúne a 15 de tus mejores amigos y amigas y alquilen el quincho para disfrutar de un delicioso asado a leña con acceso a la piscina. Proporcionamos estacionamiento privado.',
+      list: [
+        {
+          link_id: 'quincho',
+          link_href: '',
+          img_src_bk: './assets/images/galleria/home/quicncho_1_bk.png',
+          img_alt:
+            'black and white 1of3 picture of an event celebrated in club los paltos',
+          onclick: '',
+        },
+        {
+          link_id: 'quicnco_2',
+          link_href: '',
+          img_src_bk: './assets/images/galleria/home/quicncho_2_bk.png',
+          img_alt:
+            'black and white 2of3 picture of an event celebrated in club los paltos',
+          onclick: '',
+        },
+        {
+          link_id: 'quincho_3',
+          link_href: '',
+          img_src_bk: './assets/images/galleria/home/quicncho_3_bk.png',
+          img_alt:
+            'black and white 3of3 picture of an event celebrated in club los paltos',
+          onclick: '',
+        },
+      ],
+    },
+  },
+  {
+    eventos: {
+      h6: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et earebum.',
+      list: [
+        {
+          link_id: 'quincho',
+          link_href: '/',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/teamBuildingEvent_1__bk.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/teamBuildingEvent_1.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'quincho_2',
+          link_href: '/',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/event2/evento2b_bk.jpeg',
+          img_src_color: [
+            'assets/images/galleria/eventos/color/event2/evento_2a.jpeg',
+            'assets/images/galleria/eventos/color/event2/evento_2b.jpeg',
+          ],
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'quincho_3',
+          link_href: './nosotros.html',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/Event3_bk.png',
+          img_src_color: './assets/images/galleria/eventos/color/Event3.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'placeholder',
+          link_href: '/',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'placeholder',
+          link_href: '/',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'quincho_3',
+          link_href: './nosotros.html',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/tugAWar_bk.png',
+          img_src_color: './assets/images/galleria/eventos/color/tugAWar.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'placeholder',
+          link_href: '/',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'placeholder',
+          link_href: '/',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'placeholder',
+          link_href: '/',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'placeholder',
+          link_href: '/',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'placeholder',
+          link_href: '/',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+        {
+          link_id: 'quincho_3',
+          link_href: './nosotros.html',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/teambuilding2_bk.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/teambuilding2.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          onclick: '',
+        },
+      ],
+    },
   },
 ];

@@ -1,5 +1,12 @@
-main#about {
-  margin-bottom: -5%;
+figure.wave h1 {
+  height: 165px;
+}
+body div#body {
+  z-index: -1;
+  top: 130px;
+}
+main {
+  top: 20px;
 }
 main#about p {
   position: relative;
@@ -11,12 +18,11 @@ main#about p {
   letter-spacing: 1px;
   text-align: justify;
 }
-
 section#actividades {
-  top: -90px;
+  top: 0;
   position: relative;
   height: auto;
-  margin-bottom: -12%;
+  margin-bottom: 0;
 }
 section#actividades h4 {
   width: 90%;
@@ -25,103 +31,113 @@ section#actividades h4 {
   text-align: center;
   font-size: 42px;
 }
-section#actividades > h5 {
-  margin: -50px 0 55px auto;
+section#actividades > h6 {
+  margin: -50px 0 25px auto;
   text-indent: unset;
 }
 section#actividades ul {
   margin: 0 auto 0 auto;
 }
 @media screen and (min-width: 576px) {
+  figure.wave h1 {
+    height: 80px;
+  }
+  body div#body {
+    top: -24px;
+  }
   section#actividades {
-    top: -55px;
+    top: 0;
   }
   section#actividades h4 {
     width: 100%;
     line-height: 1.4;
   }
-  section#actividades > h5 {
-    margin: -35px 0 55px auto;
+  section#actividades > h6 {
+    margin: -50px 0 20px auto;
   }
   section#actividades ul {
-    margin: 0 auto 50px auto;
+    margin: 0 auto 8px auto;
   }
 }
 @media screen and (min-width: 768px) {
+  body div#body {
+    top: -55px;
+  }
   main#about p {
     width: 100%;
   }
-  section#actividades > h5 {
-    margin: -35px auto 55px auto;
+  section#actividades > h6 {
+    margin: -35px auto 20px auto;
   }
   section#actividades {
-    top: -20px;
-    margin-bottom: 18%;
+    top: 50px;
+    margin-bottom: 28%;
   }
 }
 @media screen and (min-width: 992px) {
+  body div#body {
+    top: -130px;
+  }
   main#about p {
     max-width: unset;
   }
   section#actividades {
-    top: -100px;
-    margin-bottom: -215px;
+    top: 25px;
+    margin-bottom: -65px;
   }
 }
 @media screen and (min-width: 1200px) {
-  figure.wave img {
-    position: relative;
-    top: -25px;
+  body div#body {
+    top: -185px;
   }
   main#about img {
     height: 700px;
   }
-  section#actividades {
-    margin-bottom: -205px;
-  }
 }
 @media screen and (min-width: 1400px) {
-  figure.wave img {
-    position: relative;
-    top: -75px;
+  body div#body {
+    top: -255px;
   }
   main#about img {
     height: 500px;
     object-position: 50% 10%;
   }
-  section#actividades {
-    margin-bottom: -180px;
-  }
 }
 @media screen and (min-width: 1600px) {
-  figure.wave img {
-    position: relative;
-    top: -125px;
+  body div#body {
+    top: -325px;
   }
   main#about img {
     height: 550px;
     object-position: 50% 13%;
+    padding: 0 5%;
+  }
+  section#actividades {
+    margin-bottom: -65px;
   }
 }
 @media screen and (min-width: 1800px) {
-  figure.wave img {
-    position: relative;
-    top: -175px;
+  body div#body {
+    top: -390px;
   }
   main#about img {
     height: 625px;
   }
+  section#actividades {
+    margin-bottom: -55px;
+  }
 }
 @media screen and (min-width: 2000px) {
-  figure.wave img {
-    position: relative;
-    top: -215px;
+  body div#body {
+    top: -458px;
+  }
+  section#actividades {
+    margin-bottom: -50px;
   }
 }
 @media screen and (min-width: 2400px) {
-  figure.wave img {
-    position: relative;
-    top: -320px;
+  body div#body {
+    top: -590px;
   }
   main#about img {
     object-position: 50% 16%;

@@ -1,0 +1,349 @@
+figure.wave h1 {
+  overflow-wrap: break-word;
+  padding: 3%;
+  height: 455px;
+}
+body div#body {
+  top: 420px;
+}
+main {
+  top: 20px;
+}
+main h6 {
+  margin: 0 0 20px auto;
+}
+div#body section:nth-child(2) {
+  padding: 5%;
+}
+div#body section:nth-child(2) ol li {
+  position: relative;
+  top: 0;
+  list-style-type: square;
+}
+main.grid ul {
+  margin: 0 auto 0 auto;
+}
+main.grid ul li {
+  padding: 0;
+}
+main.grid ul li figure {
+  height: 300px;
+}
+section#date {
+  position: relative;
+  top: 0;
+}
+section#date a {
+  cursor: pointer;
+  color: var(--black);
+}
+section#date a:hover {
+  color: var(--accent-color);
+}
+section#actividades {
+  top: -52px;
+}
+section#date h3 {
+  color: var(--black);
+  text-align: center;
+  background-color: var(--grey);
+  padding: 3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+  top: -39px;
+  flex: auto;
+  font-weight: 600;
+}
+section#actividades h4 {
+  width: 90%;
+  color: var(--black);
+  padding: 0 5%;
+  text-align: center;
+  font-size: 42px;
+}
+section#actividades > h6 {
+  margin: -35px 0 20px auto;
+}
+section#tour {
+  top: -50px;
+  margin-bottom: -20%;
+}
+footer {
+  height: 250px;
+}
+
+@media screen and (min-width: 576px) {
+  figure.wave h1 {
+    height: 371px;
+  }
+  body div#body {
+    top: 265px;
+  }
+  main {
+    top: 20px;
+    margin-bottom: 0;
+  }
+  main h4 {
+    width: 86%;
+  }
+  main.grid ul li figure {
+    height: 350px;
+  }
+  div#body section:nth-child(2) ol {
+    columns: 2;
+  }
+
+  section#date h3 {
+    height: 300px;
+  }
+  section#actividades ul li {
+    padding: 0;
+  }
+  section#tour {
+    top: -110px;
+    margin-bottom: -32%;
+  }
+  footer {
+    height: 265px;
+  }
+}
+@media screen and (min-width: 768px) {
+  figure.wave h1 {
+    height: 188px;
+  }
+  body div#body {
+    top: 55px;
+  }
+  div#body section:nth-child(2) ol {
+    columns: 2;
+  }
+  main {
+    top: 20px;
+    margin-bottom: 0;
+  }
+  main.grid ul {
+    margin: 0 auto;
+  }
+  main.grid ul li figure {
+    height: 300px;
+  }
+  main h4 {
+    margin: 25px auto 45px auto;
+  }
+  main h6 {
+    width: 100%;
+    padding: 0 5%;
+  }
+  div#body section:nth-child(2):has(ol) {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    height: 200px;
+  }
+  div#body section:nth-child(2) ol li {
+    top: 0;
+  }
+  section#date {
+    top: 22px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+  }
+  section#actividades {
+    top: 35px;
+    padding: 0;
+  }
+  section#actividades h4 {
+    width: 100%;
+  }
+  section#actividades > h6 {
+    text-indent: unset;
+    margin: -35px auto 15px auto;
+  }
+  section#actividades ul {
+    margin: 0 auto 25px auto;
+  }
+  section#tour {
+    top: 162px;
+    margin-bottom: 42%;
+  }
+  figure.footer-wave {
+    bottom: -33px;
+  }
+  footer {
+    bottom: 0;
+    height: 92px;
+    position: absolute;
+  }
+  div#body section:nth-child(2) {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  body div#body {
+    top: -22px;
+  }
+  div#body section:nth-child(2) ol {
+    columns: 3;
+  }
+  section#tour {
+    top: 60px;
+    margin-bottom: 55px;
+  }
+  figure.footer-wave {
+    bottom: 0;
+  }
+  footer {
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body div#body {
+    top: -70px;
+  }
+  main h4 {
+    max-width: 1200px;
+  }
+  main.grid ul {
+    max-width: unset;
+    margin: 0 auto;
+  }
+  main.grid ul li figure {
+    height: 350px;
+  }
+  div#body section:nth-child(2):has(ol) {
+    top: 0;
+  }
+  section#date {
+    top: 0;
+  }
+  section#actividades {
+    top: 0;
+    margin-bottom: 5%;
+  }
+  section#actividades > h6 {
+    max-width: 980px;
+  }
+  section#tour {
+    top: 0;
+    margin-bottom: 0;
+  }
+  figure.footer-wave {
+    bottom: 0;
+  }
+  footer {
+    bottom: 0;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  figure.wave h1 {
+    height: 140px;
+  }
+  body div#body {
+    top: -195px;
+  }
+  main.grid ul {
+    top: 0;
+    padding: 0 5%;
+  }
+  div#body section:nth-child(2) ol {
+    columns: 4;
+  }
+  section#date {
+    top: 0;
+    padding: 0 5%;
+  }
+  section#date a {
+    width: 600px;
+  }
+  section#actividades {
+    top: 50px;
+  }
+  section#actividades ul {
+    margin: 0 auto 80px auto;
+  }
+  section#tour {
+    top: 0;
+    margin-bottom: -3%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  figure.wave h1 {
+    height: 129px;
+  }
+  body div#body {
+    top: -275px;
+  }
+  section#date a {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  body div#body {
+    top: -340px;
+  }
+  main h6 {
+    padding: 0 8%;
+  }
+  main.grid ul,
+  section#date {
+    padding: 0 8%;
+  }
+  section#date a {
+    width: 800px;
+  }
+  section#tour {
+    margin: 0 auto -2% auto;
+  }
+}
+@media screen and (min-width: 2000px) {
+  figure.wave h1 {
+    height: 140px;
+  }
+  body div#body {
+    top: -400px;
+  }
+  main h6 {
+    padding: 0 8%;
+    margin: 0 auto 20px auto;
+  }
+  main.grid ul,
+  section#date {
+    padding: 0 13%;
+  }
+  section#date a {
+    width: 700px;
+  }
+  section#tour {
+    margin-bottom: -1%;
+  }
+}
+@media screen and (min-width: 2400px) {
+  body div#body {
+    top: -525px;
+  }
+  main h6 {
+    padding: 0%;
+  }
+  main.grid ul,
+  section#date {
+    padding: 0 10%;
+  }
+  section#date a {
+    width: 860px;
+  }
+  section#tour {
+    margin-bottom: 0;
+  }
+}

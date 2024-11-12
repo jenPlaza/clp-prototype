@@ -13,7 +13,8 @@
   --primary-color: var(--red);
   --accent-color: var(--lime);
   --secondary-color: var(--green);
-  --header-text: var(--white);
+  --primary-text-color: var(--white);
+  --secondary-text-color: var(--black);
 }
 * {
   box-sizing: border-box;
@@ -39,44 +40,48 @@ body {
 }
 body div#body {
   position: relative;
-  top: 250px;
+  top: 215px;
   flex: 1;
-  z-index: -1;
+  z-index: 0;
 }
 h1 {
   font: normal normal 900 72px/1.2 'Raleway', sans-serif;
-  color: var(--header-text);
+  color: var(--primary-text-color);
 }
 h2 {
   font: normal normal bold 64px/1.2 'Raleway', sans-serif;
-  color: var(--header-text);
+  color: var(--primary-text-color);
 }
 
 h3 {
-  font: normal normal 300 38px/1.2 'Raleway', sans-serif;
-  color: var(--header-text);
+  font: normal normal 400 38px/1.2 'Raleway', sans-serif;
+  color: var(--primary-text-color);
 }
 
 h4 {
-  font: normal normal bold 26px/1.6 'Bodoni 72', serif;
-  color: var(--header-text);
+  font: normal normal 300 26px/1.6 'Playfair Display', serif;
+  color: var(--secondary-text-color);
 }
 h4 em {
-  font: normal normal bold 26px/1.6 'Bodoni 72', serif;
-  color: var(--header-text);
+  font: normal normal bold 26px/1.6 'Playfair Display', serif;
+  color: var(--primary-text-color);
 }
 h5 {
-  font: normal normal bold 22px/1.6 'Bodoni 72', serif;
-  color: var(--header-text);
+  font: normal normal 300 22px/1.6 'Playfair Display', serif;
+  color: var(--primary-text-color);
 }
 h5 em,
 button {
   font: normal normal 300 22px/1.6 'Raleway', sans-serif;
-  color: var(--header-text);
+  color: var(--primary-text-color);
 }
 h6 {
+  font: normal normal 300 18px/1.6 'Playfair Display', sans-serif;
+  color: var(--secondary-text-color);
+}
+h6 em {
   font: normal normal 900 18px/1.6 'Raleway', sans-serif;
-  color: var(--header-text);
+  color: var(--primary-text-color);
 }
 
 p b {
@@ -98,7 +103,7 @@ ul li {
   list-style: none;
   display: flex;
   align-items: start;
-  gap: 12px;
+  gap: 25px;
   width: 100%;
   padding: 10px 0;
 }
@@ -112,7 +117,7 @@ img.nav-icon {
 }
 body > header.scroll-in-place {
   background-color: transparent;
-  filter: drop-shadow(2px 4px 6px var(--shadow));
+  filter: drop-shadow(2px 2px 0 var(--shadow));
 }
 body > header.scroll-in-place.nav-scroll {
   background-color: var(--primary-color);
@@ -135,7 +140,7 @@ body > header {
 /*-----------------------logo & Menu----*/
 body > header#top figure {
   width: auto;
-  height: 50px;
+  height: 55px;
   display: flex;
   align-items: center;
   margin: 0 0 0 1%;
@@ -171,17 +176,17 @@ nav ul.list.min {
   align-items: start;
   padding: 5% 2% 5% 2%;
   background-color: #c22f30;
-  position: relative;
-  top: 258px;
+  position: absolute;
+  top: 40px;
   left: 0;
   width: 13vw;
 }
 nav ul.list.min.max {
-  top: 258px;
+  top: 40px;
   width: 100vw;
 }
 nav ul.list.min.top255 {
-  top: 332px;
+  top: 40px;
 }
 nav ul.list.min > li:first-child {
   gap: unset;
@@ -246,13 +251,17 @@ nav a h6:active {
   display: block;
 }
 .dropdown-content.modifyMargin {
-  margin-left: -135px;
+  margin-left: -169px;
 }
 .dropdown-content ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding-left: 0;
+}
+.dropdown-content ul li {
+  position: relative;
+  left: -13px;
 }
 /*-----------------------wave ----*/
 figure.wave {
@@ -271,24 +280,19 @@ figure.wave h1 {
   z-index: 1;
   top: 100px;
   margin: 0 auto 35px auto;
-  filter: drop-shadow(1px 1px 2px var(--shadow));
+  filter: drop-shadow(2px 2px 2px var(--shadow));
+  height: 250px;
 }
 /*-----------------------main ----*/
 main {
   height: auto;
   position: relative;
-  top: -90px;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
-/* main h1 {
-  position: relative;
-  margin: 0 auto 35px auto;
-  filter: drop-shadow(1px 1px 2px var(--shadow));
-  text-align: center;
-} */
 main h4 {
   position: relative;
   margin: 0 0 45px auto;
@@ -299,7 +303,39 @@ main h4 {
   letter-spacing: 0.5px;
   filter: drop-shadow(1px 1px 1px var(--light-border));
 }
+main h6 {
+  width: 85%;
+  margin: 40px 0 35px auto;
+}
+/*-----------------------Grids ----*/
+main.grid ul {
+  display: grid;
+
+  grid-gap: 5px;
+  width: 100%;
+  padding: 0;
+  max-width: 992px;
+  margin: 0 auto 35px auto;
+  position: relative;
+}
+main.grid ul {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+main.grid ul li figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0.25px solid var(--grey);
+  position: relative;
+}
 /*-----------------------Activities ----*/
+section#actividades {
+  height: auto;
+  position: relative;
+  top: 0;
+  margin-bottom: -17%;
+}
 
 section#actividades ul {
   display: grid;
@@ -307,7 +343,7 @@ section#actividades ul {
   width: 100%;
   padding: 0;
   max-width: 992px;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 80px auto;
   position: relative;
 }
 
@@ -322,10 +358,10 @@ section#actividades ul li figure {
   border: 0.25px solid var(--grey);
   position: relative;
 }
-section#actividades > h5 {
+section#actividades > h6 {
   color: var(--black);
   width: 85%;
-  margin: 0 0 35px auto;
+  margin: 0 0 20px auto;
   text-indent: 0px;
   position: relative;
   max-width: 980px;
@@ -346,7 +382,7 @@ section#actividades ul li figure figcaption {
   height: 40px;
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
-  bottom: 40px;
+  bottom: 46px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,6 +429,7 @@ section#tour {
   top: 0;
   margin-bottom: -3%;
   letter-spacing: 0.5px;
+  max-width: 1800px;
 }
 section#tour > h4 {
   color: var(--primary-color);
@@ -593,6 +630,7 @@ footer section:last-child ul {
 footer section#socialM ul li {
   list-style: none;
   width: 40px;
+  padding: 0;
 }
 footer section#socialM ul li a figure {
   width: 26px;
@@ -606,16 +644,24 @@ footer section#socialM ul li a figure {
   }
   figure.wave h1 {
     top: 100px;
+    height: 160px;
   }
   body div#body {
-    top: 100px;
+    top: 55px;
   }
-  /* main h1 {
-    margin: 0 auto 35px 75px;
-  } */
+  main {
+    top: 20px;
+  }
+  main h6 {
+    margin: 0 0 35px auto;
+  }
   button {
     padding: 15px 50px;
     width: auto;
+  }
+  section#actividades {
+    top: 15px;
+    margin-bottom: 0;
   }
   section#actividades ul {
     margin: 0 auto 80px auto;
@@ -626,10 +672,14 @@ footer section#socialM ul li a figure {
     text-align: center;
   }
   section#tour {
-    margin-bottom: -8%;
+    margin-bottom: -17%;
+    top: -50px;
   }
   section#tour ul {
     margin: 0 auto 80px auto;
+  }
+  footer {
+    height: 210px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -642,7 +692,7 @@ footer section#socialM ul li a figure {
   }
   body > header#top figure:nth-child(1) {
     left: 0;
-    width: 250px;
+    width: 300px;
   }
   body > header figure {
     height: 40px;
@@ -664,18 +714,29 @@ footer section#socialM ul li a figure {
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    height: 35px;
-    gap: 20px;
+    /* height: 35px; */
+    gap: 0;
     top: 0;
     right: 0;
     overflow: scroll;
     background-color: unset;
+    position: relative;
+  }
+  .dropdown .dropbtn {
+    margin: 0 0 0 26px;
+  }
+  figure.wave img {
+    position: relative;
+    top: -28px;
+    filter: drop-shadow(2px 2px 14px var(--black));
   }
   figure.wave h1 {
     top: 135px;
+    height: 80px;
+    filter: drop-shadow(2px 2px 2px var(--black));
   }
   body div#body {
-    top: 55px;
+    top: -55px;
   }
   main h1 {
     margin: 0 auto 35px auto;
@@ -684,16 +745,25 @@ footer section#socialM ul li a figure {
     position: relative;
     margin: 0 auto 45px auto;
   }
-  section#actividades > h5 {
+  main h6 {
+    width: 90%;
+    margin: 0 auto 35px auto;
+    text-align: justify;
+  }
+  section#actividades {
+    top: 25px;
+  }
+  section#actividades > h6 {
     text-indent: 50px;
-    margin: 0 auto 55px auto;
+    margin: 0 auto 20px auto;
+    width: 90%;
   }
   section#actividades ul {
     margin: 0 auto 175px auto;
   }
   section#tour {
-    top: 105px;
-    margin-bottom: 23%;
+    top: 0;
+    margin-bottom: -40px;
   }
   section#tour > h4 {
     width: 88%;
@@ -714,11 +784,11 @@ footer section#socialM ul li a figure {
     left: -40px;
     width: 100%;
     overflow: hidden;
+    height: 185px;
   }
   figure.footer-wave img {
     width: 120%;
   }
-
   footer {
     height: 65px;
     flex-direction: row;
@@ -767,6 +837,9 @@ footer section#socialM ul li a figure {
   }
 }
 @media screen and (min-width: 992px) {
+  body > header#top figure img {
+    filter: drop-shadow(2px 1px 2px var(--shadow));
+  }
   nav ul {
     align-items: center;
   }
@@ -778,16 +851,20 @@ footer section#socialM ul li a figure {
     z-index: 1;
     margin: 10px;
   }
-  body div#body {
-    top: 120px;
+  figure.wave img {
+    top: -100px;
   }
-  main {
-    top: -205px;
+  body div#body {
+    top: -130px;
+  }
+  section#actividades {
+    top: 50px;
+    height: auto;
   }
   section#tour {
     height: 300px;
-    margin-bottom: 65px;
-    top: 150px;
+    margin-bottom: -190px;
+    top: -100px;
   }
   section#tour > h4 {
     width: 70%;
@@ -846,20 +923,31 @@ footer section#socialM ul li a figure {
     object-fit: cover;
   }
   body > header nav#navList {
-    width: 60%;
-    max-width: 725px;
+    width: 70%;
+    max-width: 850px;
+    margin-right: 10px;
+    height: auto;
+    overflow: unset;
+  }
+
+  figure.wave img {
+    top: -158px;
   }
   figure.wave h1 {
     top: 150px;
   }
   body div#body {
-    top: 60px;
+    top: -185px;
   }
   main h4 {
-    margin: 0 auto 25px auto;
+    margin: -20px auto 25px auto;
+  }
+  main h6 {
+    width: 82%;
+    max-width: 1800px;
   }
   section#tour {
-    margin-bottom: 10px;
+    margin-bottom: -230px;
   }
   section#tour > h4 {
     width: 75%;
@@ -872,49 +960,82 @@ footer section#socialM ul li a figure {
   }
 }
 @media screen and (min-width: 1400px) {
+  body > header nav#navList {
+    width: 72%;
+    max-width: 875px;
+  }
+  body > header > nav#navList ul.list.min {
+    overflow: unset;
+  }
+  figure.wave img {
+    top: -172px;
+  }
   body div#body {
-    top: -15px;
+    top: -255px;
+  }
+  section#actividades > h6 {
+    width: 82%;
+    max-width: 1800px;
   }
   footer section:first-child > div {
     width: 72%;
   }
 }
 @media screen and (min-width: 1600px) {
-  body div#body {
-    top: -85px;
+  figure.wave img {
+    top: -295px;
   }
-  section#tour {
-    margin-bottom: 20px;
+  body div#body {
+    top: -325px;
   }
   footer section:first-child > div {
     width: 70%;
   }
 }
 @media screen and (min-width: 1800px) {
+  figure.wave img {
+    top: -360px;
+  }
   body div#body {
-    top: -143px;
+    top: -390px;
   }
   section#tour {
-    margin-bottom: 32px;
+    margin-bottom: -215px;
+  }
+  section#tour ul {
+    margin: 0 auto;
   }
   footer section:first-child > div {
     width: 67%;
   }
+  section#tour ul li {
+    -webkit-animation: unset;
+    -moz-animation: unset;
+  }
 }
 @media screen and (min-width: 2000px) {
+  figure.wave img {
+    top: -433px;
+  }
   body div#body {
-    top: -215px;
+    top: -460px;
+  }
+  section#tour {
+    margin: 0 auto -215px auto;
   }
   footer section:first-child > div {
     width: 65%;
   }
 }
 @media screen and (min-width: 2400px) {
+  figure.wave img {
+    top: -565px;
+  }
   body div#body {
-    top: -343px;
+    top: -600px;
   }
   section#tour {
-    margin-bottom: 60px;
+    margin: 0 auto -200px auto;
   }
   figure.footer-wave img {
     width: 70%;

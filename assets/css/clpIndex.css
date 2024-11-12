@@ -1,32 +1,10 @@
-/*-----------------------Grids ----*/
-main ul {
-  display: grid;
-
-  grid-gap: 5px;
-  width: 100%;
-  padding: 0;
-  max-width: 992px;
-  margin: 0 auto 35px auto;
-  position: relative;
-}
-main ul {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-main ul li figure {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  border: 0.25px solid var(--grey);
-  position: relative;
-}
 /*----------------------- Parallex Mas ----*/
 .parallex-section {
   margin: 0;
   padding: 0;
   position: relative;
   z-index: 0;
-  top: -90px;
+  top: -50px;
 }
 .parallex {
   background-repeat: no-repeat;
@@ -69,13 +47,7 @@ main ul li figure {
 }
 
 /*-----------------------Actividades ----*/
-section#actividades {
-  height: auto;
-  position: relative;
-  top: -45px;
-  margin-bottom: -17%;
-}
-section#actividades > h5:first-letter {
+section#actividades > h6:first-letter {
   -webkit-initial-letter: 3 1;
   initial-letter: 3 1;
   color: var(--lime);
@@ -84,13 +56,13 @@ section#actividades > h5:first-letter {
 }
 @media screen and (min-width: 576px) {
   .parallex-section {
-    top: -80px;
+    top: -30px;
   }
 }
 @media screen and (min-width: 768px) {
-  section#actividades {
-    top: -15px;
-  }
+  /* section#actividades {
+    top: -75px;
+  } */
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   main ul li:last-child figure img {
@@ -120,12 +92,11 @@ section#actividades > h5:first-letter {
 }
 @media screen and (min-width: 992px) {
   .parallex-section {
-    top: -190px;
+    top: 0;
   }
   section#actividades {
-    height: 300px;
+    /* height: 300px; */
     margin-bottom: 0;
-    top: -115px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -134,5 +105,30 @@ section#actividades > h5:first-letter {
     background-size: cover;
     width: 100%;
     background-position: 50% bottom;
+  }
+}
+@media screen and (min-width: 1400px) {
+  figure.wave img {
+    top: -230px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  figure.wave img {
+    top: -305px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  figure.wave img {
+    top: -369px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  figure.wave img {
+    top: -436px;
+  }
+}
+@media screen and (min-width: 2400px) {
+  figure.wave img {
+    top: -580px;
   }
 }
