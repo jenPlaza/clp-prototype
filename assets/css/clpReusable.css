@@ -107,7 +107,7 @@ ul li {
   width: 100%;
   padding: 10px 0;
 }
-img:not(img.nav-icon) {
+img:not(img.nav-icon):not(img.team_icon):not(figure.footer-wave img) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -224,9 +224,22 @@ button {
   margin: 0 auto 35px auto;
   width: 98%;
 }
-
+.small {
+  max-width: 300px;
+}
+.secondary {
+  background-color: transparent;
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 1px 35px;
+}
+button.secondary.small:hover {
+  background-color: var(--accent-color);
+  border: 3px solid var(--accent-color);
+  color: var(--primary-text-color);
+}
 .dropdown:hover .dropbtn,
-button:hover {
+button:hover:not(button.equipo):not(button.secondary) {
   color: var(--accent-color);
   filter: drop-shadow(1px 1px 1px var(--shadow));
   border-bottom: 3px solid var(--accent-color);
@@ -391,8 +404,8 @@ section#actividades ul li figure figcaption a h5 {
   color: var(--white);
 }
 /*-----------------------tour ----*/
-section#tour h4 {
-  /* color: var(black); */
+section#tour h4 a {
+  color: var(--red);
 }
 section#tour ul {
   display: flex;
@@ -736,7 +749,7 @@ footer section#socialM ul li a figure {
     filter: drop-shadow(2px 2px 2px var(--black));
   }
   body div#body {
-    top: -55px;
+    top: -50px;
   }
   main h1 {
     margin: 0 auto 35px auto;
@@ -780,14 +793,14 @@ footer section#socialM ul li a figure {
   figure.footer-wave {
     display: block;
     position: absolute;
-    bottom: -61px;
+    bottom: -78px;
     left: -40px;
     width: 100%;
     overflow: hidden;
-    height: 185px;
+    height: 146px;
   }
   figure.footer-wave img {
-    width: 120%;
+    width: 152%;
   }
   footer {
     height: 65px;
@@ -795,6 +808,7 @@ footer section#socialM ul li a figure {
     align-items: center;
     justify-content: space-between;
     background-color: unset;
+    bottom: -25px;
   }
   footer section:first-child {
     height: 110px;
@@ -810,7 +824,7 @@ footer section#socialM ul li a figure {
   }
   footer section:first-child > div address,
   footer section:first-child > div div {
-    margin-top: -5px;
+    margin-top: -14px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -855,7 +869,7 @@ footer section#socialM ul li a figure {
     top: -100px;
   }
   body div#body {
-    top: -130px;
+    top: -125px;
   }
   section#actividades {
     top: 50px;
@@ -873,19 +887,19 @@ footer section#socialM ul li a figure {
   figure.footer-wave {
     position: relative;
     bottom: -85px;
-    height: 176px;
     width: 100%;
     margin: 0;
     z-index: -1;
     display: block;
   }
   figure.footer-wave img {
-    width: 95%;
+    width: 105%;
   }
   footer {
     height: 65px;
     background-color: transparent;
     flex-direction: row;
+    bottom: 0;
   }
   footer div {
     align-items: start;
@@ -917,7 +931,9 @@ footer section#socialM ul li a figure {
   }
 }
 @media screen and (min-width: 1200px) {
-  img:not(img.nav-icon):not(main#about img):not(figure.footer-wave img) {
+  img:not(img.nav-icon):not(main#about img):not(figure.footer-wave img):not(
+      img.team_icon:not(figure.footer-wave img)
+    ) {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -929,7 +945,9 @@ footer section#socialM ul li a figure {
     height: auto;
     overflow: unset;
   }
-
+  figure.footer-wave {
+    bottom: -88px;
+  }
   figure.wave img {
     top: -158px;
   }
@@ -937,7 +955,7 @@ footer section#socialM ul li a figure {
     top: 150px;
   }
   body div#body {
-    top: -185px;
+    top: -180px;
   }
   main h4 {
     margin: -20px auto 25px auto;
@@ -950,10 +968,10 @@ footer section#socialM ul li a figure {
     margin-bottom: -230px;
   }
   section#tour > h4 {
-    width: 75%;
+    width: 78%;
   }
   figure.footer-wave img {
-    width: 75%;
+    width: 95%;
   }
   footer section:first-child > div {
     width: 77%;

@@ -6,13 +6,15 @@ figure.wave h1 {
 body div#body {
   top: 420px;
 }
+/*-------------MAIN-------------*/
 main {
   top: 20px;
 }
 main h6 {
+  padding-top: 0.5%;
   margin: 0 0 20px auto;
 }
-div#body section:nth-child(2) {
+div#body section:nth-child(2):not(div#body footer section:nth-child(2)) {
   padding: 5%;
 }
 div#body section:nth-child(2) ol li {
@@ -22,6 +24,7 @@ div#body section:nth-child(2) ol li {
 }
 main.grid ul {
   margin: 0 auto 0 auto;
+  top: -20px;
 }
 main.grid ul li {
   padding: 0;
@@ -29,9 +32,60 @@ main.grid ul li {
 main.grid ul li figure {
   height: 300px;
 }
+/*-------------EVENTS-------------*/
+div#event_story {
+  top: 590px;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+  z-index: 2;
+}
+div#event_story > header {
+  align-self: flex-end;
+  position: relative;
+  height: 65px;
+  width: 100%;
+}
+div#event_story > header > figure {
+  width: 25px;
+  position: absolute;
+  right: -47px;
+  top: -8px;
+}
+
+div#event_story_content {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+div#event_story_content figure {
+  width: 95%;
+  border-radius: 25px;
+}
+
+div#event_story_content h3 {
+  color: var(--secondary-text-color);
+  margin: 0;
+}
+div#event_story_content p {
+  width: 95%;
+}
+/*-------------CALENDAR-------------*/
 section#date {
   position: relative;
   top: 0;
+  max-width: 2400px;
+  margin: 0 auto;
+  z-index: -1;
 }
 section#date a {
   cursor: pointer;
@@ -58,6 +112,7 @@ section#date h3 {
   flex: auto;
   font-weight: 600;
 }
+/*-------------ACTIVIDADES-------------*/
 section#actividades h4 {
   width: 90%;
   color: var(--black);
@@ -68,6 +123,7 @@ section#actividades h4 {
 section#actividades > h6 {
   margin: -35px 0 20px auto;
 }
+/*-------------TOUR-------------*/
 section#tour {
   top: -50px;
   margin-bottom: -20%;
@@ -75,7 +131,14 @@ section#tour {
 footer {
   height: 250px;
 }
-
+@media screen and (min-width: 399px) and (max-width: 575px) {
+  figure.wave h1 {
+    height: 375px;
+  }
+  body div#body {
+    top: 300px;
+  }
+}
 @media screen and (min-width: 576px) {
   figure.wave h1 {
     height: 371px;
@@ -93,10 +156,17 @@ footer {
   main.grid ul li figure {
     height: 350px;
   }
-  div#body section:nth-child(2) ol {
+  div#body section:nth-child(3) ol {
     columns: 2;
   }
-
+  div#event_story {
+    top: 419px;
+    height: auto;
+    padding: 0 5% 80px 5%;
+  }
+  div#event_story > header > figure {
+    right: -55px;
+  }
   section#date h3 {
     height: 300px;
   }
@@ -111,15 +181,29 @@ footer {
     height: 265px;
   }
 }
+@media screen and (min-width: 578px) and (max-width: 730px) {
+  figure.wave h1 {
+    top: 135px;
+    height: 200px;
+  }
+  body div#body {
+    top: 200px;
+  }
+}
+@media screen and (min-width: 731px) and (max-width: 767px) {
+  body div#body {
+    top: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   figure.wave h1 {
     height: 188px;
   }
   body div#body {
-    top: 55px;
-  }
-  div#body section:nth-child(2) ol {
-    columns: 2;
+    top: 325px;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
   }
   main {
     top: 20px;
@@ -136,9 +220,12 @@ footer {
   }
   main h6 {
     width: 100%;
-    padding: 0 5%;
+    padding: 0.5% 5%;
   }
-  div#body section:nth-child(2):has(ol) {
+  div#body section:nth-child(3) {
+    padding: 0;
+  }
+  div#body section:nth-child(3):has(ol) {
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -148,8 +235,22 @@ footer {
     top: 20px;
     height: 200px;
   }
-  div#body section:nth-child(2) ol li {
+  div#body section:nth-child(3) ol {
+    columns: 2;
+  }
+  div#body section:nth-child(3) ol li {
     top: 0;
+  }
+  div#event_story {
+    top: 335px;
+    padding: 5% 3%;
+  }
+  div#event_story > header {
+    align-self: flex-end;
+    padding-bottom: 25px;
+    margin-left: 4px;
+    position: relative;
+    top: -30px;
   }
   section#date {
     top: 22px;
@@ -185,16 +286,17 @@ footer {
     height: 92px;
     position: absolute;
   }
-  div#body section:nth-child(2) {
-    padding: 0;
-  }
 }
 @media screen and (min-width: 992px) {
-  body div#body {
-    top: -22px;
-  }
-  div#body section:nth-child(2) ol {
+  div#body section:nth-child(3) ol {
     columns: 3;
+  }
+  div#event_story {
+    top: 310px;
+    height: auto;
+  }
+  div#event_story_content {
+    padding: 5%;
   }
   section#tour {
     top: 60px;
@@ -208,8 +310,8 @@ footer {
   }
 }
 @media screen and (min-width: 1200px) {
-  body div#body {
-    top: -70px;
+  figure.wave h1 {
+    top: 130px;
   }
   main h4 {
     max-width: 1200px;
@@ -221,8 +323,14 @@ footer {
   main.grid ul li figure {
     height: 350px;
   }
-  div#body section:nth-child(2):has(ol) {
+  div#body section:nth-child(3):has(ol) {
     top: 0;
+  }
+  div#event_story {
+    top: 285px;
+  }
+  div#event_story > header {
+    top: -50px;
   }
   section#date {
     top: 0;
@@ -246,19 +354,32 @@ footer {
     height: 100px;
   }
 }
+@media screen and (min-width: 1397px) and (max-width: 1400px) {
+  figure.wave h1 {
+    top: 200px;
+  }
+}
 @media screen and (min-width: 1400px) {
   figure.wave h1 {
-    height: 140px;
+    top: 185px;
   }
-  body div#body {
-    top: -195px;
+  main {
+    top: 0;
   }
   main.grid ul {
-    top: 0;
+    top: -30px;
     padding: 0 5%;
   }
-  div#body section:nth-child(2) ol {
+  div#body section:nth-child(3) ol {
     columns: 4;
+  }
+  div#event_story {
+    top: 225px;
+    padding: 5% 8%;
+  }
+  div#event_story > header {
+    right: -80px;
+    top: -60px;
   }
   section#date {
     top: 0;
@@ -279,26 +400,23 @@ footer {
   }
 }
 @media screen and (min-width: 1600px) {
-  figure.wave h1 {
-    height: 129px;
-  }
-  body div#body {
-    top: -275px;
-  }
   section#date a {
     width: 700px;
   }
+  main.grid ul {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
 @media screen and (min-width: 1800px) {
-  body div#body {
-    top: -340px;
-  }
   main h6 {
-    padding: 0 8%;
+    padding: 1% 8%;
   }
   main.grid ul,
   section#date {
     padding: 0 8%;
+  }
+  div#event_story {
+    top: 220px;
   }
   section#date a {
     width: 800px;
@@ -308,19 +426,24 @@ footer {
   }
 }
 @media screen and (min-width: 2000px) {
-  figure.wave h1 {
-    height: 140px;
-  }
-  body div#body {
-    top: -400px;
-  }
   main h6 {
-    padding: 0 8%;
     margin: 0 auto 20px auto;
+    padding: 1% 13%;
+    max-width: unset;
+  }
+  main.grid ul {
+    top: -35px;
   }
   main.grid ul,
   section#date {
     padding: 0 13%;
+  }
+  div#event_story {
+    padding: 5% 13%;
+  }
+  div#event_story > header {
+    right: -215px;
+    top: -70px;
   }
   section#date a {
     width: 700px;
@@ -330,11 +453,16 @@ footer {
   }
 }
 @media screen and (min-width: 2400px) {
-  body div#body {
-    top: -525px;
+  figure.wave h1 {
+    top: 150px;
   }
   main h6 {
-    padding: 0%;
+    padding: 1% 10%;
+    max-width: 2400px;
+  }
+  main.grid ul,
+  div#event_story_content {
+    max-width: 2400px;
   }
   main.grid ul,
   section#date {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Acontecimientos | Club Los Paltos</title>
     <link rel="stylesheet" href="./assets/css/clpReusable.css" />
-    <link rel="stylesheet" href="./assets/css/events.css" />
+    <link rel="stylesheet" href="./assets/css/clpEvents.css" />
   </head>
   <body onload="takeATour();">
     <header id="top" class="scroll-in-place">
@@ -26,7 +26,36 @@
       <h1>Acontecimientos: Los Cuentos de Hoy</h1>
     </figure>
     <div id="body">
-      <main id="event_gallery" class="grid"></main>
+      <main id="event_gallery" class="grid">
+        <button>Conoscan Al Equipo</button>
+      </main>
+      <div id="event_story" style="display: none">
+        <header>
+          <figure onclick="closeEventStory();">
+            <img
+              src="./assets/images/icons/close-white.png"
+              alt="close icon"
+              width="25px"
+              height="25px"
+            />
+          </figure>
+        </header>
+        <div id="event_story_content">
+          <figure>
+            <img
+              src="./assets/images/galleria/eventos/color/Event3.png"
+              alt="event image"
+            />
+          </figure>
+          <h3>El Evento 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum.
+          </p>
+        </div>
+      </div>
       <section>
         <ol>
           <li>Matrimonios</li>

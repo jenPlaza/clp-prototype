@@ -68,8 +68,8 @@ var navigationArray = [
 var company = [
   {
     company_name: 'Club Los Paltos',
-    company_add: '239 Meadow View Dr. Powell, Ohio(OH), 43065',
-    company_phone: '(740) 548-2041',
+    company_add: 'Balmaceda 951, 9380173 Lampa, Región Metropolitana, Chile',
+    company_phone: '+56 9 7766 0445',
     logo_info: [
       {
         link_href: '.index.html',
@@ -171,7 +171,7 @@ var socialArray = [
   },
   {
     media_id: 'phone',
-    media_link: 'tel:1-232-75-769929',
+    media_link: 'tel:56 9 7766 0445',
     media_src: [
       'assets/images/icons/phone-white.png',
       'assets/images/icons/phone-bk.png',
@@ -189,7 +189,7 @@ var socialArray = [
   },
   {
     media_id: 'facebook',
-    media_link: '/',
+    media_link: 'https://www.facebook.com/p/Club-Los-Paltos-100054313999159/',
     media_src: [
       'assets/images/icons/facebook-white.png',
       'assets/images/icons/facebook-bk.png',
@@ -198,7 +198,8 @@ var socialArray = [
   },
   {
     media_id: 'instgram',
-    media_link: '/',
+    media_link:
+      'https://www.instagram.com/explore/locations/1013305569/club-los-paltos/?hl=en',
     media_src: [
       'assets/images/icons/instagram-white.png',
       'assets/images/icons/instagram-bk.png',
@@ -242,129 +243,254 @@ var gallery = [
   },
   {
     eventos: {
-      h6: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et earebum.',
+      h6: 'No importa la ocasión, Club Los Paltos es el lugar perfecto para albergar una variedad de eventos. Nuestras instalaciones ofrecen un espacio maravilloso con un paisaje natural que garantiza el éxito de cualquier evento. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario \n*Grupos de entre 15 y 30 personas. No se incluye el personal, los utensilios de cocina ni las camareras. <br /><br /> <button class="secondary small" type="button" onclick="toTeams();">Conoscan Al Equipo</button>',
       list: [
         {
-          link_id: 'quincho',
-          link_href: '/',
+          link_id: '8114486',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/teamBuildingEvent_1__bk.png',
           img_src_color:
             './assets/images/galleria/eventos/color/teamBuildingEvent_1.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'quincho_2',
-          link_href: '/',
+          link_id: '1135651',
           img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/event2/evento2b_bk.jpeg',
-          img_src_color: [
-            'assets/images/galleria/eventos/color/event2/evento_2a.jpeg',
-            'assets/images/galleria/eventos/color/event2/evento_2b.jpeg',
-          ],
+            './assets/images/galleria/eventos/blackAndWhite/evento2b_bk.jpeg',
+          img_src_color: './assets/images/galleria/eventos/color/evento2b.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'quincho_3',
-          link_href: './nosotros.html',
+          link_id: '6678302',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/Event3_bk.png',
           img_src_color: './assets/images/galleria/eventos/color/Event3.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'placeholder',
-          link_href: '/',
+          link_id: '2207899',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/eventos/color/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'placeholder',
-          link_href: '/',
+          link_id: '4588551',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/eventos/color/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'quincho_3',
-          link_href: './nosotros.html',
+          link_id: '3190650',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/tugAWar_bk.png',
           img_src_color: './assets/images/galleria/eventos/color/tugAWar.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'placeholder',
-          link_href: '/',
+          link_id: '2985797',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/eventos/color/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'placeholder',
-          link_href: '/',
+          link_id: '1186776',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/eventos/color/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'placeholder',
-          link_href: '/',
+          link_id: '2931160',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/eventos/color/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'placeholder',
-          link_href: '/',
+          link_id: '5009953',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/eventos/color/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'placeholder',
-          link_href: '/',
+          link_id: '6982182',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/eventos/color/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
-          link_id: 'quincho_3',
-          link_href: './nosotros.html',
+          link_id: '1862835',
           img_src_bk:
             './assets/images/galleria/eventos/blackAndWhite/teambuilding2_bk.png',
           img_src_color:
             './assets/images/galleria/eventos/color/teambuilding2.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          onclick: '',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
       ],
     },
+  },
+];
+
+//Team
+var teamArray = [
+  {
+    h6: 'Bien Venidos al <b>Club los Paltos</b>, un club que se dedirica a ... <mas information>. Nuestra mission es ...<mas information> <br /><br />  <b>Nuestros Liderazgo</b> está formado por personas apasionadas por servir y garantizar que cada huésped tenga la oportunidad de sentirse cómodo en cualquier área del club, ya sea en el tenis o pádel, disfrutando la calma del yoga o participando en una agradable reunión en el quincho. Prestan toda su atención y dedicación para mantener un alto nivel de excelencia.<br /><br />  <b>Nuestros Instructores</b> que se especializan con una gran pasión y están profesionalmente capacitados para tratar y ayudar a cada persona y niño de todos los niveles a mejorar sus habilidades y alcanzar sus objetivos.<br /><br />  <b>Juntos</b> generan un ambiente que es tanto competitivo como acogedor e inclusivo.',
+    list: [
+      {
+        team_id: 'ceo',
+        mem_image_src: './assets/images/team/image_placeholder-min.png',
+        mem_image_alt: 'Foto de remate de Eduardo Piña',
+        mem_name: 'Eduardo Piña',
+        mem_CLP_role: 'Director Ejecutivo y Organizador del Club Los Paltos',
+        mem_country: ' Santiago, Chile',
+        mem_pro_title: '',
+        mem_web_page: '',
+        mem_linkedIn: '/',
+        mem_bio:
+          'Presentamos a Eduardo Piña, el director ejecutivo del Club Los Paltos. Con más de dos décadas de experiencia en la industria hotelera, actualmente se dedica a asegurar que cada visitante tenga la oportunidad de sentirse a gusto en todas las áreas del club.',
+      },
+      {
+        team_id: 'dir',
+        mem_image_src: './assets/images/team/image_placeholder-min.png',
+        mem_image_alt: 'Foto de remate de Julio Piña',
+        mem_name: 'Julio Piña',
+        mem_CLP_role:
+          'Director Ejecutivo y Organizador del Club Los Paltos - Paddeling',
+        mem_country: ' Santiago, Chile',
+        mem_pro_title: '',
+        mem_web_page: '',
+        mem_linkedIn: '/',
+        mem_bio:
+          'Conozcan a Julio Piña, el director ejecutivo del Club Los Paltos - Paddeling. Con más de veinte años de experiencia en la industria de ventas de autos, ahora se dedica a garantizar que cada jugador de pádel tenga la oportunidad de alcanzar sus objetivos.',
+      },
+      {
+        team_id: 'communicaciones',
+        mem_image_src: './assets/images/team/image_placeholder-min.png',
+        mem_image_alt: 'Foto de remate de Gerarldine Acevedo',
+        mem_name: 'Gerarldine Acevedo Piña',
+        mem_CLP_role: 'Communicacionces',
+        mem_country: ' Santiago, Chile',
+        mem_pro_title: 'Directora de collegio infantil xxx',
+        mem_web_page: '',
+        mem_linkedIn: '/',
+        mem_bio:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      },
+      {
+        team_id: 'INSTRUCT01',
+        mem_image_src: './assets/images/team/image_placeholder-min.png',
+        mem_image_alt: 'Foto de remate de Diego Piña',
+        mem_name: 'Diego Piña',
+        mem_CLP_role:
+          'Instructor y Organizador de Torneos infantiles del Club Los Paltos',
+        mem_country: ' Santiago, Chile',
+        mem_pro_title: 'Psicologo Clinica en Practica Privado',
+        mem_web_page: '',
+        mem_linkedIn: '/',
+        mem_bio:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      },
+      {
+        team_id: 'INSTRUCT02',
+        mem_image_src: './assets/images/team/image_placeholder-min.png',
+        mem_image_alt: 'Foto de remate de Rocio Piña',
+        mem_name: 'Rocio Piña',
+        mem_CLP_role: 'Instructora de Yoga del Club Los Paltos',
+        mem_country: ' Santiago, Chile',
+        mem_pro_title: 'Maestra para niños con autismo',
+        mem_web_page: '',
+        mem_linkedIn: '/',
+        mem_bio:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      },
+      {
+        team_id: 'web',
+        mem_image_src: './assets/images/team/headshot_bw.jpg',
+        mem_image_alt: 'Jennifer Plaza Headshot',
+        mem_name: 'Jennifer Plaza',
+        mem_CLP_role: 'Desarrollador front-end del Club Los Paltos',
+        mem_country: 'Orlando, Florida USA',
+        mem_pro_title: 'Web Design and Development',
+        mem_web_page: 'https://jennplaza.wordpress.com/',
+        mem_linkedIn: 'https://www.linkedin.com/in/jenn-plaza-339613321/',
+        mem_bio:
+          'Obtuve mi licenciatura en Diseño y Desarrollo Web de Full Sail University el 24 de noviembre de 2020. Soy oriunda de Miami, Florida, pero me mudé a Orlando, Florida, en 2006. Soy la hermana menor de dos. Disfruto de la jardinería, pintura, y recientemente he comenzado a cultivar mis propios alimentos orgánicos. Desde 2006 trabajé para el American Hotel and Lodging Educational Institute (AHLEI) hasta su fusión con la National Restaurant Association (NRA), en el 2017. Durante ese tiempo descubrí mi pasión por los sitios web y decidí regresar a la escuela. Me gradué en 2020 y desde entonces he participado en varios proyectos de voluntariado, adquirido experiencia laboral y refinado mis habilidades mientras implemento mejores prácticas. En junio de 2024 me uní a AYPAD como voluntaria y en Noviembre con Club los Paltos, lo que me ha permitido participar en una variacion de proyectos; ha sido una experiencia enriquecedora y estoy buscando nuevos desafíos.',
+      },
+      {
+        team_id: 'Mngr',
+        mem_image_src: './assets/images/team/image_placeholder-min.png',
+        mem_image_alt: 'Foto de remate de Maximileano Piña',
+        mem_name: 'Maximileano Piña ',
+        mem_CLP_role: 'Gestor de Graficos del Club los Paltos',
+        mem_country: ' Santiago, Chile',
+        mem_pro_title:
+          'Estudiante de Diseno de Graficos en la Universidad .....',
+        mem_web_page: '',
+        mem_linkedIn: '/',
+        mem_bio:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      },
+      {
+        team_id: 'Mngr',
+        mem_image_src: './assets/images/team/image_placeholder-min.png',
+        mem_image_alt: 'Foto de remate de Pia Piña',
+        mem_name: 'Pia Piña',
+        mem_CLP_role: 'Consejera de Nutricion del Club los Paltos',
+        mem_country: ' Santiago, Chile',
+        mem_pro_title: 'Estudiante de Nutricion en la Universidad .....',
+        mem_portfolio: '',
+        mem_web_page: '',
+        mem_bio:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      },
+    ],
   },
 ];

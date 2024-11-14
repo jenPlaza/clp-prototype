@@ -1,6 +1,12 @@
-const mediaQueryDesktop = window.matchMedia('(min-width: 1400px)');
+//const mediaQueryDesktop = window.matchMedia('(min-width: 1400px)');
 const mediaQueryTablet = window.matchMedia('(min-width: 768px)');
 const mediaQueryMobile = window.matchMedia('(min-width: 375px)');
+
+function toTeams() {
+  location.href = './equipo.html';
+  //neocities
+  //location.href = './equipo';
+}
 
 //HEADER
 var menu = '<ul class="list min">';
@@ -75,7 +81,7 @@ document.getElementById('navList').innerHTML = menu;
 
 //NAV Scrolling
 const navMenu = document.querySelector('.scroll-in-place');
-console.log(window.scrollY);
+//console.log(window.scrollY);
 (window.onscroll = function () {
   if (window.scrollY > 100) {
     navMenu.classList.add('nav-scroll');
@@ -139,6 +145,68 @@ function extendMenu() {
     navshow[i].classList.add('show');
   }
 }
+//display event
+function displayEvent(e) {
+  var eventStory = document.getElementById('event_story');
+  if (eventStory.style.display == 'none') {
+    eventStory.style.display = 'flex';
+  } else {
+    eventStory.style.display = 'none';
+  }
+  //testing
+  //console.log(e);
+  var e;
+  var eventitem;
+  if (e === '8114486') {
+    eventitem = 0;
+  } else if (e === '1135651') {
+    eventitem = 1;
+  } else if (e === '6678302') {
+    eventitem = 2;
+  } else if (e === '2207899') {
+    eventitem = 3;
+  } else if (e === '4588551') {
+    eventitem = 4;
+  } else if (e === '3190650') {
+    eventitem = 5;
+  } else if (e === '2985797') {
+    eventitem = 6;
+  } else if (e === '1186776') {
+    eventitem = 7;
+  } else if (e === '2931160') {
+    eventitem = 8;
+  } else if (e === '5009953') {
+    eventitem = 9;
+  } else if (e === '6982182') {
+    eventitem = 10;
+  } else {
+    eventitem = 11;
+  }
+
+  //Event Story
+  console.log(gallery[1].eventos.list[eventitem].img_src_color.length);
+  var openEvent = '<figure>';
+  openEvent +=
+    '<img src="' +
+    gallery[1].eventos.list[eventitem].img_src_color +
+    '" alt="' +
+    gallery[1].eventos.list[eventitem].img_alt +
+    '"> ';
+  openEvent +=
+    '</figure><h3>' + gallery[1].eventos.list[eventitem].event_name + '</h3>';
+  openEvent += '<p>' + gallery[1].eventos.list[eventitem].event_info + '</p>';
+
+  document.getElementById('event_story_content').innerHTML = openEvent;
+}
+
+//close Brandlist
+function closeEventStory() {
+  var eventStory = document.getElementById('event_story');
+  if (eventStory.style.display == 'flex') {
+    eventStory.style.display = 'none';
+  }
+}
+
 //Navigation Menu extension onclick functionality for mobile sizes
 function shortenMenu() {
   var navList = document.querySelector('.list');
@@ -194,7 +262,10 @@ document.getElementById('sports').innerHTML = activity;
 
 //TOUR
 function takeATour() {
-  var newTour = '<h4>Llamen hoy y programen un recorrido (740) 548-2041.</h4>';
+  var newTour =
+    '<h4>Llamen hoy y programen un recorrido <a href="' +
+    socialArray[1].media_link +
+    '"> +56 9 7766 0445.</a></h4>';
   newTour += '<ul>';
   for (var t = 0; t < tour.length; t++) {
     newTour +=
@@ -209,6 +280,41 @@ function takeATour() {
   document.getElementById('tour').innerHTML = newTour;
 }
 
+//TEAM
+function displayTeam() {
+  console.log('team clp');
+  console.log('teamArray.list: ', teamArray[0].list);
+  console.log('teamArray[0].h6: ', teamArray[0].h6);
+  var teamMembers = '<h6>' + teamArray[0].h6 + '</h6>';
+  teamMembers += '<ul>';
+  for (var t = 0; t < teamArray[0].list.length; t++) {
+    teamMembers += '<li><article><figure>';
+    teamMembers +=
+      '<img src="' +
+      teamArray[0].list[t].mem_image_src +
+      '" alt="' +
+      teamArray[0].list[t].mem_image_alt +
+      '" width="100%" height="100%" /></figure>';
+    teamMembers +=
+      '<section><h5>' +
+      teamArray[0].list[t].mem_name +
+      '</h5><h6><b>' +
+      teamArray[0].list[t].mem_DIM_role +
+      '</b><br />' +
+      teamArray[0].list[t].mem_country +
+      '</h6><div><a href="' +
+      teamArray[0].list[t].mem_linkedIn +
+      '" ><img src="./assets/images/icons/linkedin-circle-bk.png" alt="linkedIn icon" width="25px" height="25px" class="team_icon" /></a><a href="' +
+      teamArray[0].list[t].mem_web_page +
+      '" style="display: none"><img src="./assets/images/icons/social-bk.png" alt="website icon" width="25px" height="25px" class="team_icon" /></a></div>';
+    teamMembers += '<div>' + teamArray[0].list[t].mem_pro_title + '</div>';
+    teamMembers += '<div><p>' + teamArray[0].list[t].mem_bio + '</p></div>';
+    teamMembers += '</section></article></li>';
+  }
+  teamMembers += '</ul>';
+  document.getElementById('team_gallery').innerHTML = teamMembers;
+}
+
 //FOOTER LOCATION
 var locate = '<figure id="logo">';
 locate +=
@@ -218,7 +324,11 @@ locate +=
 locate += '<div><p><em><b>' + company[0].company_name + '</b></em></p>';
 locate += '<address>' + company[0].company_add + '</address>';
 locate +=
-  '<div><p><em><b>' + company[0].company_phone + '</b></em></p></div></div>';
+  '<div><a href="' +
+  socialArray[1].media_link +
+  '"><p><em><b>' +
+  company[0].company_phone +
+  '</b></em></p></a></div></div>';
 
 document.getElementById('location').innerHTML = locate;
 

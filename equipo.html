@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Equipo | Club Los Paltos</title>
+    <link rel="stylesheet" href="./assets/css/clpReusable.css" />
+    <link rel="stylesheet" href="./assets/css/clpEquipo.css" />
+  </head>
+  <body onload="displayTeam();">
+    <header id="top" class="scroll-in-place">
+      <figure>
+        <img src="./assets/images/logos/CLP_wt.png" alt="white logo" />
+      </figure>
+      <figure onclick="appear();">
+        <img src="./assets/images/icons/menu-white.png" alt="white menu icon" />
+      </figure>
+      <nav id="navList" style="display: none"></nav>
+    </header>
+    <figure class="wave">
+      <img
+        src="./assets/images/red-grey-wave.png"
+        alt="gray-red wave upside
+      down"
+      />
+      <h1>Nuestro Equipo</h1>
+    </figure>
+    <div id="body">
+      <main id="team_gallery" class="grid">
+        <button>Conoscan Al Equipo</button>
+      </main>
+      <!-- actividades -->
+      <section id="actividades">
+        <h4>Quieren Mas ... Visite Nuestras Otras Actividades</h4>
+        <h6>
+          En tu tiempo libre, ven y disfruta de nuestras canchas de tenis o
+          pádel. Prueba tu suerte y participa en uno de nuestros torneos;
+          tenemos opciones para niños y adultos. Después, relájate con una clase
+          de yoga al aire libre para descansar cuerpo y mente. Yoga se ofrece
+          los lunes de 5 p.m. a 7 p.m. Es necesario registrarse.
+        </h6>
+        <ul id="sports"></ul>
+      </section>
+      <!-- footer -->
+      <figure class="footer-wave">
+        <img
+          src="./assets/images/red-wave-footer-195px.png"
+          alt="gray-red wave upside down"
+        />
+      </figure>
+      <footer>
+        <section id="location"></section>
+        <section id="socialM"></section>
+      </footer>
+    </div>
+    <script type="text/javascript" src="./assets/js/clpData.js"></script>
+    <script type="text/javascript" src="./assets/js/clpMain.js"></script>
+  </body>
+</html>
