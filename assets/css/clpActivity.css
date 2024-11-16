@@ -1,0 +1,89 @@
+figure.wave h1#activityHeading:has(.tenis),
+figure.wave h1#activityHeading:has(.padel),
+figure.wave h1#activityHeading:has(.yoga) {
+  height: 100px;
+  top: 0;
+}
+body:has(.tenis) div#body,
+body:has(.padel) div#body,
+body:has(.yoga) div#body {
+  top: 50px;
+}
+@media screen and (min-width: 576px) {
+  body:has(.tenis) div#body,
+  body:has(.padel) div#body,
+  body:has(.yoga) div#body {
+    top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  body:has(.tenis) div#body,
+  body:has(.padel) div#body,
+  body:has(.yoga) div#body {
+    top: 215px;
+  }
+  figure.wave h1#activityHeading:has(.tenis),
+  figure.wave h1#activityHeading:has(.padel),
+  figure.wave h1#activityHeading:has(.yoga) {
+    top: -15px;
+  }
+}
+@media screen and (min-width: 910px) and (max-width: 1214px) {
+  main.grid ul > *:nth-child(9n-1) {
+    justify-self: center;
+    text-align: center;
+  }
+  main.grid ul > *:nth-child(9n) {
+    justify-self: end;
+    text-align: right;
+  }
+  main.grid ul > *:nth-child(9n-1):nth-last-of-type(1) {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main h6 {
+    padding: 1% 5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main.grid ul {
+    max-width: unset;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body:has(.tenis) div#body,
+  body:has(.padel) div#body,
+  body:has(.yoga) div#body {
+    top: 325px;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 2182px) {
+  main.grid ul > *:nth-child(9n-1) {
+    justify-self: center;
+    text-align: center;
+  }
+  main.grid ul > *:nth-child(9n) {
+    justify-self: end;
+    text-align: right;
+  }
+  main.grid ul > *:nth-child(9n-1):nth-last-of-type(1) {
+    grid-column: span 2;
+  }
+}
+@media screen and (min-width: 2400px) {
+  main h6 {
+    padding: 1% 10%;
+    max-width: 2400px;
+  }
+  main.grid ul,
+  section#date {
+    padding: 0 10%;
+  }
+  main.grid ul {
+    padding-bottom: 25px;
+  }
+}

@@ -232,6 +232,8 @@ button {
   border: 3px solid var(--primary-color);
   color: var(--primary-color);
   padding: 1px 35px;
+  white-space: nowrap;
+  margin-top: 10px;
 }
 button.secondary.small:hover {
   background-color: var(--accent-color);
@@ -242,7 +244,7 @@ button.secondary.small:hover {
 button:hover:not(button.equipo):not(button.secondary) {
   color: var(--accent-color);
   filter: drop-shadow(1px 1px 1px var(--shadow));
-  border-bottom: 3px solid var(--accent-color);
+  /* border-bottom: 3px solid var(--accent-color); */
 }
 nav ul li.dropdown div.dropdown-content a h6:hover,
 nav a h6:active {
@@ -711,7 +713,7 @@ footer section#socialM ul li a figure {
     height: 40px;
   }
   body > header#top figure:nth-child(2),
-  nav#navList ul > li:first-child,
+  nav#navList ul > li:first-child:not(.dropdown-content ul li:first-child),
   nav#navList ul > li:last-child > img {
     display: none !important;
   }
@@ -735,8 +737,25 @@ footer section#socialM ul li a figure {
     background-color: unset;
     position: relative;
   }
+  .dropdown-content {
+    position: relative;
+    margin: 0;
+    height: 50px;
+    display: block;
+  }
   .dropdown .dropbtn {
     margin: 0 0 0 26px;
+  }
+  .dropdown-content ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  body > header > nav#navList ul li.dropdown {
+    display: flex;
+    align-items: center;
+    width: auto;
   }
   figure.wave img {
     position: relative;
@@ -761,7 +780,7 @@ footer section#socialM ul li a figure {
   main h6 {
     width: 90%;
     margin: 0 auto 35px auto;
-    text-align: justify;
+    text-align: left;
   }
   section#actividades {
     top: 25px;
@@ -857,14 +876,14 @@ footer section#socialM ul li a figure {
   nav ul {
     align-items: center;
   }
-  .dropdown-content {
+  /* .dropdown-content {
     position: absolute;
     background-color: var(--grey);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin: 10px;
-  }
+  } */
   figure.wave img {
     top: -100px;
   }
@@ -979,11 +998,8 @@ footer section#socialM ul li a figure {
 }
 @media screen and (min-width: 1400px) {
   body > header nav#navList {
-    width: 72%;
-    max-width: 875px;
-  }
-  body > header > nav#navList ul.list.min {
-    overflow: unset;
+    width: 62%;
+    max-width: 1120px;
   }
   figure.wave img {
     top: -172px;
@@ -1000,6 +1016,13 @@ footer section#socialM ul li a figure {
   }
 }
 @media screen and (min-width: 1600px) {
+  body > header nav#navList {
+    width: 55%;
+    max-width: 1120px;
+  }
+  body > header > nav#navList ul.list.min {
+    overflow: unset;
+  }
   figure.wave img {
     top: -295px;
   }

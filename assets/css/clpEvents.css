@@ -14,7 +14,12 @@ main h6 {
   padding-top: 0.5%;
   margin: 0 0 20px auto;
 }
-div#body section:nth-child(2):not(div#body footer section:nth-child(2)) {
+div#body
+  section:nth-child(2):not(div#body footer section:nth-child(2)):not(
+    body:has(.tenis) div#body section#date
+  ):not(body:has(.padel) div#body section#date):not(
+    body:has(.yoga) div#body section#date
+  ) {
   padding: 5%;
 }
 div#body section:nth-child(2) ol li {
@@ -33,7 +38,10 @@ main.grid ul li figure {
   height: 300px;
 }
 /*-------------EVENTS-------------*/
-div#event_story {
+div#event_story,
+div#tenis_story,
+div#padel_story,
+div#yoga_story {
   top: 590px;
   background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
@@ -44,20 +52,32 @@ div#event_story {
   padding: 0 5%;
   z-index: 2;
 }
-div#event_story > header {
+div#tenis_story {
+  top: 465px;
+}
+div#event_story > header,
+div#tenis_story > header,
+div#padel_story > header,
+div#yoga_story > header {
   align-self: flex-end;
   position: relative;
   height: 65px;
   width: 100%;
 }
-div#event_story > header > figure {
+div#event_story > header > figure,
+div#tenis_story > header > figure,
+div#padel_story > header > figure,
+div#yoga_story > header > figure {
   width: 25px;
   position: absolute;
   right: -47px;
   top: -8px;
 }
 
-div#event_story_content {
+div#event_story_content,
+div#tenis_story_content,
+div#padel_story_content,
+div#yoga_story_content {
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
@@ -67,16 +87,25 @@ div#event_story_content {
   position: relative;
 }
 
-div#event_story_content figure {
+div#event_story_content figure,
+div#tenis_story_content figure,
+div#padel_story_content figure,
+div#yoga_story_content figure {
   width: 95%;
   border-radius: 25px;
 }
 
-div#event_story_content h3 {
+div#event_story_content h3,
+div#tenis_story_content h3,
+div#padel_story_content h3,
+div#yoga_story_content h3 {
   color: var(--secondary-text-color);
   margin: 0;
 }
-div#event_story_content p {
+div#event_story_content p,
+div#tenis_story_content p,
+div#padel_story_content p,
+div#yoga_story_content p {
   width: 95%;
 }
 /*-------------CALENDAR-------------*/
@@ -129,7 +158,10 @@ section#tour {
   margin-bottom: -20%;
 }
 footer {
-  height: 250px;
+  height: 188px;
+}
+footer div {
+  margin: 0 0 0 0;
 }
 @media screen and (min-width: 399px) and (max-width: 575px) {
   figure.wave h1 {
@@ -159,12 +191,18 @@ footer {
   div#body section:nth-child(3) ol {
     columns: 2;
   }
-  div#event_story {
+  div#event_story,
+  div#tenis_story,
+  div#padel_story,
+  div#yoga_story {
     top: 419px;
     height: auto;
     padding: 0 5% 80px 5%;
   }
-  div#event_story > header > figure {
+  div#event_story > header > figure,
+  div#tenis_story > header > figure,
+  div#padel_story > header > figure,
+  div#yoga_story > header > figure {
     right: -55px;
   }
   section#date h3 {
@@ -176,9 +214,6 @@ footer {
   section#tour {
     top: -110px;
     margin-bottom: -32%;
-  }
-  footer {
-    height: 265px;
   }
 }
 @media screen and (min-width: 578px) and (max-width: 730px) {
@@ -241,11 +276,17 @@ footer {
   div#body section:nth-child(3) ol li {
     top: 0;
   }
-  div#event_story {
+  div#event_story,
+  div#tenis_story,
+  div#padel_story,
+  div#yoga_story {
     top: 335px;
     padding: 5% 3%;
   }
-  div#event_story > header {
+  div#event_story > header,
+  div#tenis_story > header,
+  div#padel_story > header,
+  div#yoga_story > header {
     align-self: flex-end;
     padding-bottom: 25px;
     margin-left: 4px;
@@ -282,7 +323,7 @@ footer {
     bottom: -33px;
   }
   footer {
-    bottom: 0;
+    bottom: -10px;
     height: 92px;
     position: absolute;
   }
@@ -291,11 +332,17 @@ footer {
   div#body section:nth-child(3) ol {
     columns: 3;
   }
-  div#event_story {
+  div#event_story,
+  div#tenis_story,
+  div#padel_story,
+  div#yoga_story {
     top: 310px;
     height: auto;
   }
-  div#event_story_content {
+  div#event_story_content,
+  div#tenis_story_content,
+  div#padel_story_content,
+  div#yoga_story_content {
     padding: 5%;
   }
   section#tour {
@@ -326,10 +373,16 @@ footer {
   div#body section:nth-child(3):has(ol) {
     top: 0;
   }
-  div#event_story {
+  div#event_story,
+  div#tenis_story,
+  div#padel_story,
+  div#yoga_story {
     top: 285px;
   }
-  div#event_story > header {
+  div#event_story > header,
+  div#tenis_story > header,
+  div#padel_story > header,
+  div#yoga_story > header {
     top: -50px;
   }
   section#date {
@@ -373,11 +426,17 @@ footer {
   div#body section:nth-child(3) ol {
     columns: 4;
   }
-  div#event_story {
+  div#event_story,
+  div#tenis_story,
+  div#padel_story,
+  div#yoga_story {
     top: 225px;
     padding: 5% 8%;
   }
-  div#event_story > header {
+  div#event_story > header,
+  div#tenis_story > header,
+  div#padel_story > header,
+  div#yoga_story > header {
     right: -80px;
     top: -60px;
   }
@@ -415,7 +474,10 @@ footer {
   section#date {
     padding: 0 8%;
   }
-  div#event_story {
+  div#event_story,
+  div#tenis_story,
+  div#padel_story,
+  div#yoga_story {
     top: 220px;
   }
   section#date a {
@@ -438,10 +500,16 @@ footer {
   section#date {
     padding: 0 13%;
   }
-  div#event_story {
+  div#event_story,
+  div#tenis_story,
+  div#padel_story,
+  div#yoga_story {
     padding: 5% 13%;
   }
-  div#event_story > header {
+  div#event_story > header,
+  div#tenis_story > header,
+  div#padel_story > header,
+  div#yoga_story > header {
     right: -215px;
     top: -70px;
   }
@@ -461,7 +529,10 @@ footer {
     max-width: 2400px;
   }
   main.grid ul,
-  div#event_story_content {
+  div#event_story_content,
+  div#tenis_story_content,
+  div#padel_story_content,
+  div#yoga_story_content {
     max-width: 2400px;
   }
   main.grid ul,
