@@ -155,11 +155,11 @@ section#actividades > h6 {
 }
 /*-------------TOUR-------------*/
 section#tour {
-  top: -75px;
-  margin-bottom: -20%;
+  bottom: -200px;
 }
 footer {
   height: 188px;
+  bottom: -389px;
 }
 footer div {
   margin: -9px 0 0 0;
@@ -213,8 +213,11 @@ footer div {
     padding: 0;
   }
   section#tour {
-    top: -143px;
-    margin-bottom: -32%;
+    bottom: -265px;
+    height: 350px;
+  }
+  footer {
+    bottom: -452px;
   }
 }
 @media screen and (min-width: 578px) and (max-width: 730px) {
@@ -304,6 +307,7 @@ footer div {
   section#actividades {
     top: 0;
     padding: 0;
+    height: 1050px;
   }
   section#actividades h4 {
     width: 100%;
@@ -316,19 +320,21 @@ footer div {
     margin: 0 auto 25px auto;
   }
   section#tour {
-    top: 162px;
-    margin-bottom: 35%;
+    bottom: -333px;
   }
   figure.footer-wave {
-    bottom: -63px;
+    bottom: -465px;
   }
   footer {
-    bottom: -25px;
+    bottom: -430px;
     height: 92px;
     position: absolute;
   }
 }
 @media screen and (min-width: 992px) {
+  main {
+    height: unset;
+  }
   div#body section:nth-child(3) ol {
     columns: 3;
   }
@@ -346,14 +352,13 @@ footer div {
     padding: 5%;
   }
   section#tour {
-    top: 60px;
-    margin-bottom: 185px;
+    bottom: 106px;
   }
   figure.footer-wave {
-    bottom: -16px;
+    bottom: -20px;
   }
   footer {
-    bottom: 16px;
+    bottom: 23px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -390,20 +395,20 @@ footer div {
   }
   section#actividades {
     top: 0;
-    margin-bottom: 5%;
+    height: 335px;
   }
   section#actividades > h6 {
     max-width: 980px;
   }
   section#tour {
-    top: 0;
-    margin-bottom: 85px;
+    bottom: -515px;
+    height: 285px;
   }
   figure.footer-wave {
-    bottom: -25px;
+    bottom: -645px;
   }
   footer {
-    bottom: 0;
+    bottom: -602px;
     height: 100px;
   }
 }
@@ -449,13 +454,19 @@ footer div {
   }
   section#actividades {
     top: 50px;
+    height: 575px;
   }
   section#actividades ul {
     margin: 0 auto 80px auto;
   }
   section#tour {
-    top: 0;
-    margin-bottom: 55px;
+    bottom: -340px;
+  }
+  figure.footer-wave {
+    bottom: -470px;
+  }
+  footer {
+    bottom: -360px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -485,6 +496,13 @@ footer div {
   }
   section#tour {
     margin: 0 auto 3% auto;
+    bottom: -390px;
+  }
+  figure.footer-wave {
+    bottom: -452px;
+  }
+  footer {
+    bottom: -406px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -515,6 +533,11 @@ footer div {
   }
   section#date a {
     width: 700px;
+  }
+  section#tour {
+    bottom: -400px;
+    left: 0;
+    right: 0;
   }
 }
 @media screen and (min-width: 2400px) {

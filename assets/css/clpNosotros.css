@@ -38,6 +38,9 @@ section#actividades > h6 {
 section#actividades ul {
   margin: 0 auto 0 auto;
 }
+footer {
+  bottom: -35px;
+}
 @media screen and (min-width: 576px) {
   figure.wave h1 {
     height: 80px;
@@ -58,10 +61,16 @@ section#actividades ul {
   section#actividades ul {
     margin: 0 auto 8px auto;
   }
+  footer {
+    bottom: -25px;
+  }
 }
 @media screen and (min-width: 768px) {
+  figure.wave h1 {
+    top: 150px;
+  }
   body div#body {
-    top: -55px;
+    top: 0;
   }
   main#about p {
     width: 100%;
@@ -70,25 +79,43 @@ section#actividades ul {
     margin: -35px auto 20px auto;
   }
   section#actividades {
-    top: 50px;
-    margin-bottom: 28%;
+    top: 35px;
+    height: 1035px;
+    margin-bottom: 0;
+  }
+  figure.footer-wave {
+    bottom: -175px;
+  }
+  footer {
+    bottom: -120px;
   }
 }
 @media screen and (min-width: 992px) {
   body div#body {
-    top: -130px;
+    top: -90px;
+  }
+  main {
+    height: unset;
   }
   main#about p {
     max-width: unset;
   }
   section#actividades {
     top: 25px;
-    margin-bottom: 60px;
+    padding-top: 15px;
+    height: 585px;
+    border: 5px solid red;
+  }
+  figure.footer-wave {
+    bottom: -145px;
+  }
+  footer {
+    bottom: -90px;
   }
 }
 @media screen and (min-width: 1200px) {
   body div#body {
-    top: -185px;
+    top: -150px;
   }
   main#about img {
     height: 500px;
@@ -96,7 +123,12 @@ section#actividades ul {
   }
   section#actividades {
     top: 25px;
-    margin-bottom: 100px;
+  }
+  figure.footer-wave {
+    bottom: -157px;
+  }
+  footer {
+    bottom: -95px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -106,21 +138,29 @@ section#actividades ul {
   main#about img {
     height: 600px;
   }
+  footer {
+    bottom: -90px;
+  }
 }
 @media screen and (min-width: 1600px) {
   body div#body {
     top: -325px;
   }
   main#about img {
+    height: 550px;
+    object-position: 50% 67%;
     padding: 0 5%;
+  }
+  figure.footer-wave {
+    bottom: -148px;
   }
 }
 @media screen and (min-width: 1800px) {
   body div#body {
     top: -390px;
   }
-  main#about img {
-    height: 625px;
+  section#actividades {
+    height: 560px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -137,5 +177,8 @@ section#actividades ul {
   }
   main#about img {
     height: 835px;
+  }
+  figure.footer-wave {
+    bottom: -155px;
   }
 }

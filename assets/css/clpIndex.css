@@ -92,12 +92,13 @@ section#actividades > h6:first-letter {
 }
 @media screen and (min-width: 992px) {
   .parallex-section {
-    top: 0;
+    top: 25px;
+    border: 5px solid green;
   }
-  section#actividades {
-    /* height: 300px; */
+  /* section#actividades {
+    /* height: 300px;
     margin-bottom: 0;
-  }
+  } */
 }
 @media screen and (min-width: 1200px) {
   #parallex-set-1 {

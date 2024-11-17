@@ -12,10 +12,10 @@
   --green: #40b93f;
   --primary-color: var(--black);
   --accent-color: var(--lime);
-  --secondary-color: var(--tertiary-text-color);
+  --secondary-color: var(--red);
   --primary-text-color: var(--white);
   --secondary-text-color: var(--black);
-  --tertiary-text-color: var(--tertiary-text-color);
+  --tertiary-text-color: var(--red);
 }
 * {
   box-sizing: border-box;
@@ -350,8 +350,8 @@ main.grid ul li figure {
 section#actividades {
   height: auto;
   position: relative;
-  top: 0;
-  margin-bottom: -17%;
+  bottom: 510px;
+  border: 2px solid aqua;
 }
 
 section#actividades ul {
@@ -360,7 +360,7 @@ section#actividades ul {
   width: 100%;
   padding: 0;
   max-width: 992px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 35px auto;
   position: relative;
 }
 
@@ -441,20 +441,25 @@ section#tour ul li:nth-last-child(2) figure img {
   object-position: 50% 70%;
 }
 section#tour {
-  height: auto;
-  position: relative;
-  top: 0;
-  margin-bottom: 210px;
+  width: 100vw;
+  position: absolute;
+  height: 300px;
   letter-spacing: 0.5px;
   max-width: 1800px;
+  border: 1px solid red;
+  bottom: -300px;
 }
 section#tour > h4 {
-  color: var(--primary-color);
+  color: var(--tertiary-text-color);
   width: 85%;
   margin: 0 0 15px auto;
   text-indent: 0px;
   position: relative;
   max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 /*-----------------------keyframes ----*/
 @-webkit-keyframes loop {
@@ -589,7 +594,7 @@ figure.footer-wave {
 footer {
   height: 200px;
   position: absolute;
-  bottom: 0;
+  bottom: -500px;
   width: 100%;
   z-index: 1;
   display: flex;
@@ -681,18 +686,18 @@ footer section#socialM ul li a figure {
     top: 15px;
     margin-bottom: 0;
   }
-  section#actividades ul {
+  /* section#actividades ul {
     margin: 0 auto 80px auto;
-  }
+  } */
   section#tour > h4 {
     width: 88%;
     font-size: xx-large;
     text-align: center;
   }
-  section#tour {
+  /* section#tour {
     margin-bottom: 150px;
     top: -50px;
-  }
+  } */
   section#tour ul {
     margin: 0 auto 80px auto;
   }
@@ -787,6 +792,7 @@ footer section#socialM ul li a figure {
   }
   section#actividades {
     top: 25px;
+    height: 915px;
   }
   section#actividades > h6 {
     text-indent: 50px;
@@ -796,13 +802,16 @@ footer section#socialM ul li a figure {
   section#actividades ul {
     margin: 0 auto 175px auto;
   }
-  section#tour {
+  /* section#tour {
     top: 0;
     margin-bottom: -40px;
+  } */
+  section#tour {
+    height: 330px;
+    bottom: -355px;
   }
   section#tour > h4 {
     width: 88%;
-    color: var(--primary-color);
     margin: 0 auto 39px auto;
     font-family: Raleway;
     font-weight: 900;
@@ -814,12 +823,12 @@ footer section#socialM ul li a figure {
   }
   figure.footer-wave {
     display: block;
-    position: absolute;
-    bottom: -85px;
     left: -112px;
     width: 100%;
     overflow: hidden;
     height: 146px;
+    position: absolute;
+    bottom: -488px;
   }
   figure.footer-wave img {
     width: 152%;
@@ -830,7 +839,7 @@ footer section#socialM ul li a figure {
     align-items: center;
     justify-content: space-between;
     background-color: unset;
-    bottom: -25px;
+    bottom: -435px;
   }
   footer section:first-child {
     height: 110px;
@@ -879,34 +888,33 @@ footer section#socialM ul li a figure {
   nav ul {
     align-items: center;
   }
-  /* .dropdown-content {
-    position: absolute;
-    background-color: var(--grey);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin: 10px;
-  } */
   figure.wave img {
     top: -100px;
   }
   body div#body {
     top: -125px;
   }
+  main {
+    top: 25px;
+    border: 4px solid orange;
+    height: 600px;
+  }
+  main.grid ul {
+    margin: 0 auto 35px auto;
+  }
   section#actividades {
-    top: 50px;
-    height: auto;
+    top: 26px;
+    height: 500px;
+    padding-top: 50px;
   }
   section#tour {
-    height: 300px;
-    margin-bottom: -70px;
-    top: -100px;
+    bottom: -415px;
   }
   section#tour > h4 {
     width: 70%;
   }
   /*-----------------------footer ----*/
-  figure.footer-wave {
+  /* figure.footer-wave {
     bottom: -105px;
     width: 100%;
     margin: 0;
@@ -922,6 +930,13 @@ footer section#socialM ul li a figure {
     background-color: transparent;
     flex-direction: row;
     bottom: -50px;
+  } */
+  figure.footer-wave {
+    left: -251px;
+    bottom: -530px;
+  }
+  footer {
+    bottom: -470px;
   }
   footer div {
     align-items: start;
@@ -971,15 +986,18 @@ footer section#socialM ul li a figure {
     height: auto;
     overflow: unset;
   }
-  figure.footer-wave {
-    bottom: -88px;
+  main {
+    height: 650px;
   }
-  figure.wave img {
-    top: -158px;
+  main.grid ul {
+    margin: 0 auto 50px auto;
   }
-  figure.wave h1 {
-    top: 150px;
+  section#actividades {
+    /* top: 50px; */
+    height: 550px;
+    padding-top: 45px;
   }
+
   body div#body {
     top: -180px;
   }
@@ -991,7 +1009,8 @@ footer section#socialM ul li a figure {
     max-width: 1800px;
   }
   section#tour {
-    margin-bottom: -100px;
+    bottom: -328px;
+    height: 300px;
   }
   section#tour > h4 {
     width: 78%;
@@ -1000,7 +1019,17 @@ footer section#socialM ul li a figure {
     width: 95%;
   }
   footer {
-    bottom: -40px;
+    bottom: -390px;
+  }
+  figure.footer-wave {
+    bottom: -457px;
+    left: -150px;
+  }
+  figure.wave img {
+    top: -158px;
+  }
+  figure.wave h1 {
+    top: 150px;
   }
   footer section:first-child > div {
     width: 77%;
@@ -1016,6 +1045,12 @@ footer section#socialM ul li a figure {
   }
   body div#body {
     top: -255px;
+  }
+  main {
+    height: 575px;
+  }
+  main h6 {
+    margin: 0 auto 0 auto;
   }
   section#actividades > h6 {
     width: 82%;
@@ -1039,6 +1074,9 @@ footer section#socialM ul li a figure {
   body div#body {
     top: -325px;
   }
+  main.grid ul {
+    margin: 0 auto 35px auto;
+  }
   footer section:first-child > div {
     width: 70%;
   }
@@ -1050,9 +1088,9 @@ footer section#socialM ul li a figure {
   body div#body {
     top: -390px;
   }
-  section#tour {
+  /* section#tour {
     margin-bottom: -215px;
-  }
+  } */
   section#tour ul {
     margin: 0 auto;
   }
@@ -1071,9 +1109,9 @@ footer section#socialM ul li a figure {
   body div#body {
     top: -460px;
   }
-  section#tour {
+  /* section#tour {
     margin: 0 auto -215px auto;
-  }
+  } */
   footer section:first-child > div {
     width: 65%;
   }
@@ -1085,9 +1123,9 @@ footer section#socialM ul li a figure {
   body div#body {
     top: -600px;
   }
-  section#tour {
+  /* section#tour {
     margin: 0 auto -200px auto;
-  }
+  } */
   figure.footer-wave img {
     width: 70%;
   }
