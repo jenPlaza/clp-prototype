@@ -22,11 +22,11 @@ section#actividades {
   top: 0;
   position: relative;
   height: auto;
-  margin-bottom: 0;
+  margin-bottom: 185px;
 }
 section#actividades h4 {
   width: 90%;
-  color: var(--black);
+  color: var(--secondary-text-color);
   padding: 0 5%;
   text-align: center;
   font-size: 42px;
@@ -83,7 +83,7 @@ section#actividades ul {
   }
   section#actividades {
     top: 25px;
-    margin-bottom: -65px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -91,7 +91,12 @@ section#actividades ul {
     top: -185px;
   }
   main#about img {
-    height: 700px;
+    height: 500px;
+    object-position: 50% 75%;
+  }
+  section#actividades {
+    top: 25px;
+    margin-bottom: 100px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -99,8 +104,7 @@ section#actividades ul {
     top: -255px;
   }
   main#about img {
-    height: 500px;
-    object-position: 50% 10%;
+    height: 600px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -108,12 +112,7 @@ section#actividades ul {
     top: -325px;
   }
   main#about img {
-    height: 550px;
-    object-position: 50% 13%;
     padding: 0 5%;
-  }
-  section#actividades {
-    margin-bottom: -65px;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -123,16 +122,13 @@ section#actividades ul {
   main#about img {
     height: 625px;
   }
-  section#actividades {
-    margin-bottom: -55px;
-  }
 }
 @media screen and (min-width: 2000px) {
   body div#body {
     top: -458px;
   }
-  section#actividades {
-    margin-bottom: -50px;
+  main#about img {
+    height: 700px;
   }
 }
 @media screen and (min-width: 2400px) {
@@ -140,6 +136,6 @@ section#actividades ul {
     top: -590px;
   }
   main#about img {
-    object-position: 50% 16%;
+    height: 835px;
   }
 }

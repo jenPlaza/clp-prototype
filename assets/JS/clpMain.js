@@ -41,12 +41,14 @@ function displayActivities() {
     navList.classList.add('top255');
     if (mediaQueryDesktop.matches) {
       navBar.style.width = '70%';
+      navBar.style.maxWidth = '1120px';
     }
   } else if (dcontent.style.display == 'flex') {
     dcontent.style.display = 'none';
     navList.classList.remove('top255');
     if (mediaQueryDesktop.matches) {
       navBar.style.width = '55%';
+      navBar.style.maxWidth = '880px';
     }
   }
 }

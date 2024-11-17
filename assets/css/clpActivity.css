@@ -14,6 +14,11 @@ body:has(.yoga) div#body,
 body:has(.torneo) div#body {
   top: 50px;
 }
+body:has(.tenis) div#body section#tour,
+body:has(.padel) div#body section#tour,
+body:has(.yoga) div#body section#tour {
+  margin-bottom: 30%;
+}
 body:has(.torneo) div#body {
   padding: 0;
 }
@@ -31,18 +36,11 @@ body:has(.torneo) div#body section main h2 {
 body:has(.torneo) div#body section main h6 {
   margin: -35px 3% 20px auto;
 }
-body:has(.torneo) div#body section#date {
-  top: 50px;
-}
-body:has(.torneo) div#body section#actividades {
-  top: 0;
-}
 body:has(.torneo) div#body section#actividades h4 {
   margin-left: 7%;
 }
 body:has(.torneo) div#body section#tour {
-  top: 0;
-  margin-bottom: 0;
+  margin-bottom: 115px;
 }
 body:has(.torneo) div#body footer section:last-child {
   position: relative;
@@ -54,6 +52,11 @@ body:has(.torneo) div#body footer section:last-child {
   body:has(.yoga) div#body {
     top: 0;
   }
+  body:has(.tenis) div#body section#tour,
+  body:has(.padel) div#body section#tour,
+  body:has(.yoga) div#body section#tour {
+    margin-bottom: -5%;
+  }
   body:has(.torneo) div#body > figure:not(figure.footer-wave) {
     top: -25px;
     height: 300px;
@@ -61,11 +64,21 @@ body:has(.torneo) div#body footer section:last-child {
   body:has(.torneo) div#body main {
     top: -5px;
   }
+  body:has(.torneo) div#body section main h6 {
+    margin: -35px 3% 50px auto;
+  }
+  body:has(.torneo) div#body section#tour {
+    margin-bottom: 50px;
+  }
   body:has(.torneo) div#body section#tour ul {
     margin: 0 auto 50px auto;
   }
 }
 @media screen and (min-width: 768px) {
+  figure.wave h1.torneo {
+    height: 100px;
+    top: 125px;
+  }
   main h6 {
     padding: 1% 5%;
   }
@@ -86,21 +99,27 @@ body:has(.torneo) div#body footer section:last-child {
   figure.wave h1#activityHeading:has(.yoga) {
     top: -15px;
   }
-  body:has(.torneo) div#body > figure:not(figure.footer-wave) {
-    padding: 0 5%;
-  }
-  body:has(.torneo) div#body section#actividades {
-    top: 50px;
+  body:has(.torneo) div#body section#date {
+    top: 0;
+    margin-bottom: 0px;
   }
   body:has(.torneo) div#body section#actividades h4 {
     margin-left: 0;
+  }
+  body:has(.tenis) div#body section#tour,
+  body:has(.padel) div#body section#tour,
+  body:has(.yoga) div#body section#tour {
+    margin-bottom: 35%;
   }
   body:has(.torneo) div#body section#tour {
     top: 162px;
     margin-bottom: 270px;
   }
+  body:has(.torneo) div#body > figure:not(figure.footer-wave) {
+    padding: 0 5%;
+  }
   body:has(.torneo) div#body figure.footer-wave {
-    bottom: -50px;
+    bottom: -58px;
   }
   body:has(.torneo) div#body footer section:last-child {
     top: 13px;
@@ -109,7 +128,7 @@ body:has(.torneo) div#body footer section:last-child {
     bottom: -20px;
   }
   body:has(.torneo) div#body footer section:first-child {
-    padding: 3% 1%;
+    padding: 3% 0;
   }
   body:has(.torneo) div#body footer section:last-child {
     justify-content: right;
@@ -133,9 +152,17 @@ body:has(.torneo) div#body footer section:last-child {
   figure.wave h1.torneo {
     top: 120px;
   }
+  body:has(.tenis) div#body section#tour,
+  body:has(.padel) div#body section#tour,
+  body:has(.yoga) div#body section#tour {
+    margin-bottom: 185px;
+  }
   body:has(.torneo) div#body section#tour {
     top: 55px;
-    margin-bottom: 0;
+    margin-bottom: 125px;
+  }
+  body:has(.torneo) div#body figure.footer-wave {
+    left: -5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -144,8 +171,18 @@ body:has(.torneo) div#body footer section:last-child {
     margin: 0 auto;
     padding-bottom: 60px;
   }
+  body:has(.tenis) div#body section#tour,
+  body:has(.padel) div#body section#tour,
+  body:has(.yoga) div#body section#tour,
   body:has(.torneo) div#body section#tour {
-    margin-bottom: -45px;
+    margin-bottom: 66px;
+  }
+  body:has(.torneo) div#body section#tour {
+    top: 30px;
+  }
+  body:has(.torneo) div#body section#date {
+    top: -65px;
+    margin-bottom: -50px;
   }
   body:has(.torneo) div#body figure.footer-wave img {
     width: 105%;
@@ -162,6 +199,9 @@ body:has(.torneo) div#body footer section:last-child {
   }
   body:has(.torneo) div#body {
     top: 375px;
+  }
+  body:has(.torneo) div#body footer {
+    bottom: -30px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -224,5 +264,8 @@ body:has(.torneo) div#body footer section:last-child {
   }
   figure.wave h1.torneo {
     top: 140px;
+  }
+  body:has(.torneo) div#body footer {
+    bottom: -37px;
   }
 }

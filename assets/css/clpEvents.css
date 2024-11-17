@@ -115,19 +115,20 @@ section#date {
   max-width: 2400px;
   margin: 0 auto;
   z-index: -1;
+  padding: 25px 0;
 }
 section#date a {
   cursor: pointer;
-  color: var(--black);
+  color: var(--secondary-text-color);
 }
 section#date a:hover {
   color: var(--accent-color);
 }
 section#actividades {
-  top: -52px;
+  top: -100px;
 }
 section#date h3 {
-  color: var(--black);
+  color: var(--secondary-text-color);
   text-align: center;
   background-color: var(--grey);
   padding: 3%;
@@ -143,9 +144,9 @@ section#date h3 {
 }
 /*-------------ACTIVIDADES-------------*/
 section#actividades h4 {
-  width: 90%;
-  color: var(--black);
-  padding: 0 5%;
+  width: 100%;
+  color: var(--secondary-text-color);
+  padding: 0 0 0 5%;
   text-align: center;
   font-size: 42px;
 }
@@ -154,7 +155,7 @@ section#actividades > h6 {
 }
 /*-------------TOUR-------------*/
 section#tour {
-  top: -50px;
+  top: -75px;
   margin-bottom: -20%;
 }
 footer {
@@ -205,14 +206,14 @@ footer div {
   div#yoga_story > header > figure {
     right: -55px;
   }
-  section#date h3 {
-    height: 300px;
+  section#date {
+    padding: 50px 0;
   }
   section#actividades ul li {
     padding: 0;
   }
   section#tour {
-    top: -110px;
+    top: -143px;
     margin-bottom: -32%;
   }
 }
@@ -295,14 +296,13 @@ footer div {
   }
   section#date {
     top: 22px;
-    height: 250px;
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 400px;
     width: 100%;
   }
   section#actividades {
-    top: 35px;
+    top: 0;
     padding: 0;
   }
   section#actividades h4 {
@@ -317,13 +317,13 @@ footer div {
   }
   section#tour {
     top: 162px;
-    margin-bottom: 42%;
+    margin-bottom: 35%;
   }
   figure.footer-wave {
-    bottom: -33px;
+    bottom: -63px;
   }
   footer {
-    bottom: -10px;
+    bottom: -25px;
     height: 92px;
     position: absolute;
   }
@@ -347,13 +347,13 @@ footer div {
   }
   section#tour {
     top: 60px;
-    margin-bottom: 55px;
+    margin-bottom: 185px;
   }
   figure.footer-wave {
-    bottom: 0;
+    bottom: -16px;
   }
   footer {
-    bottom: 0;
+    bottom: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -397,10 +397,10 @@ footer div {
   }
   section#tour {
     top: 0;
-    margin-bottom: 0;
+    margin-bottom: 85px;
   }
   figure.footer-wave {
-    bottom: 0;
+    bottom: -25px;
   }
   footer {
     bottom: 0;
@@ -455,7 +455,7 @@ footer div {
   }
   section#tour {
     top: 0;
-    margin-bottom: -3%;
+    margin-bottom: 55px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -484,7 +484,7 @@ footer div {
     width: 800px;
   }
   section#tour {
-    margin: 0 auto -2% auto;
+    margin: 0 auto 3% auto;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -516,9 +516,6 @@ footer div {
   section#date a {
     width: 700px;
   }
-  section#tour {
-    margin-bottom: -1%;
-  }
 }
 @media screen and (min-width: 2400px) {
   figure.wave h1 {
@@ -541,8 +538,5 @@ footer div {
   }
   section#date a {
     width: 860px;
-  }
-  section#tour {
-    margin-bottom: 0;
   }
 }
