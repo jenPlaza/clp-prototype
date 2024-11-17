@@ -1,14 +1,4 @@
 //NAVIGATION MENU
-// var id;
-// var navId;
-// if (id === 'tenis') {
-//   navId = 'tenis';
-// } else if (id === 'padel') {
-//   navId = 'padel';
-// }
-// if (id === 'yoga') {
-//   navId = 'yoga';
-// }
 var navigationArray = [
   {
     link_id: 'home',
@@ -61,20 +51,20 @@ var navigationArray = [
   },
   {
     link_id: 'competencias',
-    link_name: 'Tournaments',
-    link_href: './tournaments.html',
+    link_name: 'Torneos',
+    link_href: './torneos.html',
     icon_src: './assets/images/icons/trophy-white.png',
     icon_alt: 'white trophy icon',
   },
   {
     link_id: 'contact',
     link_name: 'Contacto',
-    link_href: './index#contact.html',
+    link_href: './contacto.html',
     icon_src: './assets/images/icons/phone-white-2.png',
     icon_alt: 'white phone icon',
   },
 ];
-
+//company information
 var company = [
   {
     company_name: 'Club Los Paltos',
@@ -93,7 +83,6 @@ var company = [
     ],
   },
 ];
-
 //Actividades
 var activities = [
   {
@@ -141,7 +130,6 @@ var activities = [
     story_content_id: 'yoga_story_content',
   },
 ];
-
 //Tour
 var tour = [
   {
@@ -229,7 +217,6 @@ var socialArray = [
     media_alt: 'instgram icon',
   },
 ];
-
 // Galleries
 var gallery = [
   {
@@ -739,8 +726,207 @@ var gallery = [
       ],
     },
   },
+  {
+    torneos_de_adultos: {
+      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /><button class="secondary small" type="button" onclick="toTeams();">Conoscan Al Instructor </button>',
+      list: [
+        {
+          link_id: '5564122',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 1',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '5516395',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 2',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '464724',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '723250',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 4',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '1285519',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 5',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '9953363',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 6',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '7188566',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 7',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '5509214',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 8',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+      ],
+      activities: [
+        {
+          media_id: 'yoga',
+          media_link: '/',
+          media_src: './assets/images/actividades/outdoor_yoga-bk.jpeg',
+          media_alt:
+            'black and white 3of3 picture of an event celebrated in club los paltos',
+          media_cap: 'YOGA',
+          gallery_id: 'yoga_gallery',
+          story_id: 'yoga_story',
+          story_content_id: 'yoga_story_content',
+        },
+      ],
+    },
+  },
+  {
+    torneos_de_ninos: {
+      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario.',
+      list: [
+        {
+          link_id: '5564122',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 1',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '5516395',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 2',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '464724',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '723250',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 4',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '1285519',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 5',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '9953363',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 6',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '7188566',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 7',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '5509214',
+          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'Evento yoga 8',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+      ],
+      activities: [
+        {
+          media_id: 'yoga',
+          media_link: '/',
+          media_src: './assets/images/actividades/outdoor_yoga-bk.jpeg',
+          media_alt:
+            'black and white 3of3 picture of an event celebrated in club los paltos',
+          media_cap: 'YOGA',
+          gallery_id: 'yoga_gallery',
+          story_id: 'yoga_story',
+          story_content_id: 'yoga_story_content',
+        },
+      ],
+    },
+  },
 ];
-
 //Team
 var teamArray = [
   {
