@@ -7,6 +7,22 @@ function toTeams() {
   //neocities
   //location.href = './equipo';
 }
+function toInstructor() {
+  var xxx;
+  if (xxx == 'tenis') {
+    location.href = './equipo.html#instruct01';
+  } else if (xxx == 'yoga') {
+    location.href = './equipo.html#instruct02';
+  }
+  location.href = './equipo.html';
+  //neocities
+  //location.href = './equipo';
+}
+function toEvents() {
+  location.href = './acontecimientos.html';
+  //neocities
+  //location.href = './acontecimientos';
+}
 //Navigation Icon Menu onclick functionality for mobile sizes
 function appear() {
   var headerBar = document.querySelector('.scroll-in-place');
@@ -141,8 +157,6 @@ function displayData(e) {
       eventitem = 6;
     } else if (e === '5509214') {
       eventitem = 7;
-    } else {
-      eventitem = 8;
     }
   } else if (page == 'actividades.html' && activityId == 'padel') {
     displayGallery = padelStory;
@@ -166,8 +180,6 @@ function displayData(e) {
       eventitem = 6;
     } else if (e === '5509214') {
       eventitem = 7;
-    } else {
-      eventitem = 8;
     }
   } else if (page == 'actividades.html' && activityId == 'yoga') {
     displayGallery = yogaStory;
@@ -191,8 +203,6 @@ function displayData(e) {
       eventitem = 6;
     } else if (e === '5509214') {
       eventitem = 7;
-    } else {
-      eventitem = 8;
     }
   } else if (page == 'torneos.html') {
     displayGallery = torneosStory;
@@ -216,8 +226,6 @@ function displayData(e) {
       eventitem = 6;
     } else if (e === '5509214') {
       eventitem = 7;
-    } else {
-      eventitem = 8;
     }
   } //end of if else conditionals
 
@@ -361,7 +369,8 @@ function displayTeam() {
   var teamMembers = '<h6>' + teamArray[0].h6 + '</h6>';
   teamMembers += '<ul>';
   for (var t = 0; t < teamArray[0].list.length; t++) {
-    teamMembers += '<li><article><figure>';
+    teamMembers +=
+      '<li id="' + teamArray[0].list[t].team_id + '"><article><figure>';
     teamMembers +=
       '<img src="' +
       teamArray[0].list[t].mem_image_src +
@@ -506,9 +515,9 @@ document.getElementById('sports').innerHTML = activity;
 //FOOTER LOCATION
 var locate = '<figure id="logo">';
 locate +=
-  '<img src="' +
+  '<a href="./index.html#top"><img src="' +
   company[0].logo_info[0].img_src[0] +
-  '" alt="logo" width="40px" height="40px" /></figure>';
+  '" alt="logo" width="40px" height="40px" /></a></figure>';
 locate += '<div><p><em><b>' + company[0].company_name + '</b></em></p>';
 locate += '<address>' + company[0].company_add + '</address>';
 locate +=

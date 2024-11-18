@@ -72,7 +72,7 @@ var company = [
     company_phone: '+56 9 7766 0445',
     logo_info: [
       {
-        link_href: '.index.html',
+        link_href: './index.html',
         img_src: [
           './assets/images/logos/clublospaltos.png',
           './assets/images/logos/CLP_wt.png',
@@ -87,7 +87,7 @@ var company = [
 var activities = [
   {
     media_id: 'tenis',
-    media_link: '/',
+    media_link: './actividades.html?id=tenis',
     media_src: './assets/images/actividades/tennis_2_bk.png',
     media_alt:
       'black and white 1of3 picture of an event celebrated in club los paltos',
@@ -98,7 +98,7 @@ var activities = [
   },
   {
     media_id: 'padel',
-    media_link: '/',
+    media_link: './actividades.html?id=padel',
     media_src: './assets/images/actividades/paddeling_bk.png',
     media_alt:
       'black and white 2of3 picture of an event celebrated in club los paltos',
@@ -109,7 +109,7 @@ var activities = [
   },
   {
     media_id: 'torneo',
-    media_link: '/',
+    media_link: './torneos',
     media_src: './assets/images/actividades/tournaments_bk.png',
     media_alt:
       'black and white 3of3 picture of an event celebrated in club los paltos',
@@ -120,7 +120,7 @@ var activities = [
   },
   {
     media_id: 'yoga',
-    media_link: '/',
+    media_link: './actividades.html?id=yoga',
     media_src: './assets/images/actividades/outdoor_yoga-bk.jpeg',
     media_alt:
       'black and white 3of3 picture of an event celebrated in club los paltos',
@@ -221,7 +221,7 @@ var socialArray = [
 var gallery = [
   {
     home: {
-      h6: 'El <b>Club Los Paltos</b> se encuentra a menos de 30 minutos del centro de Santiago y a 20 minutos del aeropuerto. Está reconocido por contar con una de las mejores canchas de arcilla. Las canchas de tierra batida son ideales para jugar al tenis, ya que facilitan un bote más alto, reduciendo drásticamente la velocidad de la pelota. Estas canchas están construidas con la técnica "clay court" y tienen una superficie de 23,77 metros cuadrados. Son de estilo tradicional y ofrecen a cada tenista una experiencia nueva y divertida. Ofrecemos alquileres por hora, clases para niños y adultos, e inscripción en torneos. También contamos con pistas de pádel y clases para niños y adultos. Si el tenis no es lo tuyo, reúne a 15 de tus mejores amigos y amigas y alquilen el quincho para disfrutar de un delicioso asado a leña con acceso a la piscina. Proporcionamos estacionamiento privado.',
+      h6: 'El <b>Club Los Paltos</b> se encuentra a menos de 30 minutos del centro de Santiago y a 20 minutos del aeropuerto. Está reconocido por contar con una de las mejores canchas de arcilla. Las canchas de tierra batida son ideales para jugar al tenis, ya que facilitan un bote más alto, reduciendo drásticamente la velocidad de la pelota. Estas canchas están construidas con la técnica "clay court" y tienen una superficie de 23,77 metros cuadrados. Son de estilo tradicional y ofrecen a cada tenista una experiencia nueva y divertida. Ofrecemos alquileres por hora, clases para niños y adultos, e inscripción en torneos. También contamos con pistas de pádel y clases para niños y adultos. Si el tenis no es lo tuyo, reúne a 15 de tus mejores amigos y amigas y alquilen el quincho para disfrutar de un delicioso asado a leña con acceso a la piscina. Proporcionamos estacionamiento privado.<br /><br /><div><button type="button" onclick="toEvents();">Exploren Los Eventos</button></div>',
       list: [
         {
           link_id: 'quincho',
@@ -983,7 +983,7 @@ var teamArray = [
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       },
       {
-        team_id: 'INSTRUCT01',
+        team_id: 'instruct01',
         mem_image_src: './assets/images/team/image_placeholder-min.png',
         mem_image_alt: 'Foto de remate de Diego Piña',
         mem_name: 'Diego Piña',
@@ -997,7 +997,7 @@ var teamArray = [
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       },
       {
-        team_id: 'INSTRUCT02',
+        team_id: 'instruct02',
         mem_image_src: './assets/images/team/image_placeholder-min.png',
         mem_image_alt: 'Foto de remate de Rocio Piña',
         mem_name: 'Rocio Piña',
@@ -1023,7 +1023,7 @@ var teamArray = [
           'Obtuve mi licenciatura en Diseño y Desarrollo Web de Full Sail University el 24 de noviembre de 2020. Soy oriunda de Miami, Florida, pero me mudé a Orlando, Florida, en 2006. Soy la hermana menor de dos. Disfruto de la jardinería, pintura, y recientemente he comenzado a cultivar mis propios alimentos orgánicos. Desde 2006 trabajé para el American Hotel and Lodging Educational Institute (AHLEI) hasta su fusión con la National Restaurant Association (NRA), en el 2017. Durante ese tiempo descubrí mi pasión por los sitios web y decidí regresar a la escuela. Me gradué en 2020 y desde entonces he participado en varios proyectos de voluntariado, adquirido experiencia laboral y refinado mis habilidades mientras implemento mejores prácticas. En junio de 2024 me uní a AYPAD como voluntaria y en Noviembre con Club los Paltos, lo que me ha permitido participar en una variacion de proyectos; ha sido una experiencia enriquecedora y estoy buscando nuevos desafíos.',
       },
       {
-        team_id: 'Mngr',
+        team_id: 'graficos',
         mem_image_src: './assets/images/team/image_placeholder-min.png',
         mem_image_alt: 'Foto de remate de Maximileano Piña',
         mem_name: 'Maximileano Piña ',
@@ -1037,7 +1037,7 @@ var teamArray = [
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       },
       {
-        team_id: 'Mngr',
+        team_id: 'nutri',
         mem_image_src: './assets/images/team/image_placeholder-min.png',
         mem_image_alt: 'Foto de remate de Pia Piña',
         mem_name: 'Pia Piña',

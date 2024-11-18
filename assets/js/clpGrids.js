@@ -41,6 +41,10 @@ if (page == 'index.html') {
 // } else if (page == 'acontecimientos') {
 //   main = gallery[1].eventos;
 //   id = 'event_gallery';
+// }else if (page == 'torneos.html') {
+//   main = gallery[5].torneos_de_adultos;
+//   id = 'torneos_gallery';
+//   click = 'displayData(this.id)';
 // }
 //----------------------------------------------
 
@@ -61,7 +65,7 @@ newGrid += '</ul>';
 
 document.getElementById(id).innerHTML = newGrid;
 
-function displayNinos(main, id_ninos) {
+function displayNinos() {
   var ninosGrid =
     '<h2 style="color:var(--secondary-color-text)">Para Los Niños</h2>';
   ninosGrid += '<h6>' + gallery[6].torneos_de_ninos.h6 + '</h6>';
@@ -76,7 +80,7 @@ function displayNinos(main, id_ninos) {
       gallery[6].torneos_de_ninos.list[i].img_src_bk +
       '" alt="' +
       gallery[6].torneos_de_ninos.list[i].img_alt +
-      '"';
+      '" />';
     ninosGrid += '</figure></li>';
   }
   ninosGrid += '</ul>';

@@ -1,3 +1,6 @@
+button {
+  margin: -5px auto 0 auto;
+}
 /*----------------------- Parallex Mas ----*/
 .parallex-section {
   margin: 0;
@@ -60,9 +63,14 @@ section#actividades > h6:first-letter {
   }
 }
 @media screen and (min-width: 768px) {
-  /* section#actividades {
-    top: -75px;
-  } */
+  main h6 div {
+    width: 100%;
+    display: flex;
+    height: auto;
+  }
+  button {
+    margin: -5px auto 0 auto;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   main ul li:last-child figure img {
@@ -96,6 +104,9 @@ section#actividades > h6:first-letter {
   }
 }
 @media screen and (min-width: 1200px) {
+  main {
+    height: 675px;
+  }
   #parallex-set-1 {
     background: url(../images/lampa.png) no-repeat top center / 100% 100%;
     background-size: cover;
@@ -106,6 +117,12 @@ section#actividades > h6:first-letter {
 @media screen and (min-width: 1400px) {
   figure.wave img {
     top: -230px;
+  }
+  main {
+    height: 650px;
+  }
+  button {
+    margin: -5px auto 35px auto;
   }
 }
 @media screen and (min-width: 1600px) {
