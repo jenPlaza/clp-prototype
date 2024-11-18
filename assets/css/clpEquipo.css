@@ -42,6 +42,12 @@ main#team_gallery.grid
   a:nth-child(2) {
   display: block !important;
 }
+main.grid ul li article section div:nth-child(6) {
+  font-weight: 600;
+}
+section#actividades {
+  bottom: 75px;
+}
 section#actividades h4 {
   margin-left: 10%;
   width: 90%;
@@ -49,6 +55,9 @@ section#actividades h4 {
   padding: 0 5%;
   text-align: center;
   font-size: 42px;
+}
+footer {
+  bottom: -125px;
 }
 @media screen and (min-width: 576px) {
   figure.wave h1 {
@@ -84,6 +93,7 @@ section#actividades h4 {
   main.grid ul {
     grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
     gap: 35px;
+    margin: 0 auto 20px auto;
   }
   main#team_gallery.grid ul li {
     border: 1px solid var(--light-border);
@@ -107,7 +117,7 @@ section#actividades h4 {
   }
   section#actividades {
     top: 25px;
-    margin-bottom: 27%;
+    height: 1000px;
   }
   section#actividades > h4 {
     width: 100%;
@@ -120,18 +130,26 @@ section#actividades h4 {
     width: 140%;
   }
   figure.footer-wave {
-    height: 170px;
+    height: 155px;
+    bottom: -169px;
+  }
+  footer {
+    bottom: -105px;
   }
 }
 @media screen and (min-width: 992px) {
   body div#body {
     top: -128px;
   }
+  main {
+    height: auto;
+  }
   section#actividades {
-    margin-bottom: -95px;
+    height: 675px;
   }
   figure.footer-wave {
     height: 155px;
+    left: -155px;
   }
   figure.footer-wave img {
     width: 100%;
@@ -147,7 +165,7 @@ section#actividades h4 {
     width: 90%;
   }
   section#actividades {
-    margin-bottom: -100px;
+    height: 600px;
   }
   figure.footer-wave {
     height: 170px;
@@ -174,6 +192,25 @@ section#actividades h4 {
 @media screen and (min-width: 2000px) {
   body div#body {
     top: -455px;
+  }
+  main.grid ul {
+    columns: 2;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    max-width: 1800px;
+  }
+  main#team_gallery.grid ul li article figure {
+    height: 200px;
+    width: 200px;
+  }
+  body div#body > main h6 {
+    width: 95%;
+  }
+  main.grid ul li:nth-child(4) article section div:nth-child(6) {
+    margin-top: -50px;
+  }
+  main.grid ul li:nth-child(6) article section div:nth-child(6),
+  main.grid ul li:nth-child(8) article section div:nth-child(6) {
+    margin-top: -20px;
   }
 }
 @media screen and (min-width: 2400px) {

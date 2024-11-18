@@ -632,9 +632,8 @@ var gallery = [
       list: [
         {
           link_id: '5564122',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk: './assets/images/galleria/yoga/yoga_cover-bk.jpeg',
+          img_src_color: './assets/images/galleria/yoga/yoga_2.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
           event_name: 'Evento yoga 1',
           event_info:
@@ -642,9 +641,8 @@ var gallery = [
         },
         {
           link_id: '5516395',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk: './assets/images/galleria/yoga/yoga-bk.jpeg',
+          img_src_color: './assets/images/galleria/yoga/yoga.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
           event_name: 'Evento yoga 2',
           event_info:
@@ -732,81 +730,85 @@ var gallery = [
       list: [
         {
           link_id: '5564122',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk: './assets/images/galleria/torneo/tournament_bk.jpeg',
+          img_src_color: './assets/images/galleria/torneo/tournament.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 1',
+          event_name: 'Evento Torneo 1',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '5516395',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk: './assets/images/galleria/torneo/categoria_C-bk.jpeg',
+          img_src_color: './assets/images/galleria/torneo/categoria_C.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 2',
+          event_name: 'Evento Torneo 2',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '464724',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 3',
+          event_name: 'Evento Torneo 3',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '723250',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 4',
+          event_name: 'Evento Torneo 4',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '1285519',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 5',
+          event_name: 'Evento Torneo 5',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '9953363',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 6',
+          event_name: 'Evento Torneo 6',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '7188566',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 7',
+          event_name: 'Evento Torneo 7',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '5509214',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 8',
+          event_name: 'Evento Torneo 8',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
@@ -832,81 +834,89 @@ var gallery = [
       list: [
         {
           link_id: '5564122',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 1',
+          event_name: 'Evento Torneo de Nino 1',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '5516395',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 2',
+          event_name: 'Evento Torneo de Nino 2',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '464724',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 3',
+          event_name: 'Evento Torneo de Nino 3',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '723250',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 4',
+          event_name: 'Evento Torneo de Nino 4',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '1285519',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 5',
+          event_name: 'Evento Torneo de Nino 5',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '9953363',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 6',
+          event_name: 'Evento Torneo de Nino 6',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '7188566',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 7',
+          event_name: 'Evento Torneo de Nino 7',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '5509214',
-          img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_src_bk:
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            './assets/images/galleria/torneo/image_placeholder-min.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento yoga 8',
+          event_name: 'Evento Torneo de Nino 8',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },

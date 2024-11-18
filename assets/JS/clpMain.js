@@ -12,7 +12,7 @@ function appear() {
   var headerBar = document.querySelector('.scroll-in-place');
   var navigationList = document.getElementById('navList');
   if (navigationList.style.display == 'none') {
-    headerBar.style.background = 'var(--red)';
+    headerBar.style.background = 'var(--green)';
     navigationList.style.display = 'contents';
   } else if (navigationList.style.display == 'contents') {
     headerBar.style.background = 'revert-layer';
@@ -76,6 +76,7 @@ function displayData(e) {
   var tenisStory = document.getElementById('tenis_story');
   var padelStory = document.getElementById('padel_story');
   var yogaStory = document.getElementById('yoga_story');
+  var torneosStory = document.getElementById('torneos_story');
   var displayGallery;
   var e;
   var contentId;
@@ -85,9 +86,7 @@ function displayData(e) {
   var page = relativePaths.pop();
   const xId = window.location.href.split('=');
   var activityId = xId.pop();
-  console.log('page: ', page);
-  console.log('activityId: ', activityId);
-  console.log('displayGallery: ', displayGallery);
+  // console.log('page: ', page);
 
   if (page == 'acontecimientos.html') {
     displayGallery = eventStory;
@@ -195,6 +194,31 @@ function displayData(e) {
     } else {
       eventitem = 8;
     }
+  } else if (page == 'torneos.html') {
+    displayGallery = torneosStory;
+    contentId = 'torneos_story_content';
+    index = 5;
+    main = gallery[index].torneos_de_adultos;
+
+    if (e === '5564122') {
+      eventitem = 0;
+    } else if (e === '5516395') {
+      eventitem = 1;
+    } else if (e === '464724') {
+      eventitem = 2;
+    } else if (e === '723250') {
+      eventitem = 3;
+    } else if (e === '1285519') {
+      eventitem = 4;
+    } else if (e === '9953363') {
+      eventitem = 5;
+    } else if (e === '7188566') {
+      eventitem = 6;
+    } else if (e === '5509214') {
+      eventitem = 7;
+    } else {
+      eventitem = 8;
+    }
   } //end of if else conditionals
 
   if (displayGallery.style.display == 'none') {
@@ -215,11 +239,58 @@ function displayData(e) {
 
   document.getElementById(contentId).innerHTML = open;
 }
+function displayNinoTorneos(e) {
+  var torneosNinosStory = document.getElementById('torneos_de_ninos_story');
+  var contentId = 'torneos_de_ninos_content';
+  index = 5;
+  main = gallery[index].torneos_de_ninos;
+
+  if (e === '5564122') {
+    eventitem = 0;
+  } else if (e === '5516395') {
+    eventitem = 1;
+  } else if (e === '464724') {
+    eventitem = 2;
+  } else if (e === '723250') {
+    eventitem = 3;
+  } else if (e === '1285519') {
+    eventitem = 4;
+  } else if (e === '9953363') {
+    eventitem = 5;
+  } else if (e === '7188566') {
+    eventitem = 6;
+  } else if (e === '5509214') {
+    eventitem = 7;
+  } else {
+    eventitem = 8;
+  }
+
+  if (torneosNinosStory.style.display == 'none') {
+    torneosNinosStory.style.display = 'flex';
+  } else {
+    torneosNinosStory.style.display = 'none';
+  } //end of if else conditionals
+
+  var open = '<figure>';
+  open +=
+    '<img src="' +
+    gallery[6].torneos_de_ninos.list[eventitem].img_src_color +
+    '" alt="' +
+    gallery[6].torneos_de_ninos.list[6].img_alt +
+    '"> ';
+  open +=
+    '</figure><h3>' + gallery[6].torneos_de_ninos.list[6].event_name + '</h3>';
+  open += '<p>' + gallery[6].torneos_de_ninos.list[6].event_info + '</p>';
+
+  document.getElementById('torneos_de_ninos_story_content').innerHTML = open;
+}
 function closeData(displayGallery) {
   var eventStory = document.getElementById('event_story');
   var tenisStory = document.getElementById('tenis_story');
   var padelStory = document.getElementById('padel_story');
   var yogaStory = document.getElementById('yoga_story');
+  var torneosStory = document.getElementById('torneos_story');
+  var torneosNinosStory = document.getElementById('torneos_de_ninos_story');
   var displayGallery;
 
   if (page == 'acontecimientos.html') {
@@ -230,10 +301,18 @@ function closeData(displayGallery) {
     displayGallery = padelStory;
   } else if (page == 'actividades.html' && activityId == 'yoga') {
     displayGallery = yogaStory;
+  } else if (page == 'torneos.html') {
+    displayGallery = torneosStory;
   }
 
   if (displayGallery.style.display == 'flex') {
     displayGallery.style.display = 'none';
+  }
+}
+function closeNinosData(displayGallery) {
+  var torneosNinosStory = document.getElementById('torneos_de_ninos_story');
+  if (torneosNinosStory.style.display == 'flex') {
+    torneosNinosStory.style.display = 'none';
   }
 }
 function shortenMenu() {
@@ -300,7 +379,7 @@ function displayTeam() {
       teamArray[0].list[t].mem_linkedIn +
       '" ><img src="./assets/images/icons/linkedin-circle-bk.png" alt="linkedIn icon" width="25px" height="25px" class="team_icon" /></a><a href="' +
       teamArray[0].list[t].mem_web_page +
-      '" style="display: none"><img src="./assets/images/icons/social-bk.png" alt="website icon" width="25px" height="25px" class="team_icon" /></a></div>';
+      '" style="display: none"><img src="./assets/images/icons/social-bk.png" alt="website icon" width="25px" height="25px" class="team_icon" /></a></div><br /><br />';
     teamMembers += '<div>' + teamArray[0].list[t].mem_pro_title + '</div>';
     teamMembers += '<div><p>' + teamArray[0].list[t].mem_bio + '</p></div>';
     teamMembers += '</section></article></li>';

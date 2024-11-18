@@ -70,7 +70,7 @@ function displayNinos(main, id_ninos) {
     ninosGrid +=
       '<li><figure id="' +
       gallery[6].torneos_de_ninos.list[i].link_id +
-      '" onclick="displayData(this.id);">';
+      '" onclick="displayNinoTorneos(this.id);">';
     ninosGrid +=
       '<img src="' +
       gallery[6].torneos_de_ninos.list[i].img_src_bk +

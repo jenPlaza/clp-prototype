@@ -9,7 +9,7 @@
   --light-border: #ebebeb;
   --red: #db3739;
   --lime: #80cd28;
-  --green: #40b93f;
+  --green: #36a135;
   --primary-color: var(--black);
   --accent-color: var(--lime);
   --secondary-color: var(--red);
@@ -122,8 +122,11 @@ body > header.scroll-in-place {
   filter: drop-shadow(2px 2px 0 var(--shadow));
 }
 body > header.scroll-in-place.nav-scroll {
-  background-color: var(--primary-color);
+  background-color: var(--green);
   filter: drop-shadow(2px 4px 6px black);
+}
+body > header.scroll-in-place.nav-scroll figure:nth-child(1) {
+  filter: drop-shadow(2px 4px 2px black);
 }
 /*-----------------------Header ----*/
 body > header {
@@ -153,6 +156,7 @@ body > header#top figure img {
 body > header#top figure:nth-child(1) {
   position: absolute;
   left: 65px;
+  /* filter: drop-shadow(2px 4px 6px black); */
 }
 body > header#top figure:nth-child(2) {
   padding: 1%;
@@ -162,11 +166,7 @@ body > header#top figure:nth-child(2) {
   left: 0;
 }
 /*-----------------------nav ----*/
-/* body > header > nav {
-  display: none;
-} */
 nav {
-  /* overflow: hidden; */
   background-color: transparent;
   font-family: 'Raleway', sans-serif;
   position: fixed;
@@ -177,7 +177,7 @@ nav ul.list.min {
   flex-direction: column;
   align-items: start;
   padding: 5% 2% 5% 2%;
-  background-color: #c22f30;
+  background-color: #36a135;
   position: absolute;
   top: 40px;
   left: 0;
@@ -244,21 +244,11 @@ button.secondary.small:hover {
 }
 .dropdown:hover .dropbtn,
 button:hover:not(button.equipo):not(button.secondary) {
-  color: var(--accent-color);
-  filter: drop-shadow(1px 1px 1px var(--shadow));
-  /* border-bottom: 3px solid var(--accent-color); */
+  color: var(--red);
 }
 nav ul li.dropdown div.dropdown-content a h6:hover,
 nav a h6:active {
-  background: -webkit-radial-gradient(
-    left,
-    var(--white),
-    var(--secondary-color),
-    var(--black)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(1px 1px 1px var(--shadow));
+  color: var(--red);
 }
 
 .dropdown-content {
@@ -351,7 +341,6 @@ section#actividades {
   height: auto;
   position: relative;
   bottom: 510px;
-  border: 2px solid aqua;
 }
 
 section#actividades ul {
@@ -446,7 +435,6 @@ section#tour {
   height: 300px;
   letter-spacing: 0.5px;
   max-width: 1800px;
-  border: 1px solid red;
   bottom: -300px;
 }
 section#tour > h4 {
@@ -896,7 +884,6 @@ footer section#socialM ul li a figure {
   }
   main {
     top: 25px;
-    border: 4px solid orange;
     height: 600px;
   }
   main.grid ul {
@@ -914,23 +901,6 @@ footer section#socialM ul li a figure {
     width: 70%;
   }
   /*-----------------------footer ----*/
-  /* figure.footer-wave {
-    bottom: -105px;
-    width: 100%;
-    margin: 0;
-    z-index: -1;
-    left: -20px;
-    display: block;
-  }
-  figure.footer-wave img {
-    width: 105%;
-  }
-  footer {
-    height: 65px;
-    background-color: transparent;
-    flex-direction: row;
-    bottom: -50px;
-  } */
   figure.footer-wave {
     left: -251px;
     bottom: -530px;
@@ -1088,9 +1058,6 @@ footer section#socialM ul li a figure {
   body div#body {
     top: -390px;
   }
-  /* section#tour {
-    margin-bottom: -215px;
-  } */
   section#tour ul {
     margin: 0 auto;
   }
@@ -1109,9 +1076,6 @@ footer section#socialM ul li a figure {
   body div#body {
     top: -460px;
   }
-  /* section#tour {
-    margin: 0 auto -215px auto;
-  } */
   footer section:first-child > div {
     width: 65%;
   }
