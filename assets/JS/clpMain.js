@@ -2,27 +2,6 @@ const mediaQueryDesktop = window.matchMedia('(min-width: 1600px)');
 const mediaQueryTablet = window.matchMedia('(min-width: 768px)');
 const mediaQueryMobile = window.matchMedia('(min-width: 375px)');
 
-function toTeams() {
-  location.href = './equipo.html';
-  //neocities
-  //location.href = './equipo';
-}
-function toInstructor() {
-  var xxx;
-  if (xxx == 'tenis') {
-    location.href = './equipo.html#instruct01';
-  } else if (xxx == 'yoga') {
-    location.href = './equipo.html#instruct02';
-  }
-  location.href = './equipo.html';
-  //neocities
-  //location.href = './equipo';
-}
-function toEvents() {
-  location.href = './acontecimientos.html';
-  //neocities
-  //location.href = './acontecimientos';
-}
 //Navigation Icon Menu onclick functionality for mobile sizes
 function appear() {
   var headerBar = document.querySelector('.scroll-in-place');
@@ -346,7 +325,7 @@ function takeATour() {
   var newTour =
     '<h4>Llamen hoy y programen un recorrido <a href="' +
     socialArray[1].media_link +
-    '"> +56 9 7766 0445.</a></h4>';
+    '">&nbsp; +56 9 7766 0445.</a></h4><p>*Precios especales para grupos mayor a 80 personas</p>';
   newTour += '<ul>';
   for (var t = 0; t < tour.length; t++) {
     newTour +=
@@ -395,6 +374,34 @@ function displayTeam() {
   }
   teamMembers += '</ul>';
   document.getElementById('team_gallery').innerHTML = teamMembers;
+}
+function toTeams() {
+  location.href = './equipo.html';
+  //neocities
+  //location.href = './equipo';
+}
+function toInstructor(e) {
+  var id = e;
+
+  const relativePaths = window.location.pathname.split('/');
+  var page = relativePaths.pop();
+  const xId = window.location.href.split('=');
+  var activityId = xId.pop();
+  // console.log('page: ', page);
+
+  //neocities
+  if (activityId == 'tenis') {
+    location.href = './equipo.html#tenis';
+  } else if (activityId == 'yoga') {
+    location.href = './equipo.html#yoga';
+  } else if (page == 'torneos') {
+    location.href = './equipo.html#tenis';
+  }
+}
+function toEvents() {
+  location.href = './acontecimientos.html';
+  //neocities
+  //location.href = './acontecimientos';
 }
 
 //HEADER

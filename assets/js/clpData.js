@@ -217,11 +217,12 @@ var socialArray = [
     media_alt: 'instgram icon',
   },
 ];
+
 // Galleries
 var gallery = [
   {
     home: {
-      h6: 'El <b>Club Los Paltos</b> se encuentra a menos de 30 minutos del centro de Santiago y a 20 minutos del aeropuerto. Está reconocido por contar con una de las mejores canchas de arcilla. Las canchas de tierra batida son ideales para jugar al tenis, ya que facilitan un bote más alto, reduciendo drásticamente la velocidad de la pelota. Estas canchas están construidas con la técnica "clay court" y tienen una superficie de 23,77 metros cuadrados. Son de estilo tradicional y ofrecen a cada tenista una experiencia nueva y divertida. Ofrecemos alquileres por hora, clases para niños y adultos, e inscripción en torneos. También contamos con pistas de pádel y clases para niños y adultos. Si el tenis no es lo tuyo, reúne a 15 de tus mejores amigos y amigas y alquilen el quincho para disfrutar de un delicioso asado a leña con acceso a la piscina. Proporcionamos estacionamiento privado.<br /><br /><div><button type="button" onclick="toEvents();">Exploren Los Eventos</button></div>',
+      h6: 'El <b>Club Los Paltos</b> se encuentra a menos de 80 minutos del centro de Santiago y a 55 minutos del aeropuerto internacional Arturo Benitez. Está reconocido regionalmente por contar con una de las mejores canchas de arcilla. Las canchas de tierra batida son ideales para jugar al tenis, ya que facilitan un bote más alto, reduciendo drásticamente la velocidad de la pelota. Estas canchas están construidas con la técnica "clay court" y tienen una superficie de 23,77 metros cuadrados. Son de estilo tradicional, completamente parejas y con una gran cantidad de arcilla que hace aún más agradable ofreciendo a cada tenista una experiencia nueva y divertida. Ofrecemos alquileres por hora, clases para niños y adultos, e inscripción en torneos. También contamos con pistas de pádel. Si el tenis no es lo tuyo, reúne a 15 de tus mejores amigos y amigas y alquilen el quincho para disfrutar de un delicioso asado a leña con acceso a la piscina. Proporcionamos estacionamiento privado.<br /><br /><div><button type="button" onclick="toEvents();">Exploren Los Eventos</button></div>',
       list: [
         {
           link_id: 'quincho',
@@ -264,7 +265,7 @@ var gallery = [
   },
   {
     eventos: {
-      h6: 'No importa la ocasión, Club Los Paltos es el lugar perfecto para albergar una variedad de eventos. Nuestras instalaciones ofrecen un espacio maravilloso con un paisaje natural que garantiza el éxito de cualquier evento. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario \n*Grupos de entre 15 y 30 personas. No se incluye el personal, los utensilios de cocina ni las camareras. <br /><button class="secondary small" type="button" onclick="toTeams();">Conoscan Al Equipo</button>',
+      h6: 'No importa la ocasión, <b>Club Los Paltos</b> es el lugar perfecto para albergar una variedad de eventos. Nuestras instalaciones ofrecen un espacio maravilloso con un paisaje natural con las características necesarias para relajarse y recrearse, en contacto con la naturaleza y todo lo necesario para disfrutar de un día único, acompañado de tu familia, amigos o empresa. Tambien disfrutando de una gran piscina, hermosas áreas verdes, y un gran quincho para hacer un asado y compartir; garantizando el éxito de cualquier evento. <br /><br /><section id="seOfrece"><div><b>Club deportivo y reacreacion Los Paltos ofrece:</b><ul><li><p>+ Amplio recinto para diferentes celebraciones, con hermosas areas verdes gran Quincho para 130 personas aproximadamente.</p></li><li><p> + Picina de 16mts de largo por 9 de ancho, mas una picina paraninos.</p></li><li><p>+ Areas de juego infantiles construido en madera.</p></li><li><p>+ Comodas instalaciones de servicios higienicos.</p></li><li><p>+ Mesas de pin-pon y taca-taca.</p></li><li><p> + Arriendo de cancha de tenis <em>(optativo con costo adicional)</em>.</p></li><li><p> + Arriendo de cancha de padel <em>(optativo con costo adicional)</em>.</p></li><li><p> + Juegos inflables y cama saltarina <em>(optativo con costo adicional)</em>.</p></li><li><p>+ Caritas pintadas <em>(optativo con costo adicional)</em>.</p></li></ul></div></section><br />El valor del recinto es de $5.000 x persona. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario <br /><br /> *Grupos de entre 15 y 130 personas. Precios especales para grupos mayor a 80 personas; minimo 15 personas. No se incluye el personal, los utensilios de cocina ni las camareras. <br /><br /><button class="secondary small" type="button" onclick="toTeams();">Conoscan Al Equipo</button>',
       list: [
         {
           link_id: '8114486',
@@ -412,7 +413,7 @@ var gallery = [
   },
   {
     tenis: {
-      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /><button class="secondary small" type="button" onclick="toTeams();">Conoscan Al Instructor </button>',
+      h6: 'El <b>Club Los Paltos</b> proporciona un entorno en la comuna de Lampa donde las personas pueden disfrutar de actividades deportivas en un lugar encantador, equipado con instalaciones de primera calidad para asegurar que la experiencia sea lo más placentera y segura posible. Nuestras canchas de tenis son reconocidas a nivel regional por ser de las mejores, con superficies completamente niveladas y una abundante capa de arcilla que hace que jugar sea aún más agradable y cómodo. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. Proporcionamos estacionamiento privado.<br /><button id="tenis" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Equipo </button>',
       list: [
         {
           link_id: '5564122',
@@ -520,14 +521,12 @@ var gallery = [
   },
   {
     padel: {
-      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /><button class="secondary small" type="button" onclick="toTeams();">Conoscan Al Instructor </button>',
+      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. Proporcionamos estacionamiento privado.<br /><br />',
       list: [
         {
           link_id: '5564122',
-          img_src_bk:
-            './assets/images/galleria/padel/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+          img_src_bk: './assets/images/galleria/padel/padel-game-bk.jpeg',
+          img_src_color: './assets/images/galleria/padel/padel-game.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
           event_name: 'Evento Padel 1',
           event_info:
@@ -628,7 +627,7 @@ var gallery = [
   },
   {
     yoga: {
-      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /><button class="secondary small" type="button" onclick="toTeams();">Conoscan Al Instructor </button>',
+      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. Proporcionamos estacionamiento privado.<br /><button id="yoga" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Equipo</button>',
       list: [
         {
           link_id: '5564122',
@@ -726,7 +725,7 @@ var gallery = [
   },
   {
     torneos_de_adultos: {
-      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /><button class="secondary small" type="button" onclick="toTeams();">Conoscan Al Instructor </button>',
+      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /><button id="torneo" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Instructor </button>',
       list: [
         {
           link_id: '5564122',
@@ -940,7 +939,7 @@ var gallery = [
 //Team
 var teamArray = [
   {
-    h6: 'Bien Venidos al <b>Club los Paltos</b>, un club que se dedirica a ... <mas information>. Nuestra mission es ...<mas information> <br /><br />  <b>Nuestros Liderazgo</b> está formado por personas apasionadas por servir y garantizar que cada huésped tenga la oportunidad de sentirse cómodo en cualquier área del club, ya sea en el tenis o pádel, disfrutando la calma del yoga o participando en una agradable reunión en el quincho. Prestan toda su atención y dedicación para mantener un alto nivel de excelencia.<br /><br />  <b>Nuestros Instructores</b> que se especializan con una gran pasión y están profesionalmente capacitados para tratar y ayudar a cada persona y niño de todos los niveles a mejorar sus habilidades y alcanzar sus objetivos.<br /><br />  <b>Juntos</b> generan un ambiente que es tanto competitivo como acogedor e inclusivo.',
+    h6: 'Bien Venidos al <b>Club los Paltos</b>, un club que se dedirica a brindar un espacio que permita a las personas de la comuna de Lampa recrearse deportivamente, en un precioso lugar con excelentes instalaciones que permitan que la experiencia sea lo más agradable y segura posible. Nuestra mission es contribuir por medio del deporte en la salud de la persona y generar una competencia deportiva saludable y entretenida. <br /><br />  <b>Nuestros Liderazgo</b> está formado por personas apasionadas por servir y garantizar que cada huésped tenga la oportunidad de sentirse cómodo en cualquier área del club, ya sea en el tenis o pádel, disfrutando la calma del yoga o participando en una agradable reunión en el quincho. Prestan toda su atención y dedicación para mantener un alto nivel de excelencia.<br /><br />  <b>Nuestros Instructores</b> que se especializan con una gran pasión y están profesionalmente capacitados para tratar y ayudar a cada persona y niño de todos los niveles a mejorar sus habilidades y alcanzar sus objetivos.<br /><br />  <b>Juntos</b> generan un ambiente que es tanto competitivo como acogedor e inclusivo.',
     list: [
       {
         team_id: 'ceo',
@@ -974,7 +973,7 @@ var teamArray = [
         mem_image_src: './assets/images/team/image_placeholder-min.png',
         mem_image_alt: 'Foto de remate de Gerarldine Acevedo',
         mem_name: 'Gerarldine Acevedo Piña',
-        mem_CLP_role: 'Communicacionces',
+        mem_CLP_role: 'Administradora de Communicacionces del Club Los Paltos ',
         mem_country: ' Santiago, Chile',
         mem_pro_title: 'Directora de collegio infantil xxx',
         mem_web_page: '',
@@ -983,12 +982,11 @@ var teamArray = [
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       },
       {
-        team_id: 'instruct01',
+        team_id: 'tenis',
         mem_image_src: './assets/images/team/image_placeholder-min.png',
         mem_image_alt: 'Foto de remate de Diego Piña',
         mem_name: 'Diego Piña',
-        mem_CLP_role:
-          'Instructor y Organizador de Torneos infantiles del Club Los Paltos',
+        mem_CLP_role: 'Instructor y Organizador de Torneos del Club Los Paltos',
         mem_country: ' Santiago, Chile',
         mem_pro_title: 'Psicologo Clinica en Practica Privado',
         mem_web_page: '',
@@ -997,7 +995,7 @@ var teamArray = [
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       },
       {
-        team_id: 'instruct02',
+        team_id: 'yoga',
         mem_image_src: './assets/images/team/image_placeholder-min.png',
         mem_image_alt: 'Foto de remate de Rocio Piña',
         mem_name: 'Rocio Piña',

@@ -102,12 +102,14 @@ a {
   cursor: pointer;
 }
 ul li {
-  list-style: none;
   display: flex;
   align-items: start;
   gap: 25px;
   width: 100%;
   padding: 10px 0;
+}
+ul li:not(section#seOfrece ul li) {
+  list-style: none;
 }
 img:not(img.nav-icon):not(img.team_icon):not(figure.footer-wave img) {
   width: 100%;
@@ -433,7 +435,8 @@ section#tour {
   max-width: 1800px;
   bottom: -300px;
 }
-section#tour > h4 {
+section#tour > h4,
+section#tour > p {
   color: var(--tertiary-text-color);
   width: 85%;
   margin: 0 0 15px auto;
@@ -678,10 +681,10 @@ footer section#socialM ul li a figure {
     font-size: xx-large;
     text-align: center;
   }
-  /* section#tour {
-    margin-bottom: 150px;
-    top: -50px;
-  } */
+  section#tour > p {
+    width: 88%;
+    text-align: center;
+  }
   section#tour ul {
     margin: 0 auto 80px auto;
   }
@@ -794,13 +797,17 @@ footer section#socialM ul li a figure {
     height: 330px;
     bottom: -355px;
   }
-  section#tour > h4 {
+  section#tour > h4,
+  section#tour > p {
     width: 88%;
     margin: 0 auto 39px auto;
     font-family: Raleway;
+    text-align: center;
+  }
+  section#tour > h4 {
     font-weight: 900;
     font-size: 34px;
-    text-align: center;
+    margin: 0 auto;
   }
   section#tour ul {
     margin: 0 auto 115px auto;
@@ -893,7 +900,8 @@ footer section#socialM ul li a figure {
   section#tour {
     bottom: -415px;
   }
-  section#tour > h4 {
+  section#tour > h4,
+  section#tour > p {
     width: 70%;
   }
   /*-----------------------footer ----*/
@@ -978,7 +986,8 @@ footer section#socialM ul li a figure {
     bottom: -328px;
     height: 300px;
   }
-  section#tour > h4 {
+  section#tour > h4,
+  section#tour > p {
     width: 78%;
   }
   figure.footer-wave img {
