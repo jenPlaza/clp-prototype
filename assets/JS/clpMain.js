@@ -215,12 +215,22 @@ function displayData(e) {
   } //end of if else conditionals
 
   var open = '<figure>';
-  open +=
-    '<img src="' +
-    main.list[eventitem].img_src_color +
-    '" alt="' +
-    main.list[eventitem].img_alt +
-    '"> ';
+  if (main.list[eventitem].source == 'video') {
+    open +=
+      '<div style="border: 3px solid white; overflow: hidden; margin: 15px auto; max-width: 736px;">';
+    open +=
+      '<iframe  scrolling="no"  src="' +
+      main.list[eventitem].img_src_color +
+      '" allow="autoplay; fullscreen" frameborder="0" style="border: 0px none; margin-left: -185px; height: 859px; margin-top: -233px; width: 926px;"></iframe>';
+    open += '</div>';
+  } else if (main.list[eventitem].source == 'image') {
+    open +=
+      '<img src="' +
+      main.list[eventitem].img_src_color +
+      '" alt="' +
+      main.list[eventitem].img_alt +
+      '"> ';
+  }
   open += '</figure><h3>' + main.list[eventitem].event_name + '</h3>';
   open += '<p>' + main.list[eventitem].event_info + '</p>';
 
@@ -391,12 +401,36 @@ function toInstructor(e) {
 
   //neocities
   if (activityId == 'tenis') {
-    location.href = './equipo.html#tenis';
+    contentId = 'instruct_story_content';
+    index = 2;
+    main = gallery[2].tenis;
   } else if (activityId == 'yoga') {
-    location.href = './equipo.html#yoga';
+    displayGallery = yogaStory;
+    contentId = 'instruct_story_content';
+    index = 4;
+    main = gallery[2].tenis;
   } else if (page == 'torneos') {
-    location.href = './equipo.html#tenis';
+    contentId = 'instruct_story_content';
+    index = 2;
+    main = gallery[2].tenis;
   }
+
+  console.log(gallery[2].tenis.instructor[0]);
+  console.log(gallery[2].tenis.instructor[0].source);
+  console.log(gallery[2].tenis.instructor[0].img_src_color);
+
+  var open = '<figure>';
+  open +=
+    '<div style="border: 3px solid white; overflow: hidden; margin: 15px auto; max-width: 736px;">';
+  open +=
+    '<iframe  scrolling="no"  src="' +
+    main.instructor[0].img_src_color +
+    '" allow="autoplay; fullscreen" frameborder="0" style="border: 0px none; margin-left: -185px; height: 859px; margin-top: -233px; width: 926px;"></iframe>';
+  open += '</div>';
+  open += '</figure><h3>' + main.instructor[0].event_name + '</h3>';
+  open += '<p>' + main.instructor[0].event_info + '</p>';
+
+  document.getElementById(contentId).innerHTML = open;
 }
 function toEvents() {
   location.href = './acontecimientos.html';

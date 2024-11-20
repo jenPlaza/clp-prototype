@@ -413,14 +413,25 @@ var gallery = [
   },
   {
     tenis: {
-      h6: 'El <b>Club Los Paltos</b> proporciona un entorno en la comuna de Lampa donde las personas pueden disfrutar de actividades deportivas en un lugar encantador, equipado con instalaciones de primera calidad para asegurar que la experiencia sea lo más placentera y segura posible. Nuestras canchas de tenis son reconocidas a nivel regional por ser de las mejores, con superficies completamente niveladas y una abundante capa de arcilla que hace que jugar sea aún más agradable y cómodo. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. Proporcionamos estacionamiento privado.<br /><button id="tenis" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Equipo </button>',
+      h6: 'El <b>Club Los Paltos</b> proporciona un entorno en la comuna de Lampa donde las personas pueden disfrutar de actividades deportivas en un lugar encantador, equipado con instalaciones de primera calidad para asegurar que la experiencia sea lo más placentera y segura posible. Nuestras canchas de tenis son reconocidas a nivel regional por ser de las mejores, con superficies completamente niveladas y una abundante capa de arcilla que hace que jugar sea aún más agradable y cómodo. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. Proporcionamos estacionamiento privado.<br /><button id="tenis" class="secondary small" type="button" onclick="toInstructor();">Conoscan Al Instructor </button>',
+      instructor: [
+        {
+          link_id: '5587922',
+          source: 'video',
+          img_src_color:
+            'https://www.instagram.com/reel/CdJVUtqgCcV/embed/?autoplay=1&loop=1',
+          img_alt: 'video del tenis',
+          event_name: 'Diego Piña',
+          event_info:
+            ' He estado vinculado al deporte toda mi vida. Mi padre me introdujo al tenis desde temprana edad, llevándonos siempre a diversos clubes con diferentes entrenadores para perfeccionar la técnica. Esta experiencia me ha permitido desarrollar un enfoque metodológico que facilita tanto el aprendizaje efectivo como el respeto por el ritmo individual de cada persona, validando cada fase del proceso de aprendizaje. Me encantaría poder ayudar a otros a mejorar su juego.',
+        },
+      ],
       list: [
         {
           link_id: '5564122',
-          img_src_bk:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
+          source: 'image',
+          img_src_bk: './assets/images/galleria/tenis/unDiaDeTenis-bk.png',
+          img_src_color: './assets/images/galleria/tenis/unDiaDeTenis.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
           event_name: 'Evento Tenis 1',
           event_info:
@@ -428,10 +439,10 @@ var gallery = [
         },
         {
           link_id: '5516395',
-          img_src_bk:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/torneo/tenis-1_bk.png',
           img_src_color:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
+            'https://www.instagram.com/reel/CgxtYo1AUYd/embed/?autoplay=1&loop=1',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
           event_name: 'Evento Tenis 2',
           event_info:
@@ -439,6 +450,7 @@ var gallery = [
         },
         {
           link_id: '464724',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/tenis/image_placeholder-min.png',
           img_src_color:
@@ -450,6 +462,7 @@ var gallery = [
         },
         {
           link_id: '723250',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/tenis/image_placeholder-min.png',
           img_src_color:
@@ -461,6 +474,7 @@ var gallery = [
         },
         {
           link_id: '1285519',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/tenis/image_placeholder-min.png',
           img_src_color:
@@ -472,6 +486,7 @@ var gallery = [
         },
         {
           link_id: '9953363',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/tenis/image_placeholder-min.png',
           img_src_color:
@@ -483,6 +498,7 @@ var gallery = [
         },
         {
           link_id: '7188566',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/tenis/image_placeholder-min.png',
           img_src_color:
@@ -494,6 +510,7 @@ var gallery = [
         },
         {
           link_id: '5509214',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/tenis/image_placeholder-min.png',
           img_src_color:
@@ -525,6 +542,7 @@ var gallery = [
       list: [
         {
           link_id: '5564122',
+          source: 'image',
           img_src_bk: './assets/images/galleria/padel/padel-game-bk.jpeg',
           img_src_color: './assets/images/galleria/padel/padel-game.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
@@ -534,10 +552,9 @@ var gallery = [
         },
         {
           link_id: '5516395',
-          img_src_bk:
-            './assets/images/galleria/padel/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+          source: 'image',
+          img_src_bk: './assets/images/galleria/padel/padle-flyer-bk.png',
+          img_src_color: './assets/images/galleria/padel/padle-flyer.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
           event_name: 'Evento Padel 2',
           event_info:
@@ -545,6 +562,7 @@ var gallery = [
         },
         {
           link_id: '464724',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/padel/image_placeholder-min.png',
           img_src_color:
@@ -556,10 +574,10 @@ var gallery = [
         },
         {
           link_id: '723250',
-          img_src_bk:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/padel/padel-3-bk.png',
           img_src_color:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+            'https://www.instagram.com/reel/DA4VkvZOCse/embed/?autoplay=1&loop=1',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
           event_name: 'Evento Padel 4',
           event_info:
@@ -567,6 +585,7 @@ var gallery = [
         },
         {
           link_id: '1285519',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/padel/image_placeholder-min.png',
           img_src_color:
@@ -578,6 +597,7 @@ var gallery = [
         },
         {
           link_id: '9953363',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/padel/image_placeholder-min.png',
           img_src_color:
@@ -589,6 +609,7 @@ var gallery = [
         },
         {
           link_id: '7188566',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/padel/image_placeholder-min.png',
           img_src_color:
@@ -600,6 +621,7 @@ var gallery = [
         },
         {
           link_id: '5509214',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/padel/image_placeholder-min.png',
           img_src_color:
@@ -627,10 +649,23 @@ var gallery = [
   },
   {
     yoga: {
-      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. Proporcionamos estacionamiento privado.<br /><button id="yoga" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Equipo</button>',
+      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. Proporcionamos estacionamiento privado.<br /><button id="yoga" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al La Instructora</button>',
+      instructor: [
+        {
+          link_id: '5647922',
+          source: 'image',
+          img_src_color:
+            './assets/images/galleria/yoga/image_placeholder-min.png',
+          img_alt: 'video de yoga',
+          event_name: 'Rocio Piña',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        },
+      ],
       list: [
         {
           link_id: '5564122',
+          source: 'image',
           img_src_bk: './assets/images/galleria/yoga/yoga_cover-bk.jpeg',
           img_src_color: './assets/images/galleria/yoga/yoga_2.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
@@ -640,6 +675,7 @@ var gallery = [
         },
         {
           link_id: '5516395',
+          source: 'image',
           img_src_bk: './assets/images/galleria/yoga/yoga-bk.jpeg',
           img_src_color: './assets/images/galleria/yoga/yoga.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
@@ -649,6 +685,7 @@ var gallery = [
         },
         {
           link_id: '464724',
+          source: 'image',
           img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/yoga/image_placeholder-min.png',
@@ -659,6 +696,7 @@ var gallery = [
         },
         {
           link_id: '723250',
+          source: 'image',
           img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/yoga/image_placeholder-min.png',
@@ -669,6 +707,7 @@ var gallery = [
         },
         {
           link_id: '1285519',
+          source: 'image',
           img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/yoga/image_placeholder-min.png',
@@ -679,6 +718,7 @@ var gallery = [
         },
         {
           link_id: '9953363',
+          source: 'image',
           img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/yoga/image_placeholder-min.png',
@@ -689,6 +729,7 @@ var gallery = [
         },
         {
           link_id: '7188566',
+          source: 'image',
           img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/yoga/image_placeholder-min.png',
@@ -699,6 +740,7 @@ var gallery = [
         },
         {
           link_id: '5509214',
+          source: 'image',
           img_src_bk: './assets/images/galleria/yoga/image_placeholder-min.png',
           img_src_color:
             './assets/images/galleria/yoga/image_placeholder-min.png',
@@ -992,7 +1034,7 @@ var teamArray = [
         mem_web_page: '',
         mem_linkedIn: '/',
         mem_bio:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          'Soy Diego Piña, y puedo afirmar con orgullo que he estado profundamente inmerso en el mundo del deporte a lo largo de toda mi vida. Desde que era muy joven, mi padre infundió en mi hermana y en mí una verdadera pasión por el tenis. Nos llevó a numerosos clubes donde tuvimos la oportunidad de trabajar con una variedad de entrenadores expertos, quienes nos ayudaron a perfeccionar nuestras habilidades técnicas y nos mantuvieron cercanamente vinculados a este fascinante deporte.<br /><br />A la temprana edad de 12 años, mi padre tuvo la visión y la iniciativa de fundar el "Club de Tenis Los Platos." Desde ese momento, mi compromiso con el tenis se ha intensificado significativamente, llevándome a jugar casi todos los días de la semana. A pesar de haber enfrentado ciertas lesiones a lo largo de mi etapa adulta, mi amor por el juego jamás ha disminuido. Además, he buscado enriquecer mis conocimientos a través de múltiples capacitaciones especializadas, con el objetivo de guiar a aquellos que desean aprender y disfrutar de esta extraordinaria disciplina.<br /><br />Gracias a mi extensa experiencia, he sido capaz de desarrollar una metodología pedagógica accesible y efectiva, que se centra en permitir que los participantes adquieran conocimientos de manera eficaz y al ritmo que más les convenga. Este enfoque asegura una validación minuciosa de cada fase en el proceso de aprendizaje.<br /><br />Además, como psicólogo profesional, tengo la responsabilidad y el empeño de proporcionar a mis estudiantes todas las herramientas emocionales necesarias para guiarlos con eficacia. Esto no solo apoya su desarrollo en el ámbito deportivo, sino que también promueve su crecimiento personal y emocional.',
       },
       {
         team_id: 'yoga',
