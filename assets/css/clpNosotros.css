@@ -1,6 +1,9 @@
 figure.wave h1 {
   height: 165px;
 }
+figure.wave img {
+  z-index: 1;
+}
 body div#body {
   z-index: -1;
   top: 130px;
@@ -18,6 +21,11 @@ main#about p {
   letter-spacing: 1px;
   text-align: justify;
 }
+button {
+  width: 88%;
+  float: right;
+  margin-right: 5%;
+}
 section#actividades {
   top: 0;
   position: relative;
@@ -30,9 +38,10 @@ section#actividades h4 {
   padding: 0 5%;
   text-align: center;
   font-size: 42px;
+  float: right;
 }
 section#actividades > h6 {
-  margin: -50px 0 25px auto;
+  margin: 0 auto 25px auto;
   text-indent: unset;
 }
 section#actividades ul {
@@ -55,9 +64,6 @@ footer {
     width: 100%;
     line-height: 1.4;
   }
-  section#actividades > h6 {
-    margin: -50px 0 20px auto;
-  }
   section#actividades ul {
     margin: 0 auto 8px auto;
   }
@@ -70,17 +76,27 @@ footer {
     top: 150px;
   }
   body div#body {
-    top: 0;
+    top: -40px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   main#about p {
     width: 100%;
   }
-  section#actividades > h6 {
-    margin: -35px auto 20px auto;
+  button {
+    width: 88%;
+    float: unset;
+    margin-right: unset;
+    max-width: 450px;
+    margin: 0 auto;
   }
+
   section#actividades {
     top: 35px;
-    height: 1035px;
+    height: 1065px;
     margin-bottom: 0;
   }
   figure.footer-wave {
@@ -92,7 +108,7 @@ footer {
 }
 @media screen and (min-width: 992px) {
   body div#body {
-    top: -90px;
+    top: -115px;
   }
   main {
     height: unset;
@@ -103,7 +119,7 @@ footer {
   section#actividades {
     top: 25px;
     padding-top: 15px;
-    height: 585px;
+    height: 690px;
   }
   figure.footer-wave {
     bottom: -145px;
@@ -114,7 +130,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   body div#body {
-    top: -150px;
+    top: -186px;
   }
   main#about img {
     height: 500px;
@@ -122,6 +138,7 @@ footer {
   }
   section#actividades {
     top: 25px;
+    height: 615px;
   }
   figure.footer-wave {
     bottom: -157px;

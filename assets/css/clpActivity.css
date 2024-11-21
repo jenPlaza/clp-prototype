@@ -18,6 +18,43 @@ body:has(.torneo) div#body {
   padding: 0;
   top: 50px;
 }
+section#seOfreceTenis {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#seOfreceTenis div {
+  width: 100%;
+}
+section#seOfreceTenis div b {
+  text-align: left;
+}
+section#seOfreceTenis p {
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+  text-indent: 15px;
+  margin-top: 15px;
+  font-weight: 100;
+  font-size: medium;
+}
+section#seOfreceTenis p em {
+  font-size: smaller;
+  font-style: italic;
+  color: var(--black);
+  font-weight: 300;
+  margin-left: 15px;
+  white-space: pre;
+}
+section#seOfreceTenis p em {
+  font-size: smaller;
+  font-style: italic;
+  color: var(--black);
+  font-weight: 300;
+  margin-left: 15px;
+  white-space: pre;
+}
 body:has(.torneo) div#body > figure:not(figure.footer-wave) {
   position: relative;
   top: 15px;
@@ -48,6 +85,9 @@ body:has(.torneo) div#body footer section:last-child {
   }
   body:has(.torneo) div#body main {
     top: -5px;
+  }
+  section#seOfreceTenis p em {
+    margin-left: 0;
   }
   body:has(.torneo) div#body section main h6 {
     margin: -35px 3% 50px auto;
@@ -172,6 +212,9 @@ body:has(.torneo) div#body footer section:last-child {
     margin: 0 auto;
     padding-bottom: 60px;
   }
+  section#seOfreceTenis {
+    margin-left: 50px;
+  }
   body:has(.torneo) div#body section#tour {
     bottom: -285px;
     height: 285px;
@@ -272,6 +315,9 @@ body:has(.torneo) div#body footer section:last-child {
   body:has(.torneo) div#body section main h2 {
     width: 84%;
   }
+  main h6 {
+    padding: 1% 8%;
+  }
   body:has(.torneo) div#body section#actividades {
     height: 554px;
   }
@@ -294,6 +340,7 @@ body:has(.torneo) div#body footer section:last-child {
   body:has(.torneo) div#body > figure:not(figure.footer-wave) {
     padding: 0 8%;
   }
+  main h6,
   body:has(.torneo) div#body main h6 {
     padding: 1% 13%;
   }

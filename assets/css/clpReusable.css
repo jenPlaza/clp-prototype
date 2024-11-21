@@ -151,6 +151,7 @@ body > header#top figure {
   display: flex;
   align-items: center;
   margin: 0 0 0 1%;
+  width: 300px;
 }
 body > header#top figure img {
   width: 100%; /*120px by 120px */

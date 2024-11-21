@@ -437,6 +437,24 @@ function toEvents() {
   //neocities
   //location.href = './acontecimientos';
 }
+//CONTACT SOCIAL MEDIA
+function displaySocial() {
+  var clp = '<ul>';
+  for (var k = 0; k < socialArray.length; k++) {
+    clp += '<li>';
+    clp +=
+      '<a href="' + socialArray[k].media_link[1] + '" target="_blank"><figure>';
+    clp +=
+      '<img src="' +
+      socialArray[k].media_src[1] +
+      '" alt="' +
+      socialArray[k].media_alt +
+      '" class="social-icon"/>';
+    clp += '</figure></a></li>';
+  }
+  clp += '</ul>';
+  document.getElementById('socialMedia').innerHTML = clp;
+}
 
 //HEADER
 var menu = '<ul class="list min">';

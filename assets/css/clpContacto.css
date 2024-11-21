@@ -1,0 +1,110 @@
+section#map {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+}
+section#ayuda {
+  position: relative;
+  top: 0;
+  height: auto;
+}
+section#ayuda h2 {
+  color: var(--grey);
+  text-align: center;
+  position: relative;
+  height: auto;
+  filter: drop-shadow(2px 1px 1px var(--shadow));
+}
+section#ayuda h3 {
+  color: var(--grey);
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  top: -50px;
+  filter: drop-shadow(-1px 2px 0px var(--shadow));
+}
+section#ayuda section#socialMedia {
+  position: relative;
+  width: 100%;
+  top: -65px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--grey);
+  height: auto;
+}
+section#ayuda section#socialMedia ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  max-width: 800px;
+}
+section#ayuda section#socialMedia ul li {
+  padding: 0;
+  width: auto;
+}
+section#ayuda section#socialMedia ul li a figure {
+  width: 64px;
+  gap: 64px;
+}
+section#actividades {
+  position: relative;
+  top: -65px;
+  height: auto;
+}
+section#actividades h4 {
+  width: 100%;
+  color: var(--secondary-text-color);
+  padding: 0 0 0 5%;
+  text-align: center;
+  font-size: 42px;
+}
+section#actividades h4 {
+  width: 100%;
+}
+footer {
+  bottom: -122px;
+}
+@media screen and (min-width: 576px) {
+  section#ayuda section#socialMedia {
+    top: -58px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section#ayuda section#socialMedia {
+    background: linear-gradient(to top, var(--white) 10%, var(--grey) 45%);
+  }
+  figure.footer-wave {
+    bottom: -69px;
+  }
+  footer {
+    bottom: -15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  section#actividades {
+    height: 665px;
+  }
+  section#actividades > h6 {
+    margin-top: -25px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  section#ayuda h2 {
+    height: 110px;
+  }
+  section#ayuda h3 {
+    top: -50px;
+  }
+  section#ayuda section#socialMedia {
+    top: -50px;
+  }
+  section#ayuda section#socialMedia ul {
+    width: 50%;
+  }
+  section#ayuda section#socialMedia ul li a figure {
+    width: 64px;
+    gap: 64px;
+  }
+}
