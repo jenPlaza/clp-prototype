@@ -42,12 +42,12 @@ body {
 }
 body div#body {
   position: relative;
-  top: 215px;
+  top: 190px;
   flex: 1;
   z-index: 0;
 }
 h1 {
-  font: normal normal 900 72px/1.2 'Raleway', sans-serif;
+  font: normal normal 900 67px/1.2 'Raleway', sans-serif;
   color: var(--primary-text-color);
 }
 h2 {
@@ -588,7 +588,7 @@ figure.footer-wave {
 footer {
   height: 200px;
   position: absolute;
-  bottom: -500px;
+  bottom: -568px;
   width: 100%;
   z-index: 1;
   display: flex;
@@ -664,7 +664,7 @@ footer section#socialM ul li a figure {
     height: 160px;
   }
   body div#body {
-    top: 55px;
+    top: 130px;
   }
   main {
     top: 20px;
@@ -700,6 +700,9 @@ footer section#socialM ul li a figure {
   }
 }
 @media screen and (min-width: 768px) {
+  h1 {
+    font: normal normal 900 67px/1.2 'Raleway', sans-serif;
+  }
   body > header#top {
     max-width: 100%;
     display: flex;
@@ -770,7 +773,7 @@ footer section#socialM ul li a figure {
     filter: drop-shadow(2px 2px 2px var(--black));
   }
   body div#body {
-    top: -50px;
+    top: 25px;
   }
   main h1 {
     margin: 0 auto 35px auto;
@@ -826,7 +829,7 @@ footer section#socialM ul li a figure {
     overflow: hidden;
     height: 146px;
     position: absolute;
-    bottom: -488px;
+    bottom: -505px;
   }
   figure.footer-wave img {
     width: 152%;
@@ -837,7 +840,7 @@ footer section#socialM ul li a figure {
     align-items: center;
     justify-content: space-between;
     background-color: unset;
-    bottom: -435px;
+    bottom: -445px;
   }
   footer section:first-child {
     height: 110px;
