@@ -525,7 +525,7 @@ for (var h = 0; h < navigationArray.length - 5; h++) {
     navigationArray[h].icon_src +
     '" alt="' +
     navigationArray[h].icon_alt +
-    '" width="30px" height="30px" class="nav-icon"/></a>';
+    '" width="35px" height="35px" class="nav-icon"/></a>';
   menu +=
     '<a href="' +
     navigationArray[h].link_href +

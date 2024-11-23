@@ -18,7 +18,7 @@ var navigationArray = [
     link_id: 'about',
     link_name: 'Nosotros',
     link_href: './nosotros.html',
-    icon_src: './assets/images/icons/info-white.png',
+    icon_src: './assets/images/icons/heart-circle-white.png',
     icon_alt: 'white info icon',
   },
   {

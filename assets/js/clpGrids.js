@@ -73,7 +73,7 @@ newGrid +=
   main.activities[0].media_id +
   '" onclick="closeData(this.id);">';
 newGrid +=
-  '<img src="./assets/images/icons/close-white.png" alt="close icon" width="25px" height="25px"/></figure></header>';
+  '<img src="./assets/images/icons/close-outlined-red.png" alt="close icon" width="50px" height="50px"/></figure></header>';
 newGrid += '<div id="' + main.activities[0].story_content_id + '"><figure>';
 newGrid +=
   '<img src="./assets/images/galleria/eventos/color/Event3.png" alt="event image" /></figure>';
@@ -89,7 +89,7 @@ newGrid +=
   main.activities[1].media_id +
   '" onclick="closeData(this.id);">';
 newGrid +=
-  '<img src="./assets/images/icons/close-white.png" alt="close icon" width="25px" height="25px"/></figure></header>';
+  '<img src="./assets/images/icons/close-outlined-red.png" alt="close icon" width="50px" height="50px"/></figure></header>';
 newGrid += '<div id="' + main.activities[1].story_content_id + '"><figure>';
 newGrid +=
   '<img src="./assets/images/galleria/eventos/color/Event3.png" alt="event image" /></figure>';

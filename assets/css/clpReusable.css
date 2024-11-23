@@ -186,6 +186,11 @@ nav ul.list.min {
   left: 0;
   width: 13vw;
 }
+nav ul.list.min li:nth-child(4) a img.nav-icon {
+  width: 46px;
+  height: 46px;
+  margin-left: -6px;
+}
 nav ul.list.min.max {
   top: 40px;
   width: 100vw;
@@ -207,6 +212,7 @@ nav ul li a h6 {
 }
 .nav-link {
   display: none;
+  filter: drop-shadow(2px 4px 6px var(--black));
 }
 .nav-link.show {
   display: block;

@@ -56,7 +56,7 @@ activity +=
   main.activities[0].media_id +
   '" onclick="closeData(this.id);">';
 activity +=
-  '<img src="./assets/images/icons/close-white.png" alt="close icon" width="25px" height="25px"/></figure></header>';
+  '<img src="./assets/images/icons/close-outlined-red.png" alt="close icon" width="25px" height="25px"/></figure></header>';
 activity += '<div id="' + main.activities[0].story_content_id + '"><figure>';
 activity +=
   '<img src="./assets/images/galleria/eventos/color/Event3.png" alt="event image" /></figure>';
@@ -72,7 +72,7 @@ activity +=
   main.activities[1].media_id +
   '" onclick="closeData(this.id);">';
 activity +=
-  '<img src="./assets/images/icons/close-white.png" alt="close icon" width="25px" height="25px"/></figure></header>';
+  '<img src="./assets/images/icons/close-outlined-red.png" alt="close icon" width="25px" height="25px"/></figure></header>';
 activity += '<div id="' + main.activities[1].story_content_id + '"><figure>';
 activity +=
   '<img src="./assets/images/galleria/eventos/color/Event3.png" alt="event image" /></figure>';
