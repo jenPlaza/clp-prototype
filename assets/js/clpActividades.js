@@ -33,8 +33,6 @@ var heading =
   '</h1>';
 document.getElementById('activityHeading').innerHTML = heading;
 
-console.log('click: ', click);
-
 var activity = '<main id="event_gallery" class="grid">';
 activity += '<h6>' + main.h6 + '</h6>';
 activity += '<ul>';
@@ -50,12 +48,32 @@ for (let i = 0; i < main.list.length; i++) {
   activity += '</figure></li>';
 }
 activity += '</ul>';
+//index item
 activity +=
   '<div id="' + main.activities[0].story_id + '" style="display: none">';
-activity += '<header><figure onclick="closeData();">';
+activity +=
+  '<header><figure id="' +
+  main.activities[0].media_id +
+  '" onclick="closeData(this.id);">';
 activity +=
   '<img src="./assets/images/icons/close-white.png" alt="close icon" width="25px" height="25px"/></figure></header>';
 activity += '<div id="' + main.activities[0].story_content_id + '"><figure>';
+activity +=
+  '<img src="./assets/images/galleria/eventos/color/Event3.png" alt="event image" /></figure>';
+activity += '<h3>El Evento 3</h3>';
+activity +=
+  '<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>';
+activity += '</div></div>';
+//Instructor
+activity +=
+  '<div id="' + main.activities[1].story_id + '" style="display: none">';
+activity +=
+  '<header><figure id="' +
+  main.activities[1].media_id +
+  '" onclick="closeData(this.id);">';
+activity +=
+  '<img src="./assets/images/icons/close-white.png" alt="close icon" width="25px" height="25px"/></figure></header>';
+activity += '<div id="' + main.activities[1].story_content_id + '"><figure>';
 activity +=
   '<img src="./assets/images/galleria/eventos/color/Event3.png" alt="event image" /></figure>';
 activity += '<h3>El Evento 3</h3>';

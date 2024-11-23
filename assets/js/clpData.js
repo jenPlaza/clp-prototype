@@ -260,144 +260,6 @@ var gallery = [
           story_id: '',
           story_content_id: '',
         },
-      ],
-    },
-  },
-  {
-    eventos: {
-      h6: 'No importa la ocasión, <b>Club Los Paltos</b> es el lugar perfecto para albergar una variedad de eventos. Nuestras instalaciones ofrecen un espacio maravilloso con un paisaje natural con las características necesarias para relajarse y recrearse, en contacto con la naturaleza y todo lo necesario para disfrutar de un día único, acompañado de tu familia, amigos o empresa. Tambien disfrutando de una gran piscina, hermosas áreas verdes, y un gran quincho para hacer un asado y compartir; garantizando el éxito de cualquier evento. <br /><br /><section id="seOfrece"><div><b>Club deportivo y reacreacion Los Paltos ofrece:</b><ul><li><p>+ Amplio recinto para diferentes celebraciones, con hermosas areas verdes gran Quincho para 130 personas aproximadamente.</p></li><li><p> + Picina de 16mts de largo por 9 de ancho, mas una picina paraninos.</p></li><li><p>+ Areas de juego infantiles construido en madera.</p></li><li><p>+ Comodas instalaciones de servicios higienicos.</p></li><li><p>+ Mesas de pin-pon y taca-taca.</p></li><li><p> + Arriendo de cancha de tenis <em>(optativo con costo adicional)</em>.</p></li><li><p> + Arriendo de cancha de padel <em>(optativo con costo adicional)</em>.</p></li><li><p> + Juegos inflables y cama saltarina <em>(optativo con costo adicional)</em>.</p></li><li><p>+ Caritas pintadas <em>(optativo con costo adicional)</em>.</p></li></ul></div></section><br />El valor del recinto es de $5.000 x persona. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario <br /><br /> *Grupos de entre 15 y 130 personas. Precios especales para grupos mayor a 80 personas; minimo 15 personas. No se incluye el personal, los utensilios de cocina ni las camareras. <br /><br /><button class="secondary small" type="button" onclick="toTeams();">Conoscan Al Equipo</button>',
-      list: [
-        {
-          link_id: '8114486',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/teamBuildingEvent_1__bk.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/teamBuildingEvent_1.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '1135651',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/evento2b_bk.jpeg',
-          img_src_color: './assets/images/galleria/eventos/color/evento2b.jpeg',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '6678302',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/Event3_bk.png',
-          img_src_color: './assets/images/galleria/eventos/color/Event3.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '2207899',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '4588551',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '3190650',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/tugAWar_bk.png',
-          img_src_color: './assets/images/galleria/eventos/color/tugAWar.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '2985797',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '1186776',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '2931160',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '5009953',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '6982182',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-        {
-          link_id: '1862835',
-          img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/teambuilding2_bk.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/teambuilding2.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'El Evento 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
-        },
-      ],
-      activities: [
         {
           media_id: '',
           media_link: '',
@@ -412,8 +274,190 @@ var gallery = [
     },
   },
   {
+    eventos: {
+      h6: 'No importa la ocasión, <b>Club Los Paltos</b> es el lugar perfecto para albergar una variedad de eventos. Nuestras instalaciones ofrecen un espacio maravilloso con un paisaje natural con las características necesarias para relajarse y recrearse, en contacto con la naturaleza y todo lo necesario para disfrutar de un día único, acompañado de tu familia, amigos o empresa. Tambien disfrutando de una gran piscina, hermosas áreas verdes, y un gran quincho para hacer un asado y compartir; garantizando el éxito de cualquier evento. <br /><br /><section id="seOfrece"><div><b>Club deportivo y reacreacion Los Paltos ofrece:</b><ul><li><p>+ Amplio recinto para diferentes celebraciones, con hermosas areas verdes gran Quincho para 130 personas aproximadamente.</p></li><li><p> + Picina de 16mts de largo por 9 de ancho, mas una picina paraninos.</p></li><li><p>+ Areas de juego infantiles construido en madera.</p></li><li><p>+ Comodas instalaciones de servicios higienicos.</p></li><li><p>+ Mesas de pin-pon y taca-taca.</p></li><li><p> + Arriendo de cancha de tenis <em>(optativo con costo adicional)</em>.</p></li><li><p> + Arriendo de cancha de padel <em>(optativo con costo adicional)</em>.</p></li><li><p> + Juegos inflables y cama saltarina <em>(optativo con costo adicional)</em>.</p></li><li><p>+ Caritas pintadas <em>(optativo con costo adicional)</em>.</p></li></ul></div></section><br />El valor del recinto es de $5.000 x persona. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario <br /><br /> *Grupos de entre 15 y 130 personas. Precios especales para grupos mayor a 80 personas; minimo 15 personas. No se incluye el personal, los utensilios de cocina ni las camareras. <br /><br /><button id="centro" class="secondary small" type="button" onclick="toInstructor(this.id)">Conoscan Al Centro</button>',
+      instructor: [
+        {
+          link_id: '5581262',
+          source: 'video',
+          img_src_color:
+            'https://www.instagram.com/reel/DBrEcCXu3nN/embed/?autoplay=1&loop=1',
+          img_alt: 'conoscan nuestro quincho por video',
+          event_name: 'Una caminata por el centro recreacional Los Paltos',
+          event_info:
+            ' Independientemente de la ocasión, Club Los Paltos se presenta como el lugar ideal para celebrar una amplia gama de eventos. Sus instalaciones combinan un entorno encantador con un paisaje natural, perfecto para disfrutar de momentos de relajación y recreación en contacto directo con la naturaleza. Aquí encontrarás todo lo necesario para vivir una experiencia única junto a tu familia, amigos o compañeros de trabajo. Contarás con una amplia piscina, extensas áreas verdes y un espacioso quincho para organizar asados y compartir inolvidables momentos, asegurando así el éxito de cualquier celebración.',
+        },
+      ],
+      list: [
+        {
+          link_id: '8114486',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/teamBuildingEvent_1__bk.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/teamBuildingEvent_1.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 1',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '1135651',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/evento2b_bk.jpeg',
+          img_src_color: './assets/images/galleria/eventos/color/evento2b.jpeg',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 2',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '6678302',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/Event3_bk.png',
+          img_src_color: './assets/images/galleria/eventos/color/Event3.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 3',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '2207899',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 4',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '4588551',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 5',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '3190650',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/tugAWar_bk.png',
+          img_src_color: './assets/images/galleria/eventos/color/tugAWar.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 6',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '2985797',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 7',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '1186776',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 8',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '2931160',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 9',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '5009953',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 10',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '6982182',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/image_placeholder-min.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 11',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+        {
+          link_id: '1862835',
+          source: 'image',
+          img_src_bk:
+            './assets/images/galleria/eventos/blackAndWhite/teambuilding2_bk.png',
+          img_src_color:
+            './assets/images/galleria/eventos/color/teambuilding2.png',
+          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          event_name: 'El Evento 12',
+          event_info:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+        },
+      ],
+      activities: [
+        {
+          media_id: 'eventos',
+          media_link: '',
+          media_src: '',
+          media_alt: '',
+          media_cap: '',
+          gallery_id: 'eventos_gallery',
+          story_id: 'event_story',
+          story_content_id: 'event_story_content',
+        },
+        {
+          media_id: 'centro_recreacional',
+          media_link: '',
+          media_src: '',
+          media_alt: '',
+          media_cap: '',
+          gallery_id: 'event_gallery',
+          story_id: 'recreational_center',
+          story_content_id: 'recreational_center_content',
+        },
+      ],
+    },
+  },
+  {
     tenis: {
-      h6: 'El <b>Club Los Paltos</b> proporciona un entorno en la comuna de Lampa donde las personas pueden disfrutar de actividades deportivas en un lugar encantador, equipado con instalaciones de primera calidad para asegurar que la experiencia sea lo más placentera y segura posible. Nuestras canchas de tenis son reconocidas a nivel regional por ser de las mejores, con superficies completamente niveladas y una abundante capa de arcilla que hace que jugar sea aún más agradable y cómodo. <br /><br /><section id="seOfreceTenis"><div><b>El Club Los Paltos ofrece las siguientes instalaciones y servicios:</b><p>+ Alquiler de cancha de tenis construida con una gran cantidad de arcilla.</p><p>+ Cómodas instalaciones de servicios higiénicos para hombres y mujeres.</p><p>+ Classes de tenis <em>(optativo con costo adicional)</em>.</p><br /><b>Las tarifas para el alquiler de cancha son las siguientes:</b><br /><p class="header">Durante la semana, Lunes a Viernes</p><p>+ de 8 a.m. a 1 p.m., $5000 por hora; </p><p>+ de 1 p.m. a 6 p.m., $6000 por hora; </p><p>+ de 7 p.m. a 9 p.m., $9000 por hora. </p><p class="header">Los fines de semana</p><p>+ de 8 a.m. a 10 p.m., $7000 por hora. </p><p>Además, se imparten <b>clases de tenis</b> a un costo de $15,000 por hora.</p></section><br />Estamos abiertos para desde Lunes a Domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario.<br /> *No se provee máquina de encordar o máquina lanza pelotas. Proporcionamos estacionamiento privado.<br /><button id="tenis" class="secondary small" type="button" onclick="toInstructor();">Conoscan Al Instructor </button>',
+      h6: 'El <b>Club Los Paltos</b> proporciona un entorno en la comuna de Lampa donde las personas pueden disfrutar de actividades deportivas en un lugar encantador, equipado con instalaciones de primera calidad para asegurar que la experiencia sea lo más placentera y segura posible. Nuestras canchas de tenis son reconocidas a nivel regional por ser de las mejores, con superficies completamente niveladas y una abundante capa de arcilla que hace que jugar sea aún más agradable y cómodo. <br /><br /><section id="seOfreceTenis"><div><b>El Club Los Paltos ofrece las siguientes instalaciones y servicios:</b><p>+ Alquiler de cancha de tenis construida con una gran cantidad de arcilla.</p><p>+ Cómodas instalaciones de servicios higiénicos para hombres y mujeres.</p><p>+ Classes de tenis <em>(optativo con costo adicional)</em>.</p><br /><b>Las tarifas para el alquiler de cancha son las siguientes:</b><br /><p class="header">Durante la semana, Lunes a Viernes</p><p>+ de 8 a.m. a 1 p.m., $5000 por hora; </p><p>+ de 1 p.m. a 6 p.m., $6000 por hora; </p><p>+ de 7 p.m. a 9 p.m., $9000 por hora. </p><p class="header">Los fines de semana</p><p>+ de 8 a.m. a 10 p.m., $7000 por hora. </p><p>Además, se imparten <b>clases de tenis</b> a un costo de $15,000 por hora.</p></section><br />Estamos abiertos para desde Lunes a Domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario.<br /> *No se provee máquina de encordar o máquina lanza pelotas. Proporcionamos estacionamiento privado.<br /><br /><button id="tenis" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Instructor </button>',
       instructor: [
         {
           link_id: '5587922',
@@ -533,6 +577,16 @@ var gallery = [
           story_id: 'tenis_story',
           story_content_id: 'tenis_story_content',
         },
+        {
+          media_id: 'tenis_instructor',
+          media_link: '',
+          media_src: '',
+          media_alt: '',
+          media_cap: '',
+          gallery_id: 'tenisInstructor_gallery',
+          story_id: 'tenisInstructor_story',
+          story_content_id: 'tenisInstructor_story_content',
+        },
       ],
     },
   },
@@ -635,27 +689,36 @@ var gallery = [
       activities: [
         {
           media_id: 'padel',
-          media_link: '/',
-          media_src: './assets/images/actividades/paddeling_bk.png',
-          media_alt:
-            'black and white 2of3 picture of an event celebrated in club los paltos',
-          media_cap: 'PADEL',
+          media_link: '',
+          media_src: '',
+          media_alt: '',
+          media_cap: '',
           gallery_id: 'padel_gallery',
           story_id: 'padel_story',
           story_content_id: 'padel_story_content',
+        },
+        {
+          media_id: '',
+          media_link: '',
+          media_src: '',
+          media_alt: '',
+          media_cap: '',
+          gallery_id: '',
+          story_id: '',
+          story_content_id: '',
         },
       ],
     },
   },
   {
     yoga: {
-      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. Proporcionamos estacionamiento privado.<br /><button id="yoga" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al La Instructora</button>',
+      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. Proporcionamos estacionamiento privado.<br /><br /><button id="yoga" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Instructor</button>',
       instructor: [
         {
           link_id: '5647922',
           source: 'image',
           img_src_color:
-            './assets/images/galleria/yoga/image_placeholder-min.png',
+            'https://www.instagram.com/reel/CdJVUtqgCcV/embed/?autoplay=1&loop=1',
           img_alt: 'video de yoga',
           event_name: 'Rocio Piña',
           event_info:
@@ -762,15 +825,38 @@ var gallery = [
           story_id: 'yoga_story',
           story_content_id: 'yoga_story_content',
         },
+        {
+          media_id: 'yoga_instructor',
+          media_link: '',
+          media_src: '',
+          media_alt: '',
+          media_cap: '',
+          gallery_id: 'yogaInstructor_gallery',
+          story_id: 'yogaInstructor_story',
+          story_content_id: 'yogaInstructor_story_content',
+        },
       ],
     },
   },
   {
     torneos_de_adultos: {
-      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /><button id="torneo" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Instructor </button>',
+      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /><button id="torneo" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Organizador </button>',
+      instructor: [
+        {
+          link_id: '5556722',
+          source: 'video',
+          img_src_color:
+            'https://www.instagram.com/reel/CdJVUtqgCcV/embed/?autoplay=1&loop=1',
+          img_alt: 'video del tenis',
+          event_name: 'Diego Piña',
+          event_info:
+            ' He estado vinculado al deporte toda mi vida. Mi padre me introdujo al tenis desde temprana edad, llevándonos siempre a diversos clubes con diferentes entrenadores para perfeccionar la técnica. Esta experiencia me ha permitido desarrollar un enfoque metodológico que facilita tanto el aprendizaje efectivo como el respeto por el ritmo individual de cada persona, validando cada fase del proceso de aprendizaje. Me encantaría poder ayudar a otros a mejorar su juego.',
+        },
+      ],
       list: [
         {
           link_id: '5564122',
+          source: 'image',
           img_src_bk: './assets/images/galleria/torneo/tournament_bk.jpeg',
           img_src_color: './assets/images/galleria/torneo/tournament.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
@@ -780,6 +866,7 @@ var gallery = [
         },
         {
           link_id: '5516395',
+          source: 'image',
           img_src_bk: './assets/images/galleria/torneo/categoria_C-bk.jpeg',
           img_src_color: './assets/images/galleria/torneo/categoria_C.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
@@ -789,6 +876,7 @@ var gallery = [
         },
         {
           link_id: '464724',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
@@ -800,6 +888,7 @@ var gallery = [
         },
         {
           link_id: '723250',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
@@ -811,6 +900,7 @@ var gallery = [
         },
         {
           link_id: '1285519',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
@@ -822,6 +912,7 @@ var gallery = [
         },
         {
           link_id: '9953363',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
@@ -833,6 +924,7 @@ var gallery = [
         },
         {
           link_id: '7188566',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
@@ -844,6 +936,7 @@ var gallery = [
         },
         {
           link_id: '5509214',
+          source: 'image',
           img_src_bk:
             './assets/images/galleria/torneo/image_placeholder-min.png',
           img_src_color:
@@ -856,15 +949,25 @@ var gallery = [
       ],
       activities: [
         {
-          media_id: 'yoga',
+          media_id: 'torneoAdultos',
           media_link: '/',
           media_src: './assets/images/actividades/outdoor_yoga-bk.jpeg',
           media_alt:
             'black and white 3of3 picture of an event celebrated in club los paltos',
           media_cap: 'YOGA',
-          gallery_id: 'yoga_gallery',
-          story_id: 'yoga_story',
-          story_content_id: 'yoga_story_content',
+          gallery_id: 'torneo_gallery',
+          story_id: 'torneos_story',
+          story_content_id: 'torneos_story_content',
+        },
+        {
+          media_id: 'torneo_organizer',
+          media_link: '',
+          media_src: '',
+          media_alt: '',
+          media_cap: '',
+          gallery_id: 'torneoOrganizer_gallery',
+          story_id: 'torneoOrganizer_story',
+          story_content_id: 'torneoOrganizer_story_content',
         },
       ],
     },

@@ -67,6 +67,8 @@ function extendMenu() {
 }
 //display grid data on Events, activities(tenis, yoga, padek)
 function displayData(e) {
+  console.log('displayData ');
+  console.log('e: ', e);
   var eventStory = document.getElementById('event_story');
   var tenisStory = document.getElementById('tenis_story');
   var padelStory = document.getElementById('padel_story');
@@ -81,7 +83,8 @@ function displayData(e) {
   var page = relativePaths.pop();
   const xId = window.location.href.split('=');
   var activityId = xId.pop();
-  // console.log('page: ', page);
+
+  console.log(page);
 
   if (page == 'acontecimientos.html') {
     displayGallery = eventStory;
@@ -231,8 +234,8 @@ function displayData(e) {
       main.list[eventitem].img_alt +
       '"> ';
   }
-  open += '</figure><h3>' + main.list[eventitem].event_name + '</h3>';
-  open += '<p>' + main.list[eventitem].event_info + '</p>';
+  open += '</figure><div><h3>' + main.list[eventitem].event_name + '</h3>';
+  open += '<p>' + main.list[eventitem].event_info + '</p></div>';
 
   document.getElementById(contentId).innerHTML = open;
 }
@@ -281,26 +284,71 @@ function displayNinoTorneos(e) {
 
   document.getElementById('torneos_de_ninos_story_content').innerHTML = open;
 }
-function closeData(displayGallery) {
+function closeData(e) {
+  console.log('e: ', e);
+  var id = e;
   var eventStory = document.getElementById('event_story');
+  var centroRecreacion = document.getElementById('recreational_center');
   var tenisStory = document.getElementById('tenis_story');
   var padelStory = document.getElementById('padel_story');
   var yogaStory = document.getElementById('yoga_story');
   var torneosStory = document.getElementById('torneos_story');
-  var torneosNinosStory = document.getElementById('torneos_de_ninos_story');
+  var tenisInsStory = document.getElementById('tenisInstructor_story');
+  var yogaInsStory = document.getElementById('yogaInstructor_story');
+  var torneosCoorStory = document.getElementById('torneoOrganizer_story');
   var displayGallery;
 
-  if (page == 'acontecimientos.html') {
+  console.log('page: ', page);
+  console.log('activityId: ', activityId);
+  console.log('id: ', id);
+  console.log('here1');
+
+  if (page == 'acontecimientos.html' && id == 'eventos') {
+    //events
     displayGallery = eventStory;
-  } else if (page == 'actividades.html' && activityId == 'tenis') {
+  } else if (page == 'acontecimientos.html') {
+    //centro recreacion
+    displayGallery = centroRecreacion;
+  } else if (
+    //tenis
+    page == 'actividades.html' &&
+    activityId == 'tenis' &&
+    id == 'tenis'
+  ) {
     displayGallery = tenisStory;
-  } else if (page == 'actividades.html' && activityId == 'padel') {
-    displayGallery = padelStory;
-  } else if (page == 'actividades.html' && activityId == 'yoga') {
+  } else if (
+    //yoga
+    page == 'actividades.html' &&
+    activityId == 'yoga' &&
+    id == 'yoga'
+  ) {
     displayGallery = yogaStory;
+  } else if (
+    //tenis instructor
+    page == 'actividades.html' &&
+    activityId == 'tenis' &&
+    id == 'tenis_instructor'
+  ) {
+    displayGallery = tenisInsStory;
+  } else if (
+    //yoga instructor
+    page == 'actividades.html' &&
+    activityId == 'yoga' &&
+    id == 'yoga_instructor'
+  ) {
+    displayGallery = yogaInsStory;
+  } else if (page == 'actividades.html' && activityId == 'padel') {
+    //padel
+    displayGallery = padelStory;
+  } else if (page == 'torneos.html' && id == 'torneo_organizer') {
+    //events
+    displayGallery = torneosCoorStory;
   } else if (page == 'torneos.html') {
+    //centro recreacion
     displayGallery = torneosStory;
   }
+
+  //console.log(displayGallery);
 
   if (displayGallery.style.display == 'flex') {
     displayGallery.style.display = 'none';
@@ -392,43 +440,48 @@ function toTeams() {
 }
 function toInstructor(e) {
   var id = e;
+  var displayGallery;
 
-  const relativePaths = window.location.pathname.split('/');
-  var page = relativePaths.pop();
-  const xId = window.location.href.split('=');
-  var activityId = xId.pop();
-  // console.log('page: ', page);
+  var tenisInsStory = document.getElementById('tenisInstructor_story');
+  var yogaInsStory = document.getElementById('yogaInstructor_story');
+  var torneosCoorStory = document.getElementById('torneoOrganizer_story');
+  var centroRecreacion = document.getElementById('recreational_center');
 
-  //neocities
-  if (activityId == 'tenis') {
-    contentId = 'instruct_story_content';
-    index = 2;
+  console.log('id: ', id);
+
+  if (id == 'tenis') {
+    contentId = 'tenisInstructor_story_content';
+    displayGallery = tenisInsStory;
     main = gallery[2].tenis;
-  } else if (activityId == 'yoga') {
-    displayGallery = yogaStory;
-    contentId = 'instruct_story_content';
-    index = 4;
-    main = gallery[2].tenis;
-  } else if (page == 'torneos') {
-    contentId = 'instruct_story_content';
-    index = 2;
-    main = gallery[2].tenis;
+  } else if (id == 'yoga') {
+    displayGallery = yogaInsStory;
+    contentId = 'yogaInstructor_story_content';
+    main = gallery[4].yoga;
+  } else if (id == 'torneo') {
+    contentId = 'torneoOrganizer_story_content';
+    displayGallery = torneosCoorStory;
+    main = gallery[5].torneos_de_adultos;
+  } else if (id == 'centro') {
+    contentId = 'recreational_center_content';
+    displayGallery = centroRecreacion;
+    main = gallery[1].eventos;
   }
 
-  console.log(gallery[2].tenis.instructor[0]);
-  console.log(gallery[2].tenis.instructor[0].source);
-  console.log(gallery[2].tenis.instructor[0].img_src_color);
+  if (displayGallery.style.display == 'none') {
+    displayGallery.style.display = 'flex';
+  } else {
+    displayGallery.style.display = 'none';
+  } //end of if else conditionals
 
   var open = '<figure>';
+  open += '<div class=iframeContainer">';
   open +=
-    '<div style="border: 3px solid white; overflow: hidden; margin: 15px auto; max-width: 736px;">';
-  open +=
-    '<iframe  scrolling="no"  src="' +
+    '<iframe  class=iframeVideo" scrolling="no"  src="' +
     main.instructor[0].img_src_color +
-    '" allow="autoplay; fullscreen" frameborder="0" style="border: 0px none; margin-left: -185px; height: 859px; margin-top: -233px; width: 926px;"></iframe>';
+    '" allow="autoplay; fullscreen" frameborder="0" ></iframe>';
   open += '</div>';
-  open += '</figure><h3>' + main.instructor[0].event_name + '</h3>';
-  open += '<p>' + main.instructor[0].event_info + '</p>';
+  open += '</figure><div><h3>' + main.instructor[0].event_name + '</h3>';
+  open += '<p>' + main.instructor[0].event_info + '</p></div>';
 
   document.getElementById(contentId).innerHTML = open;
 }
