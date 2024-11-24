@@ -379,7 +379,7 @@ section#actividades > h6 {
   letter-spacing: 0.5px;
 }
 section#actividades ul li figure {
-  width: auto;
+  width: 100%;
   height: 250px;
   min-height: 165px;
   margin: 0;
@@ -437,6 +437,9 @@ section#tour ul li:nth-last-child(2) figure img {
 section#tour {
   width: 100vw;
   position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   height: 300px;
   letter-spacing: 0.5px;
   max-width: 1800px;
@@ -683,6 +686,9 @@ footer section#socialM ul li a figure {
   /* section#actividades ul {
     margin: 0 auto 80px auto;
   } */
+  section#tour {
+    bottom: -400px;
+  }
   section#tour > h4 {
     width: 88%;
     font-size: xx-large;
@@ -696,7 +702,41 @@ footer section#socialM ul li a figure {
     margin: 0 auto 80px auto;
   }
   footer {
-    height: 188px;
+    height: 170px;
+  }
+}
+@media screen and (min-width: 405px) and (max-width: 609px) {
+  section#actividades ul li figure {
+    width: auto;
+  }
+  section#actividades ul li:nth-child(4) figure a img,
+  section#actividades ul li:last-child figcaption {
+    width: 100vw;
+  }
+  section#actividades ul li:last-child figure a img {
+    height: 350px;
+  }
+  section#actividades ul > *:nth-child(3n-1) {
+    justify-self: center;
+    text-align: center;
+  }
+  section#actividades ul > *:nth-child(3n) {
+    justify-self: end;
+    text-align: right;
+  }
+  section#actividades ul > *:nth-child(3n-1):nth-last-of-type(1) {
+    grid-column: span 2;
+  }
+  section#actividades ul > *:nth-child(3n-2):nth-last-of-type(1) {
+    grid-column: span 3;
+  }
+  section#tour {
+    bottom: -380px;
+  }
+  footer {
+    height: 200px;
+    position: absolute;
+    bottom: -650px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -789,10 +829,9 @@ footer section#socialM ul li a figure {
   }
   section#actividades {
     top: 25px;
-    height: 915px;
+    height: 495px;
   }
   section#actividades > h6 {
-    text-indent: 50px;
     margin: 0 auto 20px auto;
     width: 90%;
   }
@@ -859,35 +898,15 @@ footer section#socialM ul li a figure {
     margin-top: -14px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  section#actividades ul li:nth-child(4) figure a img,
-  section#actividades ul li:last-child figcaption {
-    width: 100vw;
-  }
-  section#actividades ul li:last-child figure a img {
-    height: 350px;
-  }
-  section#actividades ul > *:nth-child(3n-1) {
-    justify-self: center;
-    text-align: center;
-  }
-  section#actividades ul > *:nth-child(3n) {
-    justify-self: end;
-    text-align: right;
-  }
-  section#actividades ul > *:nth-child(3n-1):nth-last-of-type(1) {
-    grid-column: span 2;
-  }
-  section#actividades ul > *:nth-child(3n-2):nth-last-of-type(1) {
-    grid-column: span 3;
-  }
-}
 @media screen and (min-width: 992px) {
   body > header#top figure img {
     filter: drop-shadow(2px 1px 2px var(--shadow));
   }
   nav ul {
     align-items: center;
+  }
+  body > header nav#navList {
+    max-width: 600px;
   }
   figure.wave img {
     top: -100px;
@@ -917,10 +936,10 @@ footer section#socialM ul li a figure {
   /*-----------------------footer ----*/
   figure.footer-wave {
     left: -251px;
-    bottom: -530px;
+    bottom: -550px;
   }
   footer {
-    bottom: -470px;
+    bottom: -490px;
   }
   footer div {
     align-items: start;
@@ -1039,7 +1058,7 @@ footer section#socialM ul li a figure {
   }
   section#actividades > h6 {
     width: 82%;
-    max-width: 1800px;
+    max-width: 992px;
   }
   footer section:first-child > div {
     width: 72%;

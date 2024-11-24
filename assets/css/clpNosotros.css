@@ -6,7 +6,7 @@ figure.wave img {
 }
 body div#body {
   z-index: -1;
-  top: 130px;
+  top: 110px;
 }
 main {
   top: 20px;
@@ -30,7 +30,7 @@ section#actividades {
   top: 0;
   position: relative;
   height: auto;
-  margin-bottom: 185px;
+  margin-bottom: 310px;
 }
 section#actividades h4 {
   width: 90%;
@@ -43,12 +43,19 @@ section#actividades h4 {
 section#actividades > h6 {
   margin: 0 auto 25px auto;
   text-indent: unset;
+  top: -35px;
+  float: right;
 }
 section#actividades ul {
   margin: 0 auto 0 auto;
 }
 footer {
   bottom: -35px;
+}
+@media screen and (min-width: 500px) and (max-width: 575px) {
+  body div#body {
+    top: 0;
+  }
 }
 @media screen and (min-width: 576px) {
   figure.wave h1 {
@@ -93,17 +100,22 @@ footer {
     max-width: 450px;
     margin: 0 auto;
   }
-
+  section#actividades > h6 {
+    margin: 0 auto 25px auto;
+    text-indent: unset;
+    top: -35px;
+    float: unset;
+  }
   section#actividades {
     top: 35px;
-    height: 1065px;
+    height: 465px;
     margin-bottom: 0;
   }
   figure.footer-wave {
-    bottom: -175px;
+    bottom: -350px;
   }
   footer {
-    bottom: -120px;
+    bottom: -288px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -119,10 +131,10 @@ footer {
   section#actividades {
     top: 25px;
     padding-top: 15px;
-    height: 690px;
+    height: 650px;
   }
   figure.footer-wave {
-    bottom: -145px;
+    bottom: -150px;
   }
   footer {
     bottom: -90px;
@@ -138,7 +150,7 @@ footer {
   }
   section#actividades {
     top: 25px;
-    height: 615px;
+    height: 590px;
   }
   figure.footer-wave {
     bottom: -157px;

@@ -1,6 +1,5 @@
 figure.wave h1#activityHeading:has(.tenis),
-figure.wave h1#activityHeading:has(.padel),
-figure.wave h1#activityHeading:has(.yoga) {
+figure.wave h1#activityHeading:has(.padel) {
   height: 100px;
   top: 0;
 }
@@ -10,7 +9,6 @@ figure.wave h1.torneo {
 }
 body:has(.tenis) div#body,
 body:has(.padel) div#body,
-body:has(.yoga) div#body,
 body:has(.torneo) div#body {
   top: 50px;
 }
@@ -75,8 +73,7 @@ body:has(.torneo) div#body footer section:last-child {
 }
 @media screen and (min-width: 576px) {
   body:has(.tenis) div#body,
-  body:has(.padel) div#body,
-  body:has(.yoga) div#body {
+  body:has(.padel) div#body {
     top: 0;
   }
   body:has(.torneo) div#body > figure:not(figure.footer-wave) {
@@ -109,16 +106,14 @@ body:has(.torneo) div#body footer section:last-child {
     width: 90%;
   }
   body:has(.tenis) div#body,
-  body:has(.padel) div#body,
-  body:has(.yoga) div#body {
+  body:has(.padel) div#body {
     top: 215px;
   }
   body:has(.torneo) div#body {
     top: 290px;
   }
   figure.wave h1#activityHeading:has(.tenis),
-  figure.wave h1#activityHeading:has(.padel),
-  figure.wave h1#activityHeading:has(.yoga) {
+  figure.wave h1#activityHeading:has(.padel) {
     top: -15px;
   }
   body:has(.torneo) div#body section#date {
@@ -128,12 +123,11 @@ body:has(.torneo) div#body footer section:last-child {
   body:has(.torneo) div#body section#actividades h4 {
     margin-left: 0;
   }
-  body:has(.tenis) div#body section#tour,
-  body:has(.padel) div#body section#tour,
-  body:has(.yoga) div#body section#tour,
+
+  /* body:has(.padel) div#body section#tour,
   body:has(.torneo) div#body section#tour {
     bottom: -335px;
-  }
+  } */
   body:has(.torneo) div#body > figure:not(figure.footer-wave) {
     padding: 0 5%;
   }
@@ -174,13 +168,12 @@ body:has(.torneo) div#body footer section:last-child {
   body:has(.torneo) div#body section main h6 {
     margin: -35px auto 50px auto;
   }
-  body:has(.tenis) div#body section#actividades,
-  body:has(.padel) div#body section#actividades,
-  body:has(.yoga) div#body section#actividades {
+  /* body:has(.tenis) div#body section#actividades,
+  body:has(.padel) div#body section#actividades {
     top: 0;
     padding: 0;
     height: 550px;
-  }
+  } */
   body:has(.torneo) div#body section#actividades {
     height: 490px;
   }
@@ -188,20 +181,18 @@ body:has(.torneo) div#body footer section:last-child {
     bottom: -370px;
     height: 335px;
   }
-  body:has(.tenis) div#body figure.footer-wave,
-  body:has(.padel) div#body figure.footer-wave,
-  body:has(.yoga) div#body figure.footer-wave {
+  /* body:has(.tenis) div#body figure.footer-wave,
+  body:has(.padel) div#body figure.footer-wave {
     bottom: -445px;
-  }
+  } */
   body:has(.torneo) div#body figure.footer-wave {
     left: -200px;
     bottom: -496px;
   }
-  body:has(.tenis) div#body footer,
-  body:has(.padel) div#body footer,
-  body:has(.yoga) div#body footer {
+  /* body:has(.tenis) div#body footer,
+  body:has(.padel) div#body footer {
     bottom: -403px;
-  }
+  } */
   body:has(.torneo) div#body footer {
     bottom: -450px;
   }
@@ -220,8 +211,7 @@ body:has(.torneo) div#body footer section:last-child {
     height: 285px;
   }
   body:has(.tenis) div#body section#actividades,
-  body:has(.padel) div#body section#actividades,
-  body:has(.yoga) div#body section#actividades {
+  body:has(.padel) div#body section#actividades {
     padding: 0;
     height: 515px;
   }
@@ -230,8 +220,7 @@ body:has(.torneo) div#body footer section:last-child {
     margin-bottom: -50px;
   }
   body:has(.tenis) div#body section#tour,
-  body:has(.padel) div#body section#tour,
-  body:has(.yoga) div#body section#tour {
+  body:has(.padel) div#body section#tour {
     height: 300px;
   }
   body:has(.torneo) div#body figure.footer-wave {
@@ -247,53 +236,54 @@ body:has(.torneo) div#body footer section:last-child {
     top: 180px;
   }
   body:has(.tenis) div#body,
-  body:has(.padel) div#body,
-  body:has(.yoga) div#body {
+  body:has(.padel) div#body {
     top: 325px;
   }
   body:has(.torneo) div#body {
     top: 375px;
   }
-  body:has(.tenis) div#body section#actividades,
-  body:has(.padel) div#body section#actividades,
-  body:has(.yoga) div#body section#actividades {
+  /* body:has(.tenis) div#body section#actividades,
+  body:has(.padel) div#body section#actividades {
     height: 475px;
-  }
+  } */
   body:has(.torneo) div#body section#date {
     top: 0;
     margin-bottom: 0;
   }
   body:has(.tenis) div#body section#tour,
-  body:has(.padel) div#body section#tour,
-  body:has(.yoga) div#body section#tour {
+  body:has(.padel) div#body section#tour {
     height: 280px;
   }
   body:has(.torneo) div#body section#tour {
     bottom: -350px;
   }
   body:has(.tenis) div#body figure.footer-wave,
-  body:has(.padel) div#body figure.footer-wave,
-  body:has(.yoga) div#body figure.footer-wave {
-    bottom: -465px;
+  body:has(.padel) div#body figure.footer-wave {
+    bottom: -490px;
     left: -65px;
   }
   body:has(.torneo) div#body figure.footer-wave {
     left: -100px;
     bottom: -475px;
   }
+  body:has(.tenis) div#body footer {
+    bottom: -435px;
+  }
   body:has(.torneo) div#body footer {
     bottom: -430px;
+  }
+  footer {
+    bottom: -447px;
   }
 }
 @media screen and (min-width: 1600px) {
   figure.wave h1.torneo {
     top: 170px;
   }
-  body:has(.tenis) div#body footer,
-  body:has(.padel) div#body footer,
-  body:has(.yoga) div#body footer {
+  /* body:has(.tenis) div#body footer,
+  body:has(.padel) div#body footer {
     bottom: -412px;
-  }
+  } */
 }
 @media screen and (min-width: 1600px) and (max-width: 2182px) {
   main.grid ul > *:nth-child(9n-1) {
@@ -322,8 +312,7 @@ body:has(.torneo) div#body footer section:last-child {
     height: 554px;
   }
   body:has(.tenis) div#body section#tour,
-  body:has(.padel) div#body section#tour,
-  body:has(.yoga) div#body section#tour {
+  body:has(.padel) div#body section#tour {
     height: 230px;
   }
   body:has(.torneo) div#body section#tour {
@@ -334,6 +323,14 @@ body:has(.torneo) div#body footer section:last-child {
   }
   body:has(.torneo) div#body footer {
     bottom: -355px;
+  }
+  body:has(.tenis) div#body figure.footer-wave,
+  body:has(.padel) div#body figure.footer-wave {
+    bottom: -530px;
+  }
+  body:has(.tenis) div#body footer,
+  body:has(.padel) div#body footer {
+    bottom: -480px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -348,8 +345,7 @@ body:has(.torneo) div#body footer section:last-child {
     width: 75%;
   }
   body:has(.tenis) div#body section#tour,
-  body:has(.padel) div#body section#tour,
-  body:has(.yoga) div#body section#tour {
+  body:has(.padel) div#body section#tour {
     height: 210px;
   }
   figure.wave h1.torneo {

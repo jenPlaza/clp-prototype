@@ -65,14 +65,13 @@ function extendMenu() {
     navshow[i].classList.add('show');
   }
 }
-//display grid data on Events, activities(tenis, yoga, padek)
+//display grid data on Events, activities(tenis, padel)
 function displayData(e) {
   console.log('displayData ');
   console.log('e: ', e);
   var eventStory = document.getElementById('event_story');
   var tenisStory = document.getElementById('tenis_story');
   var padelStory = document.getElementById('padel_story');
-  var yogaStory = document.getElementById('yoga_story');
   var torneosStory = document.getElementById('torneos_story');
   var displayGallery;
   var e;
@@ -163,29 +162,6 @@ function displayData(e) {
     } else if (e === '5509214') {
       eventitem = 7;
     }
-  } else if (page == 'actividades.html' && activityId == 'yoga') {
-    displayGallery = yogaStory;
-    contentId = 'yoga_story_content';
-    index = 4;
-    main = gallery[index].yoga;
-
-    if (e === '5564122') {
-      eventitem = 0;
-    } else if (e === '5516395') {
-      eventitem = 1;
-    } else if (e === '464724') {
-      eventitem = 2;
-    } else if (e === '723250') {
-      eventitem = 3;
-    } else if (e === '1285519') {
-      eventitem = 4;
-    } else if (e === '9953363') {
-      eventitem = 5;
-    } else if (e === '7188566') {
-      eventitem = 6;
-    } else if (e === '5509214') {
-      eventitem = 7;
-    }
   } else if (page == 'torneos.html') {
     displayGallery = torneosStory;
     contentId = 'torneos_story_content';
@@ -239,51 +215,7 @@ function displayData(e) {
 
   document.getElementById(contentId).innerHTML = open;
 }
-function displayNinoTorneos(e) {
-  var torneosNinosStory = document.getElementById('torneos_de_ninos_story');
-  var contentId = 'torneos_de_ninos_content';
-  index = 5;
-  main = gallery[index].torneos_de_ninos;
 
-  if (e === '5564122') {
-    eventitem = 0;
-  } else if (e === '5516395') {
-    eventitem = 1;
-  } else if (e === '464724') {
-    eventitem = 2;
-  } else if (e === '723250') {
-    eventitem = 3;
-  } else if (e === '1285519') {
-    eventitem = 4;
-  } else if (e === '9953363') {
-    eventitem = 5;
-  } else if (e === '7188566') {
-    eventitem = 6;
-  } else if (e === '5509214') {
-    eventitem = 7;
-  } else {
-    eventitem = 8;
-  }
-
-  if (torneosNinosStory.style.display == 'none') {
-    torneosNinosStory.style.display = 'flex';
-  } else {
-    torneosNinosStory.style.display = 'none';
-  } //end of if else conditionals
-
-  var open = '<figure>';
-  open +=
-    '<img src="' +
-    gallery[6].torneos_de_ninos.list[eventitem].img_src_color +
-    '" alt="' +
-    gallery[6].torneos_de_ninos.list[6].img_alt +
-    '"> ';
-  open +=
-    '</figure><h3>' + gallery[6].torneos_de_ninos.list[6].event_name + '</h3>';
-  open += '<p>' + gallery[6].torneos_de_ninos.list[6].event_info + '</p>';
-
-  document.getElementById('torneos_de_ninos_story_content').innerHTML = open;
-}
 function closeData(e) {
   console.log('e: ', e);
   var id = e;
@@ -291,17 +223,14 @@ function closeData(e) {
   var centroRecreacion = document.getElementById('recreational_center');
   var tenisStory = document.getElementById('tenis_story');
   var padelStory = document.getElementById('padel_story');
-  var yogaStory = document.getElementById('yoga_story');
   var torneosStory = document.getElementById('torneos_story');
   var tenisInsStory = document.getElementById('tenisInstructor_story');
-  var yogaInsStory = document.getElementById('yogaInstructor_story');
   var torneosCoorStory = document.getElementById('torneoOrganizer_story');
   var displayGallery;
 
-  console.log('page: ', page);
-  console.log('activityId: ', activityId);
-  console.log('id: ', id);
-  console.log('here1');
+  // console.log('page: ', page);
+  // console.log('activityId: ', activityId);
+  // console.log('id: ', id);
 
   if (page == 'acontecimientos.html' && id == 'eventos') {
     //events
@@ -317,26 +246,12 @@ function closeData(e) {
   ) {
     displayGallery = tenisStory;
   } else if (
-    //yoga
-    page == 'actividades.html' &&
-    activityId == 'yoga' &&
-    id == 'yoga'
-  ) {
-    displayGallery = yogaStory;
-  } else if (
     //tenis instructor
     page == 'actividades.html' &&
     activityId == 'tenis' &&
     id == 'tenis_instructor'
   ) {
     displayGallery = tenisInsStory;
-  } else if (
-    //yoga instructor
-    page == 'actividades.html' &&
-    activityId == 'yoga' &&
-    id == 'yoga_instructor'
-  ) {
-    displayGallery = yogaInsStory;
   } else if (page == 'actividades.html' && activityId == 'padel') {
     //padel
     displayGallery = padelStory;
@@ -354,12 +269,7 @@ function closeData(e) {
     displayGallery.style.display = 'none';
   }
 }
-function closeNinosData(displayGallery) {
-  var torneosNinosStory = document.getElementById('torneos_de_ninos_story');
-  if (torneosNinosStory.style.display == 'flex') {
-    torneosNinosStory.style.display = 'none';
-  }
-}
+
 function shortenMenu() {
   var navList = document.querySelector('.list');
   const navshow = document.getElementsByClassName('nav-link');
@@ -443,7 +353,6 @@ function toInstructor(e) {
   var displayGallery;
 
   var tenisInsStory = document.getElementById('tenisInstructor_story');
-  var yogaInsStory = document.getElementById('yogaInstructor_story');
   var torneosCoorStory = document.getElementById('torneoOrganizer_story');
   var centroRecreacion = document.getElementById('recreational_center');
 
@@ -453,10 +362,6 @@ function toInstructor(e) {
     contentId = 'tenisInstructor_story_content';
     displayGallery = tenisInsStory;
     main = gallery[2].tenis;
-  } else if (id == 'yoga') {
-    displayGallery = yogaInsStory;
-    contentId = 'yogaInstructor_story_content';
-    main = gallery[4].yoga;
   } else if (id == 'torneo') {
     contentId = 'torneoOrganizer_story_content';
     displayGallery = torneosCoorStory;
@@ -517,7 +422,7 @@ menu +=
 menu +=
   '<img src="./assets/images/icons/arrow-right-small-white.png" alt="white menu icon" width="16px" height="16px" class="nav-icon nav-open" onclick="extendMenu();" />';
 menu += '</li>';
-for (var h = 0; h < navigationArray.length - 5; h++) {
+for (var h = 0; h < navigationArray.length - 4; h++) {
   menu +=
     '<li><a href="' +
     navigationArray[h].link_href +
@@ -559,7 +464,7 @@ for (var h = 4; h < navigationArray.length - 2; h++) {
   menu += '</li>';
 }
 menu += '</ul></div></li>';
-for (var h = 7; h < navigationArray.length; h++) {
+for (var h = 6; h < navigationArray.length; h++) {
   menu +=
     '<li><a href="' +
     navigationArray[h].link_href +

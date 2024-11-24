@@ -99,26 +99,3 @@ newGrid +=
 newGrid += '</div></div>';
 
 document.getElementById(id).innerHTML = newGrid;
-
-function displayNinos() {
-  var ninosGrid =
-    '<h2 style="color:var(--secondary-color-text)">Para Los Niños</h2>';
-  ninosGrid += '<h6>' + gallery[6].torneos_de_ninos.h6 + '</h6>';
-  ninosGrid += '<ul>';
-  for (let i = 0; i < gallery[6].torneos_de_ninos.list.length; i++) {
-    ninosGrid +=
-      '<li><figure id="' +
-      gallery[6].torneos_de_ninos.list[i].link_id +
-      '" onclick="displayNinoTorneos(this.id);">';
-    ninosGrid +=
-      '<img src="' +
-      gallery[6].torneos_de_ninos.list[i].img_src_bk +
-      '" alt="' +
-      gallery[6].torneos_de_ninos.list[i].img_alt +
-      '" />';
-    ninosGrid += '</figure></li>';
-  }
-  ninosGrid += '</ul>';
-
-  document.getElementById('torneos_de_ninos_gallery').innerHTML = ninosGrid;
-}

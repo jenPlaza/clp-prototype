@@ -18,11 +18,6 @@ if (page == 'actividades.html' && activityId == 'tenis') {
   id = 'padel_gallery';
   heading = 'padel';
   click = 'displayData(this.id)';
-} else if (page == 'actividades.html' && activityId == 'yoga') {
-  main = gallery[4].yoga;
-  id = 'yoga_gallery';
-  heading = 'yoga';
-  click = 'displayData(this.id)';
 }
 
 var heading =
