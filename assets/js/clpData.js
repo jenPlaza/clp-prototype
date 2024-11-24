@@ -429,7 +429,7 @@ var gallery = [
   },
   {
     tenis: {
-      h6: 'El <b>Club Los Paltos</b> proporciona un entorno en la comuna de Lampa donde las personas pueden disfrutar de actividades deportivas en un lugar encantador, equipado con instalaciones de primera calidad para asegurar que la experiencia sea lo más placentera y segura posible. Nuestras canchas de tenis son reconocidas a nivel regional por ser de las mejores, con superficies completamente niveladas y una abundante capa de arcilla que hace que jugar sea aún más agradable y cómodo. <br /><br /><section id="seOfreceTenis"><div><b>El Club Los Paltos ofrece las siguientes instalaciones y servicios:</b><p>+ Alquiler de cancha de tenis construida con una gran cantidad de arcilla.</p><p>+ Cómodas instalaciones de servicios higiénicos para hombres y mujeres.</p><p>+ Classes de tenis <em>(optativo con costo adicional)</em>.</p><br /><b>Las tarifas para el alquiler de cancha son las siguientes:</b><br /><p class="header">Durante la semana, Lunes a Viernes</p><p>+ de 8 a.m. a 1 p.m., $5000 por hora; </p><p>+ de 1 p.m. a 6 p.m., $6000 por hora; </p><p>+ de 7 p.m. a 9 p.m., $9000 por hora. </p><p class="header">Los fines de semana</p><p>+ de 8 a.m. a 10 p.m., $7000 por hora. </p><p>Además, se imparten <b>clases de tenis</b> a un costo de $15,000 por hora.</p></section><br />Estamos abiertos para desde Lunes a Domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario.<br /> *No se provee máquina de encordar o máquina lanza pelotas. Proporcionamos estacionamiento privado.<br /><br /><button id="tenis" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Instructor </button>',
+      h6: 'El <b>Club Los Paltos</b> proporciona un entorno en la comuna de Lampa donde las personas pueden disfrutar de actividades deportivas en un lugar encantador, equipado con instalaciones de primera calidad para asegurar que la experiencia sea lo más placentera y segura posible. Nuestras canchas de tenis son reconocidas a nivel regional por ser de las mejores, con superficies completamente niveladas y una abundante capa de arcilla que hace que jugar sea aún más agradable y cómodo. <br /><br /><section id="seOfreceTenis"><div><b>El Club Los Paltos ofrece las siguientes instalaciones y servicios:</b><p>+ Alquiler de cancha de tenis construida con una gran cantidad de arcilla.</p><p>+ Cómodas instalaciones de servicios higiénicos para hombres y mujeres.</p><p>+ Classes de tenis <em>(optativo con costo adicional)</em>.</p><br /><b>Las tarifas para el alquiler de cancha son las siguientes:</b><br /><p class="header">Durante la semana, Lunes a Viernes</p><p>+ de 8 a.m. a 1 p.m., $5000 por hora; </p><p>+ de 1 p.m. a 6 p.m., $6000 por hora; </p><p>+ de 7 p.m. a 9 p.m., $9000 por hora. </p><p class="header">Los fines de semana</p><p>+ de 8 a.m. a 10 p.m., $7000 por hora. </p><p>Además, se imparten <b>clases de tenis</b> a un costo de $15,000 por hora.</p></section><br />Estamos abiertos desde Lunes a Domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario.<br /> *No se provee máquina de encordar o máquina lanza pelotas. Proporcionamos estacionamiento privado.<br /><br /><button id="tenis" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Instructor </button>',
       instructor: [
         {
           link_id: '5587922',
@@ -454,7 +454,7 @@ var gallery = [
           img_class: 'iframeVideoLandscape',
           event_name: 'Canchas Los Paltos',
           event_info:
-            ' Te gustaría aprender o mejorar tu técnica en el Tenis? En nuestro Club Deportivo los Paltos tenemos clases personalizadas para que perfecciones tu jugada. Encuentra tu equilibrio a través del deporte.',
+            '¿Te interesa aprender o perfeccionar tu técnica en el tenis? En el Club Deportivo Los Paltos ofrecemos clases personalizadas diseñadas para que mejores tu rendimiento en la cancha. Descubre el equilibrio y la energía que el deporte puede brindarte.',
         },
         {
           link_id: '5516395',
@@ -465,7 +465,7 @@ var gallery = [
           img_class: '',
           event_name: 'Un dia de Tenis',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            'Un día dedicado al tenis se convierte en mucho más que un simple deporte cuando lo compartes con tus seres queridos. Es una ocasión perfecta para disfrutar de la compañía de la familia, fortalecer lazos y crear recuerdos inolvidables, todo mientras se practica una actividad saludable y divertida.',
         },
         {
           link_id: '464724',
@@ -475,7 +475,7 @@ var gallery = [
           img_alt: 'foto de Diego Piña tirando al reves',
           img_class: '',
           event_name: 'Tiro al reves',
-          event_info: ' Tiro al reves...conoces tu technica',
+          event_info: '¿Tiro al revés...? ¿Conoces esta técnica?',
         },
         {
           link_id: '723250',
@@ -488,7 +488,7 @@ var gallery = [
           img_class: '',
           event_name: 'Canchas Los Paltos',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Esta es una fotografía tomada desde un dron que muestra las canchas de Los Paltos.',
         },
         {
           link_id: '1285519',
@@ -499,7 +499,7 @@ var gallery = [
           img_class: '',
           event_name: 'Canchas Los Paltos',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Actualmente hay canchas disponibles  para quienes deseen disfrutar de un buen juego. No importa si eres principiante o experto, esta es tu oportunidad para pasar un buen rato, ejercitarte y compartir momentos divertidos. No olvides reservar con anticipación y aprovechar al máximo el espacio. ¿Te animas a jugar?',
         },
         {
           link_id: '9953363',
@@ -511,7 +511,8 @@ var gallery = [
           img_alt: 'foto de 4 participando posando antes de u n juego de tenis',
           img_class: '',
           event_name: 'Partido entre amigos ',
-          event_info: ' Participantes de nuestro partido revancha.',
+          event_info:
+            ' Los participantes de nuestro esperado partido de revancha.',
         },
         {
           link_id: '7188566',
@@ -519,11 +520,10 @@ var gallery = [
           img_src_bk: './assets/images/galleria/torneo/tenis-1_bk.png',
           img_src_color:
             'https://www.instagram.com/reel/CgxtYo1AUYd/embed/?autoplay=1&loop=1',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          img_alt: 'video de un partido con Diego Piña',
           img_class: 'iframeVideoPortrait',
           event_name: 'Evento Tenis 2',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+          event_info: 'Un emocionante partido junto a Diego Piña.',
         },
         {
           link_id: '5509214',
@@ -565,7 +565,7 @@ var gallery = [
   },
   {
     padel: {
-      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br /><br /><section id="seOfreceTenis"><div><b>El Club Los Paltos ofrece las siguientes instalaciones y servicios:</b><p>+ Alquiler de cancha de padel</p><p>+ Cómodas instalaciones de servicios higiénicos para hombres y mujeres.</p></p><br /><b>Las tarifas para el alquiler de cancha son las siguientes:</b><br /><p class="header">Lunes a Domingo</p><p>+ de 8 a.m. a 6 p.m., $15000 por 1.5hrs; </p><p>+ de 6 p.m. a 10 p.m., $20000 por 1.5hrs; </p></section><br />Estamos abiertos para desde Lunes a Domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /> *No se provee máquina de encordar o máquina lanza pelotas. Proporcionamos estacionamiento privado.<br /><br />',
+      h6: 'Una sana dosis de competencia siempre resulta emocionante, especialmente cuando se comparte con amigos. Es en esos momentos donde la camaradería y el entusiasmo por superar límites se combinan para crear una experiencia verdaderamente enriquecedora. Competir con tus seres queridos no solo fortalece los lazos de amistad, sino que también nos impulsa a crecer, aprender y disfrutar cada paso del proceso. ¿Acaso hay una mejor forma de invertir el tiempo que inspirándonos unos a otros para convertirnos en nuestra mejor versión? La mezcla perfecta entre desafío y amistad aporta un toque especial que transforma cualquier actividad en algo mucho más significativo y divertido. Reúne a cuatro de tus mejores amigos o amigas y ven a disfrutar de las mejores canchas de pádel en Lampa. Reserva hoy!<br /><br /><section id="seOfreceTenis"><div><b>El Club Los Paltos ofrece las siguientes instalaciones y servicios:</b><p>+ Alquiler de cancha de padel</p><p>+ Cómodas instalaciones de servicios higiénicos para hombres y mujeres.</p><br /><b>Las tarifas para el alquiler de cancha son las siguientes:</b><br /><p class="header">Lunes a Domingo</p><p>+ de 8 a.m. a 6 p.m., $15000 por 1.5hrs; </p><p>+ de 6 p.m. a 10 p.m., $20000 por 1.5hrs; </p></section><br />Estamos abiertos desde Lunes a Domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /> *No se provee máquina de encordar o máquina lanza pelotas. Proporcionamos estacionamiento privado.<br /><br />',
       list: [
         {
           link_id: '5564122',
@@ -573,22 +573,23 @@ var gallery = [
           img_src_bk: './assets/images/galleria/padel/padelLosPaltos-bk.png',
           img_src_color:
             'https://www.instagram.com/reel/C6XD3igOPzj/embed/?autoplay=1&loop=1',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          img_alt: 'video mostrando las canchas Los Paltos',
           img_class: 'iframeVideoPortrait',
-          event_name: 'Evento Padel 3',
+          event_name: 'Canchas Padel Los Paltos',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            'Un paseo por las canchas de pádel en Los Paltos. Explorar las canchas de pádel en Los Paltos es una experiencia que combina deporte, naturaleza y un ambiente relajante. Este espacio no solo es ideal para los aficionados al pádel, sino también para quienes disfrutan de una caminata tranquila mientras observan los partidos o simplemente respiran aire fresco.',
         },
         {
           link_id: '5516395',
           source: 'image',
           img_src_bk: './assets/images/galleria/padel/padel-game-bk.jpeg',
           img_src_color: './assets/images/galleria/padel/padel-game.jpeg',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          img_alt:
+            'foto de una posada de amigos en las canchas de padel Los Paltos',
           img_class: '',
-          event_name: 'Evento Padel 1',
+          event_name: 'Entre Amigos',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            'Compartir una partida de pádel entre compañeros  siempre es una experiencia divertida y enriquecedora. Este deporte, que ha ganado gran popularidad en los últimos años, no solo es ideal para mantenerse en forma, sino que también fomenta la camaradería y el espíritu de equipo.',
         },
         {
           link_id: '464724',
@@ -600,18 +601,18 @@ var gallery = [
           img_class: 'iframeVideoPortrait',
           event_name: 'Establecimientos de padel',
           event_info:
-            ' Reserven hoy estas lindas canchas de padel. Ofrecemos > Estacionamiento privado > Camarines y baños > Área de descanso > Bebestibles y snacks.',
+            'Reserven hoy estas lindas canchas de padel. Ofrecemos > Estacionamiento privado > Camarines y baños > Área de descanso > Bebestibles y snacks.',
         },
         {
           link_id: '723250',
           source: 'image',
           img_src_bk: './assets/images/galleria/padel/padle-flyer-bk.png',
           img_src_color: './assets/images/galleria/padel/padle-flyer.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          img_alt: 'flyer del las canchas de padel Los Paltos',
           img_class: '',
-          event_name: 'Evento Padel 2',
+          event_name: 'Canchas de padel en Lampa',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            'Únete y disfruta de las mejores canchas de pádel en Lampa.',
         },
         {
           link_id: '1285519',
@@ -623,7 +624,8 @@ var gallery = [
           img_alt: 'Padel nocturno, de día domingo.',
           img_class: '',
           event_name: 'Americano nocturno en club de pádel los paltos',
-          event_info: ' Una sana competencia entre amigos con Eduardo Piña',
+          event_info:
+            'Una competencia amistosa y saludable entre amigos junto a Eduardo Piña',
         },
         {
           link_id: '9953363',
@@ -635,7 +637,8 @@ var gallery = [
           img_alt: 'Padel nocturno, de día domingo.',
           img_class: '',
           event_name: 'Americano nocturno en club de pádel los paltos',
-          event_info: ' Una sana competencia entre amigos con Eduardo Piña',
+          event_info:
+            'Una competencia amistosa y saludable entre amigos junto a Eduardo Piña',
         },
         {
           link_id: '7188566',
@@ -643,11 +646,11 @@ var gallery = [
           img_src_bk: 'assets/images/galleria/padel/padelEntreAmigos-bk.png',
           img_src_color:
             'https://www.instagram.com/reel/CyCKa_PAuLj/embed/?autoplay=1&loop=1',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          img_alt: 'foto de un partido de pádel entre amigos',
           img_class: 'iframeVideoPortrait',
           event_name: 'Partidos entre amigos',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            '¿Quién se llevará la victoria en este partido de pádel, tú o él?',
         },
         {
           link_id: '5509214',
@@ -655,11 +658,11 @@ var gallery = [
           img_src_bk: './assets/images/galleria/padel/padel-3-bk.png',
           img_src_color:
             'https://www.instagram.com/reel/DA4VkvZOCse/embed/?autoplay=1&loop=1',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          img_alt: 'foto de un partido de pádel entre 4 compañeros',
           img_class: 'iframeVideoPortrait',
-          event_name: 'Evento Padel 4',
+          event_name: 'Padel Game',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Un emocionante partido de pádel disputado entre cuatro compañeros.',
         },
       ],
       activities: [
@@ -688,7 +691,7 @@ var gallery = [
   },
   {
     torneos_de_adultos: {
-      h6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Estamos abiertos para eventos de martes a domingo, de 8 a.m. a 10 p.m., y cerramos el 25 de diciembre. Por favor, llamen a la oficina de alquileres al +56 9 7766 0445 o simplemente reserven en https://clublospaltos.com/calendario. <br /><button id="torneo" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Organizador </button>',
+      h6: 'El inicio de un torneo siempre supone una emocionante combinación de nerviosismo y anticipación, especialmente cuando se trata de deportistas que se enfrentan en una competencia que es tanto sana como llena de adrenalina. Estos eventos no solo desafían las habilidades individuales y el talento propio de cada participante, sino que también fomentan un fuerte espíritu de camaradería y respeto mutuo entre los competidores. <br /><br />A medida que todos los participantes se preparan para brindar lo mejor de sí mismos, el entorno se impregna de una energía positiva y un deseo inquebrantable de superación personal. En este constante desafío, los objetivos trascienden la simple búsqueda de la victoria; se trata también de aprender, mejorar y crecer a partir de cada encuentro. Este es precisamente el objetivo que persiguen <b>Las Escalerillas del Club Los Paltos</b>, convirtiéndolas en una plataforma esencial para el desarrollo tanto personal como deportivo de sus miembros. <br /><br />El inicio de una nueva temporada de escalerillas representa un capítulo emocionante para todos los involucrados, desde los apasionados atletas hasta los entusiastas aficionados. Es un espacio donde los sueños comienzan a materializarse y donde el esfuerzo constante y la dedicación encuentran su merecida recompensa. Al final de la jornada, una competencia sana no se reduce simplemente a quién cruza primero la línea de meta, sino a la manera en que todos crecen y se desarrollan juntos en este apasionante viaje. <br /><br /><section id="seOfreceTenis"><div><b>Las Escalerillas Club Los Paltos ofrece las siguientes instalaciones y servicios:</b><p>+ Categorias Honor A, B, C, D</p><p>+ Modalidad Singles</p><p>+ El club facilita las pelotas (se cambian cada 3 partidos)</p><p>+ Copas, medallas, y premios especiales a los finalistas</p><p>+ Asado de convivencia gratuito para todos los participantes en premiacion al final de la escalerilla.</p><br /><b>Las tarifas son las siguientes:</b><br /><p class="header">+ Inscripcion $15.000</p><p class="header">+ Menusaulidad $35.000 </p></section><br /><br /> Por favor, llamen a la oficina de registracion para participar en la proxima escalerillas al +56 9 7766 0445. <br /><button id="torneo" class="secondary small" type="button" onclick="toInstructor(this.id);">Conoscan Al Organizador </button>',
       instructor: [
         {
           link_id: '5556722',
@@ -709,6 +712,7 @@ var gallery = [
           img_src_color: './assets/images/galleria/torneo/tournament.jpeg',
           img_alt:
             'foto de inicio de competencia Claudio Irarrazaval vs Raúl Mercado',
+          img_class: '',
           event_name: 'Claudio Irarrazaval vs Raúl Mercado',
           event_info: ' Categoría C. Claudio Irarrazaval vs Raúl Mercado',
         },
@@ -718,6 +722,7 @@ var gallery = [
           img_src_bk: './assets/images/galleria/torneo/categoria_C-bk.jpeg',
           img_src_color: './assets/images/galleria/torneo/categoria_C.jpeg',
           img_alt: 'foto de inicio de competencia Sergio Pino vs Ronald Lagos',
+          img_class: '',
           event_name: 'Sergio Pino vs Ronald Lagos',
           event_info: ' Categoría C. Sergio Pino vs Ronald Lagos',
         },
@@ -727,6 +732,7 @@ var gallery = [
           img_src_bk: './assets/images/galleria/torneo/categoria_a-bk.jpeg',
           img_src_color: './assets/images/galleria/torneo/categoria_a.jpeg',
           img_alt: 'foto de la exposición de los jugadores de la categoría A',
+          img_class: '',
           event_name: 'Exposición de los jugadores de la categoría A',
           event_info:
             ' Categoria A. Exposición de los jugadores de la categoría A',
@@ -740,6 +746,7 @@ var gallery = [
             './assets/images/galleria/torneo/categoria_a-paddeling.jpeg',
           img_alt:
             'foto de la exposición de los jugadores de la categoría A- Padel',
+          img_class: '',
           event_name: 'Exposición de los jugadores de la categoría A - Padel',
           event_info:
             ' Categoria A. Exposición de los jugadores de la categoría A',
@@ -749,10 +756,11 @@ var gallery = [
           source: 'image',
           img_src_bk: './assets/images/galleria/torneo/categoria_b_bk.jpeg',
           img_src_color: './assets/images/galleria/torneo/categoria_b.jpeg',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Torneo 5',
+          img_alt: 'foto de la exposición de los jugadores de la categoría B',
+          img_class: '',
+          event_name: 'Exposición de los jugadores de la categoría B',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            'Categoria B. Exposición de los jugadores de la categoría B',
         },
         {
           link_id: '9953363',
@@ -760,7 +768,8 @@ var gallery = [
           img_src_bk: './assets/images/galleria/torneo/fernandoGonzalez_bk.png',
           img_src_color:
             'https://www.instagram.com/reel/Cto9X0YA4oD/embed/?autoplay=1&loop=1',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+          img_alt: 'Un video de Fernando Gonzalez mandando saludos',
+          img_class: 'iframeVideoPortrait',
           event_name: 'Saludo de Fernando González - un gran medalista',
           event_info:
             ' Fernando González quién ganó 3 medallas olímpicas, logro llegar a ser número 5 del mundo y fue finalista del abierto de Australia, nos envía este gran saludo a nuestro club y nuestros participantes.Muchas gracias Fernando!',
@@ -773,17 +782,19 @@ var gallery = [
           img_src_color:
             'https://www.instagram.com/reel/CkEwh49gw6y/embed/?autoplay=1&loop=1',
           img_alt: 'Exposicion de La roja del tenis juvenil',
+          img_class: 'iframeVideoLandscape',
           event_name: 'Exposicion de La roja del tenis juvenil',
           event_info:
             ' Linda tarde para despedir a las estrellas que parten a Turquía a representar a nuestro país en el mundial femenino menores de 16. Qué orgullo de haber podido compartir con ustedes en nuestro Club, hermosa exhibición y está demás decir que sin duda encantadoras, son una gran promesa para nuestro tenis nacional. Aguante el poder femenino. Agradecimientos a la gestión a Carlos Pardo y a don Carlos Marchant',
         },
         {
           link_id: '5509214',
-          source: 'video',
+          source: 'image',
           img_src_bk: './assets/images/galleria/torneo/torneoPrimavera_bk.png',
           img_src_color:
             'https://www.instagram.com/p/CXZAHCrLWLy/embed/?autoplay=1&loop=1',
           img_alt: 'Premiacion escalerilla temporada de primavera 2021',
+          img_class: '',
           event_name: 'Premiacion escalerilla temporada de primavera 2021',
           event_info:
             ' Premiacion escalerilla temporada de primavera 2021. Felicitaciones a todos nuestros deportistas. Estamos muy felices de su participación en nuestro club, de verlos mejorar, disfrutar de su proceso y de este bello deporte. Tomaremos un pequeño receso durante este verano respecto a la escalerilla y retomaremos nuestra competencia en marzo 2022. ¡LOS ESPERAMOS!',
