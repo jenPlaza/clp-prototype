@@ -29,7 +29,7 @@ if (page == 'index.html') {
   id = 'event_gallery';
   click = 'displayData(this.id)';
 } else if (page == 'torneos.html') {
-  main = gallery[5].torneos_de_adultos;
+  main = gallery[4].torneos_de_adultos;
   id = 'torneos_gallery';
   click = 'displayData(this.id)';
 }

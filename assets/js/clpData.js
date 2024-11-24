@@ -817,7 +817,6 @@ var gallery = [
       ],
     },
   },
-  {},
 ];
 //Team
 var teamArray = [

@@ -175,7 +175,8 @@ body:has(.torneo) div#body footer section:last-child {
     height: 550px;
   } */
   body:has(.torneo) div#body section#actividades {
-    height: 490px;
+    height: 520px;
+    padding: 0;
   }
   body:has(.torneo) div#body section#tour {
     bottom: -370px;
@@ -205,6 +206,9 @@ body:has(.torneo) div#body footer section:last-child {
   }
   section#seOfreceTenis {
     margin-left: 50px;
+  }
+  body:has(.torneo) div#body section#actividades {
+    height: 536px;
   }
   body:has(.torneo) div#body section#tour {
     bottom: -285px;
@@ -309,7 +313,7 @@ body:has(.torneo) div#body footer section:last-child {
     padding: 1% 8%;
   }
   body:has(.torneo) div#body section#actividades {
-    height: 554px;
+    height: 600px;
   }
   body:has(.tenis) div#body section#tour,
   body:has(.padel) div#body section#tour {
