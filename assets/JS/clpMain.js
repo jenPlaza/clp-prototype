@@ -36,14 +36,14 @@ function displayActivities() {
     navList.classList.add('top255');
     if (mediaQueryDesktop.matches) {
       navBar.style.width = '70%';
-      navBar.style.maxWidth = '1120px';
+      navBar.style.maxWidth = '1010px';
     }
   } else if (dcontent.style.display == 'flex') {
     dcontent.style.display = 'none';
     navList.classList.remove('top255');
     if (mediaQueryDesktop.matches) {
       navBar.style.width = '55%';
-      navBar.style.maxWidth = '880px';
+      navBar.style.maxWidth = '830px';
     }
   }
 }
@@ -165,7 +165,7 @@ function displayData(e) {
   } else if (page == 'torneos.html') {
     displayGallery = torneosStory;
     contentId = 'torneos_story_content';
-    index = 5;
+    index = 4;
     main = gallery[index].torneos_de_adultos;
 
     if (e === '5564122') {
@@ -195,12 +195,13 @@ function displayData(e) {
 
   var open = '<figure>';
   if (main.list[eventitem].source == 'video') {
+    open += '<div class="iframeContainer">';
     open +=
-      '<div style="border: 3px solid white; overflow: hidden; margin: 15px auto; max-width: 736px;">';
-    open +=
-      '<iframe  scrolling="no"  src="' +
+      '<iframe  class="' +
+      main.list[eventitem].img_class +
+      '" scrolling="no"  src="' +
       main.list[eventitem].img_src_color +
-      '" allow="autoplay; fullscreen" frameborder="0" style="border: 0px none; margin-left: -185px; height: 859px; margin-top: -233px; width: 926px;"></iframe>';
+      '" allow="autoplay; fullscreen" frameborder="0" ></iframe>';
     open += '</div>';
   } else if (main.list[eventitem].source == 'image') {
     open +=
@@ -365,7 +366,7 @@ function toInstructor(e) {
   } else if (id == 'torneo') {
     contentId = 'torneoOrganizer_story_content';
     displayGallery = torneosCoorStory;
-    main = gallery[5].torneos_de_adultos;
+    main = gallery[4].torneos_de_adultos;
   } else if (id == 'centro') {
     contentId = 'recreational_center_content';
     displayGallery = centroRecreacion;
@@ -379,9 +380,11 @@ function toInstructor(e) {
   } //end of if else conditionals
 
   var open = '<figure>';
-  open += '<div class=iframeContainer">';
+  open += '<div class="iframeContainer">';
   open +=
-    '<iframe  class=iframeVideo" scrolling="no"  src="' +
+    '<iframe  class="' +
+    main.instructor[0].img_class +
+    '" scrolling="no"  src="' +
     main.instructor[0].img_src_color +
     '" allow="autoplay; fullscreen" frameborder="0" ></iframe>';
   open += '</div>';

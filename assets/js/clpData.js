@@ -266,9 +266,8 @@ var gallery = [
           link_id: '8114486',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/teamBuildingEvent_1__bk.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/teamBuildingEvent_1.png',
+            './assets/images/galleria/eventos/blackAndWhite/yoga_cover-bk.jpeg',
+          img_src_color: './assets/images/galleria/eventos/color/yoga_2.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
           event_name: 'El Evento 1',
           event_info:
@@ -438,6 +437,7 @@ var gallery = [
           img_src_color:
             'https://www.instagram.com/reel/CdJVUtqgCcV/embed/?autoplay=1&loop=1',
           img_alt: 'video del tenis',
+          img_class: 'iframeVideoPortrait',
           event_name: 'Diego Piña',
           event_info:
             ' He estado vinculado al deporte toda mi vida. Mi padre me introdujo al tenis desde temprana edad, llevándonos siempre a diversos clubes con diferentes entrenadores para perfeccionar la técnica. Esta experiencia me ha permitido desarrollar un enfoque metodológico que facilita tanto el aprendizaje efectivo como el respeto por el ritmo individual de cada persona, validando cada fase del proceso de aprendizaje. Me encantaría poder ayudar a otros a mejorar su juego.',
@@ -446,58 +446,58 @@ var gallery = [
       list: [
         {
           link_id: '5564122',
-          source: 'image',
-          img_src_bk: './assets/images/galleria/tenis/unDiaDeTenis-bk.png',
-          img_src_color: './assets/images/galleria/tenis/unDiaDeTenis.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Tenis 1',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/tenis/tenisLospaltos-bk.png',
+          img_src_color:
+            'https://www.instagram.com/p/CZaZb0RAaN9/embed/?autoplay=1&loop=1',
+          img_alt: 'video de las canchas los paltos',
+          img_class: 'iframeVideoLandscape',
+          event_name: 'Canchas Los Paltos',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Te gustaría aprender o mejorar tu técnica en el Tenis? En nuestro Club Deportivo los Paltos tenemos clases personalizadas para que perfecciones tu jugada. Encuentra tu equilibrio a través del deporte.',
         },
         {
           link_id: '5516395',
-          source: 'video',
-          img_src_bk: './assets/images/galleria/torneo/tenis-1_bk.png',
-          img_src_color:
-            'https://www.instagram.com/reel/CgxtYo1AUYd/embed/?autoplay=1&loop=1',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Tenis 2',
+          source: 'image',
+          img_src_bk: './assets/images/galleria/tenis/unDiaDeTenis-bk.png',
+          img_src_color: './assets/images/galleria/tenis/unDiaDeTenis.png',
+          img_alt: 'foto de Eduardo, Rocio, y Diego Piña',
+          img_class: '',
+          event_name: 'Un dia de Tenis',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '464724',
           source: 'image',
-          img_src_bk:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Tenis 3',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+          img_src_bk: './assets/images/galleria/tenis/juego-bk.jpg',
+          img_src_color: './assets/images/galleria/tenis/juego.jpg',
+          img_alt: 'foto de Diego Piña tirando al reves',
+          img_class: '',
+          event_name: 'Tiro al reves',
+          event_info: ' Tiro al reves...conoces tu technica',
         },
         {
           link_id: '723250',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
+            './assets/images/galleria/tenis/visitasCanchasTenis-bk.jpg',
           img_src_color:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Tenis 4',
+            './assets/images/galleria/tenis/visitasCanchasTenis.jpg',
+          img_alt: 'foto de las canchas los paltos',
+          img_class: '',
+          event_name: 'Canchas Los Paltos',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '1285519',
           source: 'image',
-          img_src_bk:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Tenis 5',
+          img_src_bk: './assets/images/galleria/tenis/canchita-bk.jpg',
+          img_src_color: './assets/images/galleria/tenis/canchita.jpg',
+          img_alt: 'foto de las canchas los paltos',
+          img_class: '',
+          event_name: 'Canchas Los Paltos',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
@@ -505,37 +505,37 @@ var gallery = [
           link_id: '9953363',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
+            './assets/images/galleria/tenis/club-Tenis-partido-entre-aigos-bk.jpg',
           img_src_color:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Tenis 6',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            './assets/images/galleria/tenis/club-Tenis-partido-entre-aigos.jpg',
+          img_alt: 'foto de 4 participando posando antes de u n juego de tenis',
+          img_class: '',
+          event_name: 'Partido entre amigos ',
+          event_info: ' Participantes de nuestro partido revancha.',
         },
         {
           link_id: '7188566',
-          source: 'image',
-          img_src_bk:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/torneo/tenis-1_bk.png',
           img_src_color:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
+            'https://www.instagram.com/reel/CgxtYo1AUYd/embed/?autoplay=1&loop=1',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Tenis 7',
+          img_class: 'iframeVideoPortrait',
+          event_name: 'Evento Tenis 2',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '5509214',
-          source: 'image',
-          img_src_bk:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/tenis/tenis-bk.png',
           img_src_color:
-            './assets/images/galleria/tenis/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Tenis 8',
+            'https://www.instagram.com/tv/CaFkOCBJKUg/embed/?autoplay=1&loop=1',
+          img_alt: 'video de Diego Piña con alumno',
+          img_class: 'iframeVideoLandscape',
+          event_name: 'Pauta como comenzar un buen juego',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Sabias que las ventajas de practicar tenis son físicas, sociales y mentales?El tenis es un deporte que favorece la movilidad y flexibilidad de tu cuerpo. Fortalece la musculatura y huesos, también beneficia tu salud cardiovascular, ya que se trata de un ejercicio aeróbico, por ende mejora tu entorno cardiaco y respiratorio. A nivel social es un deporte que se realiza con otras personas, lo que mejora la relación con ellas, evitando el egoísmo e individualismo ya que elimina el estrés. La fortaleza que hace ganar los partidos no es sólo física, también mental. El control de las emociones es clave a la hora de enfrentarse a un partido, y eso se trabaja y se logra. Y tu, ¿cuando comienzas?',
         },
       ],
       activities: [
@@ -569,44 +569,47 @@ var gallery = [
       list: [
         {
           link_id: '5564122',
-          source: 'image',
-          img_src_bk: './assets/images/galleria/padel/padel-game-bk.jpeg',
-          img_src_color: './assets/images/galleria/padel/padel-game.jpeg',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/padel/padelLosPaltos-bk.png',
+          img_src_color:
+            'https://www.instagram.com/reel/C6XD3igOPzj/embed/?autoplay=1&loop=1',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Padel 1',
+          img_class: 'iframeVideoPortrait',
+          event_name: 'Evento Padel 3',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '5516395',
           source: 'image',
-          img_src_bk: './assets/images/galleria/padel/padle-flyer-bk.png',
-          img_src_color: './assets/images/galleria/padel/padle-flyer.png',
+          img_src_bk: './assets/images/galleria/padel/padel-game-bk.jpeg',
+          img_src_color: './assets/images/galleria/padel/padel-game.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Padel 2',
+          img_class: '',
+          event_name: 'Evento Padel 1',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '464724',
-          source: 'image',
-          img_src_bk:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/padel/padelGame_bk.png',
           img_src_color:
-            './assets/images/galleria/padel/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Padel 3',
+            'https://www.instagram.com/reel/C6XD3igOPzj/embed/?autoplay=1&loop=1',
+          img_alt: 'foto de Establecimientos de padel',
+          img_class: 'iframeVideoPortrait',
+          event_name: 'Establecimientos de padel',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Reserven hoy estas lindas canchas de padel. Ofrecemos > Estacionamiento privado > Camarines y baños > Área de descanso > Bebestibles y snacks.',
         },
         {
           link_id: '723250',
-          source: 'video',
-          img_src_bk: './assets/images/galleria/padel/padel-3-bk.png',
-          img_src_color:
-            'https://www.instagram.com/reel/DA4VkvZOCse/embed/?autoplay=1&loop=1',
+          source: 'image',
+          img_src_bk: './assets/images/galleria/padel/padle-flyer-bk.png',
+          img_src_color: './assets/images/galleria/padel/padle-flyer.png',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Padel 4',
+          img_class: '',
+          event_name: 'Evento Padel 2',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
@@ -614,47 +617,47 @@ var gallery = [
           link_id: '1285519',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+            './assets/images/galleria/padel/padelNocturnoDomingo-bk.jpeg',
           img_src_color:
-            './assets/images/galleria/padel/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Padel 5',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            './assets/images/galleria/padel/padelNocturnoDomingo.jpeg',
+          img_alt: 'Padel nocturno, de día domingo.',
+          img_class: '',
+          event_name: 'Americano nocturno en club de pádel los paltos',
+          event_info: ' Una sana competencia entre amigos con Eduardo Piña',
         },
         {
           link_id: '9953363',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+            './assets/images/galleria/padel/americanoNocturno-bk.jpeg',
           img_src_color:
-            './assets/images/galleria/padel/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Padel 6',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            './assets/images/galleria/padel/americanoNocturno.jpeg',
+          img_alt: 'Padel nocturno, de día domingo.',
+          img_class: '',
+          event_name: 'Americano nocturno en club de pádel los paltos',
+          event_info: ' Una sana competencia entre amigos con Eduardo Piña',
         },
         {
           link_id: '7188566',
-          source: 'image',
-          img_src_bk:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+          source: 'video',
+          img_src_bk: 'assets/images/galleria/padel/padelEntreAmigos-bk.png',
           img_src_color:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+            'https://www.instagram.com/reel/CyCKa_PAuLj/embed/?autoplay=1&loop=1',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Padel 7',
+          img_class: 'iframeVideoPortrait',
+          event_name: 'Partidos entre amigos',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
         {
           link_id: '5509214',
-          source: 'image',
-          img_src_bk:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/padel/padel-3-bk.png',
           img_src_color:
-            './assets/images/galleria/padel/image_placeholder-min.png',
+            'https://www.instagram.com/reel/DA4VkvZOCse/embed/?autoplay=1&loop=1',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Padel 8',
+          img_class: 'iframeVideoPortrait',
+          event_name: 'Evento Padel 4',
           event_info:
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
@@ -691,11 +694,11 @@ var gallery = [
           link_id: '5556722',
           source: 'video',
           img_src_color:
-            'https://www.instagram.com/reel/CdJVUtqgCcV/embed/?autoplay=1&loop=1',
+            'https://www.instagram.com/tv/CuKpEhBAro4/embed/?autoplay=1&loop=1',
           img_alt: 'video del tenis',
-          event_name: 'Diego Piña',
+          event_name: 'Presentador Eduardo Piña',
           event_info:
-            ' He estado vinculado al deporte toda mi vida. Mi padre me introdujo al tenis desde temprana edad, llevándonos siempre a diversos clubes con diferentes entrenadores para perfeccionar la técnica. Esta experiencia me ha permitido desarrollar un enfoque metodológico que facilita tanto el aprendizaje efectivo como el respeto por el ritmo individual de cada persona, validando cada fase del proceso de aprendizaje. Me encantaría poder ayudar a otros a mejorar su juego.',
+            ' Siempre nos encontraremos con deportistas que juegan un poco mejor, pero la idea es que continúen superándose al mismo ritmo.',
         },
       ],
       list: [
@@ -704,52 +707,48 @@ var gallery = [
           source: 'image',
           img_src_bk: './assets/images/galleria/torneo/tournament_bk.jpeg',
           img_src_color: './assets/images/galleria/torneo/tournament.jpeg',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Torneo 1',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+          img_alt:
+            'foto de inicio de competencia Claudio Irarrazaval vs Raúl Mercado',
+          event_name: 'Claudio Irarrazaval vs Raúl Mercado',
+          event_info: ' Categoría C. Claudio Irarrazaval vs Raúl Mercado',
         },
         {
           link_id: '5516395',
           source: 'image',
           img_src_bk: './assets/images/galleria/torneo/categoria_C-bk.jpeg',
           img_src_color: './assets/images/galleria/torneo/categoria_C.jpeg',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Torneo 2',
-          event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+          img_alt: 'foto de inicio de competencia Sergio Pino vs Ronald Lagos',
+          event_name: 'Sergio Pino vs Ronald Lagos',
+          event_info: ' Categoría C. Sergio Pino vs Ronald Lagos',
         },
         {
           link_id: '464724',
           source: 'image',
-          img_src_bk:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Torneo 3',
+          img_src_bk: './assets/images/galleria/torneo/categoria_a-bk.jpeg',
+          img_src_color: './assets/images/galleria/torneo/categoria_a.jpeg',
+          img_alt: 'foto de la exposición de los jugadores de la categoría A',
+          event_name: 'Exposición de los jugadores de la categoría A',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Categoria A. Exposición de los jugadores de la categoría A',
         },
         {
           link_id: '723250',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
+            './assets/images/galleria/torneo/categoria_a-paddeling-bk.jpeg',
           img_src_color:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Torneo 4',
+            './assets/images/galleria/torneo/categoria_a-paddeling.jpeg',
+          img_alt:
+            'foto de la exposición de los jugadores de la categoría A- Padel',
+          event_name: 'Exposición de los jugadores de la categoría A - Padel',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Categoria A. Exposición de los jugadores de la categoría A',
         },
         {
           link_id: '1285519',
           source: 'image',
-          img_src_bk:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
+          img_src_bk: './assets/images/galleria/torneo/categoria_b_bk.jpeg',
+          img_src_color: './assets/images/galleria/torneo/categoria_b.jpeg',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
           event_name: 'Evento Torneo 5',
           event_info:
@@ -757,39 +756,37 @@ var gallery = [
         },
         {
           link_id: '9953363',
-          source: 'image',
-          img_src_bk:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/torneo/fernandoGonzalez_bk.png',
           img_src_color:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
+            'https://www.instagram.com/reel/Cto9X0YA4oD/embed/?autoplay=1&loop=1',
           img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Torneo 6',
+          event_name: 'Saludo de Fernando González - un gran medalista',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Fernando González quién ganó 3 medallas olímpicas, logro llegar a ser número 5 del mundo y fue finalista del abierto de Australia, nos envía este gran saludo a nuestro club y nuestros participantes.Muchas gracias Fernando!',
         },
         {
           link_id: '7188566',
-          source: 'image',
+          source: 'video',
           img_src_bk:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
+            './assets/images/galleria/torneo/laRojaDeTenisJuvenil-bk.png',
           img_src_color:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Torneo 7',
+            'https://www.instagram.com/reel/CkEwh49gw6y/embed/?autoplay=1&loop=1',
+          img_alt: 'Exposicion de La roja del tenis juvenil',
+          event_name: 'Exposicion de La roja del tenis juvenil',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Linda tarde para despedir a las estrellas que parten a Turquía a representar a nuestro país en el mundial femenino menores de 16. Qué orgullo de haber podido compartir con ustedes en nuestro Club, hermosa exhibición y está demás decir que sin duda encantadoras, son una gran promesa para nuestro tenis nacional. Aguante el poder femenino. Agradecimientos a la gestión a Carlos Pardo y a don Carlos Marchant',
         },
         {
           link_id: '5509214',
-          source: 'image',
-          img_src_bk:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
+          source: 'video',
+          img_src_bk: './assets/images/galleria/torneo/torneoPrimavera_bk.png',
           img_src_color:
-            './assets/images/galleria/torneo/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          event_name: 'Evento Torneo 8',
+            'https://www.instagram.com/p/CXZAHCrLWLy/embed/?autoplay=1&loop=1',
+          img_alt: 'Premiacion escalerilla temporada de primavera 2021',
+          event_name: 'Premiacion escalerilla temporada de primavera 2021',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Premiacion escalerilla temporada de primavera 2021. Felicitaciones a todos nuestros deportistas. Estamos muy felices de su participación en nuestro club, de verlos mejorar, disfrutar de su proceso y de este bello deporte. Tomaremos un pequeño receso durante este verano respecto a la escalerilla y retomaremos nuestra competencia en marzo 2022. ¡LOS ESPERAMOS!',
         },
       ],
       activities: [
