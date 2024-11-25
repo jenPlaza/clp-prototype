@@ -83,7 +83,7 @@ function displayData(e) {
   const xId = window.location.href.split('=');
   var activityId = xId.pop();
 
-  console.log(page);
+  //console.log(page);
 
   if (page == 'acontecimientos.html') {
     displayGallery = eventStory;
@@ -205,7 +205,9 @@ function displayData(e) {
     open += '</div>';
   } else if (main.list[eventitem].source == 'image') {
     open +=
-      '<img src="' +
+      '<img class="' +
+      main.list[eventitem].img_class +
+      '" src="' +
       main.list[eventitem].img_src_color +
       '" alt="' +
       main.list[eventitem].img_alt +

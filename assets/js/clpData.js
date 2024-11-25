@@ -462,7 +462,7 @@ var gallery = [
           img_src_bk: './assets/images/galleria/tenis/unDiaDeTenis-bk.png',
           img_src_color: './assets/images/galleria/tenis/unDiaDeTenis.png',
           img_alt: 'foto de Eduardo, Rocio, y Diego Piña',
-          img_class: '',
+          img_class: 'adjustCenter',
           event_name: 'Un dia de Tenis',
           event_info:
             'Un día dedicado al tenis se convierte en mucho más que un simple deporte cuando lo compartes con tus seres queridos. Es una ocasión perfecta para disfrutar de la compañía de la familia, fortalecer lazos y crear recuerdos inolvidables, todo mientras se practica una actividad saludable y divertida.',
@@ -473,7 +473,7 @@ var gallery = [
           img_src_bk: './assets/images/galleria/tenis/juego-bk.jpg',
           img_src_color: './assets/images/galleria/tenis/juego.jpg',
           img_alt: 'foto de Diego Piña tirando al reves',
-          img_class: '',
+          img_class: 'adjustTop',
           event_name: 'Tiro al reves',
           event_info: '¿Tiro al revés...? ¿Conoces esta técnica?',
         },
@@ -509,7 +509,7 @@ var gallery = [
           img_src_color:
             './assets/images/galleria/tenis/club-Tenis-partido-entre-aigos.jpg',
           img_alt: 'foto de 4 participando posando antes de u n juego de tenis',
-          img_class: '',
+          img_class: 'adjustCenter',
           event_name: 'Partido entre amigos ',
           event_info:
             ' Los participantes de nuestro esperado partido de revancha.',
@@ -622,7 +622,7 @@ var gallery = [
           img_src_color:
             './assets/images/galleria/padel/padelNocturnoDomingo.jpeg',
           img_alt: 'Padel nocturno, de día domingo.',
-          img_class: '',
+          img_class: 'adjustCenter',
           event_name: 'Americano nocturno en club de pádel los paltos',
           event_info:
             'Una competencia amistosa y saludable entre amigos junto a Eduardo Piña',
@@ -647,7 +647,7 @@ var gallery = [
           img_src_color:
             'https://www.instagram.com/reel/CyCKa_PAuLj/embed/?autoplay=1&loop=1',
           img_alt: 'foto de un partido de pádel entre amigos',
-          img_class: 'iframeVideoPortrait',
+          img_class: 'iframeVideoPortrait adjust',
           event_name: 'Partidos entre amigos',
           event_info:
             '¿Quién se llevará la victoria en este partido de pádel, tú o él?',
@@ -699,6 +699,7 @@ var gallery = [
           img_src_color:
             'https://www.instagram.com/tv/CuKpEhBAro4/embed/?autoplay=1&loop=1',
           img_alt: 'video del tenis',
+          img_class: 'iframeVideoPortrait adjust',
           event_name: 'Presentador Eduardo Piña',
           event_info:
             ' Siempre nos encontraremos con deportistas que juegan un poco mejor, pero la idea es que continúen superándose al mismo ritmo.',
@@ -746,7 +747,7 @@ var gallery = [
             './assets/images/galleria/torneo/categoria_a-paddeling.jpeg',
           img_alt:
             'foto de la exposición de los jugadores de la categoría A- Padel',
-          img_class: '',
+          img_class: 'catA',
           event_name: 'Exposición de los jugadores de la categoría A - Padel',
           event_info:
             ' Categoria A. Exposición de los jugadores de la categoría A',
@@ -769,7 +770,7 @@ var gallery = [
           img_src_color:
             'https://www.instagram.com/reel/Cto9X0YA4oD/embed/?autoplay=1&loop=1',
           img_alt: 'Un video de Fernando Gonzalez mandando saludos',
-          img_class: 'iframeVideoPortrait',
+          img_class: 'iframeVideoPortrait adjust fernando',
           event_name: 'Saludo de Fernando González - un gran medalista',
           event_info:
             ' Fernando González quién ganó 3 medallas olímpicas, logro llegar a ser número 5 del mundo y fue finalista del abierto de Australia, nos envía este gran saludo a nuestro club y nuestros participantes.Muchas gracias Fernando!',
@@ -782,7 +783,7 @@ var gallery = [
           img_src_color:
             'https://www.instagram.com/reel/CkEwh49gw6y/embed/?autoplay=1&loop=1',
           img_alt: 'Exposicion de La roja del tenis juvenil',
-          img_class: 'iframeVideoLandscape',
+          img_class: 'iframeVideoLandscape laRoja',
           event_name: 'Exposicion de La roja del tenis juvenil',
           event_info:
             ' Linda tarde para despedir a las estrellas que parten a Turquía a representar a nuestro país en el mundial femenino menores de 16. Qué orgullo de haber podido compartir con ustedes en nuestro Club, hermosa exhibición y está demás decir que sin duda encantadoras, son una gran promesa para nuestro tenis nacional. Aguante el poder femenino. Agradecimientos a la gestión a Carlos Pardo y a don Carlos Marchant',
@@ -791,8 +792,7 @@ var gallery = [
           link_id: '5509214',
           source: 'image',
           img_src_bk: './assets/images/galleria/torneo/torneoPrimavera_bk.png',
-          img_src_color:
-            'https://www.instagram.com/p/CXZAHCrLWLy/embed/?autoplay=1&loop=1',
+          img_src_color: './assets/images/galleria/torneo/torneoPrimavera.jpg',
           img_alt: 'Premiacion escalerilla temporada de primavera 2021',
           img_class: '',
           event_name: 'Premiacion escalerilla temporada de primavera 2021',
