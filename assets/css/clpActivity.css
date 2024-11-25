@@ -241,7 +241,7 @@ body:has(.torneo) div#body footer section:last-child {
   }
   body:has(.tenis) div#body,
   body:has(.padel) div#body {
-    top: 325px;
+    top: 280px;
   }
   body:has(.torneo) div#body {
     top: 375px;

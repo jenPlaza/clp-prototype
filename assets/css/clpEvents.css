@@ -100,17 +100,16 @@ iframe.iframeVideoPortrait {
   max-height: -webkit-fill-available;
   margin-right: 0;
   margin-left: 0;
-  height: 55vh;
+  height: 460px;
 }
 iframe.iframeVideoLandscape {
-  height: 30vh;
+  height: 250px;
   margin-top: -283px;
   margin-top: -50px;
   width: -webkit-fill-available;
   max-height: -webkit-fill-available;
   margin-right: 0;
   margin-left: 0;
-  border: 2px solid red;
 }
 div#torneoOrganizer_story_content figure div iframe.iframeVideo\" {
   margin-left: -408px;
@@ -119,10 +118,10 @@ div#event_story_content,
 div#tenis_story_content,
 div#padel_story_content,
 div#torneos_story_content {
-  top: -45px;
+  top: -37px;
 }
 div#padel_story_content {
-  top: -38px;
+  top: -30px;
 }
 div#event_story,
 div#tenis_story,
@@ -161,10 +160,6 @@ div#recreational_center > header {
   height: 100px;
   width: 100%;
 }
-
-div#tenisInstructor_story > header {
-  top: 13px;
-}
 div#event_story > header > figure,
 div#tenis_story > header > figure,
 div#padel_story > header > figure,
@@ -175,10 +170,20 @@ div#recreational_center > header > figure {
   width: 40px;
   position: absolute;
   right: -57px;
-  top: 20px;
   z-index: 5;
 }
-
+div#tenisInstructor_story > header {
+  top: 0;
+}
+div#tenis_story > header > figure {
+  top: 0;
+}
+div#tenisInstructor_story_content {
+  top: -43px;
+}
+div#padel_story > header > figure {
+  top: -5px;
+}
 div#event_story_content,
 div#tenis_story_content,
 div#padel_story_content,
@@ -187,7 +192,7 @@ div#tenisInstructor_story_content,
 div#torneoOrganizer_story_content,
 div#recreational_center_content {
   width: 100%;
-  height: auto;
+  height: 750px;
   background-color: #fff;
   border-radius: 10px;
   display: flex;
@@ -339,16 +344,16 @@ footer div {
   div#tenis_story_content,
   div#padel_story_content,
   div#torneos_story_content {
-    top: 5px;
+    top: -14px;
   }
   div#torneoOrganizer_story > header {
     top: -30px;
   }
   div#tenisInstructor_story > header {
-    top: -20px;
+    top: -12px;
   }
   div#padel_story > header > figure {
-    top: 8px;
+    top: -8px;
   }
   div#torneos_story > header {
     top: -13px;
@@ -370,13 +375,16 @@ footer div {
   div#torneoOrganizer_story,
   div#recreational_center {
     height: 100%;
-    padding: 0 5% 80px 5%;
+    padding: 5% 5% 80px 5%;
   }
   iframe.iframeVideo\" {
     height: 108vh;
   }
   div#torneoOrganizer_story_content figure div iframe.iframeVideo\" {
     margin-left: -290px;
+  }
+  div#tenisInstructor_story_content {
+    top: -22px;
   }
   div#recreational_center > header {
     height: 90px;
@@ -388,7 +396,7 @@ footer div {
   div#torneoOrganizer_story > header > figure,
   div#recreational_center > header > figure {
     right: -59px;
-    top: 25px;
+    top: 0;
   }
   section#date {
     padding: 50px 0;
@@ -452,7 +460,7 @@ footer div {
     height: 65vh;
   }
   div#tenisInstructor_story_content figure div iframe.iframeVideoPortrait {
-    height: 80vh;
+    height: 670px;
     margin-top: -130px;
   }
   div#tenis_story_content figure div iframe.iframeVideoPortrait {
@@ -462,6 +470,9 @@ footer div {
   div#padel_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -150px;
     height: 73vh;
+  }
+  div#padel_story_content div {
+    width: 100%;
   }
   div#event_story_content,
   div#tenis_story_content,
@@ -702,17 +713,27 @@ footer div {
   div#tenis_story_content,
   div#padel_story_content,
   div#torneos_story_content {
-    height: 85vh;
+    height: 650px;
     top: -60px;
     width: 75%;
     justify-content: center;
     align-items: center;
   }
 
+  div#tenisInstructor_story_content figure div iframe.iframeVideoPortrait {
+    margin-top: -95px;
+  }
+  div#tenisInstructor_story_content figure div.iframeContainer {
+    height: 100%;
+  }
+  div#tenisInstructor_story_content {
+    height: 525px;
+  }
+
   div#tenisInstructor_story_content,
   div#torneoOrganizer_story_content,
   div#recreational_center_content {
-    height: 82vh;
+    /* height: 82vh; */
     top: -45px;
     width: 100%;
     flex-direction: row;
@@ -768,7 +789,7 @@ footer div {
   }
   div#tenis_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -434px;
-    height: 105vh;
+    height: 100vh;
   }
   iframe.iframeVideoLandscape {
     height: 53vh;
@@ -834,7 +855,9 @@ footer div {
   main.grid ul {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
-
+  main.grid ul li:nth-child(3) figure img {
+    object-position: 50% top;
+  }
   div#event_story_content,
   div#tenis_story_content,
   div#padel_story_content,
@@ -846,6 +869,9 @@ footer div {
   div#padel_story_content figure,
   div#torneos_story_content figure {
     height: 95%;
+  }
+  div#padel_story_content figure div iframe.iframeVideoPortrait {
+    height: 79vh;
   }
   div#event_story > header,
   div#tenis_story > header,
@@ -876,16 +902,26 @@ footer div {
   section#seOfrece div b {
     margin-left: 90px;
   }
-  div#tenis_story_content figure div iframe.iframeVideoPortrait {
-    margin-top: -689px;
-    height: 134vh;
-  }
   iframe.iframeVideoLandscape {
-    height: 68vh;
+    height: 585px;
+  }
+  div#tenis_story_content figure img {
+    object-position: 50% 30%;
   }
   div#padel_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -450px;
-    height: 110vh;
+    height: 116vh;
+  }
+  div#tenis_story_content figure div iframe.iframeVideoPortrait {
+    margin-top: -527px;
+    height: 125vh;
+  }
+  div#event_story_content figure,
+  div#tenis_story_content figure,
+  div#padel_story_content figure,
+  div#torneos_story_content figure {
+    height: 550px;
+    margin-top: 108px;
   }
   div#event_story_content,
   div#tenis_story_content,
@@ -894,7 +930,6 @@ footer div {
   div#tenisInstructor_story_content,
   div#torneoOrganizer_story_content,
   div#recreational_center_content {
-    height: 85vh;
     width: 85%;
     top: -85px;
   }
@@ -943,6 +978,20 @@ footer div {
   }
   section#seOfrece div b {
     margin-left: 150px;
+  }
+  div#tenisInstructor_story_content figure div iframe.iframeVideoPortrait {
+    height: 725px;
+  }
+  div#tenis_story_content figure div iframe.iframeVideoPortrait {
+    height: 120vh;
+  }
+  div#padel_story_content figure div iframe.iframeVideoPortrait {
+    height: 98vh;
+  }
+  div#tenisInstructor_story > header > figure,
+  div#torneoOrganizer_story > header > figure,
+  div#recreational_center > header > figure {
+    right: -55px;
   }
   div#event_story,
   div#tenis_story,
@@ -998,13 +1047,34 @@ footer div {
     padding: 1% 10%;
     max-width: 2400px;
   }
+  div#tenisInstructor_story_content figure div iframe.iframeVideoPortrait {
+    height: 835px;
+  }
   div#tenis_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -595px;
-    height: 111vh;
+    height: 93vh;
   }
   div#padel_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -450px;
     height: 88vh;
+  }
+  div#event_story_content,
+  div#tenis_story_content,
+  div#padel_story_content,
+  div#torneos_story_content {
+    height: 850px;
+  }
+  div#tenis_story_content figure img {
+    object-position: 50% 30%;
+  }
+  div#tenis_story_content div {
+    margin-top: -155px;
+  }
+  iframe.iframeVideoLandscape {
+    height: 600px;
+  }
+  div#tenis_story_content div {
+    margin-top: 15px;
   }
   main.grid ul,
   div#event_story_content,

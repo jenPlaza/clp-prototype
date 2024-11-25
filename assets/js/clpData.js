@@ -522,7 +522,7 @@ var gallery = [
             'https://www.instagram.com/reel/CgxtYo1AUYd/embed/?autoplay=1&loop=1',
           img_alt: 'video de un partido con Diego Piña',
           img_class: 'iframeVideoPortrait',
-          event_name: 'Evento Tenis 2',
+          event_name: 'Partido de tenis con Diego Piña',
           event_info: 'Un emocionante partido junto a Diego Piña.',
         },
         {
