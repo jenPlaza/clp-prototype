@@ -44,8 +44,8 @@ var navigationArray = [
   },
   {
     link_id: 'competencias',
-    link_name: 'Torneos',
-    link_href: './torneos.html',
+    link_name: 'Escalerillas',
+    link_href: './escalerillas.html',
     icon_src: './assets/images/icons/trophy-white.png',
     icon_alt: 'white trophy icon',
   },

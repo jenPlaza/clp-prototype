@@ -1067,7 +1067,8 @@ footer section#socialM ul li a figure {
 @media screen and (min-width: 1600px) {
   body > header nav#navList {
     width: 55%;
-    max-width: 840px;
+    max-width: 875px;
+    padding-right: 3%;
   }
   body > header > nav#navList ul.list.min {
     overflow: unset;

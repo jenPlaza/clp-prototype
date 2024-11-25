@@ -199,12 +199,12 @@ div#tenisInstructor_story_content,
 div#event_story_content,
 div#tenis_story_content,
 div#padel_story_content {
-  top: -53px;
+  top: -64px;
 }
 
 div#torneos_story_content,
 div#torneoOrganizer_story_content {
-  top: -51px;
+  top: -31px;
 }
 
 /*-------------Story - Content figure, h3, p, iframe -------------*/
@@ -426,18 +426,21 @@ footer div {
   }
   div#torneoOrganizer_story > header > figure,
   div#padel_story > header > figure {
-    top: -8px;
+    top: 13px;
   }
   /*-------------Story - Content-------------*/
   div#event_story_content,
-  div#tenis_story_content,
-  div#padel_story_content {
+  div#tenis_story_content {
     top: -14px;
+  }
+
+  div#padel_story_content {
+    top: 0;
   }
 
   div#tenisInstructor_story_content,
   div#torneos_story_content {
-    top: -22px;
+    top: -29px;
   }
 
   /*-------------Story - Content figure, h3, p, iframe -------------*/
@@ -503,7 +506,7 @@ footer div {
   }
   /*-------------EVENTS-------------*/
   iframe.iframeVideoLandscape {
-    height: 52vh;
+    height: 450px;
   }
   .iframeContainer\" {
     height: 85vh;
@@ -607,7 +610,7 @@ footer div {
   }
   div#tenis_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -265px;
-    height: 95vh;
+    height: 809px;
   }
   div#padel_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -150px;
@@ -719,6 +722,10 @@ footer div {
   div#recreational_center_content {
     padding: 5%;
     height: 80vh;
+  }
+  div#padel_story_content figure div iframe.iframeVideoPortrait {
+    margin-top: -150px;
+    height: 700px;
   }
 
   section#actividades {
@@ -866,7 +873,7 @@ footer div {
   /*-------------EVENTS-------------*/
 
   iframe.iframeVideoLandscape {
-    height: 53vh;
+    height: 520px;
   }
   .iframeContainer {
     max-width: 1300px;
@@ -898,14 +905,14 @@ footer div {
   /*-------------Story - Content figure, h3, p, iframe -------------*/
   div#padel_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -252px;
-    height: 88vh;
+    height: 800px;
   }
   div#padel_story_content figure img {
     object-position: 50% 35%;
   }
   div#tenis_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -434px;
-    height: 100vh;
+    height: 900px;
   }
   /*-------------se Ofrece -------------*/
   section#seOfrece ul li {
@@ -1079,11 +1086,11 @@ footer div {
   }
   div#padel_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -450px;
-    height: 116vh;
+    height: 985px;
   }
   div#tenis_story_content figure div iframe.iframeVideoPortrait {
     margin-top: -527px;
-    height: 125vh;
+    height: 1018px;
   }
   /*-------------EVENTS end-------------*/
   section#date a {
@@ -1173,7 +1180,7 @@ footer div {
     margin-top: -600px;
   }
   div#padel_story_content figure div iframe.iframeVideoPortrait {
-    height: 98vh;
+    height: 1000px;
   }
   iframe.iframeVideoPortrait.adjust {
     height: 1128px;
@@ -1270,8 +1277,8 @@ footer div {
     height: 835px;
   }
   div#tenis_story_content figure div iframe.iframeVideoPortrait {
-    margin-top: -595px;
-    height: 93vh;
+    margin-top: -575px;
+    height: 1083px;
   }
   div#tenis_story_content figure img.adjustCenter {
     object-position: 50% 50%;

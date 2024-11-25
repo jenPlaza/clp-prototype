@@ -162,7 +162,7 @@ function displayData(e) {
     } else if (e === '5509214') {
       eventitem = 7;
     }
-  } else if (page == 'torneos.html') {
+  } else if (page == 'escalerillas.html') {
     displayGallery = torneosStory;
     contentId = 'torneos_story_content';
     index = 4;
@@ -258,10 +258,10 @@ function closeData(e) {
   } else if (page == 'actividades.html' && activityId == 'padel') {
     //padel
     displayGallery = padelStory;
-  } else if (page == 'torneos.html' && id == 'torneo_organizer') {
+  } else if (page == 'escalerillas.html' && id == 'torneo_organizer') {
     //events
     displayGallery = torneosCoorStory;
-  } else if (page == 'torneos.html') {
+  } else if (page == 'escalerillas.html') {
     //centro recreacion
     displayGallery = torneosStory;
   }

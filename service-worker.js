@@ -14,6 +14,7 @@ let coreAssets = [
   '/nosotros.html',
   '/contacto.html',
   '/equipo.html',
+  '/escalerillas.html',
   './assets/js/clpMain.js',
   './assets/js/clpGrids.js',
   './assets/js/clpData.js',

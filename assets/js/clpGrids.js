@@ -28,7 +28,7 @@ if (page == 'index.html') {
   main = gallery[1].eventos;
   id = 'event_gallery';
   click = 'displayData(this.id)';
-} else if (page == 'torneos.html') {
+} else if (page == 'escalerillas.html') {
   main = gallery[4].torneos_de_adultos;
   id = 'torneos_gallery';
   click = 'displayData(this.id)';
@@ -43,7 +43,7 @@ if (page == 'index.html') {
 //   main = gallery[1].eventos;
 //   id = 'event_gallery';
 //   click = 'displayData(this.id)';
-// } else if (page == 'torneos') {
+// } else if (page == 'escalerillas') {
 //   main = gallery[5].torneos_de_adultos;
 //   id = 'torneos_gallery';
 //   click = 'displayData(this.id)';
