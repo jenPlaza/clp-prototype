@@ -46,7 +46,14 @@ main.grid ul li article section div:nth-child(6) {
   font-weight: 600;
   margin-top: -50px;
 }
+main#team_gallery.grid ul li:first-child article section div a img.team_icon,
+main#team_gallery.grid ul li:nth-child(2) article section div a img.team_icon {
+  display: none;
+}
 
+main#team_gallery.grid ul li:nth-child(5) article section div a.web {
+  display: block !important;
+}
 section#actividades {
   bottom: 75px;
 }
@@ -197,7 +204,7 @@ footer {
   }
   main.grid ul {
     columns: 2;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     max-width: 1800px;
   }
   main#team_gallery.grid ul li article figure {

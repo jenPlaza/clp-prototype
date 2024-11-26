@@ -218,7 +218,6 @@ function displayData(e) {
 
   document.getElementById(contentId).innerHTML = open;
 }
-
 function closeData(e) {
   console.log('e: ', e);
   var id = e;
@@ -272,7 +271,6 @@ function closeData(e) {
     displayGallery.style.display = 'none';
   }
 }
-
 function shortenMenu() {
   var navList = document.querySelector('.list');
   const navshow = document.getElementsByClassName('nav-link');
@@ -335,10 +333,12 @@ function displayTeam() {
       '</b><br />' +
       teamArray[0].list[t].mem_country +
       '</h6><div><a href="' +
-      teamArray[0].list[t].mem_linkedIn +
-      '" ><img src="./assets/images/icons/linkedin-circle-bk.png" alt="linkedIn icon" width="25px" height="25px" class="team_icon" /></a><a href="' +
+      teamArray[0].list[t].mem_link +
+      '" ><img src="' +
+      teamArray[0].list[t].mem_socialmedia_icon +
+      '" alt="linkedIn icon" width="25px" height="25px" class="team_icon" /></a><a href="' +
       teamArray[0].list[t].mem_web_page +
-      '" style="display: none"><img src="./assets/images/icons/social-bk.png" alt="website icon" width="25px" height="25px" class="team_icon" /></a></div><br /><br />';
+      '" style="display: none" class="web"><img src="./assets/images/icons/social-bk.png" alt="website icon" width="25px" height="25px" class="team_icon" /></a></div><br /><br />';
     teamMembers += '<div>' + teamArray[0].list[t].mem_pro_title + '</div>';
     teamMembers += '<div><p>' + teamArray[0].list[t].mem_bio + '</p></div>';
     teamMembers += '</section></article></li>';
@@ -550,7 +550,7 @@ locate +=
   '</b></em></p></a></div></div>';
 
 document.getElementById('location').innerHTML = locate;
-
+console.log(socialArray[3].media_link);
 //FOOTER SOCIAL
 var clp = '<ul>';
 if (mediaQueryMobile.matches) {
@@ -574,7 +574,7 @@ if (mediaQueryTablet.matches) {
   for (var k = 0; k < socialArray.length; k++) {
     clp += '<li>';
     clp +=
-      '<a href="' + socialArray[k].media_link[1] + '" target="_blank"><figure>';
+      '<a href="' + socialArray[k].media_link + '" target="_blank"><figure>';
     clp +=
       '<img src="' +
       socialArray[k].media_src[1] +
