@@ -222,6 +222,7 @@ var gallery = [
           onclick: '',
         },
       ],
+      notifications: [],
       activities: [
         {
           media_id: '',
@@ -403,6 +404,7 @@ var gallery = [
             ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
         },
       ],
+      notifications: [],
       activities: [
         {
           media_id: 'eventos',
@@ -538,6 +540,12 @@ var gallery = [
             ' Sabias que las ventajas de practicar tenis son físicas, sociales y mentales?El tenis es un deporte que favorece la movilidad y flexibilidad de tu cuerpo. Fortalece la musculatura y huesos, también beneficia tu salud cardiovascular, ya que se trata de un ejercicio aeróbico, por ende mejora tu entorno cardiaco y respiratorio. A nivel social es un deporte que se realiza con otras personas, lo que mejora la relación con ellas, evitando el egoísmo e individualismo ya que elimina el estrés. La fortaleza que hace ganar los partidos no es sólo física, también mental. El control de las emociones es clave a la hora de enfrentarse a un partido, y eso se trabaja y se logra. Y tu, ¿cuando comienzas?',
         },
       ],
+      notifications: [
+        'Escalerillas Tenis Marzo 2025.&nbsp;&nbsp;Reservaen sus Puestos!',
+        'Torneos Tenis de Verano 2024.&nbsp;&nbsp;INSCRIBANCE HOY!',
+        'Llamen a + 56977660445',
+        '&nbsp;&nbsp;&nbsp;',
+      ],
       activities: [
         {
           media_id: 'tenis',
@@ -665,6 +673,7 @@ var gallery = [
             ' Un emocionante partido de pádel disputado entre cuatro compañeros.',
         },
       ],
+      notifications: [],
       activities: [
         {
           media_id: 'padel',
@@ -800,6 +809,12 @@ var gallery = [
             ' Premiacion escalerilla temporada de primavera 2021. Felicitaciones a todos nuestros deportistas. Estamos muy felices de su participación en nuestro club, de verlos mejorar, disfrutar de su proceso y de este bello deporte. Tomaremos un pequeño receso durante este verano respecto a la escalerilla y retomaremos nuestra competencia en marzo 2022. ¡LOS ESPERAMOS!',
         },
       ],
+      notifications: [
+        'Escalerillas Tenis Marzo 2025.&nbsp;&nbsp;Reservaen sus Puestos!',
+        'Torneos Tenis de Verano 2024.&nbsp;&nbsp;INSCRIBANCE HOY!',
+        'Llamen a + 56977660445',
+        '&nbsp;&nbsp;&nbsp;',
+      ],
       activities: [
         {
           media_id: 'torneoAdultos',
@@ -829,7 +844,7 @@ var gallery = [
 //Team
 var teamArray = [
   {
-    h6: 'Bien Venidos al <b>Club los Paltos</b>, un club que se dedirica a brindar un espacio que permita a las personas de la comuna de Lampa recrearse deportivamente, en un precioso lugar con excelentes instalaciones que permitan que la experiencia sea lo más agradable y segura posible. Nuestra mission es contribuir por medio del deporte en la salud de la persona y generar una competencia deportiva saludable y entretenida. <br /><br />  <b>Nuestros Liderazgo</b> está formado por personas apasionadas por servir y garantizar que cada huésped tenga la oportunidad de sentirse cómodo en cualquier área del club, ya sea en el tenis o pádel, o participando en una agradable reunión en el quincho. Prestan toda su atención y dedicación para mantener un alto nivel de excelencia.<br /><br />  <b>Nuestros Instructores</b> que se especializan con una gran pasión y están profesionalmente capacitados para tratar y ayudar a cada persona y niño de todos los niveles a mejorar sus habilidades y alcanzar sus objetivos.<br /><br />  <b>Juntos</b> generan un ambiente que es tanto competitivo como acogedor e inclusivo.',
+    h6: 'Bienvenidos a <b>Club los Paltos</b>, un club que se dedica a brindar un espacio que permita a las personas de la comuna de Lampa recrearse deportivamente, en un precioso lugar con excelentes instalaciones que permitan que la experiencia sea lo más agradable y segura posible. Nuestra mision es contribuir por medio del deporte en la salud de la persona y generar una competencia deportiva saludable y entretenida.<br /><br />  <b>Quienes lideran</b> nuestro club son personas apasionadas por servir y garantizar que tengas la oportunidad de sentirte cómodo en cualquier área del club, ya sea en el tenis o pádel, o participando en una agradable reunión en el quincho. Prestan toda su atención y dedicación para mantener un alto nivel de excelencia.<br /><br /><b>Nuestros Instructores</b> que trabajan con gran pasión y profesionalismo, están capacitados para tratar y ayudar a cada persona y niño de todos los niveles a mejorar sus habilidades y alcanzar sus objetivos.<br /><br /> <b>Juntos</b>generan un ambiente que es tanto competitivo como acogedor e inclusivo.',
     list: [
       {
         team_id: 'ceo',

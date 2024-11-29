@@ -111,7 +111,9 @@ ul li {
 ul li:not(section#seOfrece ul li) {
   list-style: none;
 }
-img:not(img.nav-icon):not(img.team_icon):not(figure.footer-wave img) {
+img:not(img.nav-icon):not(img.team_icon):not(figure.footer-wave img):not(
+    div.notification img
+  ):not(#toast > div > img) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -279,6 +281,113 @@ nav a h6:active {
   position: relative;
   left: -13px;
 }
+/*-----------------------toast ----*/
+.wrapper {
+  /* width: 620px; */
+  width: 100%;
+  padding: 30px 20px;
+  position: absolute;
+  top: 100px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#toast {
+  /* width: 390px;
+  height: 68px; */
+  width: 100%;
+  height: auto;
+  padding: 11px;
+  background-color: var(--white);
+  box-shadow: 0 10px 20px rgba(75, 50, 50, 0.05);
+  border-left: 20px solid var(--grey);
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 0.5fr;
+  transition: 2s;
+}
+.wrapper {
+  left: 0;
+}
+#toast {
+  transform: translate(-400px);
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+}
+.container div a {
+  cursor: pointer;
+}
+.container div p {
+  color: var(--red);
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+.container div p:first-child {
+  font-size: 18px;
+}
+.container div p:last-child {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#toast button {
+  align-self: flex-start;
+  background-color: transparent;
+  font-size: 25px;
+  line-height: 0;
+  color: var(--red);
+  cursor: pointer;
+  width: 5%;
+}
+/*-----------------------notification bar ----*/
+div.notification {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -75px;
+}
+#toast_content {
+  width: 100%;
+}
+
+#toast_content ul {
+  display: flex;
+  grid-gap: 5px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#toast_content ul li {
+  position: relative;
+  left: 0;
+  width: 800%;
+  -webkit-animation: loop 35s infinite;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+#toast_content ul li p {
+  padding: 0 20px;
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--red);
+  white-space: nowrap;
+}
+
 /*-----------------------wave ----*/
 figure.wave {
   position: relative;
@@ -662,6 +771,9 @@ footer section#socialM ul li a figure {
   nav ul.list.min.max {
     width: 50vw;
   }
+  #toast {
+    width: 75%;
+  }
   figure.wave h1 {
     top: 100px;
     height: 160px;
@@ -802,6 +914,9 @@ footer section#socialM ul li a figure {
     align-items: center;
     width: auto;
   }
+  #toast {
+    width: 55%;
+  }
   figure.wave img {
     position: relative;
     top: -28px;
@@ -908,6 +1023,9 @@ footer section#socialM ul li a figure {
   body > header nav#navList {
     max-width: 600px;
   }
+  #toast {
+    width: 41%;
+  }
   figure.wave img {
     top: -100px;
   }
@@ -920,6 +1038,9 @@ footer section#socialM ul li a figure {
   }
   main.grid ul {
     margin: 0 auto 35px auto;
+  }
+  div.notification {
+    top: 0;
   }
   section#actividades {
     top: 26px;
@@ -976,7 +1097,9 @@ footer section#socialM ul li a figure {
 }
 @media screen and (min-width: 1200px) {
   img:not(img.nav-icon):not(main#about img):not(figure.footer-wave img):not(
-      img.team_icon:not(figure.footer-wave img)
+      img.team_icon
+    ):not(figure.footer-wave img):not(div.notification img):not(
+      #toast > div > img
     ) {
     width: 100%;
     height: 100%;

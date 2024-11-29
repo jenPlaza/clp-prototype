@@ -6,7 +6,7 @@
 <meta name=author content="Centro Recreativo | Club Los Paltos - Tenis, Pádel y Eventos Sociales">
 <meta name="title" content="Centro Recreativo | Club Los Paltos - Tenis, Pádel y Eventos Sociales">
 <meta name="description" content="TENIS. PADEL. EVENTOS RECREATIVOS. Disfruta del tenis en pistas de tierra batida, modernas canchas de pádel, clases con expertos o momentos sociales junto al quincho.">
-<meta name="keywords" content="centro Recreativo y deportivo, centro recreativo y deportivo, de tenis santiago, club de tenis cerca mio, club deportivo cerca mio, club deportivo santiago, club de padel santiago, club de padel cerca mio, jugar padel santiago, canchas, canchas de arcilla, canchas de tenis, canchas de padel, eventos socials, eventos corporativo, escalerillas de tenis, escalerillas de padel, clases de tenis, clases de padel, centro recreativo deportivo santiago, club recreativo, centro de tenis, centro de padel, centro de tenis recreativo, centro de padel recreativo">
+<meta name="keywords" content="centro recreativo y deportivo, centro recreacional tenis, club los paltos, club de tenis cerca mio, club de padel cerca mio,club tenis santiago, pistas de padel, pistas de padel santiago, canchas de tierra batida, clases para niños tenis, clases para adultos tenis, torneos de tenis, escalerillas de tenis, alquiler de quincho, fiestas de fin de ano, fiesta corporativos, centro recreativo con estacionamiento privado">
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="Spanish">
@@ -34,7 +34,7 @@
   {
                   "@context": "https://schema.org/",
                   "@type"             : "WebSite",
-                  "about"             : {"@id": "/clublospaltos.neocities.org/nosotros",
+                  "about"             : {"@id": "/clublospaltos.neocities.org/nosotros"},
         "hasPart": [
               {
                     "@type": "WebPage",
@@ -179,10 +179,11 @@
                   ]
                 }
                   ]        
-  }
-  </script>
+}
+}
+</script>
 </head>
-  <body onload="takeATour();">
+  <body onload="takeATour();showToast()">
     <header id="top" class="scroll-in-place">
       <figure><a href="./index.html">
         <img src="./assets/images/logos/CLP_wt.png" alt="white logo" />
@@ -192,6 +193,21 @@
       </figure>
       <nav id="navList" style="display: none"></nav>
     </header>
+     <!-- Toast -->
+    <section>
+      <div class="wrapper">
+        <div id="toast">
+          <div  class="container">
+            <img  src="./assets/images/icons/tennis.gif" alt="target icon" width="auto" height="30px"/>
+            <div>
+            <p >Torneos de Verano. </p>
+            <a href="./escalerillas.html"><p>Inscribence Hoy!</p></a>
+          </div>
+          </div>
+          <button id="close" onclick="closeToast()">&times;</button>
+        </div>
+      </div>
+    </section>
     <figure class="wave">
       <img
         src="./assets/images/wave-green-black-grey.png"
@@ -207,7 +223,17 @@
           <a href="/"><h2>Pero Hay Mas</h2></a>
         </div>
       </section>
-      <!-- actividades -->
+<!-- notification bar -->
+      <div class="notification">
+      <div id="toast_content">
+        <ul>
+          <li><img  src="./assets/images/icons/tennis.gif" alt="target icon" width="auto" height="30px"/><p>Escalerillas Tenis Marzo 2025.&nbsp;&nbsp;Reservaen sus Puestos!  </p></li>
+          <li><img  src="./assets/images/icons/tennis.gif" alt="target icon" width="auto" height="30px"/><p>Torneos Tenis de Verano 2024.&nbsp;&nbsp;INSCRIBANCE HOY!  </p></li>
+          <li><img  src="./assets/images/icons/tennis.gif" alt="target icon" width="auto" height="30px"/><p>Llamen a + 56977660445</p><img  src="./assets/images/icons/tennis.gif" alt="target icon" width="auto" height="30px"/></li>
+        </ul>
+      </div>
+      </div>
+            <!-- actividades -->
       <section id="actividades">
         <h6>
           En tu tiempo libre, ven y disfruta de nuestras canchas de tenis o

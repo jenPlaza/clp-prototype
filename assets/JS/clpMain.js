@@ -418,6 +418,20 @@ function displaySocial() {
   clp += '</ul>';
   document.getElementById('socialMedia').innerHTML = clp;
 }
+//TOAST Meassage
+let xToast;
+let toast = document.getElementById('toast');
+function showToast() {
+  clearTimeout(xToast);
+  toast.style.transform = 'translateX(0)';
+  toast.style.display = 'flex';
+  xToast = setTimeout(() => {
+    toast.style.transform = 'translateX(100vw)';
+  }, 8000);
+}
+function closeToast() {
+  toast.style.transform = 'translateX(100%)';
+}
 
 //HEADER
 var menu = '<ul class="list min">';
