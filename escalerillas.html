@@ -28,6 +28,7 @@ Centro Recreativo | Escalerillas Club Los Paltos - Tenis y Pádel
 <link rel=stylesheet href=./assets/css/clpReusable.css>
 <link rel=stylesheet href=./assets/css/clpEvents.css>
 <link rel=stylesheet href=./assets/css/clpActivity.css>
+<link rel=stylesheet href=./assets/css/clpCalendario.css>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -190,7 +191,16 @@ Centro Recreativo | Escalerillas Club Los Paltos - Tenis y Pádel
 <img src=./assets/images/icons/menu-white.png alt="white menu icon">
 </figure>
 <nav id=navList style=display:none></nav>
-</header>
+<section class=reservaciones style=display:none>
+  <header class=x>
+  <div id=close onclick=closeReservations()>Cerrar</div>
+  <h3 style=margin-bottom:-5px>Centro de Reservacion Club Los Paltos</h3>
+  <p> Direccion: Balmaceda 951, 9380173 Lampa, Región Metropolitana, Chile<br>telefono: +56 9 7766 0445<br>Cancelaciones : 24 horas antes de la reserva </p>
+  </header>
+  <ul id=actividadesCLP style=display:flex></ul>
+  <section class=calendar style=display:none></section>
+  </section>
+  </header>
 <section>
 <div class=wrapper>
 <div id=toast>
@@ -242,5 +252,6 @@ En tu tiempo libre, ven y disfruta de nuestras canchas de tenis o pádel. Prueba
 <script src=./assets/js/clpData.js></script>
 <script src=./assets/js/clpMain.js></script>
 <script src=./assets/js/clpGrids.js></script>
+<script src=./assets/js/clpCalendar.js></script>
 </body>
 </html>
