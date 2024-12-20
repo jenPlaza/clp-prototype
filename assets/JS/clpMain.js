@@ -83,9 +83,9 @@ function displayData(e) {
   const xId = window.location.href.split('=');
   var activityId = xId.pop();
 
-  //console.log(page);
+  console.log(page);
 
-  if (page == 'acontecimientos.html') {
+  if (page == 'eventos.html') {
     displayGallery = eventStory;
     contentId = 'event_story_content';
     index = 1;
@@ -218,6 +218,7 @@ function displayData(e) {
 
   document.getElementById(contentId).innerHTML = open;
 }
+
 function closeData(e) {
   console.log('e: ', e);
   var id = e;
@@ -234,10 +235,10 @@ function closeData(e) {
   // console.log('activityId: ', activityId);
   // console.log('id: ', id);
 
-  if (page == 'acontecimientos.html' && id == 'eventos') {
+  if (page == 'eventos.html' && id == 'eventos') {
     //events
     displayGallery = eventStory;
-  } else if (page == 'acontecimientos.html') {
+  } else if (page == 'eventos.html') {
     //centro recreacion
     displayGallery = centroRecreacion;
   } else if (
@@ -271,6 +272,7 @@ function closeData(e) {
     displayGallery.style.display = 'none';
   }
 }
+
 function shortenMenu() {
   var navList = document.querySelector('.list');
   const navshow = document.getElementsByClassName('nav-link');
@@ -347,7 +349,7 @@ function displayTeam() {
   document.getElementById('team_gallery').innerHTML = teamMembers;
 }
 function toTeams() {
-  location.href = './equipo.html';
+  location.href = './equipo';
   //neocities
   //location.href = './equipo';
 }
@@ -396,9 +398,9 @@ function toInstructor(e) {
   document.getElementById(contentId).innerHTML = open;
 }
 function toEvents() {
-  location.href = './acontecimientos.html';
+  location.href = './eventos';
   //neocities
-  //location.href = './acontecimientos';
+  //location.href = './eventos';
 }
 //CONTACT SOCIAL MEDIA
 function displaySocial() {
@@ -430,7 +432,7 @@ function showToast() {
   }, 8000);
 }
 function closeToast() {
-  toast.style.transform = 'translateX(100%)';
+  toast.style.transform = 'translateX(100vw)';
 }
 
 //HEADER
@@ -441,7 +443,28 @@ menu +=
 menu +=
   '<img src="./assets/images/icons/arrow-right-small-white.png" alt="white menu icon" width="16px" height="16px" class="nav-icon nav-open" onclick="extendMenu();" />';
 menu += '</li>';
-for (var h = 0; h < navigationArray.length - 4; h++) {
+menu +=
+  '<li><a href="' +
+  navigationArray[0].link_href +
+  '"><img src="' +
+  navigationArray[0].icon_src +
+  '" alt="' +
+  navigationArray[0].icon_alt +
+  '" width="35px" height="35px" class="nav-icon"/></a>';
+menu +=
+  '<a href="' +
+  navigationArray[0].link_href +
+  '" class="nav-link"><h6><em>' +
+  navigationArray[0].link_name +
+  '</em></h6></a>';
+menu += '</li>';
+menu += '<li class="dropdown">';
+menu +=
+  '<img src="./assets/images/icons/calendar-white.png" alt="white menu icon" width="30px" height="30px" class="nav-icon" onclick="displayReservations();"/>';
+menu +=
+  '<h6 class="brandbtn nav-link" onclick="displayReservations();"><em>Calendario</em></h6>';
+menu += '</li>';
+for (var h = 2; h < navigationArray.length - 4; h++) {
   menu +=
     '<li><a href="' +
     navigationArray[h].link_href +
@@ -504,6 +527,26 @@ menu += '</ul>';
 
 document.getElementById('navList').innerHTML = menu;
 
+//Reservations
+var reserva = '';
+for (var r = 0; r < reservArray.length; r++) {
+  reserva += '<li><article>';
+  reserva +=
+    '<figure id="' +
+    reservArray[r].calendar_id +
+    '" onclick="displayCalendar(this.id)">';
+  reserva +=
+    '<img src="' +
+    reservArray[r].calendar_icon_src +
+    '" alt="' +
+    reservArray[r].calendar_icon_alt +
+    '">';
+  reserva +=
+    '<figcaption><h5>' + reservArray[r].calendar_name + '</h5></figcaption>';
+  reserva += '</figure></article></li>';
+}
+document.getElementById('actividadesCLP').innerHTML = reserva;
+
 //NAV Scrolling
 const navMenu = document.querySelector('.scroll-in-place');
 //console.log(window.scrollY);
@@ -551,7 +594,7 @@ document.getElementById('sports').innerHTML = activity;
 //FOOTER LOCATION
 var locate = '<figure id="logo">';
 locate +=
-  '<a href="./index.html#top"><img src="' +
+  '<a href="./index#top"><img src="' +
   company[0].logo_info[0].img_src[0] +
   '" alt="logo" width="40px" height="40px" /></a></figure>';
 locate += '<div><p><em><b>' + company[0].company_name + '</b></em></p>';
@@ -564,14 +607,14 @@ locate +=
   '</b></em></p></a></div></div>';
 
 document.getElementById('location').innerHTML = locate;
-console.log(socialArray[3].media_link);
+
 //FOOTER SOCIAL
 var clp = '<ul>';
 if (mediaQueryMobile.matches) {
   for (var k = 0; k < socialArray.length; k++) {
     clp += '<li>';
     clp +=
-      '<a href="' + socialArray[k].media_link[1] + '" target="_blank"><figure>';
+      '<a href="' + socialArray[k].media_link + '" target="_blank"><figure>';
     clp +=
       '<img src="' +
       socialArray[k].media_src[0] +

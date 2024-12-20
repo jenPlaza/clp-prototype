@@ -1,27 +1,37 @@
 figure.wave h1 {
   overflow-wrap: break-word;
-  padding: 3%;
-  height: 275px;
+  height: 170px;
 }
 body div#body {
-  top: 220px;
+  top: 150px;
   z-index: 1;
 }
 /*-------------MAIN-------------*/
 main {
-  top: 20px;
+  top: 0;
 }
 main h6 {
-  padding-top: 0.5%;
+  padding: 0.5% 2% 0 10%;
   margin: 0 0 20px auto;
+}
+main div h6 {
+  width: 100%;
+  margin: 0 auto 35px auto;
 }
 div#body
   section:nth-child(2):not(div#body footer section:nth-child(2)):not(
-    body:has(.tenis) div#body section#date
-  ):not(body:has(.padel) div#body section#date):not(
-    body:has(.yoga) div#body section#date
-  ) {
+    section.button
+  ):not(section#socialM):not(section#date) {
   padding: 5%;
+}
+
+main#event_gallery.grid > div section.button {
+  padding: 0;
+  width: 90%;
+  float: right;
+}
+main#event_gallery.grid > div section.button h3 {
+  margin: 0;
 }
 div#body section:nth-child(2) ol li {
   position: relative;
@@ -273,7 +283,7 @@ section#date a:hover {
 }
 section#actividades {
   top: -100px;
-  height: 1345px;
+  height: auto;
   border: 2px solid transparent;
 }
 section#date h3 {
@@ -304,32 +314,18 @@ section#actividades > h6 {
 }
 /*-------------TOUR-------------*/
 section#tour {
-  bottom: -200px;
+  bottom: -280px;
 }
-footer {
-  height: 188px;
-  bottom: -460px;
-}
-footer div {
-  margin: -9px 0 0 0;
-}
-@media screen and (min-width: 399px) and (max-width: 575px) {
-  figure.wave h1 {
-    height: 215px;
-  }
-  body div#body {
-    top: 85px;
-  }
-}
+
 @media screen and (min-width: 576px) {
   figure.wave h1 {
-    height: 215px;
+    height: 200px;
   }
   body div#body {
-    top: 85px;
+    top: 80px;
   }
   main {
-    top: 20px;
+    top: 0;
     margin-bottom: 0;
   }
   main h4 {
@@ -350,7 +346,7 @@ footer div {
     object-position: 50% 25%;
   }
   section#actividades {
-    height: 945px;
+    height: 850px;
   }
   section#seOfrece ul li p em {
     margin-left: 0;
@@ -366,7 +362,7 @@ footer div {
   iframe.iframeVideoLandscape {
     height: 40vh;
   }
-  iframe.iframeVideo\" {
+  iframe.iframeVideo\ {
     height: 108vh;
   }
   iframe.iframeVideoLandscape.laRoja {
@@ -449,9 +445,6 @@ footer div {
   }
 
   /*-------------Celendar-------------*/
-  section#date {
-    padding: 50px 0;
-  }
   section#actividades ul li {
     padding: 0;
   }
@@ -459,30 +452,32 @@ footer div {
     bottom: -300px;
     height: 350px;
   }
-  footer {
-    bottom: -525px;
+}
+@media screen and (min-width: 450px) and (max-width: 575px) {
+  body div#body {
+    top: 100px;
   }
 }
-@media screen and (min-width: 578px) and (max-width: 730px) {
+@media screen and (min-width: 629px) and (max-width: 730px) {
   figure.wave h1 {
-    top: 135px;
-    height: 200px;
+    top: 150px;
+    height: 100px;
   }
   body div#body {
-    top: 200px;
+    top: 0;
   }
 }
 @media screen and (min-width: 731px) and (max-width: 767px) {
   body div#body {
-    top: 30px;
+    top: 0;
   }
 }
 @media screen and (min-width: 768px) {
   figure.wave h1 {
-    height: 188px;
+    height: 125px;
   }
   body div#body {
-    top: 325px;
+    top: 235px;
     position: absolute;
     margin: 0 auto;
     width: 100%;
@@ -504,11 +499,14 @@ footer div {
     width: 100%;
     padding: 0.5% 5%;
   }
+  main#event_gallery.grid > div section.button {
+    width: 95%;
+  }
   /*-------------EVENTS-------------*/
   iframe.iframeVideoLandscape {
     height: 450px;
   }
-  .iframeContainer\" {
+  .iframeContainer\ {
     height: 85vh;
   }
   iframe.iframeVideoPortrait.adjust {
@@ -655,10 +653,16 @@ footer div {
     height: 400px;
     width: 100%;
   }
+  section#date h3 {
+    width: 87%;
+  }
   section#actividades {
     top: 0;
-    padding: 5% 0;
-    height: 685px;
+    padding: 0;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   section#actividades h4 {
     width: 100%;
@@ -673,14 +677,6 @@ footer div {
   section#tour {
     bottom: -360px;
   }
-  figure.footer-wave {
-    bottom: -485px;
-  }
-  footer {
-    bottom: -450px;
-    height: 92px;
-    position: absolute;
-  }
 }
 @media screen and (min-width: 992px) {
   figure.wave h1 {
@@ -691,6 +687,7 @@ footer div {
   }
   main {
     height: unset;
+    top: 0;
   }
   section#seOfrece div {
     width: 90%;
@@ -700,6 +697,10 @@ footer div {
   }
   div#body section:nth-child(2) ol {
     columns: 3;
+  }
+  #toast {
+    width: 41%;
+    max-width: 425px;
   }
   /*-------------Story -------------*/
   div#event_story,
@@ -727,7 +728,9 @@ footer div {
     margin-top: -150px;
     height: 700px;
   }
-
+  section#date h3 {
+    width: 70%;
+  }
   section#actividades {
     top: 0;
     top: 0;
@@ -736,12 +739,6 @@ footer div {
   }
   section#actividades h4 {
     padding: 0;
-  }
-  figure.footer-wave {
-    bottom: -470px;
-  }
-  footer {
-    bottom: -433px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -767,10 +764,10 @@ footer div {
   div#body section:nth-child(2):has(ol) {
     top: 0;
   }
-  .iframeContainer\" {
+  .iframeContainer\ {
     height: 56vh;
   }
-  iframe.iframeVideo\" {
+  iframe.iframeVideo\ {
     height: 89vh;
     width: 50%;
     left: 0;
@@ -779,6 +776,12 @@ footer div {
   iframe.iframeVideoPortrait.adjust {
     height: 752px;
     margin-top: -96px;
+  }
+  div#event_story_content figure img.imgCenter {
+    object-position: 50% 55%;
+  }
+  div#event_story_content figure img.imgBottom {
+    object-position: 50% bottom;
   }
   /*-------------Story - Header-------------*/
   div#event_story > header,
@@ -840,9 +843,11 @@ footer div {
   section#date {
     top: 0;
   }
+  section#date h3 {
+    width: 59%;
+  }
   section#actividades {
-    top: 0;
-    height: 500px;
+    height: 550px;
   }
   section#actividades > h6 {
     max-width: 980px;
@@ -850,13 +855,6 @@ footer div {
   section#tour {
     bottom: -315px;
     height: 285px;
-  }
-  figure.footer-wave {
-    bottom: -450px;
-  }
-  footer {
-    bottom: -406px;
-    height: 100px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -925,28 +923,28 @@ footer div {
     columns: 4;
   }
   /*-------------Calendario -------------*/
+  div#body section:nth-child(2):not(section#date) {
+    padding: 0;
+  }
   section#date {
     top: 0;
     padding: 0 5%;
+  }
+  section#date h3 {
+    width: auto;
+    flex: unset;
   }
   section#date a {
     width: 600px;
   }
   section#actividades {
     top: 50px;
-    height: 550px;
   }
   section#actividades ul {
     margin: 0 auto 80px auto;
   }
   section#tour {
     bottom: -340px;
-  }
-  figure.footer-wave {
-    bottom: -470px;
-  }
-  footer {
-    bottom: -422px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1008,6 +1006,9 @@ footer div {
   }
   section#seOfrece ul li p em {
     margin-left: 0;
+  }
+  section#actividades {
+    height: 600px;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -1096,25 +1097,27 @@ footer div {
   section#date a {
     width: 800px;
   }
+  div#body section:nth-child(2):not(section#date) {
+    padding: 0 3%;
+    max-width: 1800px;
+  }
   section#tour {
     margin: 0 auto 3% auto;
     bottom: -390px;
-  }
-  figure.footer-wave {
-    bottom: -475px;
-  }
-  footer {
-    bottom: -433px;
   }
 }
 @media screen and (min-width: 2000px) {
   figure.wave img {
     top: -385px;
   }
-  main h6 {
+  main h6,
+  main div h6 {
     margin: 0 auto 20px auto;
     padding: 1% 13%;
     max-width: unset;
+  }
+  main#event_gallery.grid > div section.button {
+    width: 87%;
   }
   main.grid ul {
     top: -35px;
@@ -1123,8 +1126,15 @@ footer div {
   section#date {
     padding: 0 13%;
   }
+
+  div#body section:nth-child(2):not(section#date) {
+    padding: 0 13%;
+    width: 100%;
+    max-width: 100%;
+    float: unset;
+  }
   /*-------------EVENTS-------------*/
-  iframe.iframeVideo\" {
+  iframe.iframeVideo\ {
     bottom: -50px;
   }
   div#torneoOrganizer_story_content
@@ -1194,7 +1204,9 @@ footer div {
     margin-left: 150px;
   }
   section#date a {
-    width: 700px;
+    width: auto;
+    max-width: 817px;
+    min-width: 678px;
   }
   section#tour {
     bottom: -400px;
@@ -1212,9 +1224,18 @@ footer div {
   body div#body {
     top: 300px;
   }
-  main h6 {
+  main h6,
+  main div h6 {
     padding: 1% 10%;
     max-width: 2400px;
+  }
+  main#event_gallery.grid > div section.button {
+    width: 90%;
+  }
+  div#body section:nth-child(2):not(section#date) {
+    padding: 0 10%;
+    max-width: 2400px;
+    margin: 0 auto;
   }
 
   /*-------------EVENTS-------------*/
@@ -1297,6 +1318,6 @@ footer div {
     padding: 0 10%;
   }
   section#date a {
-    width: 860px;
+    width: 817px;
   }
 }

@@ -7,14 +7,14 @@ if ('serviceWorker' in navigator) {
 // Core assets
 let coreAssets = [
   '/',
-  '/index.html',
-  '/acontecimientos.html',
-  '/actividades.html',
-  '/equipo.html',
-  '/nosotros.html',
-  '/contacto.html',
-  '/equipo.html',
-  '/escalerillas.html',
+  './index.html',
+  './eventos.html',
+  './actividades.html',
+  './equipo.html',
+  './nosotros.html',
+  './contacto.html',
+  './equipo.html',
+  './escalerillas.html',
   './assets/js/clpMain.js',
   './assets/js/clpGrids.js',
   './assets/js/clpData.js',
@@ -72,7 +72,7 @@ let coreAssets = [
   './assets/images/galleria/padel/padelNocturnoDomingo.jpeg',
   './assets/images/galleria/padel/americanoNocturno-bk.jpeg',
   './assets/images/galleria/padel/americanoNocturno.jpeg',
-  'assets/images/galleria/padel/padelEntreAmigos-bk.png',
+  './assets/images/galleria/padel/padelEntreAmigos-bk.png',
   './assets/images/galleria/padel/padel-3-bk.png',
   './assets/images/galleria/torneo/tournament_bk.jpeg',
   './assets/images/galleria/torneo/tournament.jpeg',
@@ -88,6 +88,11 @@ let coreAssets = [
   './assets/images/galleria/torneo/laRojaDeTenisJuvenil-bk.png',
   './assets/images/galleria/torneo/torneoPrimavera_bk.png',
   './assets/images/actividades/outdoor_yoga-bk.jpeg',
+  './assets/images/team/Diego_Pina.png',
+  './assets/images/team/Eduardo_Pina.png',
+  './assets/images/team/Geraldine_Pina.png',
+  './assets/images/team/headshot_bw.jpg',
+  './assets/images/team/Julio_Pina.png',
 ];
 
 // On install, cache core assets

@@ -1,0 +1,352 @@
+p {
+  color: var(--white);
+}
+nav ul.list.min {
+  top: 286px;
+}
+nav ul.list.min.max {
+  top: 285px;
+}
+nav ul.list.min.top255 {
+  top: 360px;
+}
+.nav-link.show {
+  display: block;
+}
+section header.x {
+  height: 30px;
+  width: 100%;
+  position: relative;
+  left: 25px;
+}
+section.reservaciones header.x div {
+  height: 100%;
+  width: 16%;
+  float: left;
+  display: block;
+}
+section.reservaciones h3 {
+  margin-top: 50px;
+  margin-bottom: -16px;
+  width: 82%;
+}
+section.reservaciones p {
+  width: 85%;
+}
+section.calendar div,
+section.calendar h3,
+section.calendar p,
+section.reservaciones header {
+  width: 100vw;
+  position: relative;
+}
+section.calendar {
+  margin-top: 275px;
+  margin-left: 0;
+  width: 100%;
+}
+section.calendar header.x div {
+  height: 100%;
+  position: relative;
+  top: -25px;
+  width: 100%;
+}
+section.calendar h3 {
+  margin-top: 0;
+  margin-bottom: -16px;
+  left: 25px;
+}
+section.calendar p {
+  left: 25px;
+}
+section.calendar div {
+  border: 1px;
+  height: 550px;
+  overflow-y: hidden;
+  margin-top: 25px;
+  overflow-x: scroll;
+  left: 5px;
+}
+#autoHide {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-transform: uppercase;
+  -webkit-animation: 5s ease-in 6s forwards cssAnimation;
+}
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+iframe {
+  margin-top: -230px;
+  z-index: 0;
+  width: 650px;
+  height: 890px;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+}
+figure.wave {
+  position: relative;
+  top: 0;
+}
+body > header#top {
+  overflow: unset;
+  height: 64px;
+  top: 0;
+}
+body
+  > header#top
+  figure:first-child:not(section.reservaciones ul li article figure) {
+  top: 0;
+  width: 300px;
+}
+body > header#top figure:not(section.reservaciones ul li article figure) {
+  height: 55px;
+  top: 0;
+}
+body > header nav#navList {
+  top: 0;
+  height: 35px;
+}
+body > header > nav#navList ul.list.min {
+  position: relative;
+  margin: 0;
+}
+section.reservaciones {
+  flex-direction: row;
+  display: flex;
+  margin-top: 571px;
+  background-color: var(--green);
+  position: relative;
+  width: 97%;
+  height: 522px;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+section.reservaciones.calendario {
+  margin-top: 559px;
+}
+section.reservaciones header {
+  margin-top: 35px;
+}
+section.reservaciones ul#actividadesCLP {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 309px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-left: 8%;
+  padding: 5%;
+}
+section.reservaciones ul#actividadesCLP li {
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+section.reservaciones ul#actividadesCLP li article figure {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 130px;
+  position: relative;
+  left: 0;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  padding-top: 10%;
+}
+section.reservaciones ul#actividadesCLP li article figure figcaption {
+  margin-top: -25px;
+}
+section.reservaciones ul#actividadesCLP li article figure img {
+  width: 75%;
+  height: 75%;
+}
+section.reservaciones ul#actividadesCLP li article figure#tenisCalendar img {
+  border-radius: 50%;
+}
+@media screen and (min-width: 576px) {
+  section.reservaciones ul#actividadesCLP {
+    margin-top: 215px;
+    margin-left: 5%;
+  }
+  section.reservaciones ul#actividadesCLP li article figure {
+    width: 150px;
+    height: 182px;
+  }
+  section.calendar {
+    margin-top: 200px;
+  }
+  section.reservaciones.calendario {
+    margin-top: 576px;
+  }
+  section.reservaciones {
+    height: 542px;
+  }
+  iframe {
+    margin-top: -230px;
+  }
+  section.calendar div {
+    height: 550px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.reservaciones {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 608px;
+  }
+  section.reservaciones.expand {
+    height: 900px;
+    margin-top: 942px;
+  }
+  section.reservaciones ul#actividadesCLP {
+    margin-top: 210px;
+    margin-left: -18px;
+    justify-content: space-evenly;
+    max-width: 992px;
+    overflow-x: hidden;
+  }
+  section.reservaciones ul#actividadesCLP li article figure {
+    width: 225px;
+    height: 245px;
+  }
+  ul#actividadesCLP li article figure img {
+    width: 65%;
+    height: 65%;
+  }
+  ul#actividadesCLP li article figure figcaption {
+    margin-top: -7px;
+    text-transform: uppercase;
+  }
+  section.calendar {
+    margin-top: 185px;
+  }
+  section.calendar div {
+    height: 655px;
+    overflow-y: scroll;
+  }
+  iframe {
+    margin-top: -230px;
+    height: 1080px;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  section.reservaciones ul#actividadesCLP {
+    margin-top: 180px;
+  }
+  section.reservaciones ul#actividadesCLP li article figure {
+    width: 250px;
+    height: 280px;
+  }
+  section.reservaciones.expand {
+    height: 880px;
+  }
+  iframe {
+    margin-top: -208px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.reservaciones {
+    flex-direction: row;
+    gap: 55px;
+    height: 375px;
+    margin-top: 430px;
+  }
+  section.reservaciones h3,
+  section.reservaciones p {
+    width: 100%;
+  }
+  section.reservaciones ul#actividadesCLP {
+    margin-top: 35px;
+    height: 288px;
+    width: 66%;
+    padding: 2%;
+    max-width: 890px;
+  }
+  section.reservaciones ul#actividadesCLP li article figure {
+    width: 200px;
+    height: 230px;
+  }
+  section.reservaciones header {
+    width: 40%;
+  }
+  section.calendar {
+    margin-top: 0;
+    width: 75vw;
+  }
+  section.calendar div {
+    height: 660px;
+    width: 64vw;
+    overflow-x: scroll;
+    overflow-y: auto;
+  }
+  section.calendar header.x {
+    width: 94%;
+  }
+  section.calendar header.x div {
+    left: 82%;
+  }
+  iframe {
+    margin-top: -210px;
+    height: 1070px;
+  }
+  section.reservaciones.expand {
+    height: 650px;
+    margin-top: 710px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  section.reservaciones header {
+    width: 33%;
+  }
+  section.calendar header.x div {
+    left: 84%;
+  }
+  section.calendar div {
+    width: 66vw;
+  }
+}
+@media screen and (min-width: 1600px) {
+  section.reservaciones header {
+    width: 27%;
+  }
+  section.calendar header.x div {
+    left: 87%;
+  }
+  section.calendar div {
+    width: 71vw;
+    height: 650px;
+    overflow-y: hidden;
+  }
+  section.reservaciones.expand {
+    height: 850px;
+    margin-top: 905px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  section.reservaciones header {
+    width: 23%;
+  }
+  section.calendar header.x div {
+    left: 89%;
+  }
+  section.calendar div {
+    width: 75vw;
+  }
+  iframe {
+    margin-top: -200px;
+  }
+}

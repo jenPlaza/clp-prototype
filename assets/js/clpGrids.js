@@ -6,7 +6,7 @@
 const relativePath = window.location.pathname.split('/');
 //console.log(relativePath);
 var page = relativePath.pop();
-//console.log(page); //index.html
+//console.log(page); //index
 //testing
 //console.log('h4: ', gallery[0].home.h6);
 //console.log('main: ', gallery[0].home.list.length);
@@ -24,7 +24,7 @@ if (page == 'index.html') {
   main = gallery[0].home;
   id = 'home_gallery';
   click = '';
-} else if (page == 'acontecimientos.html') {
+} else if (page == 'eventos.html') {
   main = gallery[1].eventos;
   id = 'event_gallery';
   click = 'displayData(this.id)';
@@ -34,23 +34,7 @@ if (page == 'index.html') {
   click = 'displayData(this.id)';
 }
 
-//-------------------------------------------for Neocities
-// if (page == '') {
-//   main = gallery[0].home;
-//   id = 'home_gallery';
-//   click = '';
-// } else if (page == 'acontecimientos') {
-//   main = gallery[1].eventos;
-//   id = 'event_gallery';
-//   click = 'displayData(this.id)';
-// } else if (page == 'escalerillas') {
-//   main = gallery[5].torneos_de_adultos;
-//   id = 'torneos_gallery';
-//   click = 'displayData(this.id)';
-// }
-//----------------------------------------------
-
-var newGrid = '<h6>' + main.h6 + '</h6>';
+var newGrid = '<div>' + main.h6 + '</div>';
 // notification bar
 newGrid += '<div class="notification"><div id="toast_content"><ul>';
 for (var n = 0; n < main.notifications.length; n++) {

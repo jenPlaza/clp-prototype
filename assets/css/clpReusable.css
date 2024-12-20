@@ -113,7 +113,9 @@ ul li:not(section#seOfrece ul li) {
 }
 img:not(img.nav-icon):not(img.team_icon):not(figure.footer-wave img):not(
     div.notification img
-  ):not(#toast > div > img) {
+  ):not(#toast > div > img):not(figure#eventCalendar img):not(
+    figure#tenisCalendar img
+  ):not(figure#padelCalendar img) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -176,6 +178,12 @@ nav {
   font-family: 'Raleway', sans-serif;
   position: fixed;
 }
+nav ul.list li.dropdown {
+  height: 50px;
+}
+nav ul.list li {
+  align-items: center;
+}
 nav ul.list.min {
   gap: 5px;
   display: flex;
@@ -193,9 +201,13 @@ nav ul.list.min li:nth-child(4) a img.nav-icon {
   height: 46px;
   margin-left: -6px;
 }
+nav ul.list.min li:nth-child(4) a:last-child {
+  margin-left: -7px;
+}
 nav ul.list.min.max {
   top: 40px;
-  width: 100vw;
+  /* width: 100vw; */
+  width: 85vw;
 }
 nav ul.list.min.top255 {
   top: 40px;
@@ -238,7 +250,7 @@ button {
   width: 98%;
 }
 .small {
-  max-width: 300px;
+  max-width: 315px;
 }
 .secondary {
   background-color: transparent;
@@ -247,6 +259,7 @@ button {
   padding: 1px 35px;
   white-space: nowrap;
   margin-top: 10px;
+  font-weight: 500;
 }
 button.secondary.small:hover {
   background-color: var(--accent-color);
@@ -346,6 +359,9 @@ nav a h6:active {
   width: 5%;
 }
 /*-----------------------notification bar ----*/
+#home_gallery .notification {
+  display: none;
+}
 div.notification {
   background-color: #fff;
   width: 100%;
@@ -355,7 +371,7 @@ div.notification {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -75px;
+  top: 0;
 }
 #toast_content {
   width: 100%;
@@ -424,9 +440,15 @@ main h4 {
   letter-spacing: 0.5px;
   filter: drop-shadow(1px 1px 1px var(--light-border));
 }
-main h6 {
+main div h6 {
   width: 85%;
   margin: 40px 0 35px auto;
+}
+
+main#home_gallery.grid div > section h3 {
+  width: 100%;
+  margin: 0 auto 35px auto;
+  display: flex;
 }
 /*-----------------------Grids ----*/
 main.grid ul {
@@ -549,7 +571,7 @@ section#tour {
   left: 0;
   right: 0;
   margin: 0 auto;
-  height: 300px;
+  height: auto;
   letter-spacing: 0.5px;
   max-width: 1800px;
   bottom: -300px;
@@ -700,7 +722,7 @@ figure.footer-wave {
 footer {
   height: 200px;
   position: absolute;
-  bottom: -568px;
+  bottom: -468px;
   width: 100%;
   z-index: 1;
   display: flex;
@@ -784,9 +806,10 @@ footer section#socialM ul li a figure {
   main {
     top: 20px;
   }
-  main h6 {
+  main div h6 {
     margin: 0 0 35px auto;
   }
+
   button {
     padding: 15px 50px;
     width: auto;
@@ -848,7 +871,7 @@ footer section#socialM ul li a figure {
   footer {
     height: 200px;
     position: absolute;
-    bottom: -650px;
+    bottom: -550px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -903,6 +926,9 @@ footer section#socialM ul li a figure {
   .dropdown .dropbtn {
     margin: 0 0 0 26px;
   }
+  nav ul.list li:nth-child(2) {
+    margin-right: 20px;
+  }
   .dropdown-content ul {
     display: flex;
     flex-direction: row;
@@ -937,11 +963,12 @@ footer section#socialM ul li a figure {
     position: relative;
     margin: 0 auto 45px auto;
   }
-  main h6 {
+  main div h6 {
     width: 90%;
     margin: 0 auto 35px auto;
     text-align: left;
   }
+
   section#actividades {
     top: 25px;
     height: 495px;
@@ -953,10 +980,6 @@ footer section#socialM ul li a figure {
   section#actividades ul {
     margin: 0 auto 175px auto;
   }
-  /* section#tour {
-    top: 0;
-    margin-bottom: -40px;
-  } */
   section#tour {
     height: 330px;
     bottom: -355px;
@@ -983,7 +1006,7 @@ footer section#socialM ul li a figure {
     overflow: hidden;
     height: 146px;
     position: absolute;
-    bottom: -505px;
+    bottom: -511px;
   }
   figure.footer-wave img {
     width: 152%;
@@ -994,7 +1017,7 @@ footer section#socialM ul li a figure {
     align-items: center;
     justify-content: space-between;
     background-color: unset;
-    bottom: -445px;
+    bottom: -450px;
   }
   footer section:first-child {
     height: 110px;
@@ -1017,6 +1040,11 @@ footer section#socialM ul li a figure {
   body > header#top figure img {
     filter: drop-shadow(2px 1px 2px var(--shadow));
   }
+  body > header > nav#navList ul.list.min {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    top: -4px;
+  }
   nav ul {
     align-items: center;
   }
@@ -1025,6 +1053,7 @@ footer section#socialM ul li a figure {
   }
   #toast {
     width: 41%;
+    max-width: 390px;
   }
   figure.wave img {
     top: -100px;
@@ -1034,7 +1063,7 @@ footer section#socialM ul li a figure {
   }
   main {
     top: 25px;
-    height: 600px;
+    height: 775px;
   }
   main.grid ul {
     margin: 0 auto 35px auto;
@@ -1048,7 +1077,7 @@ footer section#socialM ul li a figure {
     padding-top: 50px;
   }
   section#tour {
-    bottom: -415px;
+    bottom: -375px;
   }
   section#tour > h4,
   section#tour > p {
@@ -1057,10 +1086,10 @@ footer section#socialM ul li a figure {
   /*-----------------------footer ----*/
   figure.footer-wave {
     left: -251px;
-    bottom: -550px;
+    bottom: -535px;
   }
   footer {
-    bottom: -490px;
+    bottom: -475px;
   }
   footer div {
     align-items: start;
@@ -1100,6 +1129,8 @@ footer section#socialM ul li a figure {
       img.team_icon
     ):not(figure.footer-wave img):not(div.notification img):not(
       #toast > div > img
+    ):not(figure#eventCalendar img):not(figure#tenisCalendar img):not(
+      figure#padelCalendar img
     ) {
     width: 100%;
     height: 100%;
@@ -1107,10 +1138,14 @@ footer section#socialM ul li a figure {
   }
   body > header nav#navList {
     width: 70%;
-    max-width: 850px;
+    max-width: 785px;
     margin-right: 10px;
     height: auto;
     overflow: unset;
+  }
+  body > header nav#navList:has(.top255) {
+    border: 1px solid red;
+    /* width: 69%; */
   }
   main {
     height: 650px;
@@ -1130,10 +1165,11 @@ footer section#socialM ul li a figure {
   main h4 {
     margin: -20px auto 25px auto;
   }
-  main h6 {
+  main div h6 {
     width: 82%;
     max-width: 1800px;
   }
+
   section#tour {
     bottom: -328px;
     height: 300px;
@@ -1144,16 +1180,13 @@ footer section#socialM ul li a figure {
   }
   figure.footer-wave img {
     width: 95%;
+    top: -158px;
   }
   footer {
-    bottom: -390px;
+    bottom: -440px;
   }
   figure.footer-wave {
-    bottom: -457px;
-    left: -150px;
-  }
-  figure.wave img {
-    top: -158px;
+    left: -80px;
   }
   figure.wave h1 {
     top: 150px;
@@ -1164,8 +1197,8 @@ footer section#socialM ul li a figure {
 }
 @media screen and (min-width: 1400px) {
   body > header nav#navList {
-    width: 62%;
-    max-width: 1120px;
+    width: 60%;
+    max-width: 960px;
   }
   figure.wave img {
     top: -172px;
@@ -1176,8 +1209,11 @@ footer section#socialM ul li a figure {
   main {
     height: 575px;
   }
-  main h6 {
+  main div h6 {
     margin: 0 auto 0 auto;
+  }
+  main#home_gallery.grid div > section h3 {
+    margin: 35px auto 0 auto;
   }
   section#actividades > h6 {
     width: 82%;
@@ -1185,6 +1221,12 @@ footer section#socialM ul li a figure {
   }
   footer section:first-child > div {
     width: 72%;
+  }
+  footer {
+    bottom: -455px;
+  }
+  figure.footer-wave {
+    bottom: -525px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1225,6 +1267,12 @@ footer section#socialM ul li a figure {
   section#tour ul li {
     -webkit-animation: unset;
     -moz-animation: unset;
+  }
+  footer {
+    bottom: -478px;
+  }
+  figure.footer-wave {
+    bottom: -550px;
   }
 }
 @media screen and (min-width: 2000px) {

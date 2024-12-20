@@ -51,6 +51,7 @@ main#team_gallery.grid ul li:nth-child(2) article section div a img.team_icon {
   display: none;
 }
 
+main#team_gallery.grid ul li:nth-child(4) article section div a.web,
 main#team_gallery.grid ul li:nth-child(5) article section div a.web {
   display: block !important;
 }
