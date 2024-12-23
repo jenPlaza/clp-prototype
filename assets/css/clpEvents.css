@@ -314,7 +314,7 @@ section#actividades > h6 {
 }
 /*-------------TOUR-------------*/
 section#tour {
-  bottom: -280px;
+  bottom: -215px;
 }
 
 @media screen and (min-width: 576px) {
@@ -449,7 +449,7 @@ section#tour {
     padding: 0;
   }
   section#tour {
-    bottom: -300px;
+    bottom: -400px;
     height: 350px;
   }
 }
@@ -1102,9 +1102,10 @@ section#tour {
   section#date a {
     width: 800px;
   }
-  div#body section:nth-child(2):not(section#date) {
-    padding: 0 3%;
+  div#body section:nth-child(2):not(section#date):not(section.button) {
+    padding: 0 5%;
     max-width: 1800px;
+    margin-left: 0;
   }
   section#tour {
     margin: 0 auto 3% auto;
@@ -1134,10 +1135,11 @@ section#tour {
   section#date {
     padding: 0 13%;
   }
+  main.grid ul:nth-child(3) {
+    margin-top: 50px;
+  }
 
   div#body section:nth-child(2):not(section#date) {
-    padding: 0 13%;
-    width: 100%;
     max-width: 100%;
     float: unset;
   }
@@ -1238,7 +1240,7 @@ section#tour {
     width: 90%;
   }
   div#body section:nth-child(2):not(section#date) {
-    padding: 0 10%;
+    padding: 0 5%;
     max-width: 2400px;
     margin: 0 auto;
   }

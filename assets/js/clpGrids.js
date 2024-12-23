@@ -36,14 +36,21 @@ if (page == 'index.html') {
 
 var newGrid = '<div>' + main.h6 + '</div>';
 // notification bar
-newGrid += '<div class="notification"><div id="toast_content"><ul>';
-for (var n = 0; n < main.notifications.length; n++) {
+console.log('main.notifications[n]: ', main.notifications);
+if (main.notifications == '') {
   newGrid +=
-    '<li><img  src="./assets/images/icons/tennis.gif" alt="target icon" width="auto" height="30px"/><p>' +
-    main.notifications[n] +
-    '</p></li>';
+    '<div class="notification" style="background-color: #f9f9f9;margin-bottom:0"></div>';
+} else {
+  newGrid += '<div class="notification"><div id="toast_content"><ul>';
+  for (var n = 0; n < main.notifications.length; n++) {
+    newGrid +=
+      '<li><img  src="./assets/images/icons/tennis.gif" alt="target icon" width="auto" height="30px"/><p>' +
+      main.notifications[n] +
+      '</p></li>';
+  }
+  newGrid += '</ul></div></div>'; // bar end
 }
-newGrid += '</ul></div></div>'; // bar end
+
 newGrid += '<ul>';
 for (let i = 0; i < main.list.length; i++) {
   newGrid +=
