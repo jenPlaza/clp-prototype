@@ -7,7 +7,7 @@ function displayReservations() {
   var expandMenu = document.querySelector('.nav-close');
   if (reservationCenter.style.display == 'none') {
     reservationCenter.style.display = 'flex';
-    clpHeader.style.background = 'var(--green)';
+    clpHeader.style.background = 'var(--red)';
     expandMenu.click();
   } else if (reservationCenter.style.display == 'flex') {
     if (mediaQueryTablet.matches) {
@@ -28,7 +28,6 @@ function closeReservations() {
   var calendar = document.querySelector('.calendar');
   if (reservationCenter.style.display == 'flex') {
     reservationCenter.style.display = 'none';
-    clpHeader.style.background = 'revert-layer';
     if (mediaQueryTablet.matches) {
       reservationCenter.classList.remove('expand');
     }
@@ -64,7 +63,7 @@ function displayCalendar(e) {
   calendarioDeReservas +=
     ' <h3>' +
     reservArray[c].calendar_name +
-    '</h3><p>' +
+    '</h3><p class="light-grey">' +
     reservArray[c].calendar_paragraph +
     '</p><div id="autoHide" style="text-align: center;">Cargando...</div>';
   calendarioDeReservas +=

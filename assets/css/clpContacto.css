@@ -1,7 +1,11 @@
+figure.wave {
+  z-index: 1;
+}
 section#map {
   z-index: -1;
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 section#ayuda {
   position: relative;
@@ -21,7 +25,7 @@ section#ayuda h3 {
   font-weight: 300;
   position: relative;
   top: -50px;
-  filter: drop-shadow(-1px 2px 0px var(--shadow));
+  filter: drop-shadow(-1px 2px 0 var(--shadow));
 }
 section#ayuda section#socialMedia {
   position: relative;
@@ -88,8 +92,15 @@ footer {
   section#actividades > h6 {
     margin-top: -25px;
   }
+  footer {
+    bottom: -10px;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  footer {
+    bottom: 0;
+  }
+}
 @media screen and (min-width: 1800px) {
   section#ayuda h2 {
     height: 110px;

@@ -309,13 +309,14 @@ var gallery = [
           link_id: '1135651',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/evento2b_bk.jpeg',
-          img_src_color: './assets/images/galleria/eventos/color/evento2b.jpeg',
-          img_alt: 'Foto del chef cocinando en el quincho del Club Los Paltos.',
+            './assets/images/galleria/eventos/blackAndWhite/team-Building-bk.jpeg',
+          img_src_color:
+            './assets/images/galleria/eventos/color/team-Building.jpg',
+          img_alt: '3 individuos brincan en pelotas tolva',
           img_class: 'imgCenter',
-          event_name: 'Picnic Corporativo',
+          event_name: 'Un dia de formación de equipo',
           event_info:
-            ' Un delicioso y completo picnic diseñado especialmente para un grupo corporativo en el exclusivo Club Los Paltos puede convertirse en una experiencia memorable. Este evento puede incluir una variada selección de alimentos frescos y saludables, desde exquisitos sándwiches gourmet y ensaladas elaboradas con ingredientes de temporada, hasta opciones dulces como pasteles artesanales o frutas frescas. Además, bebidas como jugos naturales, limonadas frescas y tal vez incluso cocteles ligeros podrían complementar la ocasión a la perfección. Un espacio al aire libre, rodeado de verde y naturaleza, con áreas acondicionadas para la comodidad de los asistentes, contribuiría a crear un ambiente relajado e ideal para fomentar la interacción entre los compañeros. Este tipo de experiencia no solo puede servir como una pausa placentera durante la jornada, sino también como una oportunidad para fortalecer vínculos y disfrutar de un momento único fuera del entorno laboral común.',
+            'Se llevó a cabo un animado evento corporativo en el prestigioso Club Los Paltos, donde los empleados de la organización tuvieron la oportunidad de participar en una jornada especialmente diseñada para fomentar la cooperación y el espíritu de equipo. En esta actividad, los asistentes fueron cuidadosamente organizados en diversos equipos que compitieron amistosamente en una serie de dinámicos juegos enfocados en el desarrollo de habilidades de trabajo grupal, fortaleciendo al mismo tiempo la colaboración mutua y la camaradería entre compañeros. A lo largo del día, predominó un ambiente vibrante y lleno de entusiasmo, diseñado para propiciar tanto el trabajo conjunto como la interacción social entre colegas. Este contexto permitió a los participantes disfrutar y compartir momentos significativos, repletos de risas, aprendizajes y conexiones personales que reforzaron los lazos dentro del equipo.',
         },
         {
           link_id: '6678302',
@@ -372,13 +373,15 @@ var gallery = [
           link_id: '2985797',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/tugAWar_bk.png',
-          img_src_color: './assets/images/galleria/eventos/color/tugAWar.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          img_class: '',
-          event_name: 'El Evento 6',
+            './assets/images/galleria/eventos/blackAndWhite/teamBuildingActivities-bk.jpeg',
+          img_src_color:
+            './assets/images/galleria/eventos/color/teamBuildingActivities.jpg',
+          img_alt:
+            'Personas logran pasar el hula hoop manteniéndose unidas de las manos.',
+          img_class: 'imgCenter',
+          event_name: 'Atravésando el hula-hoop',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            'El Club Los Paltos fue el escenario de un vibrante evento corporativo que reunió a los empleados de la organización en una experiencia pensada para fortalecer la colaboración y el trabajo en equipo. Durante la jornada, los participantes se enfrentaron a desafíos dinámicos como pasar el hula hoop sin soltarse las manos, poniendo a prueba su coordinación y cooperación. Fue una ocasión perfecta para disfrutar de momentos únicos y significativos, donde las risas, los aprendizajes y las nuevas conexiones se convirtieron en protagonistas. Sin duda, esta iniciativa contribuyó a estrechar los lazos entre colegas y a construir un equipo más unido y fuerte.',
         },
         {
           link_id: '1186776',
@@ -397,14 +400,13 @@ var gallery = [
           link_id: '2931160',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            './assets/images/galleria/eventos/blackAndWhite/bday-bg.png',
+          img_src_color: './assets/images/galleria/eventos/color/bday.png',
+          img_alt: 'un mesa decorada de cumpleaños, bajo un arbol con globos',
           img_class: '',
-          event_name: 'El Evento 11',
+          event_name: 'un cumpleaños picnic',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            'Se celebró un cumpleaños estilo picnic en los hermosos espacios verdes del Club Los Paltos. La familia disfrutó de un día encantador rodeada de amigos y seres queridos, festejando el especial octavo cumpleaños de una niña.',
         },
         {
           link_id: '5009953',
@@ -424,27 +426,26 @@ var gallery = [
           link_id: '6982182',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/image_placeholder-min.png',
-          img_src_color:
-            './assets/images/galleria/eventos/color/image_placeholder-min.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          img_class: '',
-          event_name: 'El Evento 11',
+            './assets/images/galleria/eventos/blackAndWhite/evento2b_bk.jpeg',
+          img_src_color: './assets/images/galleria/eventos/color/evento2b.jpeg',
+          img_alt: 'Foto del chef cocinando en el quincho del Club Los Paltos.',
+          img_class: 'imgCenter',
+          event_name: 'Picnic Corporativo',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Un delicioso y completo picnic diseñado especialmente para un grupo corporativo en el exclusivo Club Los Paltos puede convertirse en una experiencia memorable. Este evento puede incluir una variada selección de alimentos frescos y saludables, desde exquisitos sándwiches gourmet y ensaladas elaboradas con ingredientes de temporada, hasta opciones dulces como pasteles artesanales o frutas frescas. Además, bebidas como jugos naturales, limonadas frescas y tal vez incluso cocteles ligeros podrían complementar la ocasión a la perfección. Un espacio al aire libre, rodeado de verde y naturaleza, con áreas acondicionadas para la comodidad de los asistentes, contribuiría a crear un ambiente relajado e ideal para fomentar la interacción entre los compañeros. Este tipo de experiencia no solo puede servir como una pausa placentera durante la jornada, sino también como una oportunidad para fortalecer vínculos y disfrutar de un momento único fuera del entorno laboral común.',
         },
         {
           link_id: '1862835',
           source: 'image',
           img_src_bk:
-            './assets/images/galleria/eventos/blackAndWhite/teambuilding2_bk.png',
+            './assets/images/galleria/eventos/blackAndWhite/teamBuildingGames-bk.jpeg',
           img_src_color:
-            './assets/images/galleria/eventos/color/teambuilding2.png',
-          img_alt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          img_class: '',
-          event_name: 'El Evento 12',
+            './assets/images/galleria/eventos/color/teamBuildingGames.jpg',
+          img_alt: '7 jugadores en un juego de equipo.',
+          img_class: 'imgCenter',
+          event_name: 'Quien Gano?',
           event_info:
-            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyamerat, sed diam voluptua. At vero eos et accusam et justo duodolores et ea rebum.',
+            ' Un evento corporativo en el que los empleados fueron organizados en distintos equipos con el propósito de disfrutar de una jornada llena de competencias amistosas, colaboración mutua y fortalecimiento de la camaradería. Durante el día, se promovió un ambiente dinámico y ameno que favoreció tanto el trabajo en equipo como la interacción entre colegas, creando momentos de conexión y diversión compartida.',
         },
       ],
       notifications: [],

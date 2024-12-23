@@ -287,7 +287,7 @@ section#actividades {
   border: 2px solid transparent;
 }
 section#date h3 {
-  color: var(--secondary-text-color);
+  color: var(--light-border);
   text-align: center;
   background-color: var(--grey);
   padding: 3%;
@@ -845,6 +845,7 @@ section#tour {
   }
   section#date h3 {
     width: 59%;
+    font-size: xxx-large;
   }
   section#actividades {
     height: 550px;
@@ -858,6 +859,9 @@ section#tour {
   }
 }
 @media screen and (min-width: 1400px) {
+  figure.wave h1 {
+    top: 165px;
+  }
   body div#body {
     top: 275px;
   }
@@ -933,6 +937,7 @@ section#tour {
   section#date h3 {
     width: auto;
     flex: unset;
+    font-weight: 900;
   }
   section#date a {
     width: 600px;
@@ -1110,6 +1115,9 @@ section#tour {
   figure.wave img {
     top: -385px;
   }
+  figure.wave h1 {
+    top: 180px;
+  }
   main h6,
   main div h6 {
     margin: 0 auto 20px auto;
@@ -1217,9 +1225,6 @@ section#tour {
 @media screen and (min-width: 2400px) {
   figure.wave img {
     top: -500px;
-  }
-  figure.wave h1 {
-    top: 150px;
   }
   body div#body {
     top: 300px;

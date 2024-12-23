@@ -167,7 +167,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   body div#body {
-    top: -185px;
+    top: -125px;
   }
   main.grid ul {
     min-width: 1080px;

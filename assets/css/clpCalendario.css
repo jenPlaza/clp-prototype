@@ -1,15 +1,81 @@
-p {
+/* p {
   color: var(--white);
-}
+} 
 nav ul.list.min {
   top: 286px;
 }
 nav ul.list.min.max {
   top: 285px;
+}*/
+/*--------------------- GOOGLE */
+/* html body#yDmH0d.xPxted.EIlDfe*/
+iframe div div main.LEJ5R div.jCuFOd h2.ExU54c {
+  color: white !important;
 }
-nav ul.list.min.top255 {
-  top: 360px;
+
+.FFK8T {
+  color: white;
 }
+
+svg.NMm5M.hhikbc {
+  fill: white;
+}
+
+th.k50Dh,
+.f1QMue,
+.IOneve {
+  color: white;
+}
+.x5FT4e.kkUTBb {
+  color: white;
+}
+
+span.mkaajd {
+  color: white;
+}
+
+button.VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc.hcJOed.m2yD4b.qau86b.dbwq3d {
+  color: white;
+}
+
+.TyZhpd {
+  color: white;
+}
+
+button.VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc.veZHyf.m2yD4b.qau86b.dbwq3d {
+  color: white;
+}
+/*--------------------- end */
+/* nav ul.list.min.top255 {
+  top: 300px;
+} */
+
+/* body > header nav#navList {
+  top: 0;
+  height: 35px;
+} */
+/* body > header > nav#navList ul.list.min {
+  position: relative;
+  margin: 0;
+} */
+
+/* body
+  > header#top
+  figure:first-child:not(section.reservaciones ul li article figure) {
+  width: 300px;
+}
+body > header#top figure:not(section.reservaciones ul li article figure) {
+  height: 55px;
+}
+figure.wave {
+  position: relative;
+  top: 0;
+}
+body > header#top {
+  overflow: unset;
+  height: 64px;
+  top: 0;
+} */
 .nav-link.show {
   display: block;
 }
@@ -24,9 +90,10 @@ section.reservaciones header.x div {
   width: 16%;
   float: left;
   display: block;
+  margin-top: -5px;
 }
 section.reservaciones h3 {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: -16px;
   width: 82%;
 }
@@ -48,7 +115,7 @@ section.calendar {
 section.calendar header.x div {
   height: 100%;
   position: relative;
-  top: -25px;
+  top: 0;
   width: 100%;
 }
 section.calendar h3 {
@@ -63,7 +130,6 @@ section.calendar div {
   border: 1px;
   height: 550px;
   overflow-y: hidden;
-  margin-top: 25px;
   overflow-x: scroll;
   left: 5px;
 }
@@ -90,41 +156,16 @@ iframe {
   background-color: transparent;
   position: relative;
 }
-figure.wave {
-  position: relative;
-  top: 0;
-}
-body > header#top {
-  overflow: unset;
-  height: 64px;
-  top: 0;
-}
-body
-  > header#top
-  figure:first-child:not(section.reservaciones ul li article figure) {
-  top: 0;
-  width: 300px;
-}
-body > header#top figure:not(section.reservaciones ul li article figure) {
-  height: 55px;
-  top: 0;
-}
-body > header nav#navList {
-  top: 0;
-  height: 35px;
-}
-body > header > nav#navList ul.list.min {
-  position: relative;
-  margin: 0;
-}
+
 section.reservaciones {
   flex-direction: row;
   display: flex;
-  margin-top: 571px;
-  background-color: var(--green);
-  position: relative;
+  background-color: var(--red);
+  position: absolute;
+  left: 49px;
+  top: 59px;
   width: 97%;
-  height: 522px;
+  height: 514px;
   flex-direction: column;
   overflow-x: scroll;
 }
@@ -140,11 +181,11 @@ section.reservaciones ul#actividadesCLP {
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 25px;
-  margin-top: 309px;
+  gap: 10px;
+  margin-top: 280px;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-left: 8%;
+  margin-left: 1%;
   padding: 5%;
 }
 section.reservaciones ul#actividadesCLP li {

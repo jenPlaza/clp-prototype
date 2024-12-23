@@ -105,7 +105,7 @@ section#actividades > h6:first-letter {
 }
 @media screen and (min-width: 1200px) {
   main {
-    height: 675px;
+    height: 775px;
   }
   #parallex-set-1 {
     background: url(../images/lampa.png) no-repeat top center / 100% 100%;
@@ -119,7 +119,10 @@ section#actividades > h6:first-letter {
     top: -230px;
   }
   main {
-    height: 650px;
+    height: 775px;
+  }
+  main.grid ul {
+    max-width: 1400px;
   }
   button {
     margin: -5px auto 35px auto;

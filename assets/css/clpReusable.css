@@ -20,6 +20,32 @@
 * {
   box-sizing: border-box;
 }
+.red {
+  color: var(--red) !important;
+}
+.light-grey {
+  color: var(--light-border) !important;
+}
+.red-bg {
+  background-color: var(--red) !important;
+}
+.blinking {
+  animation: blink 10s linear infinite;
+}
+.ExU54c {
+  color: white !important;
+}
+@keyframes blink {
+  0% {
+    color: var(--red) !important;
+  }
+  50% {
+    color: var(--black) !important;
+  }
+  100% {
+    color: var(--red) !important;
+  }
+}
 html,
 body {
   width: 100%;
@@ -117,8 +143,13 @@ img:not(img.nav-icon):not(img.team_icon):not(figure.footer-wave img):not(
     figure#tenisCalendar img
   ):not(figure#padelCalendar img) {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
+}
+ul#sports li figure a img,
+figure#logo a img,
+main#event_gallery.grid ul li figure img {
+  height: 100%;
 }
 img.nav-icon {
   order: 0;
@@ -128,7 +159,7 @@ body > header.scroll-in-place {
   filter: drop-shadow(2px 2px 0 var(--shadow));
 }
 body > header.scroll-in-place.nav-scroll {
-  background-color: var(--green);
+  background-color: var(--red);
   filter: drop-shadow(2px 4px 6px black);
 }
 body > header.scroll-in-place.nav-scroll figure:nth-child(1) {
@@ -154,7 +185,7 @@ body > header#top figure {
   height: 55px;
   display: flex;
   align-items: center;
-  margin: 0 0 0 1%;
+  margin: 5px 0 0 1%;
   width: 300px;
 }
 body > header#top figure img {
@@ -178,9 +209,7 @@ nav {
   font-family: 'Raleway', sans-serif;
   position: fixed;
 }
-nav ul.list li.dropdown {
-  height: 50px;
-}
+
 nav ul.list li {
   align-items: center;
 }
@@ -190,7 +219,7 @@ nav ul.list.min {
   flex-direction: column;
   align-items: start;
   padding: 5% 2% 5% 2%;
-  background-color: #36a135;
+  background-color: var(--red);
   position: absolute;
   top: 40px;
   left: 0;
@@ -209,9 +238,7 @@ nav ul.list.min.max {
   /* width: 100vw; */
   width: 85vw;
 }
-nav ul.list.min.top255 {
-  top: 40px;
-}
+
 nav ul.list.min > li:first-child {
   gap: unset;
 }
@@ -239,7 +266,6 @@ button {
   color: var(--white);
   background-color: inherit;
   font-family: inherit;
-  /* font-weight: 900; */
   margin: 0;
 }
 button {
@@ -274,15 +300,45 @@ nav ul li.dropdown div.dropdown-content a h6:hover,
 nav a h6:active {
   color: var(--red);
 }
-
-.dropdown-content {
+li.dropCalendar {
+  height: 50px;
+}
+nav ul.list li.dropdown {
+  height: 45px;
+}
+nav ul.list li.dropdown img.nav-icon {
   position: relative;
-  margin: 37px 0 -10px -40px;
+}
+nav ul.list.min.top255 li.dropdown,
+nav ul.list.min.max.top255 li.dropdown {
+  height: 155px;
+}
+nav#navList ul.list.min li.dropdown > img.nav-icon,
+nav#navList ul.list.min.max li.dropdown > img.nav-icon {
+  bottom: 6px;
+}
+nav#navList ul.list.min.max.top255 li.dropdown > img.nav-icon:nth-child(1),
+nav#navList ul.list.min.top255 li.dropdown > img.nav-icon:nth-child(1) {
+  bottom: 65px;
+}
+nav ul.list.min.max.top255 li.dropdown h6.dropbtn.nav-link.show {
+  bottom: 270px;
+}
+nav ul.list.min.max.top255 li.dropdown .dropdown-content {
+  bottom: 140px;
+  height: 125px;
+}
+.dropdown-content {
+  position: absolute;
   height: 150px;
   display: block;
+  bottom: 116px;
+  left: 20px;
 }
-.dropdown-content.modifyMargin {
-  margin-left: -169px;
+h6.dropbtn.nav-link.show {
+  position: absolute;
+  left: 65px;
+  bottom: 157px;
 }
 .dropdown-content ul {
   display: flex;
@@ -294,9 +350,9 @@ nav a h6:active {
   position: relative;
   left: -13px;
 }
+
 /*-----------------------toast ----*/
 .wrapper {
-  /* width: 620px; */
   width: 100%;
   padding: 30px 20px;
   position: absolute;
@@ -366,7 +422,7 @@ div.notification {
   background-color: #fff;
   width: 100%;
   height: 50px;
-  margin-top: 25px;
+  margin: -40px 0 60px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,6 +466,10 @@ figure.wave {
   top: 0;
   width: 100%;
   margin: 0;
+}
+
+figure.wave img {
+  filter: drop-shadow(2px 4px 6px black);
 }
 figure.wave h1 {
   position: absolute;
@@ -485,7 +545,7 @@ section#actividades ul {
   width: 100%;
   padding: 0;
   max-width: 992px;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 103px auto;
   position: relative;
 }
 
@@ -729,7 +789,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background-color: var(--red);
 }
 footer div {
   display: flex;
@@ -885,6 +945,9 @@ footer section#socialM ul li a figure {
     justify-content: space-between;
     overflow: hidden;
   }
+  body > header#top figure {
+    margin: 0 0 0 1%;
+  }
   body > header#top figure:nth-child(1) {
     left: 0;
     width: 300px;
@@ -1001,12 +1064,12 @@ footer section#socialM ul li a figure {
   }
   figure.footer-wave {
     display: block;
-    left: -112px;
+    left: -40px;
     width: 100%;
     overflow: hidden;
-    height: 146px;
+    height: 150px;
     position: absolute;
-    bottom: -511px;
+    bottom: -510px;
   }
   figure.footer-wave img {
     width: 152%;
@@ -1069,7 +1132,7 @@ footer section#socialM ul li a figure {
     margin: 0 auto 35px auto;
   }
   div.notification {
-    top: 0;
+    top: 65px;
   }
   section#actividades {
     top: 26px;
@@ -1085,7 +1148,7 @@ footer section#socialM ul li a figure {
   }
   /*-----------------------footer ----*/
   figure.footer-wave {
-    left: -251px;
+    left: -170px;
     bottom: -535px;
   }
   footer {
@@ -1144,7 +1207,6 @@ footer section#socialM ul li a figure {
     overflow: unset;
   }
   body > header nav#navList:has(.top255) {
-    border: 1px solid red;
     /* width: 69%; */
   }
   main {
@@ -1160,7 +1222,7 @@ footer section#socialM ul li a figure {
   }
 
   body div#body {
-    top: -180px;
+    top: -130px;
   }
   main h4 {
     margin: -20px auto 25px auto;
@@ -1183,13 +1245,13 @@ footer section#socialM ul li a figure {
     top: -158px;
   }
   footer {
-    bottom: -440px;
+    bottom: -465px;
   }
   figure.footer-wave {
     left: -80px;
   }
   figure.wave h1 {
-    top: 150px;
+    top: 215px;
   }
   footer section:first-child > div {
     width: 77%;
@@ -1202,6 +1264,9 @@ footer section#socialM ul li a figure {
   }
   figure.wave img {
     top: -172px;
+  }
+  figure.wave h1 {
+    top: 155px;
   }
   body div#body {
     top: -255px;
@@ -1227,6 +1292,8 @@ footer section#socialM ul li a figure {
   }
   figure.footer-wave {
     bottom: -525px;
+    left: -170px;
+    height: 173px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1240,6 +1307,9 @@ footer section#socialM ul li a figure {
   }
   figure.wave img {
     top: -295px;
+  }
+  figure.wave h1 {
+    top: 145px;
   }
   body div#body {
     top: -325px;
@@ -1269,10 +1339,11 @@ footer section#socialM ul li a figure {
     -moz-animation: unset;
   }
   footer {
-    bottom: -478px;
+    bottom: -482px;
   }
   figure.footer-wave {
     bottom: -550px;
+    left: -220px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -1301,5 +1372,8 @@ footer section#socialM ul li a figure {
   }
   footer section:first-child > div {
     width: 62%;
+  }
+  figure.footer-wave {
+    left: -100px;
   }
 }

@@ -7,7 +7,7 @@ function appear() {
   var headerBar = document.querySelector('.scroll-in-place');
   var navigationList = document.getElementById('navList');
   if (navigationList.style.display == 'none') {
-    headerBar.style.background = 'var(--green)';
+    headerBar.style.background = 'var(--red)';
     navigationList.style.display = 'contents';
   } else if (navigationList.style.display == 'contents') {
     headerBar.style.background = 'revert-layer';
@@ -458,7 +458,7 @@ menu +=
   navigationArray[0].link_name +
   '</em></h6></a>';
 menu += '</li>';
-menu += '<li class="dropdown">';
+menu += '<li class="dropCalendar">';
 menu +=
   '<img src="./assets/images/icons/calendar-white.png" alt="white menu icon" width="30px" height="30px" class="nav-icon" onclick="displayReservations();"/>';
 menu +=
