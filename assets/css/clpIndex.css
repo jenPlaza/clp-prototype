@@ -48,7 +48,11 @@ button {
   cursor: pointer;
   margin: 0 auto 3% auto;
 }
-
+/*-----------------------notification ----*/
+div.notification {
+  margin: -45px 0 100px 0;
+  height: 0;
+}
 /*-----------------------Actividades ----*/
 section#actividades > h6:first-letter {
   -webkit-initial-letter: 3 1;
@@ -101,6 +105,9 @@ section#actividades > h6:first-letter {
 @media screen and (min-width: 992px) {
   .parallex-section {
     top: 25px;
+  }
+  div.notification {
+    margin: 25px 0 25px 0;
   }
 }
 @media screen and (min-width: 1200px) {

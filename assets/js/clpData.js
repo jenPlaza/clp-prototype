@@ -206,7 +206,7 @@ var reservArray = [
     calendar_icon_src: './assets/images/icons/tennis.gif',
     calendar_icon_alt: 'tenis calendar icon',
     calendar_name: 'Tenis',
-    calendar_paragraph: 'Para jugar tenis, hay que ser una reservacion.',
+    calendar_paragraph: '',
     calendar_iframe_src:
       'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1NxoazHuQ0hnnB0pEC2aTKYmsjvvaupBSXuoCpd6Rwqdosp05BZ4zmhzVQf5siYOGmgMXxxF6P?gv=true',
   },

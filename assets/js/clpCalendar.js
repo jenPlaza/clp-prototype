@@ -1,23 +1,51 @@
 //Brand list
+// function displayReservations() {
+//   var reservationCenter = document.querySelector('.reservaciones');
+//   var actividadesCLP = document.getElementById('actividadesCLP');
+//   var calendar = document.querySelector('.calendar');
+//   var clpHeader = document.getElementById('top');
+//   var expandMenu = document.querySelector('.nav-close');
+//   if (reservationCenter.style.display == 'none') {
+//     reservationCenter.style.display = 'flex';
+//     clpHeader.style.background = 'var(--red)';
+//     expandMenu.click();
+//   } else if (reservationCenter.style.display == 'flex') {
+//     if (mediaQueryTablet.matches) {
+//       reservationCenter.classList.remove('expand');
+//     }
+//     actividadesCLP.style.display = 'flex';
+//     calendar.style.display = 'none';
+//     // reservationCenter.classList.remove('calendario');
+//     reservationCenter.style.display = 'none';
+//     // clpHeader.style.background = 'revert-layer';
+//   }
+// }
+
 function displayReservations() {
   var reservationCenter = document.querySelector('.reservaciones');
   var actividadesCLP = document.getElementById('actividadesCLP');
-  var calendar = document.querySelector('.calendar');
+  const calendar = document.querySelector('.calendar');
   var clpHeader = document.getElementById('top');
   var expandMenu = document.querySelector('.nav-close');
   if (reservationCenter.style.display == 'none') {
     reservationCenter.style.display = 'flex';
     clpHeader.style.background = 'var(--red)';
-    expandMenu.click();
-  } else if (reservationCenter.style.display == 'flex') {
+    if (mediaQueryMobile.matches) {
+      expandMenu.click();
+    }
     if (mediaQueryTablet.matches) {
-      reservationCenter.classList.remove('expand');
+      clpHeader.style.height = '550px';
+    }
+    if (mediaQuerySmlDesktop.matches) {
+      clpHeader.style.height = '400px';
+    }
+  } else if (reservationCenter.style.display == 'flex') {
+    if (mediaQueryMobile.matches || mediaQueryTablet.matches) {
+      clpHeader.style.height = '60px';
     }
     actividadesCLP.style.display = 'flex';
     calendar.style.display = 'none';
-    // reservationCenter.classList.remove('calendario');
     reservationCenter.style.display = 'none';
-    clpHeader.style.background = 'revert-layer';
   }
 }
 
@@ -28,6 +56,9 @@ function closeReservations() {
   var calendar = document.querySelector('.calendar');
   if (reservationCenter.style.display == 'flex') {
     reservationCenter.style.display = 'none';
+    if (mediaQueryMobile.matches || mediaQueryTablet.matches) {
+      clpHeader.style.height = '60px';
+    }
     if (mediaQueryTablet.matches) {
       reservationCenter.classList.remove('expand');
     }
@@ -42,17 +73,26 @@ function displayCalendar(e) {
   var calendar = document.querySelector('.calendar');
   var actividadesCLP = document.getElementById('actividadesCLP');
   var reservationCenter = document.querySelector('.reservaciones');
+  var clpHeader = document.getElementById('top');
+  console.log('calendarStyle', calendar.style.display);
   if (actividadesCLP.style.display == 'flex') {
     if (mediaQueryTablet.matches) {
       reservationCenter.classList.add('expand');
+      if (reservationCenter.classList.contains('expand')) {
+        clpHeader.style.height = '800px';
+      }
+    }
+    if (mediaQueryDesktop.matches) {
+      clpHeader.style.height = '878px';
     }
     actividadesCLP.style.display = 'none';
     calendar.style.display = 'block';
   }
+
   //Calendar
   var calendarioDeReservas = '';
   calendarioDeReservas +=
-    '<header class="x"><div id="close" onclick="closeCalendar()">Cerrar Calendario</div></header>';
+    '<header class="x"><div id="close" onclick="closeCalendar()"><img src="./assets/images/icons/close-outlined-red.png" alt="white menu icon" width="25px"></div></header>';
   if (calendarId == 'eventCalendar') {
     c = 0;
   } else if (calendarId == 'tenisCalendar') {
@@ -79,11 +119,17 @@ function displayCalendar(e) {
 function closeCalendar() {
   var calendar = document.querySelector('.calendar');
   var reservationCenter = document.querySelector('.reservaciones');
+  var clpHeader = document.getElementById('top');
   if (calendar.style.display == 'block') {
     if (mediaQueryTablet.matches) {
       reservationCenter.classList.remove('expand');
     }
     calendar.style.display = 'none';
     actividadesCLP.style.display = 'flex';
+    if (mediaQuerySmlDesktop.matches || mediaQueryDesktop.matches) {
+      clpHeader.style.height = '400px';
+    } else {
+      clpHeader.style.height = '550px';
+    }
   }
 }

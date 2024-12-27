@@ -1,4 +1,5 @@
 const mediaQueryDesktop = window.matchMedia('(min-width: 1600px)');
+const mediaQuerySmlDesktop = window.matchMedia('(min-width: 1200px)');
 const mediaQueryTablet = window.matchMedia('(min-width: 768px)');
 const mediaQueryMobile = window.matchMedia('(min-width: 375px)');
 

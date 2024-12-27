@@ -141,7 +141,7 @@ img:not(img.nav-icon):not(img.team_icon):not(figure.footer-wave img):not(
     div.notification img
   ):not(#toast > div > img):not(figure#eventCalendar img):not(
     figure#tenisCalendar img
-  ):not(figure#padelCalendar img) {
+  ):not(figure#padelCalendar img):not(header.x div img) {
   width: 100%;
   /* height: 100%; */
   object-fit: cover;
@@ -194,16 +194,19 @@ body > header#top figure img {
   width: 100%; /*120px by 120px */
 }
 body > header#top figure:nth-child(1) {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   left: 65px;
+  top: 0;
   /* filter: drop-shadow(2px 4px 6px black); */
 }
 body > header#top figure:nth-child(2) {
   padding: 1%;
   margin-right: 3%;
   width: 50px;
-  position: absolute;
+  position: fixed;
   left: 0;
+  top: 0;
 }
 /*-----------------------nav ----*/
 nav {
@@ -220,12 +223,16 @@ nav ul.list.min {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 5% 2% 5% 2%;
+  padding: 1% 2% 0 2%;
   background-color: var(--red);
   position: absolute;
-  top: 40px;
+  top: 44px;
   left: 0;
-  width: 13vw;
+  width: 60px;
+  height: 490px;
+}
+nav ul.list.min.top255 {
+  height: 630px;
 }
 nav ul.list.min li:nth-child(4) a img.nav-icon {
   width: 46px;
@@ -308,12 +315,12 @@ li.dropCalendar {
 nav ul.list li.dropdown {
   height: 45px;
 }
-nav ul.list li.dropdown img.nav-icon {
-  position: relative;
-}
 nav ul.list.min.top255 li.dropdown,
 nav ul.list.min.max.top255 li.dropdown {
-  height: 155px;
+  height: 165px;
+}
+nav ul.list li.dropdown img.nav-icon {
+  position: relative;
 }
 nav#navList ul.list.min li.dropdown > img.nav-icon,
 nav#navList ul.list.min.max li.dropdown > img.nav-icon {
@@ -324,7 +331,7 @@ nav#navList ul.list.min.top255 li.dropdown > img.nav-icon:nth-child(1) {
   bottom: 65px;
 }
 nav ul.list.min.max.top255 li.dropdown h6.dropbtn.nav-link.show {
-  bottom: 270px;
+  bottom: 281px;
 }
 nav ul.list.min.max.top255 li.dropdown .dropdown-content {
   bottom: 140px;
@@ -332,15 +339,15 @@ nav ul.list.min.max.top255 li.dropdown .dropdown-content {
 }
 .dropdown-content {
   position: absolute;
-  height: 150px;
+  height: 130px;
   display: block;
-  bottom: 116px;
-  left: 20px;
+  bottom: 135px;
+  left: 21px;
 }
 h6.dropbtn.nav-link.show {
   position: absolute;
   left: 65px;
-  bottom: 157px;
+  bottom: 143px;
 }
 .dropdown-content ul {
   display: flex;
@@ -856,6 +863,10 @@ footer section#socialM ul li a figure {
   nav ul.list.min.max {
     width: 50vw;
   }
+  .dropdown-content {
+    bottom: 140px;
+    left: 28px;
+  }
   #toast {
     width: 75%;
   }
@@ -953,6 +964,7 @@ footer section#socialM ul li a figure {
   }
   body > header#top figure:nth-child(1) {
     left: 0;
+    top: 5px;
     width: 300px;
   }
   body > header figure {
@@ -966,8 +978,12 @@ footer section#socialM ul li a figure {
   /*-----------------------nav ----*/
   body > header nav#navList {
     display: flex !important;
+    align-items: center;
     right: 0;
     width: calc(100% - 300px);
+    top: 0;
+    height: 55px;
+    position: inherit;
   }
   body > header > nav#navList ul.list.min {
     width: 100%;
@@ -975,19 +991,23 @@ footer section#socialM ul li a figure {
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    /* height: 35px; */
     gap: 0;
     top: 0;
     right: 0;
     overflow: scroll;
     background-color: unset;
     position: relative;
+    height: 55px;
   }
+
   .dropdown-content {
     position: relative;
     margin: 0;
     height: 50px;
     display: block;
+    top: 0;
+    left: 0;
+    width: 135px;
   }
   .dropdown .dropbtn {
     margin: 0 0 0 26px;
@@ -1197,7 +1217,7 @@ footer section#socialM ul li a figure {
       #toast > div > img
     ):not(figure#eventCalendar img):not(figure#tenisCalendar img):not(
       figure#padelCalendar img
-    ) {
+    ):not(header.x div img) {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1206,7 +1226,7 @@ footer section#socialM ul li a figure {
     width: 70%;
     max-width: 785px;
     margin-right: 10px;
-    height: auto;
+    /* height: auto; */
     overflow: unset;
   }
   body > header nav#navList:has(.top255) {
@@ -1360,6 +1380,9 @@ footer section#socialM ul li a figure {
   }
   footer section:first-child > div {
     width: 65%;
+  }
+  footer {
+    bottom: -468px;
   }
 }
 @media screen and (min-width: 2400px) {

@@ -27,15 +27,20 @@ document.getElementById('activityHeading').innerHTML = heading;
 var activity = '<main id="event_gallery" class="grid">';
 activity += '<h6>' + main.h6 + '</h6>';
 // notification bar
-activity += '<div class="notification"><div id="toast_content"><ul>';
-console.log('main.notifications[n]: ', main.notifications);
-for (var n = 0; n < main.notifications.length; n++) {
+if (main.notifications == '') {
   activity +=
-    '<li><img  src="./assets/images/icons/tennis.gif" alt="target icon" width="auto" height="30px"/><p>' +
-    main.notifications[n] +
-    '</p></li>';
+    '<div class="notification" style="background-color: #f9f9f9;margin-bottom:-5%"></div>';
+} else {
+  activity += '<div class="notification"><div id="toast_content"><ul>';
+  console.log('main.notifications[n]: ', main.notifications);
+  for (var n = 0; n < main.notifications.length; n++) {
+    activity +=
+      '<li><img  src="./assets/images/icons/tennis.gif" alt="target icon" width="auto" height="30px"/><p>' +
+      main.notifications[n] +
+      '</p></li>';
+  }
+  activity += '</ul></div></div>'; // bar end
 }
-activity += '</ul></div></div>'; // bar end
 activity += '<ul>';
 for (let i = 0; i < main.list.length; i++) {
   activity +=
