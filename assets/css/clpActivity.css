@@ -145,9 +145,6 @@ body:has(.torneo) div#body footer section:last-child {
   body:has(.torneo) div#body > figure:not(figure.footer-wave) {
     padding: 0 5%;
   }
-  body:has(.torneo) div#body figure.footer-wave {
-    /* left: -145px; */
-  }
   body:has(.torneo) div#body footer section:last-child {
     top: 13px;
   }
@@ -296,10 +293,6 @@ body:has(.torneo) div#body footer section:last-child {
   }
   figure.wave h1.torneo {
     top: 200px;
-  }
-  main div h6,
-  body:has(.torneo) div#body main div h6 {
-    /* padding: 1% 13%; */
   }
   main#torneos_gallery.grid div > section.button h3 {
     margin: -25px auto 50px 13%;

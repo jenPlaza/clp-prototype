@@ -351,8 +351,6 @@ function displayTeam() {
 }
 function toTeams() {
   location.href = './equipo';
-  //neocities
-  //location.href = './equipo';
 }
 function toInstructor(e) {
   var id = e;
@@ -400,8 +398,6 @@ function toInstructor(e) {
 }
 function toEvents() {
   location.href = './eventos';
-  //neocities
-  //location.href = './eventos';
 }
 //CONTACT SOCIAL MEDIA
 function displaySocial() {

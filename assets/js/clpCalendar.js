@@ -1,26 +1,3 @@
-//Brand list
-// function displayReservations() {
-//   var reservationCenter = document.querySelector('.reservaciones');
-//   var actividadesCLP = document.getElementById('actividadesCLP');
-//   var calendar = document.querySelector('.calendar');
-//   var clpHeader = document.getElementById('top');
-//   var expandMenu = document.querySelector('.nav-close');
-//   if (reservationCenter.style.display == 'none') {
-//     reservationCenter.style.display = 'flex';
-//     clpHeader.style.background = 'var(--red)';
-//     expandMenu.click();
-//   } else if (reservationCenter.style.display == 'flex') {
-//     if (mediaQueryTablet.matches) {
-//       reservationCenter.classList.remove('expand');
-//     }
-//     actividadesCLP.style.display = 'flex';
-//     calendar.style.display = 'none';
-//     // reservationCenter.classList.remove('calendario');
-//     reservationCenter.style.display = 'none';
-//     // clpHeader.style.background = 'revert-layer';
-//   }
-// }
-
 function displayReservations() {
   var reservationCenter = document.querySelector('.reservaciones');
   var actividadesCLP = document.getElementById('actividadesCLP');
