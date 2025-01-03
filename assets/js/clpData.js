@@ -286,6 +286,7 @@ var gallery = [
           img_src_color:
             'https://www.instagram.com/reel/DBrEcCXu3nN/embed/?autoplay=1&loop=1',
           img_alt: 'conoscan nuestro quincho por video',
+          img_class: 'iframeVideoPortrait adjust',
           event_name: 'Una caminata por el centro recreacional Los Paltos',
           event_info:
             ' Independientemente de la ocasión, Club Los Paltos se presenta como el lugar ideal para celebrar una amplia gama de eventos. Sus instalaciones combinan un entorno encantador con un paisaje natural, perfecto para disfrutar de momentos de relajación y recreación en contacto directo con la naturaleza. Aquí encontrarás todo lo necesario para vivir una experiencia única junto a tu familia, amigos o compañeros de trabajo. Contarás con una amplia piscina, extensas áreas verdes y un espacioso quincho para organizar asados y compartir inolvidables momentos, asegurando así el éxito de cualquier celebración.',
