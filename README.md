@@ -8,7 +8,8 @@ Google's new appointment scheduler is a straightforward tool that allows others 
 
 To manage reservation details (such as name, email, and phone number), I incorporated the Sheets2GCal Google extension. This tool lets you import appointments directly into Google Sheets. The basic plan is free and provides [raw data](https://jennplaza.wordpress.com/wp-content/uploads/2025/01/sheets2gcal_rawdata.png), which can be customized using simple functions. For example, I used the filter function to isolate reservations for January. Then, I cleaned up the data using the split function, added a total count (to determine the number of reservations), and transformed the information into a [formatted table](https://jennplaza.wordpress.com/wp-content/uploads/2025/01/formattedtable-clp.png).
 
-Making a reservations through this prototype will not be officially registered with Club Los Paltos. For more details, https://clublospaltos.neocities.org or explore the prototype at https://jenplaza.github.io/clp-prototype/. You can also check out the Adobe XD wireframes at [Lofi](https://jennplaza.wordpress.com/wp-content/uploads/2024/11/screenshot-2024-11-08-at-7.07.10-pm.png) and [Hifi](https://jennplaza.wordpress.com/wp-content/uploads/2024/11/screenshot-2024-11-08-at-7.03.47-pm.png).
+Making a reservations through this prototype will not be officially registered with Club Los Paltos. For more details, https://clublospaltos.neocities.org or explore the prototype at https://jenplaza.github.io/clp-prototype/. You can also check out the Adobe XD wireframes [Lofi](https://jennplaza.wordpress.com/wp-content/uploads/2024/11/screenshot-2024-11-08-at-7.07.10-pm.png) and [Hifi](https://jennplaza.wordpress.com/wp-content/uploads/2024/11/screenshot-2024-11-08-at-7.03.47-pm.png).
+
 
 ## About CLP
 
