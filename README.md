@@ -2,7 +2,7 @@
 
 **Volunteer Project<br />Contact: Marcelo Piña or Julio Piña**
 
-Club Los Paltos (CLP) is a fully responsive HTML prototype created with HTML, CSS, and Vanilla JavaScript. Developed from the ground up, CLP handles 65% of its spanish content through multiple object arrays. These arrays process data by passing values into specific conditions and functions, which dynamically update the designated HTML elements with new innerHTML content. The prototype advances the project by incorporating a reservation center powered by Google's latest scheduling tool. 
+Club Los Paltos (CLP) is a fully responsive HTML prototype created with HTML, CSS, and Vanilla JavaScript. Developed from the ground up, CLP handles 65% of its spanish content through multiple object arrays. These arrays process data by passing values into specific conditions and functions, which dynamically updates the designated HTML elements with new innerHTML content. The prototype advances the project by incorporating a reservation center powered by Google's latest scheduling tool. 
 
 Google's new appointment scheduler is a straightforward tool that allows others to book time with you through Google Calendar. For Club Los Paltos, I integrated this tool to enable users to reserve time for tennis, padel, or events. In the prototype, I embedded just one calendar, but for this project, having three separate calendars would be ideal—one for each activity. 
 
