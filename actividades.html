@@ -152,19 +152,26 @@ Centro Recreativo | Actividades Club Los Paltos - Tenis y Pádel.
 <div id=alerta style=display:none></div>
 </header>
 <section>
-<div class=wrapper>
-<div id=toast>
-<div class=container>
-<img src=./assets/images/icons/tennis.gif alt="target icon" width=auto height=30px>
-<div>
-<p>Torneos de Verano. </p>
-<a href=/escalerillas><p>Inscribence Hoy!</p></a>
-</div>
-</div>
-<button id=close onclick=closeToast()>&times;</button>
-</div>
-</div>
-</section>
+  <div class=wrapper>
+            <div id=toast>
+                      <div class=container>
+                                <img class="icon" src=./assets/images/icons/tennis.gif alt="target icon" width=auto height=30px>
+                                <div style="width:200px;">
+                                          <p>
+                                          Torneos de Verano.
+                                          </p><a href=./escalerillas.html>
+                                          <p>
+                                          Inscribence Hoy!
+                                          </p></a>
+                                </div><!-- content -->
+                      </div><!-- container -->
+                      <div style="width:65px;">
+                      <button id=close style="top:-9px; position: relative; right:0;" onclick=closeToast()>&times;</button>
+                       <img class="icon" src=./assets/images/logos/clublospaltos.png alt="white menu icon" width="48px" height="48px" style="top:-55px; position: relative;">
+                      </div><!-- close & logo -->
+            </div><!-- toast -->
+  </div><!-- wrapper -->
+</section><!-- section toast -->
 <figure class=wave>
 <img src=./assets/images/red-grey-wave.png alt="3-color-wave image">
 <h1 id=activityHeading>Recreacion Deportivas</h1>
